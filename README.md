@@ -1,6 +1,6 @@
 # SP Desenvolvedor Front-end - Junior
 
-###### Você já conhece a Profite? Nós somos a maior implantadora de e-commerce do Brasil. Atendemos clientes como Electrolux, Calvin Klein, C&A, Havaianas, Timex, Shopfácil, Manbo entre outros.
+###### Você já conhece a Profite? Nós somos a maior implantadora de e-commerce do Brasil. Atendemos clientes como Electrolux, Calvin Klein, C&A, Havaianas, Timex, Shopfácil, Mambo entre outros.
 
 ###### Estamos procurando um(a) Desenvolvedor(a) Front-end, com sólidos conhecimentos em HTML. CSS e JS para projetar interfaces e entregar a melhor experiência para os consumidores visando sempre a otimização do código e agilidade no desenvolvimento.
 
