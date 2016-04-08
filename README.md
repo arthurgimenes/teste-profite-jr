@@ -48,3 +48,5 @@
 * Responsividade
 * SASS/LESS
 
+### Final:
+Quando finalizar enviar o teste para: arthur@profite.com.br
