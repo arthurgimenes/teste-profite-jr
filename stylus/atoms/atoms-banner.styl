@@ -1,0 +1,60 @@
+.atom-main-banner-slider-each-img
+	position absolute
+	left 0
+	top -1px
+	height 350px
+	width 100%
+	background-image url('../img/Banner/banner1.jpg')
+	background-position center
+	background-size contain
+	background-repeat no-repeat
+	display none
+	&.slider-1
+		background-image url('../img/Banner/banner1.jpg')
+		display block
+	&.slider-2
+		background-image url('../img/Banner/banner2.jpg')
+	&.slider-3
+		background-image url('../img/Banner/banner3.jpg')
+	&.slider-4
+		background-image url('../img/Banner/banner4.jpg')
+	&.slider-5
+		background-image url('../img/Banner/banner5.jpg')
+	+below(650px)
+		height 140px
+		
+.atom-main-banner-slider-arrows-before, .atom-main-banner-slider-arrows-after
+	width 15px
+	height 15px
+	background-repeat no-repeat
+	background-size cover
+	background-position center
+	position absolute
+	top 50%
+	transform translateY(-50%)
+	cursor pointer
+	
+.atom-main-banner-slider-arrows-before
+	background-image url('../img/Banner/seta_esquerda.png')
+	left -30px 
+	+below(650px)
+		left 5px
+	
+.atom-main-banner-slider-arrows-after
+	background-image url('../img/Banner/seta_direita.png')
+	right -30px
+	+below(650px)
+		right 5px
+	
+.atom-main-banner-slider-dots-each
+	width 10px
+	height 10px
+	display inline-block
+	margin 0 5px
+	background-image url('../img/Banner/slide_proximo.png')
+	background-position center
+	background-size cover
+	background-repeat no-repeat
+	cursor pointer
+	&.active
+		background-image url('../img/Banner/slide_atual.png')

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title> Processo Seletivo </title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<meta name="author" content="Processo Seletivo">
+	<meta name="description" content="Processo Seletivo">
+	<meta name="keywords" content="Processo Seletivo">
+	<meta name="viewport" content="initial-scale=1">
+	<script src="angular/angular/angular.js"></script>
+	<script src="angular/app.js"></script>
+	<script src="angular/controllers.js"></script>
+</head>
+<body ng-controller="ProductsController">
+
+	<div class="organism-main">
+		<header class="organism-main-header">
+			<div class="molecule-main-header-logo">
+				<div class="atom-main-header-logo-img"></div>
+			</div><!--
+		 --><div class="molecule-main-header-login">
+				<div class="atom-main-header-login-greetings">
+					Olá, Visitante
+				</div>
+				<div class="atom-main-header-login-actions">
+					<div class="quark-main-header-login-actions-register">
+						Cadastre-se
+					</div>
+					<div class="quark-main-header-login-actions-login">
+						Login
+					</div>
+				</div>
+			</div><!--
+		 --><div class="molecule-main-header-search">
+				<div class="molecule-main-header-search-bar">
+					<div class="atom-main-header-search-bar-magnifier">
+						<div class="quark-main-header-search-bar-magnifier-img"></div>
+					</div><!--
+				 --><input type="text" class="atom-main-header-search-bar-input" placeholder="Buscar por...">
+				</div>
+			</div><!--
+		 --><div class="molecule-main-header-contact">
+				<div class="atom-main-header-contact-flags">
+					<img src="img/Topo/bandeira1.png" class="quark-main-header-contact-flags-each">
+					<img src="img/Topo/bandeira2.png" class="quark-main-header-contact-flags-each">
+					<img src="img/Topo/bandeira3.png" class="quark-main-header-contact-flags-each">
+				</div>
+				<div class="atom-main-header-contact-skype">
+					<img src="img/Topo/skype.png" alt="" class="quark-main-header-contact-skype-img">
+					<div class="quark-main-header-contact-skype-number">
+						11 33375618
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="organism-main-banner">
+			<div class="molecule-main-banner-slider">
+				<div class="molecule-main-banner-slider-each">
+					<div class="atom-main-banner-slider-each-img slider-1" data-slide="1"></div>
+					<div class="atom-main-banner-slider-each-img slider-2" data-slide="2"></div>
+					<div class="atom-main-banner-slider-each-img slider-3" data-slide="3"></div>
+					<div class="atom-main-banner-slider-each-img slider-4" data-slide="4"></div>
+					<div class="atom-main-banner-slider-each-img slider-5" data-slide="5"></div>
+				</div>
+				<div class="molecule-main-banner-slider-controls">
+					<div class="molecule-main-banner-slider-arrows">
+						<div class="atom-main-banner-slider-arrows-before"></div>
+						<div class="atom-main-banner-slider-arrows-after"></div>
+					</div>
+					<div class="molecule-main-banner-slider-dots">
+						<div class="atom-main-banner-slider-dots-each active" data-slider="1"></div>
+						<div class="atom-main-banner-slider-dots-each" data-slider="2"></div>
+						<div class="atom-main-banner-slider-dots-each" data-slider="3"></div>
+						<div class="atom-main-banner-slider-dots-each" data-slider="4"></div>
+						<div class="atom-main-banner-slider-dots-each" data-slider="5"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="organism-main-products">
+			<slick class="organism-main-products-gallery" init-onload="true" data="products" slides-to-show="{{slides}}" arrows="false" css-ease="ease-in-out" use-css="true">
+				<div class="molecule-main-products-each" ng-class="{'featured': product.featured}" ng-repeat="product in products">
+					<div class="atom-main-products-each-img" ng-style="{'background-image': 'url({{product.image}})'}" data-image="{{product.imageZoom}}"></div>
+					<div class="atom-main-products-each-title">
+						{{product.name}}
+					</div>
+					<div class="atom-main-products-each-stars"></div>
+					<div class="atom-main-products-each-price-invalid">
+						De: {{product.oldPrice}}
+					</div>
+					<div class="atom-main-products-each-price">
+						Por: {{product.newPrice}}
+					</div>
+					<div class="atom-main-products-each-subprice">
+						ou até {{product.priceDivision}}
+					</div>
+					<div class="atom-main-products-each-buy">
+						<div class="quark-main-products-each-buy-cart"></div>
+						Comprar
+					</div>
+					<div class="atom-main-products-each-info">
+						Economize {{product.economy}}
+					</div>
+				</div>
+			</slick>
+			<div class="atom-main-products-whitebar whitebar-right"></div>
+			<div class="atom-main-products-whitebar whitebar-left"></div>
+			<div class="molecule-main-products-control">
+				<div class="atom-main-products-control-prev"></div>
+				<div class="atom-main-products-control-after"></div>
+			</div>
+		</section>
+
+		<footer class="organism-main-footer">
+			<div class="molecule-main-footer-columns">
+				<div class="molecule-main-footer-columns-each">
+					<div class="atom-main-footer-columns-each-flag">
+						RJ
+					</div>
+					<div class="atom-main-footer-columns-each-street">
+						Rua do Acre, 77 - sala 1108
+					</div>
+					<div class="atom-main-footer-columns-each-city">
+						Centro - Rio de Janeiro
+					</div>
+					<div class="atom-main-footer-columns-each-contact">
+						tel: +55 (21) 2263.6044
+					</div>
+				</div><!--
+			 --><div class="molecule-main-footer-columns-each">
+					<div class="atom-main-footer-columns-each-flag">
+						SP
+					</div>
+					<div class="atom-main-footer-columns-each-street">
+						Rua Cardoso de Melo, 1750
+					</div>
+					<div class="atom-main-footer-columns-each-city">
+						6º Andar Vila Olímpica
+					</div>
+					<div class="atom-main-footer-columns-each-contact">
+						tel: +55 (21) 2263.6044
+					</div>
+				</div><!--
+			 --><div class="molecule-main-footer-columns-each last-column">
+					<div class="atom-main-footer-columns-each-button-contact">
+						<div class="quark-main-footer-columns-each-button-contact-img"></div>
+						<div class="quark-main-footer-columns-each-button-contact-title">
+							Entre em <span>Contato</span>
+						</div>
+					</div>
+					<div class="atom-main-footer-columns-each-button-chat">
+						<div class="quark-main-footer-columns-each-button-chat-img"></div>
+						<div class="quark-main-footer-columns-each-button-contact-text">
+							<div class="quark-main-footer-columns-each-button-contact-text-subtitle">
+								Fale com o nosso
+							</div>
+							<div class="quark-main-footer-columns-each-button-contact-text-title">
+								Consultor Online
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div class="organism-overlay"></div>
+
+	<div class="organism-modal-products">
+		<div class="molecule-modal-products-img"></div>
+		<div class="atom-modal-products-close"></div>
+	</div>
+
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/angular-slick.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

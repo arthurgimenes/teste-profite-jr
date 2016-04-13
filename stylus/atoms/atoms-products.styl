@@ -1,0 +1,121 @@
+.atom-main-products-each-img
+	width 100%
+	height 150px
+	background-position center
+	background-repeat no-repeat
+	background-size contain
+	cursor pointer
+		
+.atom-main-products-each-title
+	set-font-size(14px)
+	font-weight 800
+	padding 0px 40px
+	line-height 20px
+	height 40px
+	+below(650px)
+		padding 0 5px
+
+.atom-main-products-each-stars
+	width 100%
+	height 15px
+	margin-top 8px
+	margin-bottom 12px
+	background-image url('../img/Produtos/estrelas.png')
+	background-size contain
+	background-repeat no-repeat
+	background-position center
+	
+.atom-main-products-each-price-invalid
+	set-font-size(11px)
+	color #AAA
+	text-decoration line-through
+	font-style italic
+	
+.atom-main-products-each-price
+	set-font-size(12px)
+	font-weight 800
+	margin-bottom 4px
+	
+.atom-main-products-each-subprice
+	set-font-size(11px)
+	font-weight 800
+	font-style italic
+	margin-bottom 15px
+	
+.atom-main-products-each-buy
+	padding 10px 20px
+	background-color #000
+	set-font-size(13px)
+	color #FFF
+	text-transform uppercase
+	flex(inline-flex, -webkit-inline-flex)
+	cursor pointer
+	
+.quark-main-products-each-buy-cart
+	width 12px
+	height 12px
+	background-image url('../img/Produtos/carrinho.png')
+	background-position center
+	background-repeat no-repeat
+	background-size contain
+	display inline-block
+	margin-right 5px
+	.featured &
+		width 20px
+		height 20px
+	
+.atom-main-products-each-info
+	margin-top 10px
+	padding 5px 20px
+	display inline-block
+	border 1px solid rgba(0,0,0,0.3)
+	set-font-size(10px)
+	background-color #FFF
+
+.atom-main-products-whitebar
+	width 3px
+	height 400px
+	background-color #FFF
+	position absolute
+	top 20px
+	&.whitebar-right
+		right 0
+	&.whitebar-left
+		left 0
+	
+.atom-main-products-control-prev, .atom-main-products-control-after
+	width 15px
+	height 15px
+	position absolute
+	background-position center
+	background-repeat no-repeat
+	background-size contain
+	cursor pointer
+	
+.atom-main-products-control-prev
+	background-image url('../img/Produtos/seta_esquerda.png')
+	left -30px
+	top 150px
+	+below(650px)
+		top 20px
+		left 50px
+	
+.atom-main-products-control-after
+	background-image url('../img/Produtos/seta_direita.png')
+	right -30px
+	top 150px
+	+below(650px)
+		top 20px
+		right 50px
+		
+.atom-modal-products-close
+	position absolute
+	right 10px
+	top 10px
+	width 30px
+	height 30px
+	background-image url('../img/Produtos/fechar.png')
+	background-repeat no-repeat
+	background-position center
+	background-size contain
+	cursor pointer

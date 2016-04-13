@@ -1,0 +1,104 @@
+.atom-main-footer-columns-each-flag
+	background-color #F9C438
+	color #000
+	set-font-size(18px)
+	font-weight 800
+	text-transform uppercase
+	position absolute
+	width 34px
+	height 34px
+	flex(inline-flex, -webkit-inline-flex)
+	left 30px
+	&::after
+		content ""
+		display block
+		position absolute
+		border-top 17px solid transparent
+		border-bottom 17px solid transparent
+		border-left 8px solid #F9C438
+		right -8px
+		top 0
+	+below(650px)
+		left 5px
+		
+.atom-main-footer-columns-each-street
+	set-font-size(12px)
+	color rgba(0,0,0,0.5)
+	margin-top 9px
+	margin-bottom 10px
+	position relative
+	left 50px
+	+below(650px)
+		set-font-size(10px)
+		display inline-block
+	
+.atom-main-footer-columns-each-city
+	set-font-size(12px)
+	color rgba(0,0,0,0.5)
+	margin-bottom 10px
+	position relative
+	left 50px
+	+below(650px)
+		set-font-size(10px)
+		display inline-block
+	
+.atom-main-footer-columns-each-contact
+	set-font-size(12px)
+	color #000
+	font-weight 800
+	position relative
+	left 50px
+	+below(650px)
+		set-font-size(10px)
+		display inline-block
+	
+.atom-main-footer-columns-each-button-contact, .atom-main-footer-columns-each-button-chat
+	flex(inline-flex, -webkit-inline-flex)
+	background-color #F9C438
+	padding 7px 10px
+	color #000
+	text-transform uppercase
+	margin-bottom 10px
+	position relative
+	left 50px
+	+below(650px)
+		left 0px
+	
+.atom-main-footer-columns-each-button-contact
+	+below(650px)
+		padding 9px 10px
+		position relative
+		top 1px
+	
+.quark-main-footer-columns-each-button-contact-img, .quark-main-footer-columns-each-button-chat-img
+	width 18px
+	height 18px
+	background-image url('../img/Footer/icone_contato.png')
+	background-size contain
+	background-position center
+	background-repeat no-repeat
+	display inline-block
+	margin-right 5px
+	position relative
+	top -1px
+	
+.quark-main-footer-columns-each-button-chat-img
+	background-image url('../img/Footer/icone_consultor.png')
+	
+.quark-main-footer-columns-each-button-contact-title
+	display inline-block
+	set-font-size(9px)
+	& span
+		font-weight 800
+		
+.quark-main-footer-columns-each-button-contact-text
+	display inline-block
+	set-font-size(9px)
+	
+.quark-main-footer-columns-each-button-contact-text-subtitle
+	display block
+	margin-bottom 3px
+	
+.quark-main-footer-columns-each-button-contact-text-title
+	display block
+	font-weight 800

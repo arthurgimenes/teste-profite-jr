@@ -1,0 +1,49 @@
+[
+	{
+		"name" : "Sandália Ferracini Ecologic",
+		"oldPrice" : "R$ 99,90",
+		"newPrice" : "R$ 95,92",
+		"priceDivision" : "4x de R$ 23,98",
+		"economy" : "R$ 43,98",
+		"featured" : false,
+		"image" : "img/Produtos/calcado1_hover.png",
+		"imageZoom" : "img/Produtos/calcado1_zoom.png"
+	},
+	{
+		"name" : "Chinelo Kildare",
+		"oldPrice" : "R$ 99,90",
+		"newPrice" : "R$ 79,92",
+		"priceDivision" : "3x de R$ 26,64",
+		"economy" : "R$ 19,96",
+		"featured" : false,
+		"image" : "img/Produtos/calcado2_hover.png",
+		"imageZoom" : "img/Produtos/calcado2_zoom.png"
+	},{
+		"name" : "Tênis Ferracini Week",
+		"oldPrice" : "R$ 229,90",
+		"newPrice" : "R$ 183,92",
+		"priceDivision" : "9x de R$ 20,43",
+		"economy" : "R$ 45,98",
+		"featured" : false,
+		"image" : "img/Produtos/calcado3_hover.png",
+		"imageZoom" : "img/Produtos/calcado3_zoom.png"
+	},{
+		"name" : "Tênis Democrata Fan",
+		"oldPrice" : "R$ 219,90",
+		"newPrice" : "R$ 159,92",
+		"priceDivision" : "7x de R$ 22,64",
+		"economy" : "R$ 59,91",
+		"featured" : true,
+		"image" : "img/Produtos/calcado4_hover.png",
+		"imageZoom" : "img/Produtos/calcado4_zoom.png"
+	},{
+		"name" : "Sandália Ferracini Ecologic",
+		"oldPrice" : "R$ 99,90",
+		"newPrice" : "R$ 95,92",
+		"priceDivision" : "4x de R$ 23,98",
+		"economy" : "R$ 43,98",
+		"featured" : false,
+		"image" : "img/Produtos/calcado1_hover.png",
+		"imageZoom" : "img/Produtos/calcado1_zoom.png"
+	}
+]
