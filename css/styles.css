@@ -38,6 +38,39 @@ body {
   color: #00AFF0;
 }
 
-footer {
+#sapatos, #sapatos div {
+  display: inline-block;
+}
+
+footer, footer div {
   background-color: #DBDBDB;
+  background-size: cover;
+}
+
+.endereco-footer {
+  color: gray;
+}
+
+.icone-footer {
+  background-color: #EEBB00;
+  max-width: 200px;
+  padding: 10px;
+}
+
+.icone-footer img {
+  margin-right: 10px;
+}
+
+#botoes-footer {
+  padding-top: 20px;
+  padding-bottom: 9px;
+}
+
+#rj-footer {
+  padding-left: 10%;
+}
+
+#rj-footer, #sp-footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
