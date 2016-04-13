@@ -1,0 +1,910 @@
+/****** Config Files *******/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+q:before,
+blockquote:after,
+q:after {
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/***************************/
+/****** Components *********/
+@font-face {
+  font-family: Arial;
+  font-style: normal;
+  src: url("../fonts/arial.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: Arial;
+  font-style: normal;
+  src: url("../fonts/arialbd.ttf");
+  font-weight: 800;
+}
+.atom-main-header-logo-img {
+  width: 100%;
+  height: 50px;
+  background-image: url("../img/Topo/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.atom-main-header-login-greetings {
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 800;
+}
+@media only screen and (max-width: 650px) {
+  .atom-main-header-login-greetings {
+    font-size: 15px;
+    font-size: 0.9375rem;
+  }
+}
+.atom-main-header-login-actions {
+  font-size: 12px;
+  font-size: 0.75rem;
+  margin-top: 2px;
+}
+@media only screen and (max-width: 650px) {
+  .atom-main-header-login-actions {
+    font-size: 11px;
+    font-size: 0.6875rem;
+  }
+}
+.quark-main-header-login-actions-register {
+  display: inline-block;
+  cursor: pointer;
+}
+.quark-main-header-login-actions-register::after {
+  content: "-";
+  margin-left: 3px;
+  margin-right: 3px;
+}
+.quark-main-header-login-actions-login {
+  display: inline-block;
+  cursor: pointer;
+}
+.atom-main-header-search-bar-magnifier {
+  padding: 6px 2px;
+  width: 10%;
+  display: inline-block;
+  background-color: #000;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+@media only screen and (max-width: 650px) {
+  .atom-main-header-search-bar-magnifier {
+    position: absolute;
+    border-radius: 0;
+    width: 28px;
+    top: -4px;
+    left: 21px;
+  }
+}
+.quark-main-header-search-bar-magnifier-img {
+  width: 100%;
+  height: 18px;
+  background-image: url("../img/Topo/search.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 650px) {
+  .quark-main-header-search-bar-magnifier-img {
+    height: 18px;
+  }
+}
+.atom-main-header-search-bar-input {
+  width: 90%;
+  display: inline-block;
+  padding: 5px 25px;
+  border-radius: 10px;
+  background-color: #f9c438;
+  color: #000;
+  border: none;
+  box-shadow: none;
+  font-size: 16px;
+  font-size: 1rem;
+  box-shadow: none;
+  border: none;
+  position: absolute;
+  left: 18px;
+  top: 1px;
+  outline: none;
+  height: 28px;
+}
+.atom-main-header-search-bar-input::-webkit-input-placeholder {
+  color: #000;
+}
+.atom-main-header-search-bar-input::-moz-input-placeholder {
+  color: #000;
+}
+.atom-main-header-search-bar-input:-moz-input-placeholder {
+  color: #000;
+}
+.atom-main-header-search-bar-input:-ms-input-placeholder {
+  color: #000;
+}
+@media only screen and (max-width: 650px) {
+  .atom-main-header-search-bar-input {
+    width: 100%;
+    left: 0;
+    border-radius: 0;
+    padding: 5px 60px;
+  }
+}
+.atom-main-header-contact-flags {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.quark-main-header-contact-flags-each {
+  width: 22px;
+  display: inline-block;
+  margin: 0 2px;
+}
+.atom-main-header-contact-skype {
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+.quark-main-header-contact-skype-img {
+  width: 26px;
+  display: inline-block;
+  margin-right: 5px;
+}
+.quark-main-header-contact-skype-number {
+  display: inline-block;
+  color: #12a5f4;
+}
+.atom-main-banner-slider-each-img {
+  position: absolute;
+  left: 0;
+  top: -1px;
+  height: 350px;
+  width: 100%;
+  background-image: url("../img/Banner/banner1.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: none;
+}
+.atom-main-banner-slider-each-img.slider-1 {
+  background-image: url("../img/Banner/banner1.jpg");
+  display: block;
+}
+.atom-main-banner-slider-each-img.slider-2 {
+  background-image: url("../img/Banner/banner2.jpg");
+}
+.atom-main-banner-slider-each-img.slider-3 {
+  background-image: url("../img/Banner/banner3.jpg");
+}
+.atom-main-banner-slider-each-img.slider-4 {
+  background-image: url("../img/Banner/banner4.jpg");
+}
+.atom-main-banner-slider-each-img.slider-5 {
+  background-image: url("../img/Banner/banner5.jpg");
+}
+@media only screen and (max-width: 650px) {
+  .atom-main-banner-slider-each-img {
+    height: 140px;
+  }
+}
+.atom-main-banner-slider-arrows-before,
+.atom-main-banner-slider-arrows-after {
+  width: 15px;
+  height: 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.atom-main-banner-slider-arrows-before {
+  background-image: url("../img/Banner/seta_esquerda.png");
+  left: -30px;
+}
+@media only screen and (max-width: 650px) {
+  .atom-main-banner-slider-arrows-before {
+    left: 5px;
+  }
+}
+.atom-main-banner-slider-arrows-after {
+  background-image: url("../img/Banner/seta_direita.png");
+  right: -30px;
+}
+@media only screen and (max-width: 650px) {
+  .atom-main-banner-slider-arrows-after {
+    right: 5px;
+  }
+}
+.atom-main-banner-slider-dots-each {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin: 0 5px;
+  background-image: url("../img/Banner/slide_proximo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.atom-main-banner-slider-dots-each.active {
+  background-image: url("../img/Banner/slide_atual.png");
+}
+.atom-main-products-each-img {
+  width: 100%;
+  height: 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+.atom-main-products-each-title {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 800;
+  padding: 0px 40px;
+  line-height: 20px;
+  height: 40px;
+}
+@media only screen and (max-width: 650px) {
+  .atom-main-products-each-title {
+    padding: 0 5px;
+  }
+}
+.atom-main-products-each-stars {
+  width: 100%;
+  height: 15px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  background-image: url("../img/Produtos/estrelas.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.atom-main-products-each-price-invalid {
+  font-size: 11px;
+  font-size: 0.6875rem;
+  color: #aaa;
+  text-decoration: line-through;
+  font-style: italic;
+}
+.atom-main-products-each-price {
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+.atom-main-products-each-subprice {
+  font-size: 11px;
+  font-size: 0.6875rem;
+  font-weight: 800;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+.atom-main-products-each-buy {
+  padding: 10px 20px;
+  background-color: #000;
+  font-size: 13px;
+  font-size: 0.8125rem;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-flex;
+  display: -webkit-inline-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  cursor: pointer;
+}
+.quark-main-products-each-buy-cart {
+  width: 12px;
+  height: 12px;
+  background-image: url("../img/Produtos/carrinho.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  margin-right: 5px;
+}
+.featured .quark-main-products-each-buy-cart {
+  width: 20px;
+  height: 20px;
+}
+.atom-main-products-each-info {
+  margin-top: 10px;
+  padding: 5px 20px;
+  display: inline-block;
+  border: 1px solid rgba(0,0,0,0.3);
+  font-size: 10px;
+  font-size: 0.625rem;
+  background-color: #fff;
+}
+.atom-main-products-whitebar {
+  width: 3px;
+  height: 400px;
+  background-color: #fff;
+  position: absolute;
+  top: 20px;
+}
+.atom-main-products-whitebar.whitebar-right {
+  right: 0;
+}
+.atom-main-products-whitebar.whitebar-left {
+  left: 0;
+}
+.atom-main-products-control-prev,
+.atom-main-products-control-after {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+.atom-main-products-control-prev {
+  background-image: url("../img/Produtos/seta_esquerda.png");
+  left: -30px;
+  top: 150px;
+}
+@media only screen and (max-width: 650px) {
+  .atom-main-products-control-prev {
+    top: 20px;
+    left: 50px;
+  }
+}
+.atom-main-products-control-after {
+  background-image: url("../img/Produtos/seta_direita.png");
+  right: -30px;
+  top: 150px;
+}
+@media only screen and (max-width: 650px) {
+  .atom-main-products-control-after {
+    top: 20px;
+    right: 50px;
+  }
+}
+.atom-modal-products-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/Produtos/fechar.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+}
+.atom-main-footer-columns-each-flag {
+  background-color: #f9c438;
+  color: #000;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  display: -webkit-inline-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  left: 30px;
+}
+.atom-main-footer-columns-each-flag::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-top: 17px solid transparent;
+  border-bottom: 17px solid transparent;
+  border-left: 8px solid #f9c438;
+  right: -8px;
+  top: 0;
+}
+@media only screen and (max-width: 650px) {
+  .atom-main-footer-columns-each-flag {
+    left: 5px;
+  }
+}
+.atom-main-footer-columns-each-street {
+  font-size: 12px;
+  font-size: 0.75rem;
+  color: rgba(0,0,0,0.5);
+  margin-top: 9px;
+  margin-bottom: 10px;
+  position: relative;
+  left: 50px;
+}
+@media only screen and (max-width: 650px) {
+  .atom-main-footer-columns-each-street {
+    font-size: 10px;
+    font-size: 0.625rem;
+    display: inline-block;
+  }
+}
+.atom-main-footer-columns-each-city {
+  font-size: 12px;
+  font-size: 0.75rem;
+  color: rgba(0,0,0,0.5);
+  margin-bottom: 10px;
+  position: relative;
+  left: 50px;
+}
+@media only screen and (max-width: 650px) {
+  .atom-main-footer-columns-each-city {
+    font-size: 10px;
+    font-size: 0.625rem;
+    display: inline-block;
+  }
+}
+.atom-main-footer-columns-each-contact {
+  font-size: 12px;
+  font-size: 0.75rem;
+  color: #000;
+  font-weight: 800;
+  position: relative;
+  left: 50px;
+}
+@media only screen and (max-width: 650px) {
+  .atom-main-footer-columns-each-contact {
+    font-size: 10px;
+    font-size: 0.625rem;
+    display: inline-block;
+  }
+}
+.atom-main-footer-columns-each-button-contact,
+.atom-main-footer-columns-each-button-chat {
+  display: inline-flex;
+  display: -webkit-inline-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  background-color: #f9c438;
+  padding: 7px 10px;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  position: relative;
+  left: 50px;
+}
+@media only screen and (max-width: 650px) {
+  .atom-main-footer-columns-each-button-contact,
+  .atom-main-footer-columns-each-button-chat {
+    left: 0px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .atom-main-footer-columns-each-button-contact {
+    padding: 9px 10px;
+    position: relative;
+    top: 1px;
+  }
+}
+.quark-main-footer-columns-each-button-contact-img,
+.quark-main-footer-columns-each-button-chat-img {
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/Footer/icone_contato.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin-right: 5px;
+  position: relative;
+  top: -1px;
+}
+.quark-main-footer-columns-each-button-chat-img {
+  background-image: url("../img/Footer/icone_consultor.png");
+}
+.quark-main-footer-columns-each-button-contact-title {
+  display: inline-block;
+  font-size: 9px;
+  font-size: 0.5625rem;
+}
+.quark-main-footer-columns-each-button-contact-title span {
+  font-weight: 800;
+}
+.quark-main-footer-columns-each-button-contact-text {
+  display: inline-block;
+  font-size: 9px;
+  font-size: 0.5625rem;
+}
+.quark-main-footer-columns-each-button-contact-text-subtitle {
+  display: block;
+  margin-bottom: 3px;
+}
+.quark-main-footer-columns-each-button-contact-text-title {
+  display: block;
+  font-weight: 800;
+}
+.molecule-main-header-logo {
+  width: 20%;
+  display: inline-block;
+}
+@media only screen and (max-width: 650px) {
+  .molecule-main-header-logo {
+    width: 40%;
+    margin: 0 10%;
+  }
+}
+.molecule-main-header-login {
+  width: 20%;
+  display: inline-block;
+  text-align: center;
+}
+@media only screen and (max-width: 650px) {
+  .molecule-main-header-login {
+    position: absolute;
+    width: auto;
+    top: 47px;
+  }
+}
+.molecule-main-header-search {
+  width: 40%;
+  display: inline-block;
+}
+@media only screen and (max-width: 650px) {
+  .molecule-main-header-search {
+    display: block;
+    width: 100%;
+  }
+}
+.molecule-main-header-search-bar {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  height: 28px;
+}
+.molecule-main-header-contact {
+  width: 20%;
+  display: inline-block;
+  text-align: center;
+}
+@media only screen and (max-width: 650px) {
+  .molecule-main-header-contact {
+    display: none;
+  }
+}
+.molecule-main-banner-slider {
+  width: 100%;
+  background-color: #f9c438;
+  position: relative;
+}
+.molecule-main-banner-slider-each,
+.molecule-main-banner-slider-controls {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  height: 348px;
+}
+@media only screen and (max-width: 650px) {
+  .molecule-main-banner-slider-each,
+  .molecule-main-banner-slider-controls {
+    height: 140px;
+  }
+}
+.molecule-main-banner-slider-controls {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.molecule-main-banner-slider-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+@media only screen and (max-width: 650px) {
+  .molecule-main-banner-slider-dots {
+    bottom: 0px;
+  }
+}
+.molecule-main-products-each {
+  text-align: center;
+  position: relative;
+  outline: none;
+  padding: 10px 0;
+}
+.molecule-main-products-each.featured {
+  background-color: #f9c438;
+}
+.molecule-main-products-each::after {
+  content: "";
+  width: 1px;
+  background-color: rgba(0,0,0,0.2);
+  height: 300px;
+  display: block;
+  position: absolute;
+  right: -1px;
+  top: 20px;
+}
+.molecule-main-products-control {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+.molecule-modal-products-img {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/Produtos/calcado4_zoom.png");
+}
+.molecule-main-footer-columns {
+  width: 100%;
+  max-width: 780px;
+  margin: 0 auto;
+  position: relative;
+}
+.molecule-main-footer-columns-each {
+  width: 31%;
+  display: inline-block;
+  margin-right: 2%;
+  padding: 0 30px;
+  position: relative;
+}
+@media only screen and (max-width: 650px) {
+  .molecule-main-footer-columns-each {
+    width: 50%;
+    margin-right: 0;
+    padding: 0;
+  }
+  .molecule-main-footer-columns-each.last-column {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+  }
+}
+.organism-main {
+  width: 100%;
+}
+.organism-main-header {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  height: 100px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+@media only screen and (max-width: 650px) {
+  .organism-main-header {
+    display: block;
+    height: auto;
+    padding: 10px 0;
+  }
+}
+.organism-main-banner {
+  width: 100%;
+}
+.organism-main-products {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 50px;
+  position: relative;
+  padding-bottom: 90px;
+}
+.organism-main-footer {
+  width: 100%;
+  padding: 50px 20px 60px 20px;
+  background-color: #d9d9d9;
+}
+@media only screen and (max-width: 650px) {
+  .organism-main-footer {
+    padding: 50px 0 60px 0;
+  }
+}
+.organism-modal-products {
+  width: 100%;
+  max-width: 600px;
+  height: 600px;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  margin: 0 auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: #fff;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.modal-active .organism-modal-products {
+  opacity: 1;
+  z-index: 10;
+}
+.organism-overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.modal-active .organism-overlay {
+  opacity: 0.5;
+  z-index: 5;
+}
+/***************************/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0,0,0,0.01) 0 0 1px;
+}
+body {
+  font-family: "Arial", sans-serif;
+  font-weight: 600;
+  width: 100%;
+  height: 100%;
+}
+html {
+  height: 100%;
+}

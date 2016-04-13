@@ -1,0 +1,58 @@
+{
+  "name": "reset.styl",
+  "version": "0.1.1",
+  "author": {
+    "name": "Roman Komarov",
+    "email": "kizmarh@ya.ru",
+    "url": "http://kizu.ru/en/"
+  },
+  "licence": "MIT",
+  "description": "Just one powerful implementation of those popular resets in Stylus",
+  "keywords": [
+    "stylus",
+    "reset",
+    "mixins"
+  ],
+  "homepage": "https://github.com/kizu/reset.styl#readme",
+  "bugs": {
+    "url": "http://github.com/kizu/reset.styl/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/kizu/reset.styl.git"
+  },
+  "devDependencies": {
+    "stylus": "0.41.x",
+    "glob": "3.2.x",
+    "mocha": "*",
+    "should": "*"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha test-runner.js --require should --reporter list"
+  },
+  "engines": {
+    "node": ">=0.6"
+  },
+  "readme": "# reset.styl [![Build Status][build]][build-link] [![NPM version][version]][version-link]\n[build]: https://travis-ci.org/kizu/reset.styl.png?branch=master\n[build-link]: https://travis-ci.org/kizu/reset.styl\n[version]: https://badge.fury.io/js/reset.styl.png\n[version-link]: http://badge.fury.io/js/reset.styl\n\n## Just one powerful implementation of those popular resets in [Stylus](http://learnboost.github.com/stylus).\n\n`reset.styl` is a resetting framework. Do you use [Eric Meyer's Reset](http://meyerweb.com/eric/thoughts/2011/01/03/reset-revisited/) or [Normalize.css](https://github.com/necolas/normalize.css/) from Necolas? Or do you have your own reset?\n\nWith `reset.styl` you can use any parts of those resets, or combine them with your overrides in an easy and maintainable way.\n\n### Install\n\n_installation instructions coming soon; in the meantime: use npm or git if you know how!_\n\n### Basic usage\n\nAfter including `reset.styl` (_more on this coming soon_) in your Stylus stylesheet, you can start using the two available resets: Meyers and Normalize.\n\nTo say `reset.styl` which reset you would like to use, you should write something like this:\n\n``` Sass\nuse_reset('meyer')\n```\n\nor\n\n``` Sass\nuse_reset('normalize')\n```\n\nThis won't do anything on its own: it would only tell Stylus from where take the reset styles when you'll need them.\n\nThen there are two possible ways to use the resets: in the global scope, and in the scope of a selector.\n\n#### Global scope\n\nJust call the `reset()` function in the global scope, passing what you wish to reset as arguments.\n\nIf you wouldn't pass anything or would pass `'all'` keyword like this:\n\n``` Sass\nreset('all')\n```\n\nYou would get all the reset styles from the reset you've _used_.\n\nHowever, in most cases you won't need to have all those styles in your stylesheet: you can pass a string with an array of elements you want to reset, like this:\n\n``` Sass\nreset('ul li a table')\n```\n\nThis would reset only the given elements.\n\n#### Local scope\n\nIf you don't want to have any element selectors, you could use the selector scope for resets. So, for Meyer's reset this:\n\n``` Sass\nuse_reset('meyer')\n\n.list\n  reset('ul, ol')\n\n  &-item\n    reset('li')\n```\n\nwould render to this:\n\n``` CSS\n.list,\n.list-item {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n}\n.list {\n  list-style: none;\n}\n```\n",
+  "readmeFilename": "README.md",
+  "_id": "reset.styl@0.1.1",
+  "dist": {
+    "shasum": "d77eb0e2591833ad999429a25d162b9d42006ace",
+    "tarball": "http://registry.npmjs.org/reset.styl/-/reset.styl-0.1.1.tgz"
+  },
+  "_from": "reset.styl@*",
+  "_npmVersion": "1.3.8",
+  "_npmUser": {
+    "name": "kizu",
+    "email": "kizmarh@ya.ru"
+  },
+  "maintainers": [
+    {
+      "name": "kizu",
+      "email": "kizmarh@ya.ru"
+    }
+  ],
+  "directories": {},
+  "_shasum": "d77eb0e2591833ad999429a25d162b9d42006ace",
+  "_resolved": "https://registry.npmjs.org/reset.styl/-/reset.styl-0.1.1.tgz"
+}
