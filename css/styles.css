@@ -2,8 +2,40 @@
   font-family: Arial, sans-serif;
 }
 
+body {
+  padding-top: 20px;
+}
+
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     width: 100%;
+}
+
+#search {
+  background-color: #EEBB00;
+  padding-left: 0px;
+  margin-top: 10px;
+}
+
+#search p {
+  padding-top: 10px;
+}
+
+#icone-pesquisa {
+  background-color: black;
+  max-height: 40px;
+  max-width: 40px;
+  margin-right: 20px;
+  border-radius: 25%;
+  border:10px solid black;
+}
+
+#bandeiras img, #skype img {
+  display: inline-block;
+  max-height: 20px;
+}
+
+#skype span {
+  color: #00AFF0;
 }
 
 footer {
