@@ -1,0 +1,376 @@
+@import "reset.scss";
+
+// Colors
+$back-color: #fff;
+$primary-color: #000;
+$secondary-color: #fac437;
+$transparent: transparent;
+$bullets: #d0d0d0;
+$blue: #00aff0;
+$footer: #949494;
+
+// Fonts 
+$font-mont: 'Montserrat', sans-serif;
+$font-rale: 'Raleway', sans-serif;
+
+// breaks
+$break-small: 320px;
+$break-medium: 768px;
+
+
+body {
+	background-color: $back-color;
+}
+
+#owl-banner .item{
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  } 
+}
+
+#owl-shelf-1 .item{
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  } 
+} 
+
+.banner-topo {
+  background: $secondary-color;
+}
+
+.owl-controls{
+  .owl-buttons {
+    div {
+      position: absolute;
+    }
+  }
+  .owl-prev {
+    left: -30px;
+    top: 50%;
+    margin-top: -16px;
+    background: url(../images/seta_esquerda_banner.png);
+    width: 15px;
+    height: 16px;
+    text-indent: -9999px;
+    @media screen and (max-width: $break-medium) {
+      left: 5px;
+    }
+  }
+  .owl-next {
+    right: -30px;
+    top: 50%;
+    margin-top: -16px;
+    background: url(../images/seta_direita_banner.png);
+    width: 15px;
+    height: 16px;
+    text-indent: -9999px;
+    @media screen and (max-width: $break-medium) {
+      right: 5px;
+    }
+  } 
+}
+ 
+.owl-pagination {
+  text-align: center;
+  margin-top: -26px;
+  position: relative;
+  margin-bottom: 10px;
+  .owl-page {
+    cursor: pointer;
+    background: $bullets;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin: 0 6px;
+  }
+}
+
+#owl-shelf-1{
+  .owl-buttons{
+    .owl-prev {
+      left: -30px;
+      top: 50%;
+      margin-top: -16px;
+      background: url(../images/seta_esquerda.png);
+      width: 15px;
+      height: 16px;
+      text-indent: -9999px;
+      @media screen and (max-width: $break-medium) {
+        left: 5px;
+      }
+    }
+    .owl-next {
+      right: -30px;
+      top: 50%;
+      margin-top: -16px;
+      background: url(../images/seta_direita.png);
+      width: 15px;
+      height: 16px;
+      text-indent: -9999px;
+      @media screen and (max-width: $break-medium) {
+        right: 5px;
+      }
+    }  
+  }
+}
+
+.active {
+  background: $back-color !important;
+}
+
+.header {
+  padding: 33px 0 40px 0;
+  .search {
+    input{
+      background: url(../images/icone_pesquisa.png) #fac437 no-repeat;
+      background-position: left center;
+      height: 31px;
+      padding-left: 60px;
+      border:0;
+      font-family: 'Open Sans', sans-serif;
+      border-radius: 10px;
+    }
+  }
+
+  .language{
+    @media screen and (max-width: $break-medium) {
+      text-align: center;
+      margin-top: 30px;
+    }
+    li{
+      display: inline;
+      margin: 0 10px;
+    }
+  }
+  .skype-fone{
+    color: $blue;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    display: inherit;
+    margin-top: 10px;
+    img{
+      display: inline;
+      vertical-align: text-bottom;
+    }
+  }
+  form.search {
+    margin-top: 20px;
+  }
+}
+
+.login {
+  margin-top: 15px;
+  h2{
+    color: $primary-color;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: arial; 
+    margin-bottom: 3px;
+  }
+
+  a{
+    font-size: 14px;
+    color: $primary-color;
+    font-family: 'Open Sans', sans-serif;
+  }
+  @media screen and (max-width: $break-medium) {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.shelf-1{
+  padding: 30px 0 70px 0;
+}
+
+.shoes{
+  padding: 0 30px 4px 30px;
+  border-right: 1px solid #ccc;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+
+  &:hover{
+    background: $secondary-color;
+  }
+
+  h2{
+    color: $primary-color;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 22px;
+  }
+
+  p{
+    font-weight: bold;
+    font-style: italic;
+    margin: 0px 40px 15px 40px;
+    line-height: 22px;
+  }
+
+  .price-before{
+    color: $footer;
+    text-decoration: line-through; 
+    margin: 0px 0;
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  .bt-comprar{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 12px 29px 12px 60px;
+    background: url(../images/carrinho.png) #212121 no-repeat;
+    background-position: 16px 7px;
+    display: inline-block;
+    font-size: 14px;
+  }
+
+  .economize{
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-style: normal;
+    font-size: 10px;
+    background: $back-color;
+    margin-top: 15px;
+  }
+}
+
+#owl-shelf-1{
+  .owl-item:nth-child(4){
+    .shoes{
+      margin-right: -1px;
+    }
+  }
+}
+
+.pp_default {
+  .pp_top,.pp_bottom{
+    display: none !important;
+  }
+}
+
+.pp_details{
+  position: absolute !important;
+}
+
+.pp_content{
+  height: 40px !important;
+}
+
+div.pp_default{
+  .pp_content_container{
+    .pp_left{
+      background: transparent !important;
+    } 
+  }
+} 
+
+div.pp_default{
+  .pp_close {
+    background: url(../images/fechar.png);
+    width: 27px;
+    height: 27px;
+    margin-right: 9px;
+    margin-top: 5px;
+  }
+} 
+
+.pp_content_container{
+  .pp_left{
+    .pp_right{
+      background: transparent !important;
+    }
+  }
+}
+
+.pp_description,
+.pp_social,
+.ppt,
+.pp_top,
+.pp_expand{
+  display: none !important;
+}
+
+.pp_details {
+    position: absolute;
+    top: 0;
+}
+
+.rating-input{
+  .glyphicon-star::before{
+    color: $secondary-color;
+    font-size: 20px;
+  }
+
+  .glyphicon-star-empty{
+    font-size: 20px;
+    color: #ccc;
+  }
+  margin: 20px 0;
+}
+
+.rodape{
+  background:url(../images/bg-footer.jpg) center center repeat;
+  height: auto;
+  padding: 50px 0;
+
+  .bts-footer{
+    margin-left: 40px;
+    @media screen and (max-width: $break-medium) {
+      margin-left: 0px;
+    }
+    .bt-footer{
+      color: $primary-color;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 11px;
+      display: block;
+      padding: 13px 13px 13px 54px;
+      margin: 10px 0;
+      text-transform: uppercase;
+      height: 41px;
+      width: 180px;
+      @media screen and (max-width: $break-medium) {
+        width: 100%;
+      }
+    }
+  }
+  .contato-ico {
+    background: url(../images/icone_contato.png) #fac437 no-repeat;
+    background-position: 14px 11px;
+  }
+  .fale-conosco {
+    background: url(../images/icone_consultor.png) #fac437 no-repeat;
+    background-position: 14px 11px;
+  }
+
+  .rio, .sp{
+    margin-top: 30px;
+
+     @media screen and (max-width: $break-medium) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+
+.info{
+  p{
+    color: $footer;
+    font-family: 'Open Sans', sans-serif;
+  }
+  span{
+    color: $primary-color;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+  }
+}
