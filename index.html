@@ -28,101 +28,101 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <div class="row">
-                    <div class="text-center col-md-3 col-xs-8 col-sm-8">
-                        <img src="img/topo/profite_logo_novo.png" alt="Logo da Profite" class="img-responsive" />
-                    </div>
-                    <div class="text-center col-md-3 col-xs-4 col-sm-4">
-                        <h3> <b> Olá visitante </b></h3>
-                        <p> Cadastra-se | Login </p>
-                    </div>
-
-                    <div id="search" class="text-center img-rounded col-md-3 col-xs-12 col-sm-12">
-                        <img id="icone-pesquisa" class="img-responsive pull-left" src="img/topo/ícone_pesquisa.png" alt="Icone Pesquisa" />
-                        <p class="text-left"> Buscar por ... </p>
-                    </div>
-
-                    <div class="text-center col-md-3 hidden-xs hidden-sm">
-                        <p id="bandeiras">
-                            <img class="img-responsive" src="img/topo/bandeira1.png" alt="Bandeira Brasil" />
-                            <img class="img-responsive" src="img/topo/bandeira2.png" alt="Bandeira Argentina" />
-                            <img class="img-responsive" src="img/topo/bandeira3.png" alt="Bandeira Canadá" />
-                        </p>
-                        <p id="skype">
-                            <img class="img-responsive" src="img/topo/skype.png" alt="Icone do Skype" />
-                            <span>11 33375618</span>
-                        </p>
-                    </div>
+            <div id="topo" class="col-md-12">
+                <div class="text-center col-md-3 col-xs-6 col-sm-6">
+                    <img id="logo" src="img/topo/profite_logo_novo.png" alt="Logo da Profite" class="img-responsive" />
+                </div>
+                <div id="login" class="text-left col-md-3 col-xs-6 col-sm-6">
+                    <p> <b> Olá visitante </b></p>
+                    <p> Cadastra-se | Login </p>
                 </div>
 
-                <div class="container fill">
-                    <div id="carousel-generic" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-generic" data-slide-to="2"></li>
-                            <li data-target="#carousel-generic" data-slide-to="3"></li>
-                        </ol>
-
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <img src="img/banner/banner1.jpg" alt="Banner 1" class="img-responsive" />
-                            </div>
-                            <div class="item">
-                                <img src="img/banner/banner2.jpg" alt="Banner 2" class="img-responsive" />
-                            </div>
-                            <div class="item">
-                                <img src="img/banner/banner3.jpg" alt="Banner 3" class="img-responsive" />
-                            </div>
-                            <div class="item">
-                                <img src="img/banner/banner4.jpg" alt="Banner 4" class="img-responsive" />
-                            </div>
-                        </div>
-
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#carousel-generic" data-slide="prev">
-                            <span class="glyphicon glyphicon-chevron-left"></span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-generic" data-slide="next">
-                            <span class="glyphicon glyphicon-chevron-right"></span>
-                        </a>
-                    </div>
+                <div id="search" class="text-center img-rounded col-md-4 col-xs-12 col-sm-12">
+                    <a href="#"><img id="icone-pesquisa" class="img-responsive pull-left" src="img/topo/ícone_pesquisa.png" alt="Icone Pesquisa" /></a>
+                    <input type="search" name="name" placeholder="Buscar por ..." class="pull-left">
                 </div>
-                <br>
-                <div id="sapatos">
-                    <div class="well">
-                        <img class="img-responsive" src="img/sapatos/calçado1.png" alt="Calçado 1" />
-                    </div>
-                    <div class="well">
-                        <img class="img-responsive" src="img/sapatos/calçado2.png" alt="Calçado 2" />
-                    </div>
-                    <div class="well">
-                        <img class="img-responsive" src="img/sapatos/calçado3.png" alt="Calçado 3" />
-                    </div>
-                    <div class="well">
-                        <img class="img-responsive" src="img/sapatos/calçado4.png" alt="Calçado 4" />
-                    </div>
+
+                <div class="text-center col-md-2 hidden-xs hidden-sm">
+                    <p id="bandeiras">
+                        <img class="img-responsive" src="img/topo/bandeira1.png" alt="Bandeira Brasil" />
+                        <img class="img-responsive" src="img/topo/bandeira2.png" alt="Bandeira Argentina" />
+                        <img class="img-responsive" src="img/topo/bandeira3.png" alt="Bandeira Canadá" />
+                    </p>
+                    <p id="skype">
+                        <img class="img-responsive" src="img/topo/skype.png" alt="Icone do Skype" />
+                        <span>11 33375618</span>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
+            <div id="carousel-imgs" class="col-md-12">
+                <div id="carousel-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-generic" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="img/banner/banner1.jpg" alt="Banner 1" class="img-responsive" />
+                        </div>
+                        <div class="item">
+                            <img src="img/banner/banner2.jpg" alt="Banner 2" class="img-responsive" />
+                        </div>
+                        <div class="item">
+                            <img src="img/banner/banner3.jpg" alt="Banner 3" class="img-responsive" />
+                        </div>
+                        <div class="item">
+                            <img src="img/banner/banner4.jpg" alt="Banner 4" class="img-responsive" />
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-generic" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-generic" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+            <div id="sapatos" class="col-md-12">
+                <div class="well">
+                    <img class="img-responsive" src="img/sapatos/calçado1.png" alt="Calçado 1" />
+                    Calçado 1
+                </div>
+                <div class="well">
+                    <img class="img-responsive" src="img/sapatos/calçado2.png" alt="Calçado 2" />
+                    Calçado 2
+                </div>
+                <div class="well">
+                    <img class="img-responsive" src="img/sapatos/calçado3.png" alt="Calçado 3" />
+                    Calçado 3
+                </div>
+                <div class="well">
+                    <img class="img-responsive" src="img/sapatos/calçado4.png" alt="Calçado 4" />
+                    Calçado 4
+                </div>
+            </div>
     <footer class="text-center">
-        <div id="rj-footer"class="col-md-4 col-xs-4 text-left">
+        <div id="rj-footer" class="col-md-4 col-xs-4 text-left">
             <p class="endereco-footer">RJ Rua do Acre, 77 - sala 1108</p>
             <p class="endereco-footer">Centro - Rio de Janeiro</p>
             <p><b>tel.: 55 (21) 2263.6044</b></p>
         </div>
-        <div id="sp-footer"class="col-md-4 col-xs-4 text-left">
+        <div id="sp-footer" class="col-md-4 col-xs-4 text-left">
             <p class="endereco-footer">SP Rua Cardoso de melo, 1750</p>
             <p class="endereco-footer">6º Andar Vila Olimpica</p>
             <p><b>tel.: 55 (21) 2263.6044</b></p>
         </div>
         <div id="botoes-footer" class="col-md-4 col-xs-4 text-left">
-            <p class="icone-footer"><img src="img/footer/ícone_contato.png" alt="Icone Contato" />ENTRE EM <b>CONTATO</b></p>
-            <p class="icone-footer"><img src="img/footer/ícone_consultor.png" alt="Icone Consultor" />FALE COM O NOSSO <b>CONSULTOR ONLINE<b/></p>
+            <a href="#"><p class="icone-footer"><img src="img/footer/ícone_contato.png" alt="Icone Contato" />ENTRE EM <b>CONTATO</b></p></a>
+            <a href="#"><p class="icone-footer"><img src="img/footer/ícone_consultor.png" alt="Icone Consultor" />FALE COM O NOSSO <b>CONSULTOR ONLINE<b/></p></a>
         </div>
     </footer>
 </body>

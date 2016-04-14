@@ -1,76 +1,124 @@
 * {
-  font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    src: url("../fonts/arial.ttf");
 }
-
 body {
-  padding-top: 20px;
+    padding-top: 20px;
 }
-
+#topo {
+    padding-bottom: 20px;
+}
+#logo {
+    padding-left: 20px;
+    width: 200px;
+}
+#carousel-imgs {
+    padding-bottom: 20px;
+    width: 100%;
+    background-color: #f9c438;
+    background-size: cover;
+    position: relative;
+    display: block;
+}
+.tales {
+    width: 100%;
+}
+.carousel-inner {
+    width: 100%;
+    max-height: 400px !important;
+}
+.carousel-indicators {
+    max-height: 20px !important;
+}
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     width: 100%;
 }
-
+#login {
+    font-size: 1.0em;
+}
+#login p b {
+    font-size: 1.5em;
+}
 #search {
-  background-color: #EEBB00;
-  padding-left: 0px;
-  margin-top: 10px;
+    background-color: #EEBB00;
+    padding-left: 0px;
+    margin-top: 10px;
 }
-
-#search p {
-  padding-top: 10px;
+#search input {
+    padding-top: 10px;
+    background-color: #EEBB00;
+    border: none;
+    color: black;
+    -moz-appearance: textfield;
+    -webkit-appearance: textfield;
+    appearance: textfield;
 }
-
+#search input:focus {
+    outline: none;
+}
+#search input[placeholder] {
+    color: black;
+}
 #icone-pesquisa {
-  background-color: black;
-  max-height: 40px;
-  max-width: 40px;
-  margin-right: 20px;
-  border-radius: 25%;
-  border:10px solid black;
+    background-color: black;
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 25%;
+    border: 10px solid black;
 }
-
 #bandeiras img, #skype img {
-  display: inline-block;
-  max-height: 20px;
+    display: inline-block;
+    max-height: 20px;
 }
-
 #skype span {
-  color: #00AFF0;
+    color: #00AFF0;
 }
-
 #sapatos, #sapatos div {
-  display: inline-block;
+    display: inline-block;
 }
-
 footer, footer div {
-  background-color: #DBDBDB;
-  background-size: cover;
+    background-color: #DBDBDB;
+    background-size: cover;
 }
-
 .endereco-footer {
-  color: gray;
+    color: gray;
 }
-
 .icone-footer {
-  background-color: #EEBB00;
-  max-width: 200px;
-  padding: 10px;
+    background-color: #EEBB00;
+    max-width: 200px;
+    padding: 10px;
 }
-
 .icone-footer img {
-  margin-right: 10px;
+    margin-right: 10px;
 }
-
 #botoes-footer {
-  padding-top: 20px;
-  padding-bottom: 9px;
+    padding-top: 20px;
+    padding-bottom: 9px;
 }
-
+#botoes-footer a {
+    color: black;
+    text-decoration: none;
+}
 #rj-footer {
-  padding-left: 10%;
+    padding-left: 10%;
 }
-
 #rj-footer, #sp-footer {
     padding-top: 30px;
     padding-bottom: 30px;
+}
+input::-webkit-input-placeholder {
+    color: black;
+}
+input:-moz-placeholder {
+    color: black;
+}
+input::-moz-placeholder {
+    color: black;
+}
+input:-ms-input-placeholder {
+    color: black;
+}
+@media screen and (max-width: 368px) {
+    #login {}
 }
