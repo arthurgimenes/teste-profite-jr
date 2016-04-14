@@ -13,12 +13,14 @@ body {
     width: 200px;
 }
 #carousel-imgs {
-    padding-bottom: 20px;
+    margin-bottom: 20px;
     width: 100%;
     background-color: #f9c438;
     background-size: cover;
     position: relative;
     display: block;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 .tales {
     width: 100%;
@@ -74,6 +76,11 @@ body {
 #skype span {
     color: #00AFF0;
 }
+#sapatos {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
 #sapatos, #sapatos div {
     display: inline-block;
 }
