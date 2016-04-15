@@ -1,0 +1,50 @@
+{
+    "calcados": [{
+        "titulo": "Sandália Ferracini Ecologic",
+        "stars": 5,
+        "precoOriginal": "",
+        "precoAtual": "R$ 95,92",
+        "maxParcelas": 4,
+        "parcela": "R$ 23,98",
+        "economia" : "R$ 43,98",
+        "imgUrl": "img/sapatos/calçado1.png",
+        "imgHoverUrl": "img/sapatos/calçado1_hover.png",
+        "imgZoomUrl": "img/sapatos/calçado1_zoom.png"
+    }, {
+        "titulo": "Chinelo Kildare",
+        "stars": 5,
+        "precoOriginal": "R$ 99,90",
+        "precoAtual": "R$ 79,92",
+        "maxParcelas": 3,
+        "parcela": "R$ 26,64",
+        "economia" : "R$ 19,98",
+        "imgUrl": "img/sapatos/calçado2.png",
+        "imgHoverUrl": "img/sapatos/calçado2_hover.png",
+        "imgZoomUrl": "img/sapatos/calçado2_zoom.png"
+
+    }, {
+        "titulo": "Tênis Ferracini Week",
+        "stars": 5,
+        "precoOriginal": "R$ 229,90",
+        "precoAtual": "R$ 183,92",
+        "maxParcelas": 9,
+        "parcela": "R$ 20,43",
+        "economia" : "R$ 45,98",
+        "imgUrl": "img/sapatos/calçado3.png",
+        "imgHoverUrl": "img/sapatos/calçado3_hover.png",
+        "imgZoomUrl": "img/sapatos/calçado3_zoom.png"
+
+    }, {
+        "titulo": "Tênis Democrata Fan",
+        "stars": 5,
+        "precoOriginal": "R$ 219,90",
+        "precoAtual": "R$ 159,92",
+        "maxParcelas": 7,
+        "parcela": "R$ 22,64",
+        "economia" : "R$ 59,98",
+        "imgUrl": "img/sapatos/calçado4.png",
+        "imgHoverUrl": "img/sapatos/calçado4_hover.png",
+        "imgZoomUrl": "img/sapatos/calçado4_zoom.png"
+
+    }]
+}

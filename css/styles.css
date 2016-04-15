@@ -22,6 +22,14 @@ body {
     padding-left: 10%;
     padding-right: 10%;
 }
+#sapatos {
+    margin-bottom: 20px;
+    width: 100%;
+    position: relative;
+    display: block;
+    padding-left: 10%;
+    padding-right: 10%;
+}
 .tales {
     width: 100%;
 }
@@ -44,6 +52,7 @@ body {
 #search {
     background-color: #EEBB00;
     padding-left: 0px;
+    margin-bottom: 20px;
     margin-top: 10px;
 }
 #search input {
@@ -95,7 +104,7 @@ footer, footer div {
     padding-top: 20px;
     padding-bottom: 9px;
 }
-#botoes-footer a {
+a {
     color: black;
     text-decoration: none;
 }
@@ -170,24 +179,47 @@ input:-ms-input-placeholder {
     width: 30px;
     height: 30px;
 }
+.sapato:hover {
+  background-color: #EEBB00;
+}
 
-@media screen and (max-width: 1045px) {
+footer > div > img {
+  padding-right: 10px;
+}
+
+.texto-footer {
+  padding-left: 60px;
+}
+@media screen and (max-width: 1070px) {
     footer {
         height: 170px;
     }
 }
+@media screen and (max-width: 990px) {
+  #carousel-imgs, #sapatos{
+    padding: 0px;
+  }
+  footer {
+    height: 210px;
+  }
+}
 @media screen and (max-width: 710px) {
     footer {
-        height: 230px;
+        height: 290px;
+    }
+}
+@media screen and (max-width: 570px) {
+    footer {
+        height: 370px;
     }
 }
 @media screen and (max-width: 500px) {
     footer {
-        height: 260px;
+        height: 370px;
     }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
     footer {
-        height: 310px;
+        height: 410px;
     }
 }
