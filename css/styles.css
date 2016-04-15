@@ -180,15 +180,31 @@ input:-ms-input-placeholder {
     height: 30px;
 }
 .sapato:hover {
-  background-color: #EEBB00;
+    background-color: #EEBB00;
 }
-
+.sapato > img, .comprar {
+    transition: width 2s;
+}
+.sapato:hover > img {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.comprar {
+    background-color: black;
+    color: white;
+}
+.comprar > img {
+    width: 40px;
+}
+.comprar:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
 footer > div > img {
-  padding-right: 10px;
+    padding-right: 10px;
 }
-
 .texto-footer {
-  padding-left: 60px;
+    padding-left: 60px;
 }
 @media screen and (max-width: 1070px) {
     footer {
@@ -196,12 +212,12 @@ footer > div > img {
     }
 }
 @media screen and (max-width: 990px) {
-  #carousel-imgs, #sapatos{
-    padding: 0px;
-  }
-  footer {
-    height: 210px;
-  }
+    #carousel-imgs, #sapatos {
+        padding: 0px;
+    }
+    footer {
+        height: 210px;
+    }
 }
 @media screen and (max-width: 710px) {
     footer {

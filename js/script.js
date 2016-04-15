@@ -22,12 +22,15 @@ $(document).ready(function() {
                     console.log(titulo + " - " + precoOriginal + " - " + precoAtual + " - " +
                         maxParcelas + " - " + parcela + " - " + economia + " - " +
                         imgUrl + " - " + imgHoverUrl + " - " + imgZoomUrl);
-                        
+
                     $("#carousel2 .carousel-inner").append("<div class='item'>" +
-                            "<div class='well center-block text-center'>" +
-                            "<img class='img-responsive' src='"+imgUrl+"' alt='Foto do "+titulo+"' />" +
-                            titulo + " - " + precoOriginal + " - " + precoAtual + " - " +
-                            maxParcelas + " - " + parcela + " - " + economia +
+                        "<div class='center-block text-center sapato'>" +
+                        "<img class='img-responsive' src='"+imgHoverUrl+"' alt='Foto do "+titulo+"' />" +
+                        titulo + " - " + precoOriginal + " - " + precoAtual + " - " +
+                        maxParcelas + " - " + parcela + " - " + economia +
+                        "<button type='button' name='button' class='comprar'>"+
+                        "<img class='btn pull-left img-responsive' src='img/sapatos/carrinho.png' alt='Icone de Carrinho' />Comprar" +
+                        "</button>"+
                         "</div>" +
                         "</div>");
             });
