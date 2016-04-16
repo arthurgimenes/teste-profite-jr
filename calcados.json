@@ -54,9 +54,9 @@
         "maxParcelas": 7,
         "parcela": "R$ 22,64",
         "economia" : "R$ 59,98",
-        "imgUrl": "img/sapatos/calçado4_zoom.png",
-        "imgHoverUrl": "img/sapatos/calçado4_zoom.png",
-        "imgZoomUrl": "img/sapatos/calçado4_zoom.png"
+        "imgUrl": "img/sapatos/sapato_generico.png",
+        "imgHoverUrl": "img/sapatos/sapato_generico.png",
+        "imgZoomUrl": "img/sapatos/sapato_generico.png"
 
     }]
 }
