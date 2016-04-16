@@ -7,9 +7,10 @@ body {
 }
 #topo {
     padding-bottom: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 #logo {
-    padding-left: 20px;
     width: 200px;
 }
 #carousel-imgs {
@@ -49,6 +50,7 @@ body {
     max-height: 450px !important;
 }
 #login {
+    margin: 0;
     font-size: 1.0em;
 }
 #login p b {
@@ -90,9 +92,9 @@ body {
 #skype span {
     color: #00AFF0;
 }
-footer, footer div {
-    background-color: #DBDBDB;
-    background-size: cover;
+footer, footer > div  {
+    background: url(../img/footer/bg-footer.jpg) center center repeat;
+    height: auto;
 }
 .endereco-footer {
     color: gray;
@@ -101,6 +103,10 @@ footer, footer div {
     background-color: #EEBB00;
     max-width: 200px;
     padding: 10px;
+    margin-bottom: 10px;
+}
+.icone-footer div {
+    background-color: #EEBB00;
 }
 .icone-footer img {
     margin-right: 10px;
@@ -255,13 +261,13 @@ p strike {
     font-size: 0.89em;
 }
 .sapato p {
-  font-weight: italic;
+    font-weight: italic;
 }
 .sapato p span {
-  font-weight: bold;
+    font-weight: bold;
 }
 .sapato:hover p span {
-  font-weight: normal;
+    font-weight: normal;
 }
 .slick-prev {
     margin-left: 0px;
@@ -269,8 +275,11 @@ p strike {
 .slick-next {
     margin-right: 0px;
 }
+.modal-header {
+    border: none;
+}
 .close {
-  opacity: 1 !important;
+    opacity: 1 !important;
 }
 @media (max-width: 1920px) and (min-width: 1830px) {
     .carousel-control {
@@ -283,24 +292,24 @@ p strike {
     }
 }
 @media screen and (max-width: 990px) {
-    #logo {
-      margin: 0 auto;
+    #logo, #login {
+        margin: 0 auto !important;
     }
     .sapato:hover {
         background-color: white;
     }
-    #carousel-imgs, #sapatos {
+    #topo, #carousel-imgs, #sapatos {
         padding: 0px;
     }
     footer {
         height: 210px;
     }
-        .slick-prev {
-            margin-left: 40px;
-        }
-        .slick-next {
-            margin-right: 40px;
-        }
+    .slick-prev {
+        margin-left: 40px;
+    }
+    .slick-next {
+        margin-right: 40px;
+    }
 }
 @media screen and (max-width: 716px) {
     footer {
