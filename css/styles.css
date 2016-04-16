@@ -19,16 +19,16 @@ body {
     background-size: cover;
     position: relative;
     display: block;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 #sapatos {
     margin-bottom: 20px;
     width: 100%;
     position: relative;
     display: block;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 .tales {
     width: 100%;
@@ -42,6 +42,7 @@ body {
 }
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     width: 100%;
+    max-height: 400px !important;
 }
 #login {
     font-size: 1.0em;
@@ -205,6 +206,13 @@ footer > div > img {
 }
 .texto-footer {
     padding-left: 60px;
+}
+.slick-prev:before, .slick-next:before {
+    color:#EEBB00 !important;
+}
+@media (max-width: 1920px) and (min-width: 1830px) {
+
+  .carousel-control {width: 510px !important; }
 }
 @media screen and (max-width: 1070px) {
     footer {
