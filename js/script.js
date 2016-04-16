@@ -19,12 +19,18 @@ $(document).ready(function() {
             var imgHoverUrl = this.imgHoverUrl;
             var imgZoomUrl = this.imgZoomUrl;
 
+            var postPrecoOriginal = "<br>";
+
+            if (precoOriginal !== "") {
+              postPrecoOriginal = "<p> <i> <strike> De: " + precoOriginal + "</strike></i></p>";
+            }
+
             $(".single-items").append("<div class='sapato text-center'>" +
                 "<img class='img-responsive' src='" + imgHoverUrl + "' alt='Foto do " + titulo + "' />" +
                 "<p><b>" + titulo + "</b></p>" +
                 "<img class='img-responsive estrelas' src='img/sapatos/estrelas.png' alt='Estrelas' />" +
-                "<p> <strike> De: " + precoOriginal + "</strike></p>" + "<p>Por: " + precoAtual + "</p>" +
-                "<p>" + maxParcelas + "</p>" + "<p>" + parcela + "</p>" +
+                postPrecoOriginal + "<p><span>Por: " + precoAtual + "</span></p>" +
+                "<p><i>ou <span>até " + maxParcelas + "X</span> de <span>" + parcela + "</span></i></p>" +
                 "<button type='button' name='button' class='comprar'>" +
                 "<img class='btn pull-left img-responsive' src='img/sapatos/carrinho.png' alt='Icone de Carrinho' />COMPRAR" +
                 "</button>" +
@@ -39,11 +45,26 @@ $(document).ready(function() {
             slidesToShow: 4,
             slidesToScroll: 1,
             dots: false,
-            arrows: false,
+            arrows: true,
             autoplay: true,
-            prevArrow: "<img class='a-left control-c prev slick-prev' src='../img/sapatos/seta_esquerda.png'>",
-            nextArrow: "<img class='a-right control-c next slick-next' src='../img/sapatos/seta_direita.png'>",
+            prevArrow: "<img class='a-left control-c prev slick-prev' src='./img/sapatos/seta_esquerda.png'>",
+            nextArrow: "<img class='a-right control-c next slick-next' src='./img/sapatos/seta_direita.png'>",
             responsive: [{
+                breakpoint: 1920,
+                settings: {
+                    slidesToShow: 4
+                }
+            },{
+                breakpoint: 1360,
+                settings: {
+                    slidesToShow: 4
+                }
+            },{
+                breakpoint: 1080,
+                settings: {
+                    slidesToShow: 4
+                }
+            },{
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 3

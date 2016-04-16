@@ -193,6 +193,12 @@ input:-ms-input-placeholder {
 .sapato:hover {
     background-color: #EEBB00;
 }
+.sapato:hover .comprar img {
+    height: 30px;
+}
+.sapato:hover .comprar {
+    font-size: 1.2em;
+}
 .sapato > img, .estrelas {
     margin: 0 auto;
 }
@@ -233,15 +239,35 @@ footer > div > img {
 .slick-prev:before, .slick-next:before {
     color: #EEBB00 !important;
 }
+.slick-prev, .slick-next {
+    z-index: 999;
+}
 .economia {
     border: 0.5px solid #D2D2D2;
     font-size: 0.8em;
     background-color: white;
     margin-bottom: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 p strike {
-  color: #888888;
-  font-size: 0.9em;
+    color: #888888;
+    font-size: 0.89em;
+}
+.sapato p {
+  font-weight: italic;
+}
+.sapato p span {
+  font-weight: bold;
+}
+.sapato:hover p span {
+  font-weight: normal;
+}
+.slick-prev {
+    margin-left: 40px;
+}
+.slick-next {
+    margin-right: 40px;
 }
 @media screen and (max-width: 600px) {
     .slick-prev {
@@ -256,12 +282,18 @@ p strike {
         width: 510px !important;
     }
 }
-@media screen and (max-width: 1070px) {
+@media screen and (max-width: 1080px) {
     footer {
         height: 170px;
     }
 }
 @media screen and (max-width: 990px) {
+    #logo {
+      margin: 0 auto;
+    }
+    .sapato:hover {
+        background-color: white;
+    }
     #carousel-imgs, #sapatos {
         padding: 0px;
     }
@@ -269,7 +301,7 @@ p strike {
         height: 210px;
     }
 }
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 716px) {
     footer {
         height: 290px;
     }
@@ -287,5 +319,10 @@ p strike {
 @media screen and (max-width: 450px) {
     footer {
         height: 410px;
+    }
+}
+@media screen and (max-width: 370px) {
+    #login {
+        font-size: 0.9em;
     }
 }

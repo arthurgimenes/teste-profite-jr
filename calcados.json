@@ -46,5 +46,17 @@
         "imgHoverUrl": "img/sapatos/calçado4_hover.png",
         "imgZoomUrl": "img/sapatos/calçado4_zoom.png"
 
+    }, {
+        "titulo": "Sapato",
+        "stars": 5,
+        "precoOriginal": "R$ 219,90",
+        "precoAtual": "R$ 159,92",
+        "maxParcelas": 7,
+        "parcela": "R$ 22,64",
+        "economia" : "R$ 59,98",
+        "imgUrl": "img/sapatos/calçado4_zoom.png",
+        "imgHoverUrl": "img/sapatos/calçado4_zoom.png",
+        "imgZoomUrl": "img/sapatos/calçado4_zoom.png"
+
     }]
 }
