@@ -37,12 +37,16 @@ body {
     width: 100%;
     max-height: 400px !important;
 }
+.carousel-control.left, .carousel-control.right {
+    margin-left: 5%;
+    margin-right: 5%;
+}
 .carousel-indicators {
     max-height: 20px !important;
 }
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
     width: 100%;
-    max-height: 400px !important;
+    max-height: 450px !important;
 }
 #login {
     font-size: 1.0em;
@@ -180,25 +184,44 @@ input:-ms-input-placeholder {
     width: 30px;
     height: 30px;
 }
+.sapato {
+    border-right: 0.5px solid #D2D2D2;
+}
+.sapato p {
+    margin: 0;
+}
 .sapato:hover {
     background-color: #EEBB00;
 }
-.sapato > img, .comprar {
-    transition: width 2s;
+.sapato > img, .estrelas {
+    margin: 0 auto;
 }
-.sapato:hover > img {
-    transform: scale(1.1);
-    cursor: pointer;
+.estrelas {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .comprar {
     background-color: black;
     color: white;
+    font-size: 1.1em;
+    padding: 10px;
+    padding-right: 20px;
+    padding-top: 15px;
+    border: none;
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .comprar > img {
-    width: 40px;
+    height: 27px;
+    padding-right: 5px;
+    padding-top: 0px;
+}
+.comprar > p {
+    padding-top: 15px;
 }
 .comprar:hover {
-    transform: scale(1.1);
     cursor: pointer;
 }
 footer > div > img {
@@ -208,11 +231,30 @@ footer > div > img {
     padding-left: 60px;
 }
 .slick-prev:before, .slick-next:before {
-    color:#EEBB00 !important;
+    color: #EEBB00 !important;
+}
+.economia {
+    border: 0.5px solid #D2D2D2;
+    font-size: 0.8em;
+    background-color: white;
+    margin-bottom: 10px;
+}
+p strike {
+  color: #888888;
+  font-size: 0.9em;
+}
+@media screen and (max-width: 600px) {
+    .slick-prev {
+        margin-left: 40px;
+    }
+    .slick-next {
+        margin-right: 40px;
+    }
 }
 @media (max-width: 1920px) and (min-width: 1830px) {
-
-  .carousel-control {width: 510px !important; }
+    .carousel-control {
+        width: 510px !important;
+    }
 }
 @media screen and (max-width: 1070px) {
     footer {
