@@ -38,7 +38,7 @@ body {
     max-height: 400px !important;
 }
 .carousel-control.left, .carousel-control.right {
-    margin-left: 5%;
+    margin-left: 6%;
     margin-right: 5%;
 }
 .carousel-indicators {
@@ -197,7 +197,7 @@ input:-ms-input-placeholder {
     height: 30px;
 }
 .sapato:hover .comprar {
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 .sapato > img, .estrelas {
     margin: 0 auto;
@@ -264,18 +264,13 @@ p strike {
   font-weight: normal;
 }
 .slick-prev {
-    margin-left: 40px;
+    margin-left: 0px;
 }
 .slick-next {
-    margin-right: 40px;
+    margin-right: 0px;
 }
-@media screen and (max-width: 600px) {
-    .slick-prev {
-        margin-left: 40px;
-    }
-    .slick-next {
-        margin-right: 40px;
-    }
+.close {
+  opacity: 1 !important;
 }
 @media (max-width: 1920px) and (min-width: 1830px) {
     .carousel-control {
@@ -300,6 +295,12 @@ p strike {
     footer {
         height: 210px;
     }
+        .slick-prev {
+            margin-left: 40px;
+        }
+        .slick-next {
+            margin-right: 40px;
+        }
 }
 @media screen and (max-width: 716px) {
     footer {

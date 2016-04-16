@@ -2,13 +2,16 @@ $(document).ready(function() {
     $('#carousel1').carousel({
         interval: 2000
     });
-
     $.getJSON("https://raw.githubusercontent.com/Leocadio94/teste-profite-jr/master/calcados.json", function(data) {
         var json = JSON.parse(JSON.stringify(data));
+        var i = 0;
 
         $(".single-items").html("");
 
         $(json.calcados).each(function() {
+            i++;
+
+            var idSapato = "sapato"+i;
             var titulo = this.titulo;
             var precoOriginal = this.precoOriginal;
             var precoAtual = this.precoAtual;
@@ -26,7 +29,7 @@ $(document).ready(function() {
             }
 
             $(".single-items").append("<div class='sapato text-center'>" +
-                "<img class='img-responsive' src='" + imgHoverUrl + "' alt='Foto do " + titulo + "' />" +
+                "<img id='"+idSapato+"' class='img-responsive' src='" + imgHoverUrl + "' alt='Foto do " + titulo + "' />" +
                 "<p><b>" + titulo + "</b></p>" +
                 "<img class='img-responsive estrelas' src='img/sapatos/estrelas.png' alt='Estrelas' />" +
                 postPrecoOriginal + "<p><span>Por: " + precoAtual + "</span></p>" +
@@ -36,6 +39,11 @@ $(document).ready(function() {
                 "</button>" +
                 "<div class='economia text-center'>Economize " + economia + "</div>" +
                 "</div>");
+
+            $("#"+idSapato).click(function(){
+                  $(".modal-body").html("<img class='img-responsive' src='"+imgZoomUrl+"' alt='Imagem Zoom' style='margin: 0 auto;'/>");
+                  $('#myModal').modal('show');
+            });
         });
 
 
