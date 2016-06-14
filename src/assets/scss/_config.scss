@@ -1,0 +1,57 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700italic,700,800,800italic);
+//sizes variables
+$container-width: 1280px;
+
+// Fontes
+$fontMain: 'Arial', sans-serif;
+$fontSecond: 'Open Sans', sans-serif;
+$fontThird: "Arial Narrow",sans-serif;
+// Cores
+$colorMain: #000;
+
+// Responsive & Mobile settings
+$responsive-min-width: 100px;
+$responsive-max-width: 760px;
+
+@mixin clearfix {
+	&, &:before, &:after {
+		display: table;
+		clear: both;
+		content: '';
+	}
+}
+
+@mixin hide-text {
+	font-size: 0;
+	line-height: 0;
+	color: transparent;
+}
+
+@mixin select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	text-overflow:'';
+	text-indent: 0.01px;
+	text-overflow: "";
+}
+
+@mixin vertical-aling {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+
+	-webkit-flex-direction: column;
+	-moz-flex-direction: column;
+	-ms-flex-direction: column;
+	-o-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-justify-content: center;
+	-moz-justify-content: center;
+	-ms-justify-content: center;
+	-o-justify-content: center;
+	justify-content: center;
+}

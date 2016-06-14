@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@import "reset";
+@import "config";
+@import "breakpoint";
+
+
+html {
+
+	& * {
+		transition: linear 0.2s;
+    -webkit-transition: linear 0.2s;
+    -moz-transition: linear 0.2s;
+		font-family: $fontSecond;
+
+        &::selection {
+            color: #fff;
+            background: #91babf;
+        }
+	}
+
+    input, button {
+        outline: none;
+    }
+
+	.x-general {
+    	width: 100%;
+      margin: 0 auto;
+
+
+        .bx-wrapper {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .x-center {
+            width: 1216px;
+            margin: 0 auto;
+            position: relative;
+
+            @include breakpoint("mobile") {
+                width: 100%;
+                padding: 0 2.5%;
+                box-sizing: border-box;
+            }
+        }
+
+        .x-content {
+            width: 100%;
+            float: left;
+            margin-top: 50px;
+        }
+
+    }
+}
