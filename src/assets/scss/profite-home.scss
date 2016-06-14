@@ -1,0 +1,666 @@
+@charset "UTF-8";
+@import "config";
+@import "breakpoint";
+
+html {
+  body{
+    .x-general {
+      float: left;
+      width: 100%;
+      //HEADER
+      .x-header-group {
+        float: left;
+        width: 100%;
+        .x-navigation {
+          float: left;
+          width: 100%;
+          padding-top: 33px;
+          padding-left: 10%;
+          padding-right: 10%;
+          box-sizing: border-box;
+          @include breakpoint('tablet'){
+            padding-right:0;
+            padding-left: 0;
+          }
+          @include breakpoint('mobile'){
+            padding-right:0;
+            padding-left: 0;
+          }
+          .x-logo {
+            float: left;
+            width: 23%;
+            height: 64px;
+            @include breakpoint('tablet'){
+              width: 35%;
+              margin-left: 21%;
+            }
+            @include breakpoint('mobile'){
+              width: 35%;
+              margin-left: 8%;
+            }
+            h1 {
+              a {
+                background-image: url('../../../src/assets/img/sprite/profite-logo.png');
+                display: block;
+                width: 233px;
+                height: 62px;
+                text-indent: -999em;
+              }
+            }
+          }
+          .x-welcome {
+            float: left;
+            width: 14%;
+            margin-left: 3%;
+            margin-top: 18px;
+            @include breakpoint('tablet'){
+              float: right;
+              width: 23%;
+            }
+            @include breakpoint('mobile'){
+              float: right;
+              width: 28%;
+              margin-right: 2%;
+            }
+            span,
+            a {
+              color: $colorMain;
+            }
+            span:first-child{
+              font-size: 19px;
+              @include breakpoint('mobile'){
+                font-size: 13px;
+              }
+            }
+            .x-signup,
+            .x-signin {
+              font-size: 14px;
+              padding-top: 8px;
+              display: block;
+              float: left;
+              font-weight: 600;
+              @include breakpoint('mobile'){
+                    font-size: 12px;
+              }
+            }
+            .x-signup {
+            }
+            .x-signin {
+              &:before {
+                content: "-";
+                padding-left: 3%;
+                padding-right: 1%;
+                float: left;
+                display: block;
+              }
+            }
+          }
+          .x-searchbox {
+            float: left;
+            width: 35%;
+            height: 32px;
+            margin-top: 20px;
+            margin-left: 3%;
+            position: relative;
+            @include breakpoint('mobile'){
+              width: 100%;
+              margin-left:0;
+            }
+            @include breakpoint('tablet'){
+              width: 100%;
+              margin-left:0;
+            }
+            fieldset {
+                .x-search-input {
+                  background-color: #fac437;
+                  border: 0;
+                  border-radius: 6px;
+                  height: 30px;
+                  width: 84%;
+                  color: #000;
+                  font-size: 14px;
+                  font-weight: 600;
+                  padding-left: 16%;
+                  @include breakpoint('tablet'){
+                    padding-left: 11%;
+                    box-sizing: border-box;
+                    width: 100%;
+                    height: 34px;
+                    border-radius:0px;
+                  }
+                  @include breakpoint('mobile'){
+                    padding-left: 17%;
+                    box-sizing: border-box;
+                    width: 100%;
+                    height: 34px;
+                    border-radius:0px;
+
+                  }
+                }
+                .x-btn-search {
+                  position: absolute;
+                  background-color: $colorMain;
+                  border-radius: 6px;
+                  height: 31px;
+                  width: 43px;
+                  background-image: url('../../../src/assets/img/sprite/icone-search.png');
+                  text-indent: -999em;
+                  top: 1px;
+                  border: 0;
+                  background-repeat: no-repeat;
+                  background-position: 45%;
+                  cursor: pointer;
+                  @include breakpoint('tablet'){
+                    border-radius: 0px;
+                    height: 33px;
+                    width: 38px;
+                    margin-left: 3%;
+                  }
+                  @include breakpoint('mobile'){
+                    border-radius: 0px;
+                    height: 33px;
+                    width: 38px;
+                    margin-left: 3%;
+                  }
+
+                }
+              }
+            }
+          .x-right-infos {
+            float: left;
+            margin-left: 7%;
+            width: 15%;
+            margin-top: 14px;
+
+            @include breakpoint('mobile'){
+              display: none;
+            }
+            @include breakpoint('tablet'){
+              display: none;
+            }
+            ul {
+              margin-left: 16%;
+              li {
+                width: 27px;
+                height: 17px;
+                float: left;
+                cursor: pointer;
+                text-indent: -999em;
+                background-repeat: no-repeat;
+                margin-right: 7%;
+              }
+              .x-br {
+                background-image: url('../../../src/assets/img/sprite/bandeira1.png');
+              }
+              .x-ar {
+                background-image: url('../../../src/assets/img/sprite/bandeira2.png');
+              }
+              .x-per {
+                background-image: url('../../../src/assets/img/sprite/bandeira3.png');
+                margin-right: 0;
+              }
+              .x-skype {
+                background-image: url('../../../src/assets/img/sprite/skype.png');
+                margin-right: 0;
+                text-indent:0em;
+                height: 24px;
+                float: left;
+                width: 100%;
+                box-sizing: border-box;
+                margin-top: 8px;
+                margin-left: -18%;
+                span {
+                  color: #00aff0;
+                  font-size: 18px;
+                  padding-left: 20%;
+                  display: block;
+                  padding-top: 3px;
+                }
+              }
+            }
+          }//fim right infos
+        }
+      }
+      .x-content {
+        .x-banner-back {
+          background-color: #fac437;
+          float: left;
+          width: 100%;
+          .x-full-banner {
+            float: left;
+            width: 100%;
+            padding-left: 10%;
+            padding-right: 10%;
+            box-sizing: border-box;
+            transition: none;
+            overflow: hidden;
+            z-index: 1;
+            .x-carousel {
+              width: auto;
+              position: relative;
+              ul {
+                li {
+                  transition: none;
+                  .x-banner {
+                    overflow: hidden;
+          					position: relative;
+                    float: left;
+          					width: 100%;
+                    a {
+                      img {
+                        width: 100%;
+                        height: auto;
+                      }
+                    }
+                  }
+                }
+              }
+              .bx-controls {
+                position: absolute;
+                bottom: 40px;
+                z-index: 100;
+                height: 0;
+                left: 0;
+                right: 0;
+                .bx-pager {
+                  width: 100%;
+                  float: left;
+                  text-align: center;
+                  .bx-pager-item {
+                    display: inline-block;
+                    margin: 0 5px;
+                    .bx-pager-link {
+                      display: block;
+                      text-indent: -999em;
+                      overflow: hidden;
+                      width: 12px;
+                      height: 12px;
+                      border: 0;
+                      background-color: #d0d0d0;
+                      border-radius: 100%;
+                      &.active {
+                        background-color: #eaeaea;
+                      }
+                    }
+                  }
+                }
+              }
+              .bx-controls-direction {
+                a {
+                  text-indent: -999em;
+                  display: block;
+                  position: absolute;
+                  width: 15px;
+                  height: 16px;
+                  top: -164px;
+
+                }
+                .bx-prev {
+                  background-image: url('../../../src/assets/img/sprite/seta_esquerda.png');
+                  left: -20px;
+                  @include breakpoint('mobile'){
+                    top: -28px;
+                  }
+                  @include breakpoint('tablet'){
+                    top: -83px;
+                  }
+                }
+                .bx-next {
+                  background-image: url('../../../src/assets/img/sprite/seta_direita.png');
+                  right: -20px;
+                  @include breakpoint('mobile'){
+                    top: -28px;
+                  }
+                  @include breakpoint('tablet'){
+                    top: -83px;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .x-vitrine {
+          float: left;
+          width: 100%;
+          margin-top: 75px;
+          margin-bottom: 75px;
+          .x-carousel {
+            float: left;
+            width: 100%;
+            .x-prateleira {
+              position: relative;
+              .bx-wrapper {position:relative;}
+              .bx-viewport {height: 419px !important;}
+              ul {
+                li {
+                  display: block;
+                  border-left: 1px solid #e1e1e1;
+                  height: 419px;
+                  .x-product {
+                    text-align: center;
+                    .x-image {
+                      margin-top: 25px;
+                      a {
+                        img {
+
+                        }
+                      }
+                    }
+                    h2 {
+                      margin-top: 19px;
+                      a{
+                        color: $colorMain;
+                        font-size: 14px;
+                        margin-bottom: 14px;
+                        display: block;
+                        font-weight: 800;
+
+                      }
+                      .x-sandalia {
+                        margin-bottom: 31px;
+                      }
+                    }
+                    .x-stars {
+                      background-image: url('../../../src/assets/img/sprite/estrelas.png');
+                      background-repeat: no-repeat;
+                      text-indent: -999em;
+                      height: 22px;
+                      display: block;
+                      margin-left: 29%;
+
+                    }
+                    .x-price {
+                      margin-top: 6px;
+
+                      a {
+                        span {
+                          font-size: 15px;
+                          color: $colorMain;
+                        }
+                        .x-old {
+                          font-size: 13px;
+                          color : #717173;
+                          text-decoration: line-through;
+                        }
+                        .x-original-price {
+                          font-weight: 700;
+
+                        }
+                        .x-vezes {
+                          padding-top: 9px;
+                          display: block;
+
+                        }
+                      }
+
+                    }
+                    .x-buy {
+                      float: left;
+                      width: 100%;
+                      height: 50px;
+                      .x-buy-link {
+                        text-transform: uppercase;
+                        font-size: 16px;
+                        font-family: $fontThird;
+                        background-color: #000;
+                        color: #fff;
+                        font-style: italic;
+                        display: block;
+                        padding: 11px 22px;
+                        width: 48%;
+                        margin-left: 17%;
+                        transition: none;
+                        margin-top: 10px;
+                        /*
+                        &:before {
+                          content:"";
+                          display: block;
+                          background-image: url('../../../src/assets/img/sprite/carrinho.png');
+                          background-repeat: no-repeat;
+                          width: 30px;
+                          height: 24px;
+                          float: left;
+                          position: relative;
+                          top: -3px;
+
+                        }
+                        */
+                        &:before {
+                          content:"";
+                          display: block;
+                          background-image: url('../../../src/assets/img/sprite/carrinho-nohover.png');
+                          background-repeat: no-repeat;
+                          width: 17px;
+                          height: 17px;
+                          float: left;
+                          position: relative;
+                          top: 1px;
+                          right: -11px;
+                          @include breakpoint('tablet'){
+                                right: -5px;
+                          }
+
+                        }
+                      }
+
+                    }
+                    .x-econ {
+                      float: left;
+                      width: 100%;
+                      margin-top: 11px;
+                      span {
+                        font-size: 11px;
+                        border: 1px solid #c5c5c5;
+                        padding: 4px 35px;
+                        font-weight: 600;
+                        background: #fff;
+                      }
+                    }
+                  }
+                  &:hover {
+                    background-color: #fac437;
+                    border-bottom: 1px solid #f3f3f3;
+                    .x-product {
+                      .x-buy {
+                        .x-buy-link {
+                          font-size: 17px;
+                          font-style: none;
+                          @include breakpoint('tablet'){
+                            font-size: 16px;
+                          }
+                          &:before {
+                            content:"";
+                            display: block;
+                            background-image: url('../../../src/assets/img/sprite/carrinho.png');
+                            background-repeat: no-repeat;
+                            width: 30px;
+                            height: 24px;
+                            float: left;
+                            position: relative;
+                            top: -3px;
+                            right: -1%;
+                            @include breakpoint('tablet'){
+                              top: -5px;
+                              right: 7%;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+              .bx-controls {
+                .bx-controls-direction {
+                  .bx-prev {
+                    background-image: url('../../../src/assets/img/sprite/seta_esquerda_produto.png');
+                    background-repeat: no-repeat;
+                    text-indent: -999em;
+                    display: block;
+                    width: 15px;
+                    height: 16px;
+                    position: absolute;
+                    top: 100px;
+                    left: -20px;
+                  }
+                  .bx-next {
+                    background-image: url('../../../src/assets/img/sprite/seta_direita_produto.png');
+                    background-repeat: no-repeat;
+                    text-indent: -999em;
+                    display: block;
+                    width: 15px;
+                    height: 16px;
+                    position: absolute;
+                    top: 100px;
+                    right: -20px;
+                  }
+                }
+              }//bx controls
+            }
+          }
+        }//fim vitrine
+      }// fim x-content
+      //FOOTER
+      .x-footer-group {
+        float: left;
+        width: 100%;
+        //background-color: #d8d8d8;
+        background-image: -webkit-repeating-linear-gradient(64deg, rgba(0,0,0,.2), rgba(0,0,0,.2) 1px, transparent 1px, transparent 100%);
+        background-size: 4px 3px;
+        .x-left {
+          float: left;
+          width: 37%;
+          margin-top: 55px;
+          margin-bottom: 75px;
+          margin-left: 24%;
+          @include breakpoint('tablet'){
+            margin-left: 12%;
+            width: 58%;
+          }
+          @include breakpoint('mobile'){
+            width: 100%;
+            margin-bottom: 55px;
+            margin-left: 18%;
+          }
+
+          ul {
+            li {
+              float: left;
+              position: relative;
+              width: 41%;
+              @include breakpoint('mobile'){
+                width: 100%;
+              }
+              span {
+                line-height: 26px;
+                font-size: 14px;
+                color: #616161;
+                font-family: $fontSecond;
+              }
+              .x-2nd {
+                color: #000;
+              }
+              &:before {
+                position: absolute;
+                left: -31%;
+                top: -8px;
+                display: block;
+                content: "";
+                background-repeat: no-repeat;
+                width: 50px;
+                height: 60px;
+                float: left;
+                @include breakpoint('mobile'){
+                  left: -15%;
+                }
+              }
+            }
+            .x-rj {
+              &:before {
+                background-image: url("../../../src/assets/img/sprite/ícone_rj.png");
+              }
+            }
+            .x-sp {
+              margin-left: 15%;
+              @include breakpoint('mobile'){
+                margin-top: 30px;
+                margin-left:0;
+              }
+              &:before {
+                background-image: url('../../../src/assets/img/sprite/ícone_sp.png');
+
+              }
+            }
+          }
+        }//fim x-left
+        .x-right {
+          margin-left: 6%;
+          float: left;
+          width: 13.5%;
+          margin-top: 50px;
+          @include breakpoint('tablet'){
+            margin-left: 4%;
+            width: 21.5%;
+          }
+          @include breakpoint('mobile'){
+            width: 100%;
+            margin-top: 0px;
+          }
+          ul {
+            li {
+              height: 40px;
+              width: 100%;
+              background-color: #fac437;
+              margin-top: 6px;
+              @include breakpoint('mobile'){
+                width: 90%;
+              }
+              a {
+                font-size: 12px;
+                color: #000;
+                text-transform: uppercase;
+                padding-top: 16px;
+                display: block;
+                padding-left: 8%;
+                @include breakpoint('mobile'){
+                  padding-left: 24%;
+                }
+                &:before {
+                  content: "";
+                  width: 22px;
+                  height: 17px;
+                  display: block;
+                  float: left;
+                  margin-right: 3%;
+                  top: -2px;
+                  position: relative;
+                  background-repeat: no-repeat;
+                }
+                strong {
+                  font-weight: 800;
+                }
+              }
+            }
+            .x-contato {
+              display: block;
+              a {
+                &:before {
+                  background-image: url('../../../src/assets/img/sprite/ícone_contato.png');
+                }
+              }
+            }
+            .x-fale-conosco {
+              a {
+                padding-top: 10px;
+                &:before {
+                  background-image: url('../../../src/assets/img/sprite/ícone_consultor.png');
+                  height: 22px;
+                }
+              }
+            }
+          }
+        }//fim x-right
+      }//fim-footer
+    }
+  }
+}

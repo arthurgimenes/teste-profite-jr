@@ -1,0 +1,10 @@
+.sass-cache
+.DS_Store
+npm-debug.log
+node_modules
+build/
+.tmp
+src/assets/scss/_x-sprite.scss
+src/assets/scss/_x-sprite_mobile.scss
+src/assets/scss/_x-sprite_marcas.scss
+src/assets/js/libs
