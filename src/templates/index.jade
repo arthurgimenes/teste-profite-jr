@@ -1,0 +1,36 @@
+doctype html
+html(lang='pt-br')
+
+  head
+
+    title Document
+
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no')
+
+    meta(name='description' content='')
+
+    link(rel='stylesheet', href='assets/stylesheet/application.css')
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Montserrat:400,700")
+
+  body(ng-app="Profite")
+
+    include _includes/header
+    include _components/slide
+    include _views/section-product
+    include _components/lightbox
+
+    include _includes/footer
+
+    script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js")
+    script(src="https://code.jquery.com/jquery-3.0.0.min.js")
+
+    script(src="assets/javascript/vendor/owl.carousel.min.js")
+    script(src="assets/javascript/vendor/rating.min.js")
+
+    script(src="assets/javascript/app.js")
+
+    script(src="assets/javascript/componente/slider.js")
+    script(src="assets/javascript/componente/rating.js")
+    script(src="assets/javascript/componente/lightbox.js")

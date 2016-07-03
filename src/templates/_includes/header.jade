@@ -1,0 +1,42 @@
+div(class="header")
+
+  div(class="header-menu__wrapper")
+
+    div(class="header-menu container")
+
+      ul(class="header-menu__list")
+
+        li
+          span(class="header-menu--hover") Olá vistante
+
+          ul(class="header-menu__dropdown")
+            li(class="item"): span Login
+            li(class="item"): span Cadastre-se
+
+  // / Menu
+
+  // Search and cart
+  div(class="header-search-and-cart")
+
+    div(class="container")
+
+      div(class="col-4")
+        a(href="#" title="Profite"): img(src="assets/images/profite_logo_novo.png", class="header__logo" alt="Profite")
+
+      div(class="col-8")
+
+        div(class="search-and-cart")
+
+          form(action="#" method="post" class="form search__wrapper")
+            input(type="text" class="input input--search" placeholder="Procurar")
+            button(type="submit" class="btn btn--search" value="")
+              svg(class="btn--icon"): use(xlink:href="assets/images/icons/icons.svg#icon-search")
+
+          div(class="cart")
+            button(type="submit" class="btn btn--cart")
+              svg(class="icon icon--small"): use(xlink:href="assets/images/icons/icons.svg#icon-cart")
+
+            span(class="cart__count") 10
+
+
+  // /Search and card

@@ -1,0 +1,11 @@
+.u-list-inline {
+  margin: 0;
+  padding: 0;
+
+  & > li { display: inline-block;  }
+
+}
+
+.u-clearfix {
+  @include clearfix();
+}

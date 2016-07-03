@@ -1,0 +1,20 @@
+@import "bower_components/susy/sass/susy";
+
+$columns: 12;
+$susy:(
+  columns: $columns,
+  gutters: 1/5,
+  container: 960px,
+);
+
+.container {
+  @include container();
+  position: relative;
+
+}
+
+@include media-querie(desktop) {
+  .col-4 { @include span(4 of 12); margin-right: 0; }
+  .col-8 { @include span(8 of 12); margin-right: 0; }
+
+}

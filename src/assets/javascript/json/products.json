@@ -1,0 +1,68 @@
+{
+    "products": [
+        {
+            "product": {
+                "title": "Sandália Ferracini Ecologic",
+                "rating": 2,
+                "price": 95.92,
+                "parcel": 4,
+                "economy": 45.98,
+                "image": "http://recursos.anita.com.br/Imagem/Produto/413/302967-1/Chinelo-Ferracini-Ecologic-NATURAL-80480.jpg"
+            }
+        },
+        {
+            "product": {
+                "title": "Chinelo Kildare",
+                "rating": 2,
+                "price": 79.92,
+                "parcel": 3,
+                "economy": 19.98,
+                "promotion": 99.90,
+                "image": "http://iacom.s8.com.br/produtos/01/00/sku/115574/6/115574611_1GG.jpg"
+            }
+        },
+        {
+            "product": {
+                "title": "Tênis Ferracini Week",
+                "rating": 2,
+                "price": 183.92,
+                "parcel": 9,
+                "economy": 45.98,
+                "promotion": 229.90,
+                "image": "http://r3.anita.com.br/Imagem/Produto/214/314372-1/Sapatenis-Ferracini-Week-ALVEJADO-74243.jpg"
+            }
+        },
+        {
+            "product": {
+                "title": "Tênis Democrata Fan",
+                "rating": 2,
+                "price": 159.92,
+                "parcel": 7,
+                "economy": 59.98,
+                "promotion": 210.90,
+                "image": "http://www.monicashop.com.br/prdfotos/democrata-042101-fan-sapatenis-masculino-casual-em-couro-azul-1_33425.jpg"
+            }
+        },
+        {
+            "product": {
+                "title": "Sandália Ferracini Ecologic",
+                "rating": 2,
+                "price": 95.92,
+                "parcel": 4,
+                "economy": 45.98,
+                "image": "http://recursos.anita.com.br/Imagem/Produto/413/302967-1/Chinelo-Ferracini-Ecologic-NATURAL-80480.jpg"
+            }
+        },
+        {
+            "product": {
+                "title": "Chinelo Kildare",
+                "rating": 2,
+                "price": 79.92,
+                "parcel": 3,
+                "economy": 19.98,
+                "promotion": 99.90,
+                "image": "http://iacom.s8.com.br/produtos/01/00/sku/115574/6/115574611_1GG.jpg"
+            }
+        }
+    ]
+}

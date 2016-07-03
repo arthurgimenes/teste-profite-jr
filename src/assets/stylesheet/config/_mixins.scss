@@ -1,0 +1,29 @@
+//
+// Mixins
+// --------------------------------------------------
+
+//== Media querie - mobile first
+//
+//## @include media-querie(desktop);
+@mixin media-querie($media) {
+  @if $media == mobile {
+    @media only screen and (min-width: $bp-mobile) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (min-width: $bp-tablet) { @content; }
+  }
+  @else if $media == desktop {
+    @media only screen and (min-width: $bp-desktop) { @content; }
+  }
+
+}
+
+//== Clearfix
+//
+//## @include clearfix();
+@mixin clearfix() {
+  &:before,
+  &:after { content:""; display:table; }
+  &:after { clear:both; }
+
+}

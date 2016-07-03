@@ -1,0 +1,23 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Colors
+$brand-default: #F1F1F1 !default;
+$brand-primary: #F8AB37 !default;
+$brand-warning: #F83747 !default;
+$brand-succes:  #37F87B !default;
+$brand-info:    #379FF8 !default;
+
+//== Typography
+$font-family-sans-serif:  "Montserrat", sans-serif !default;
+$font-family-base:        $font-family-sans-serif !default;
+$font-size-base:          16px !default;
+
+//== Breakpoints
+$bp-mobile:         320px; //- Default(mobile first)
+$bp-tablet:         768px;
+$bp-desktop:        1024px;
+$bp-full:           1920px;
+
