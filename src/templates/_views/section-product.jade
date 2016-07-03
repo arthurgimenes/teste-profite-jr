@@ -1,0 +1,20 @@
+section(class="section section-product" ng-controller="ProductController")
+
+  div(class="container")
+
+    ul(class="products-list" id="products")
+
+      li(class="item product" ng-repeat="item in products.products")
+        div(class="product__image"): img(ng-src="{{item.product.image}}", class="thumb" alt="")
+        span(class="product__title") {{item.product.title}}
+        ul(class="product__rating c-rating")
+        span(class="product__promotion") De: R$ {{item.product.promotion}}
+        span(class="product__price") Por: R$
+          span  {{item.product.price}}
+        span(class="product__price") ou até
+          span  {{item.product.parcel}}x
+          |  de
+          span  {{calcParcel(item.product.price, item.product.parcel) | currency: "R$ "}}
+        a(href="" class="btn btn--buy btn--black") Comprar
+        span(class="product__discount") Economize: R$ {{item.product.economy}}
+

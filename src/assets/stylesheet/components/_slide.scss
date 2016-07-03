@@ -1,0 +1,34 @@
+.slide-wrapper {
+  width: 100%;
+  height: 230px;
+  background: $brand-primary;
+
+}
+
+.slide-wrapper .container ,
+.slide { height: 100%; }
+
+.slide-bg {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+
+}
+
+.one   { background-image: url('../images/banner/banner1_mobile.jpg'); }
+.two   { background-image: url('../images/banner/banner2_mobile.jpg'); }
+.three { background-image: url('../images/banner/banner3_mobile.jpg'); }
+.four  { background-image: url('../images/banner/banner4_mobile.jpg'); }
+.five  { background-image: url('../images/banner/banner5_mobile.jpg'); }
+
+
+@include media-querie(desktop) {
+  .slide-wrapper { height: 350px; }
+  .one   { background-image: url('../images/banner/banner1.jpg'); }
+  .two   { background-image: url('../images/banner/banner2.jpg'); }
+  .three { background-image: url('../images/banner/banner3.jpg'); }
+  .four  { background-image: url('../images/banner/banner4.jpg'); }
+  .five  { background-image: url('../images/banner/banner5.jpg'); }
+
+}

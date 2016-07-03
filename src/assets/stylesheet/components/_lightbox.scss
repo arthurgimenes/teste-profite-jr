@@ -1,0 +1,61 @@
+.lightbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  display: none;
+
+  z-index: 100;
+  transition: ease .5s;
+
+  background: rgba(0, 0, 0, 0.5);
+
+  &__content {
+    position: absolute;
+    top: 50%;
+    transform: translate3d(0, -30%, 0);
+    left: 0;
+    right: 0;
+
+    padding: 50px;
+    max-width: 500px;
+
+    opacity: 0;
+    transition: ease .5s;
+    margin: 0 auto;
+
+    background: #FFF;
+
+  }
+
+  &__close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+
+    cursor: pointer;
+
+    fill: $brand-primary;
+
+  }
+
+  &__image {
+    display: block;
+    margin: 0 auto;
+
+  }
+
+}
+
+
+.lightbox.is-active {
+  display: block;
+
+}
+
+.lightbox.is-active .lightbox__content {
+  opacity: 1;
+  transform: translate3d(0, -50%, 0);
+
+}
