@@ -42,7 +42,8 @@ module.exports = function( grunt ) {
       dist : {
         files : [
           'assets/_js/**/*',
-          'assets/img/**/*'
+          'assets/img/**/*',
+          'assets/scss/style.scss
         ],
 
         tasks : [ 'uglify', 'imagemin', 'sass' ]
