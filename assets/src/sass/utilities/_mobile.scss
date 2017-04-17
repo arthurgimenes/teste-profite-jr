@@ -1,0 +1,147 @@
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 1200px) {
+  .navbar-header{
+    .cabecalho{
+      .item{
+        padding: 3rem 1rem 0!important;
+        &:last-child{
+              padding-left: 2.5rem!important;
+        }
+      }
+    }
+  }
+  .footer-profite{
+    .rj{
+      padding-left: 0!important;
+      p{
+        padding-left: 2rem!important;
+      }
+    }
+    .sp{
+      p{
+        padding-left: 2rem!important;
+      }
+    }
+  }
+}
+
+  /* Small Devices, Tablets */
+  @media only screen and (max-width : 991px) {
+    .navbar-header{
+      .cabecalho{
+        .item{
+          padding: 3rem 0.5rem 0!important;
+          &:last-child{
+            padding-left: 1rem!important;
+          }
+        }
+        .search{
+          input{
+            width: 180px!important;
+          }
+        }
+      }
+    }
+  }
+
+
+  /* Extra Small Devices, Little Tablets, Phones */
+  @media only screen and (max-width : 767px) {
+      .navbar-header{
+        .cabecalho{
+          .item{
+            height: auto!important;
+            &:last-child{
+              display: none;
+            }
+          }
+          .logo{
+            width: 100%;
+            text-align: center;
+          }
+          .login{
+            padding-top: 4rem!important;
+            position: absolute;
+            right: 2.5rem;
+            top: 0;
+          }
+          .search{
+            width: 100%;
+            padding: 3rem 0 2rem!important;
+            input{
+              width: 100%!important;
+              border-radius: 0!important;
+              padding-left: 8rem!important;
+            }
+            .lupa{
+              left: 2.5rem;
+              border-radius: 0!important;
+            }
+          }
+        }
+      }
+      .footer-profite{
+        text-align: left!important;
+        .img-estado{
+          text-align: right;
+        }
+        .txt-estado{
+          text-align: left;
+        }
+        .rj{
+          padding-bottom: 10rem;
+        }
+        .sp{
+          padding-bottom: 10rem;
+      }
+      .botoes{
+        text-align: center!important;
+        margin-bottom: 2rem;
+        img{
+          margin-bottom: 2rem!important;
+        }
+      }
+    }
+  }
+
+  /* Big Smartphones */
+  @media (max-width: 560px){
+    .navbar-header{
+      .cabecalho{
+        .logo{
+          text-align: left!important;
+          img{
+            padding-left: 1.5rem;
+
+          }
+        }
+      }
+    }
+  }
+
+  /* Medium Smartphones */
+  @media (max-width: 435px){
+    .navbar-header{
+      .cabecalho{
+        .logo{
+          img{
+            max-width: 205px!important;
+            padding-top: 1rem;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 380px){
+    .navbar-header{
+      .cabecalho{
+        .logo{
+          img{
+            max-width: 140px!important;
+          }
+        }
+      }
+    }
+  }

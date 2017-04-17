@@ -1,0 +1,73 @@
+.navbar-header{
+
+  .cabecalho{
+    margin: 0;
+    padding: 0;
+    .item{
+      display: inline-block;
+      padding: 3rem 2rem 0;
+      height: 100px;
+      &:last-child{
+        padding-left: 4.5rem;
+      }
+      &:first-child{
+        padding-left: 6rem;
+      }
+    }
+    .login{
+      h1{
+        font-size: 2rem;
+        margin: 0;
+        font-weight: bold;
+      }
+      h2{
+        margin: 0;
+        font-size: 1.4rem;
+      }
+    }
+    .search{
+      input{
+        border: none;
+        border-radius: 6px;
+        background-color: $amarelo-busca;
+        padding: 0.5rem 5rem ;
+        width: 320px;
+        position: relative;
+        z-index: 1;
+        font-weight: 8rem;
+        &:active{
+          border: none;
+        }
+      }
+      .lupa{
+        width: 42px;
+        height: 30px;
+        background: #000;
+        position: absolute;
+        z-index: 100;
+        border-radius: 6px;
+        img{
+          height: 20px;
+          width: 20px;
+          margin: 0.5rem 1rem;
+        }
+      }
+    }
+    .bandeiras{
+      text-align: center;
+      img{
+        max-width: 25px;
+        max-height: 17px;
+        margin: 0 0.25rem;
+      }
+      .skp{
+          margin-top: 0.5rem;
+          color: $azul-claro;
+        img{
+          max-width: 25px;
+          max-height: 25px;
+        }
+      }
+    }
+  }
+}

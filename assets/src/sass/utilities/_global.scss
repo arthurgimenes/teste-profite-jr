@@ -1,0 +1,9 @@
+body{
+	a{
+		text-decoration: none;
+		list-style: none;
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
