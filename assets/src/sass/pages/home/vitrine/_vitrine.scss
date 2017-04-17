@@ -1,0 +1,70 @@
+.vitrine{
+  margin-top: 3rem;
+  .proxima_l{
+    position: absolute;
+    right: -35px;
+    top: 50%;
+    width: 25px;
+  }
+  .anterior_l{
+    position: absolute;
+    left: -35px;
+    top: 50%;
+    width: 25px;
+    z-index: 100;
+  }
+  img{
+    display: inline-block;
+    width: auto;
+    &:hover{
+      transform: none;
+    }
+  }
+  .produto{
+    text-align: center;
+    margin-bottom: 4rem;
+    &:hover{
+      background-color: $amarelo-busca;
+    }
+    .img-produto{
+    }
+    .titulo-produto{
+      font-weight: bold;
+      margin-bottom: 3rem;
+      padding: 0  5rem;
+    }
+    .estrelas{
+      margin-bottom: 1rem;
+    }
+    .preco{
+      font-weight: bold;
+      margin-bottom: 4rem;
+      font-style: italic;
+      span{
+        font-weight: normal;
+        font-style: normal;
+      }
+      .promocao{
+        color: #726e6f;
+        font-size: 1.2rem;
+
+      }
+    }
+    .botao-comprar{
+      margin-bottom: 3rem;
+      span{
+        color: $branco;
+        padding: 1.5rem 2rem;
+        background-color: $cinza-escuro;
+      }
+    }
+    .economize{
+      margin-bottom: 1rem;
+      span{
+        background: $branco;
+        padding: 0.5rem 1.5rem;
+        border: 1px solid #c5c5c5;
+      }
+    }
+  }
+}
