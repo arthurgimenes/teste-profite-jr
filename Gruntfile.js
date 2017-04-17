@@ -43,7 +43,7 @@ module.exports = function( grunt ) {
         files : [
           'assets/_js/**/*',
           'assets/img/**/*',
-          'assets/scss/style.scss
+          'assets/scss/style.scss'
         ],
 
         tasks : [ 'uglify', 'imagemin', 'sass' ]
