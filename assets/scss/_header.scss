@@ -1,0 +1,100 @@
+body{
+	> header{
+		padding:25px 0;
+		> .content{
+			> .logo-container{
+				@include make-xs-column(12);
+				@include make-sm-column(4);
+				@include make-md-column(3);
+
+				> .logo-container__logo{
+					width:80%;
+				}
+			}
+			> .login-container{
+				@include make-md-column(2);
+				text-align:center;
+				a{
+					text-decoration: none;
+					color:#000;
+					cursor:pointer;
+				}
+				a:hover{
+					color: $main_color;
+					font-weight: bold;
+				}
+				p{
+					font-size:18px;
+					margin-top: 10px;
+					margin-bottom: 0;
+				}
+			}
+			> .search-container{
+				@include make-xs-column(12);
+				@include make-sm-column(4);
+				@include make-md-column(4);
+
+				padding: 0;
+				background-color: $main_color;
+				margin-top: 10px;
+				border: 1px solid #d6d6d6;
+				border-radius: 15px;
+
+				input{
+					padding-top: 10px;
+					background-color: $main_color;
+					border: none;
+					color: #000;
+					font-weight: bold;			    	
+				}
+				.img-search{
+					background-color: #000;
+					height: 40px;
+					width: 40px;
+					margin-right: 20px;
+					border-radius: 15px;
+					border: 10px solid #000;
+				}
+				.form-control{
+					width: auto;
+					display: inline-block;
+				}
+				.form-control::-webkit-input-placeholder { 
+					color: #000; 
+				}
+				.form-control:-moz-placeholder { 
+					color: #000; 
+				}
+				.form-control::-moz-placeholder { 
+					color: #000; 
+				}
+				.form-control:-ms-input-placeholder { 
+					color: #000; 
+				}
+			}
+			> .flag-container{
+				@include make-md-column(2);
+				margin-top: 15px;
+				margin-left: 30px;
+				img{
+					width: 20%;
+				}
+				a{
+					color:#01AEF2;
+					text-decoration: none;
+					font-size: 15px;
+				}
+				a:hover{
+					font-weight: bold;
+				}
+				.p-tel{
+					margin-top: 20px;
+				}
+				.flag-img{
+					width: 15%;
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+}

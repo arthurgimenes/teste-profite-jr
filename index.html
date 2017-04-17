@@ -1,0 +1,143 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Profite | Teste Desenvolvedor Front-End Jr</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="author" content="Fernanda Querino">
+        <link rel="stylesheet" href="assets/css/vendors/plugins.css">
+        <link rel="stylesheet" href="assets/css/vendors/owl-carousel/owl.carousel.css">
+        <link rel="stylesheet" href="assets/css/vendors/owl-carousel/owl.theme.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+        <link rel="shortcut icon" href="assets/img/favicon/favicon.png" type="image/x-icon">
+        <link rel="icon" href="assets/img/favicon/favicon.png" type="image/x-icon">
+    </head>
+
+    <body>
+        <!--Nav Header-->
+        <header id="top" class="container">
+            <div class="content">
+                <div class="logo-container">
+                    <div class="logo-container__logo">
+                        <a href="index.html"><img src="assets/img/topo/profite_logo_novo.png" class="img-responsive" alt="Logo Profite"></a>
+                    </div>
+                </div>
+                <div class="login-container">
+                    <p class="bold"> Olá, Visitante!</p>
+                    <a href="#">Cadastre-se</a> - <a href="#">Login</a>
+                </div>
+                <div class="search-container">
+                    <form action="">
+                        <a href="#"><img class="img-search" src="assets/img/topo/icone_pesquisa.png" alt="Icone de Pesquisa"></a>
+                        <input class="form-control" type="text" placeholder="Buscar por...">
+                    </form>
+                </div>
+                <div class="flag-container">
+                    <img class="flag-img" src="assets/img/topo/bandeira1.png" alt="Português">
+                    <img class="flag-img" src="assets/img/topo/bandeira2.png" alt="Espanhol">
+                    <img class="flag-img" src="assets/img/topo/bandeira3.png" alt="Espanhol">
+
+                    <p class="skype"><img class="img-responsive pull-left" src="assets/img/topo/skype.png" alt="Icone Skype">
+                        <p class="p-tel"><a href="tel:1133375618" alt="Telefone Profite">11 33375618</a></p>
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <!--Banner-Slider-->
+
+        <div id="slider" class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="assets/img/banner/banner1.jpg" alt="Banner Home 1">
+            </div>
+            <div class="item">
+                <img src="assets/img/banner/banner2.jpg" alt="Banner Home 2">
+            </div>
+            <div class="item">
+                <img src="assets/img/banner/banner3.jpg" alt="Banner Home 3">
+            </div>
+            <div class="item">
+                <img src="assets/img/banner/banner4.jpg" alt="Banner Home 4">
+            </div>
+            <div class="item">
+                <img src="assets/img/banner/banner5.jpg" alt="Banner Home 5">
+            </div>
+        </div>
+        <!--Produtos-->
+        <div class="container">
+         <div id="produtos" class="owl-carousel owl-theme">
+            <a href="#prodModal"><div class="produtos__item" id="prod1">
+            </div></a>
+            <a href="#prodModal"><div class="produtos__item" id="prod2">
+            </div></a>
+            <a href="#prodModal"><div class="produtos__item" id="prod3">
+            </div></a>
+            <a href="#prodModal"><div class="produtos__item" id="prod4">
+            </div></a>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="prodModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal">
+                        <img src="assets/img/sapatos/fechar.png" alt="Botão Fechar">
+                    </button>
+                </div>
+                <div class="modal-body">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <div class="container">
+            <div class="content" id="footer-sidebar">
+                <div class="footer-widget">
+                    <img src="assets/img/footer/ícone_rj.png" alt="Rio de Janeiro" class="pull-left"/>
+                    <div class="text-adress">
+                       <p class="p-adress">Rua do Acre, 77 - Sala 1108</p>
+                       <p class="p-adress">Centro - Rio de Janeiro</p>
+                       <p class="bold">Tel.: +55 (21) 2263-6044</p>
+                   </div>
+               </div>
+               <div class="footer-widget">
+                <img src="assets/img/footer/ícone_sp.png" alt="São Paulo" class="pull-left"/>
+                <div class="text-adress">
+                   <p class="p-adress">Rua Cardoso de Melo, 1750</p>
+                   <p class="p-adress">6º Andar Vila Olímpia</p>
+                   <p class="bold">Tel.: +55 (11) 2263-6044</p>
+               </div>
+           </div>
+           <div class="footer-widget">
+            <a href="#">
+                <div class="footer-icon">
+                    <img src="assets/img/footer/ícone_contato.png" alt="Icode de Contato" class="img-contact pull-left"/> <p class="p-contact-top">Entre em <strong>contato</strong></p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="footer-icon">
+                    <img src="assets/img/footer/ícone_consultor.png" alt="Icone Consultor" class="img-contact pull-left"/> <p class="p-contact">Fale com o nosso <strong>consultor online</strong></p>
+                </div>
+            </a>
+        </div>
+    </div>
+    </div>
+    </footer>
+
+    <script src="assets/js/vendors/jquery/jquery.min.js"></script>
+    <script src="assets/js/vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="assets/js/vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/produtos.js"></script>
+
+    </body>
+
+    </html>

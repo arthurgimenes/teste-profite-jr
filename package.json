@@ -1,0 +1,33 @@
+{
+  "name": "teste-profite",
+  "version": "1.0.0",
+  "description": "teste de devjr",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandaquerino/teste-profite-jr.git"
+  },
+  "author": "Fernanda Querino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fernandaquerino/teste-profite-jr/issues"
+  },
+  "homepage": "https://github.com/fernandaquerino/teste-profite-jr#readme"
+}
