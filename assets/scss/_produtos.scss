@@ -1,0 +1,122 @@
+#produtos {
+	margin-bottom: 60px;
+	margin-left: 110px;
+		a{
+			text-decoration: none;
+			color: #000;
+		}
+	.produtos__item{
+		@include make-xs-column(12);
+		@include make-sm-column(12);
+		@include make-md-column(12);
+		border-right: 1px solid #ccc;
+			img{
+				display: block;
+				height: auto;
+			}
+		.prod-economize{
+			font-size: 10px;
+			border: 1px solid #ccc;
+			text-align: center;
+			width: 70%;
+			margin: 0 auto;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		.buy{
+			background-color: #000;
+			margin: 0 auto;
+			width: 60%;
+			height: 40%;
+			border: 1px solid #ccc;
+			margin-top: 10px;
+
+			.p-buy{
+				text-transform: uppercase;
+				color: #fff;
+				font-weight: bold;
+				font-size: 12px;
+				text-align: center;
+					img{
+						width: 20%;
+						margin-left: 5px;
+					}
+			}
+		}
+		.precos{
+			text-align: center;
+			margin: 0;
+		}
+		.first-prod{
+			margin-bottom: 30px;
+		}
+		.stars{
+			margin: 0 auto;
+			margin-bottom: 10px;
+				img{
+					margin: 0 auto;
+				}
+		}
+		.title{
+			text-align: center;
+		}
+		.img-produto{
+			display:block;
+		}
+		.img-hover{
+			display:none;
+		}
+		.img-produto:hover{
+			display: none;
+		}
+		.img-hover{
+			display: block;
+		}
+
+	}
+	#prod1:hover{
+		background-color: $main_color;
+	}
+	#prod2:hover{
+		background-color: $main_color;
+	}
+	#prod3:hover{
+		background-color: $main_color;
+	}
+	#prod4{
+		border: none;
+	}
+	#prod4:hover{
+		background-color: $main_color;
+	}
+	.owl-buttons .owl-prev {
+		background: url(../img/sapatos/seta_esquerda.png);
+		width: 15px;
+		height: 15px;
+		left: -25px;
+		top: 50%;
+		margin-top: -15px;
+		text-indent: -9999px;
+	}
+	.owl-buttons .owl-next {
+		background: url(../img/sapatos/seta_direita.png);
+		width: 15px;
+		height: 15px;
+		right: -25px;
+		top: 50%;
+		margin-top: -15px;
+		text-indent: -9999px; 
+	}
+	.owl-controls .owl-buttons div {
+		position: absolute; 
+	}
+	.owl-pagination {
+		text-align: center;
+		margin-top: -26px;
+		position: relative;
+		margin-bottom: 10px; 
+	}
+}
+.modal-header{
+	border:none;
+}

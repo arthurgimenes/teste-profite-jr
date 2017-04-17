@@ -1,0 +1,49 @@
+body{
+	> footer{
+		background: #f7f7f7;
+		padding: 20px 0 0;
+		> .container{
+			padding-bottom: 95px;
+		}
+		#footer-sidebar{
+			> .footer-widget{
+				@include make-xs-column(12);
+				@include make-sm-column(4);
+				@include make-md-column(4);
+
+				a{
+					text-decoration: none;
+					cursor: pointer;
+					color: #000;
+				}			
+			}
+			.text-adress{
+				margin-left: 65px;
+			}
+			.footer-icon {
+		    	background-color: $main_color;
+		    	width: 240px;
+		    	height: 56px;
+				padding: 10px;
+				margin-bottom: 10px;
+			}
+			.footer-icon:hover{
+				border:1px solid #595959;
+			}
+			.p-adress{
+				color: #8c8c86;
+			}
+			.p-contact{
+				text-transform: uppercase;
+				margin: 0 auto;
+			}
+			.p-contact-top{
+				text-transform: uppercase;
+				margin: 10px;
+			}			
+			.img-contact{
+				margin: 10px;
+			}
+		}
+	}
+}
