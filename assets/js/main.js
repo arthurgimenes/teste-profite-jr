@@ -1,0 +1,1 @@
+$("#slider").owlCarousel({slideSpeed:300,paginationSpeed:400,singleItem:!0}),$("#produtos").owlCarousel({navigation:!0,slideSpeed:300,pagination:!1,paginationSpeed:400,dots:!1});
