@@ -157,6 +157,7 @@ mod.montarProdutos = function(data) {
                 setViewProduto();
 };
 
+
 function setViewProduto(){
     var imagens = document.querySelectorAll('.img-produto');
     imagens.forEach(function(item){
