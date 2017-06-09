@@ -1,0 +1,32 @@
+{
+	"produtos":[{
+		"nome": "Sandália Ferracini Ecologic",
+		"image":"/profite/build/image/sapatos/",
+		"preco_original":95.92,
+		"preco":95.92,
+		"parcela":4,
+		"promo":false
+	}, {
+		"nome": "Chinelo Kildare",
+		"image":"/profite/build/image/sapatos/",
+		"preco_original":99.90,
+		"preco":79.92,
+		"parcela":3,
+		"promo":true
+	}, {
+		"nome": "Tênis Ferracini Week",
+		"image":"/profite/build/image/sapatos/",
+		"preco_original":229.90,
+		"preco":183.92,
+		"parcela":9,
+		"promo":true
+	}, {
+		"nome": "Tênis Democrata Fan",
+		"image":"/profite/build/image/sapatos/",
+		"preco_original":219.90,
+		"preco":159.92,
+		"parcela":4,
+		"promo":false
+	}]
+}
+
