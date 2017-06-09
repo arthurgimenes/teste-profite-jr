@@ -153,25 +153,32 @@ mod.montarProdutos = function(data) {
                 if(qtdProdutos > 0){
                     setBtnDirections();
                 }       
-                }
                 setViewProduto();
+                }
 };
 
 
 function setViewProduto(){
-    var imagens = document.querySelectorAll('.img-produto');
-    imagens.forEach(function(item){
+            var imagens = document.querySelectorAll('.img-produto');
             var img = document.createElement('img');
-            img.src = item.getAttribute('data-zoom');
-            img.className = "is-hidden";
-            document.getElementById('visualizacao-produto').appendChild(img);
-            item.addEventListener('click',function(){
-
+            var modalProduto = document.getElementById('visualizacao-produto');
+            var fundoModal = document.getElementById('fundo-modal');
+            fundoModal.className = "is-hidden";
+            modalProduto.querySelector('span').addEventListener('click',function(){
+                modalProduto.className = "is-hidden";
+                fundoModal.className = "is-hidden";
             });
-    });
-}
-
-function vizualizarProduto(){
+            img.id = "produto-zoom"; 
+            modalProduto.className = "is-hidden";
+            modalProduto.appendChild(img);
+            imagens.forEach(function(item){
+            item.addEventListener('click',function(){
+                var content = document.getElementById("produto-zoom");
+                content.src = item.getAttribute('data-zoom');
+                document.getElementById('visualizacao-produto').className = "is-show";
+                fundoModal.className = "is-show";
+            });
+        });
 
 }
 

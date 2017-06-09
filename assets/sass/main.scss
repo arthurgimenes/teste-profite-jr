@@ -2,7 +2,7 @@
 @import 'normalize';
 
 .is-hidden{
-	display:none;
+	display:none !important;
 }
 
 body{
@@ -12,11 +12,31 @@ body{
 #footer{
         background-color: $footer-color;
         height: 9.375%;
+        width:100%;
+}
+
+.is-show{
+	display:block !important;
+	transition:all 3s;
+	opacity:1 !important; 
+}
+
+#fundo-modal{
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0;
+	background-color:rgba(#000,0.5) !important;
+	z-index:3;
+	display:none;
+	opacity:0;
 }
 
 #visualizacao-produto{
+	transition:all 3s;
 	z-index:100;
 	position:fixed;
+	opacity:0;
 	width:33%;
 	left:33%;
 	top:20%;
@@ -48,7 +68,7 @@ body{
 #contato{
 	display:flex;
 	padding:3% 2%;
-	font-size:.6em;
+	font-size:.5em;
 	div{
 		margin-top:-2%;
 	}
@@ -95,27 +115,33 @@ body{
 		text-transform:uppercase;
 		cursor:pointer;
 		transition:background-color .3s;
-		box-sizing:border-box;
-		padding:5% 15%;
+		padding:5% 10%;
 		margin:3% 15% 0;
 		text-align:left;
-		span{
-			white-space:nowrap;
+		white-space:nowrap;
+		span:nth-of-type(2){
 			display:block;
 		}
 		&:hover{
 			background-color: complement($main-color);
 			color: #fff;
+			&:before{
+				filter:invert(100%);
+			}
 		}
 		&:before{
-			left:4%;
+			content:"";
+			vertical-align:middle;
+			margin-right:5%;
+			height:22px;
+			width:25px;
+			display:inline-block;
+			background-repeat:no-repeat;
 		}
 	}
 	button:nth-of-type(1){
 		&:before{
-			top:25%;
-			content:url($btn-contato);
-			position:absolute;
+			background-image:url($btn-contato);
 		}
 	}
 	button:nth-of-type(2){
@@ -123,8 +149,9 @@ body{
 			font-weight:bold;
 		}
 		&:before{
-			content:url($btn-consultor);
-			position:absolute;
+			background-image:url($btn-consultor);
+			display:inline-block;
+			float:left;
 		}
 	}
 }
@@ -205,6 +232,7 @@ button.pesquisa{
 	text-align:center;
 	margin:7% 0;
 	width:100%;
+	white-space:nowrap;
 }
 
 #carrousel{
@@ -420,6 +448,8 @@ main{
 }
 }
 
+
+
 @media screen and (min-width:641px){
 main{
 	margin:0 auto;
@@ -542,7 +572,6 @@ button.pesquisa{
 		span:nth-of-type(2):before{
 			background-image:url($bandeira-argentina);
 			margin-left:50%;
-			
 		}
 		span:nth-of-type(3):before{
 			background-image:url($bandeira-tres);
@@ -606,7 +635,14 @@ button.pesquisa{
 		&:hover{
 		transition:font-size .1s ease-in;
 		font-size:1.2em;
-		
+		background-color:#dedede;
+		color:#000;
+		&:before{
+			background-size:20px 20px;
+			height:20px;
+			width:20px;
+			filter:invert(100%);
+		}
 		}
 	}
 	.info{
@@ -629,20 +665,18 @@ button.pesquisa{
 	}
 }	
 footer{
-	margin:2% auto 0;
+	margin:2% 0 0;
 	width:100%;
 }
 
 #contato{
 	width:$wrapper-size-desktop;
 	margin:0 auto;
-	font-size:.7em;
+	font-size:.67em;
 	div{
 		margin-top:-2%;
 	}
 	address{
-		color: #b2b2b2;
-		font-style:normal;
 		position:relative;
 		margin-left:12%;
 		line-height:1em;
@@ -654,53 +688,10 @@ footer{
 			color: #000;
 			white-space:nowrap;
 		}
-		&:before{
-			position:absolute;
-			left:-32%;
-			background-repeat:no-repeat;
-			height:100%;
-			width:100%;
-			content:"";
-			background-size:30%;
-		}
-	}
-	address:nth-of-type(1){
-		&:before{
-			background-image:url($contato-rj);
-
-		}
-	}
-	address:nth-of-type(2){
-		&:before{
-			background-image:url($contato-sp);
-		}
-	}
-	button{
-		position:relative;
-		padding:3% 5% 3% 10%;
-		margin:3% 15% 0;
-		text-align:left;
-		font-size:1.1em;
-		&:hover{
-			background-color: complement($main-color);
-			color: #fff;
-		}
-
 	}
 	button:nth-of-type(1){
 		&:before{
 			top:25%;
-			content:url($btn-contato);
-			position:absolute;
-		}
-	}
-	button:nth-of-type(2){
-		span:nth-of-type(2){
-			font-weight:bold;
-		}
-		&:before{
-			content:url($btn-consultor);
-			position:absolute;
 		}
 	}
 }
