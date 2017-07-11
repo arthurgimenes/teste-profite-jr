@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Teste Profite</title>
+
+  <link rel="stylesheet" href="./styles/app.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+
+  <!-- bower:css -->
+  <link rel="stylesheet" href="./bower_components/normalize-css/normalize.css">
+  <!-- endinject -->
+</head>
+<body>
+  <!-- Header -->
+  <header class="hea">
+    <div class="hea-wrap">
+      <h1 class="hea-logo"><a href="#"><img src="./images/logo-profite.jpg" alt=""></a></h1>
+      <div class="hea-view_login">
+        <b>Olá, Visitante</b>
+        <a href="#">Cadastre-se</a> – <a href="#">Login</a>
+      </div>
+      <form class="hea-search">
+        <label for="hea_search">
+          <span class="hs-ico_search"><i></i></span>
+          <input id="hea_search" type="search" placeholder="Buscar por...">
+        </label>
+      </form>
+      <div class="hea-contact">
+        <div class="hc-top">
+          <a href="#" class="hc-ico_brasil"></a>
+          <a href="#" class="hc-ico_argentina"></a>
+          <a href="#" class="hc-ico_peru"></a>
+        </div>
+        <div class="hc-down">
+          <a href="tel:11 33375618"><i class="hc-ico_skype"></i> 11 33375618</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="slide_destaque">
+    <div class="slide-wrap">
+      <picture>
+        <source srcset="./images/banner1_mobile.jpg" media="(max-width: 768px)">
+        <source srcset="./images/banner1.jpg">
+        <img src="./images/banner1.jpg">
+      </picture>
+      <picture>
+        <source srcset="./images/banner2_mobile.jpg" media="(max-width: 768px)">
+        <source srcset="./images/banner2.jpg">
+        <img src="./images/banner2.jpg">
+      </picture>
+      <picture>
+        <source srcset="./images/banner3_mobile.jpg" media="(max-width: 768px)">
+        <source srcset="./images/banner3.jpg">
+        <img src="./images/banner3.jpg">
+      </picture>
+      <picture>
+        <source srcset="./images/banner4_mobile.jpg" media="(max-width: 768px)">
+        <source srcset="./images/banner4.jpg">
+        <img src="./images/banner4.jpg">
+      </picture>
+      <picture>
+        <source srcset="./images/banner5_mobile.jpg" media="(max-width: 768px)">
+        <source srcset="./images/banner5.jpg">
+        <img src="./images/banner5.jpg">
+      </picture>
+      <div class="sd-pager"></div>
+      <div class="sd-arrow_prev"></div>
+      <div class="sd-arrow_next"></div>
+    </div>
+
+  </section>
+  <section class="produtos-destaque">
+    <div class="pd-wrap_produto">
+      <img src="./images/calçado1.png" class="pd-img">
+      <h3 class="sp-tt">Sandália Ferracini Ecologic</h3>
+    </div>
+  </section>
+
+  <!-- bower:js -->
+  <script src="./bower_components/jquery/dist/jquery.js"></script>
+  <script src="./bower_components/jquery-cycle2/build/jquery.cycle2.js"></script>
+  <!-- endinject -->
+
+  <script src="./scripts/app.js"></script>
+</body>
+</html>

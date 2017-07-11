@@ -1,0 +1,156 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$arrow-left-name: 'arrow_left';
+$arrow-left-x: 50px;
+$arrow-left-y: 20px;
+$arrow-left-offset-x: -50px;
+$arrow-left-offset-y: -20px;
+$arrow-left-width: 15px;
+$arrow-left-height: 16px;
+$arrow-left-total-width: 70px;
+$arrow-left-total-height: 58px;
+$arrow-left-image: '../images/sprite.png';
+$arrow-left: (50px, 20px, -50px, -20px, 15px, 16px, 70px, 58px, '../images/sprite.png', 'arrow_left', );
+$arrow-right-name: 'arrow_right';
+$arrow-right-x: 0px;
+$arrow-right-y: 42px;
+$arrow-right-offset-x: 0px;
+$arrow-right-offset-y: -42px;
+$arrow-right-width: 15px;
+$arrow-right-height: 16px;
+$arrow-right-total-width: 70px;
+$arrow-right-total-height: 58px;
+$arrow-right-image: '../images/sprite.png';
+$arrow-right: (0px, 42px, 0px, -42px, 15px, 16px, 70px, 58px, '../images/sprite.png', 'arrow_right', );
+$ico-frag-argentina-name: 'ico-frag_argentina';
+$ico-frag-argentina-x: 25px;
+$ico-frag-argentina-y: 0px;
+$ico-frag-argentina-offset-x: -25px;
+$ico-frag-argentina-offset-y: 0px;
+$ico-frag-argentina-width: 25px;
+$ico-frag-argentina-height: 17px;
+$ico-frag-argentina-total-width: 70px;
+$ico-frag-argentina-total-height: 58px;
+$ico-frag-argentina-image: '../images/sprite.png';
+$ico-frag-argentina: (25px, 0px, -25px, 0px, 25px, 17px, 70px, 58px, '../images/sprite.png', 'ico-frag_argentina', );
+$ico-frag-brasil-name: 'ico-frag_brasil';
+$ico-frag-brasil-x: 0px;
+$ico-frag-brasil-y: 25px;
+$ico-frag-brasil-offset-x: 0px;
+$ico-frag-brasil-offset-y: -25px;
+$ico-frag-brasil-width: 25px;
+$ico-frag-brasil-height: 17px;
+$ico-frag-brasil-total-width: 70px;
+$ico-frag-brasil-total-height: 58px;
+$ico-frag-brasil-image: '../images/sprite.png';
+$ico-frag-brasil: (0px, 25px, 0px, -25px, 25px, 17px, 70px, 58px, '../images/sprite.png', 'ico-frag_brasil', );
+$ico-frag-peru-name: 'ico-frag_peru';
+$ico-frag-peru-x: 25px;
+$ico-frag-peru-y: 25px;
+$ico-frag-peru-offset-x: -25px;
+$ico-frag-peru-offset-y: -25px;
+$ico-frag-peru-width: 25px;
+$ico-frag-peru-height: 17px;
+$ico-frag-peru-total-width: 70px;
+$ico-frag-peru-total-height: 58px;
+$ico-frag-peru-image: '../images/sprite.png';
+$ico-frag-peru: (25px, 25px, -25px, -25px, 25px, 17px, 70px, 58px, '../images/sprite.png', 'ico-frag_peru', );
+$ico-search-name: 'ico-search';
+$ico-search-x: 50px;
+$ico-search-y: 0px;
+$ico-search-offset-x: -50px;
+$ico-search-offset-y: 0px;
+$ico-search-width: 20px;
+$ico-search-height: 20px;
+$ico-search-total-width: 70px;
+$ico-search-total-height: 58px;
+$ico-search-image: '../images/sprite.png';
+$ico-search: (50px, 0px, -50px, 0px, 20px, 20px, 70px, 58px, '../images/sprite.png', 'ico-search', );
+$ico-skype-name: 'ico-skype';
+$ico-skype-x: 0px;
+$ico-skype-y: 0px;
+$ico-skype-offset-x: 0px;
+$ico-skype-offset-y: 0px;
+$ico-skype-width: 25px;
+$ico-skype-height: 25px;
+$ico-skype-total-width: 70px;
+$ico-skype-total-height: 58px;
+$ico-skype-image: '../images/sprite.png';
+$ico-skype: (0px, 0px, 0px, 0px, 25px, 25px, 70px, 58px, '../images/sprite.png', 'ico-skype', );
+$spritesheet-width: 70px;
+$spritesheet-height: 58px;
+$spritesheet-image: '../images/sprite.png';
+$spritesheet-sprites: ($arrow-left, $arrow-right, $ico-frag-argentina, $ico-frag-brasil, $ico-frag-peru, $ico-search, $ico-skype, );
+$spritesheet: (70px, 58px, '../images/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

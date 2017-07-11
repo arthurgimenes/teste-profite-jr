@@ -1,0 +1,203 @@
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+.hea-wrap {
+  width: 90%;
+  max-width: 970px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; }
+
+.hea {
+  height: 70px;
+  display: flex;
+  padding: 40px 0; }
+  .hea .hea-logo {
+    margin: 0; }
+  .hea .hea-view_login {
+    width: 130px;
+    margin: 20px 29px 0;
+    flex-shrink: 0; }
+    .hea .hea-view_login b {
+      font-size: 19px; }
+    .hea .hea-view_login a {
+      font-size: 14px;
+      color: #000000;
+      text-decoration: none; }
+  .hea .hea-search {
+    width: 340px;
+    margin: 20px 0 0 0;
+    position: relative; }
+    .hea .hea-search .hs-ico_search {
+      width: 40px;
+      height: 30px;
+      left: 0;
+      top: 0;
+      position: absolute;
+      border-radius: 8px;
+      background-color: #000000;
+      cursor: pointer; }
+      .hea .hea-search .hs-ico_search i {
+        background-image: url(../images/sprite.png);
+        background-position: -50px 0px;
+        width: 20px;
+        height: 20px;
+        display: block;
+        margin: 5px auto; }
+    .hea .hea-search #hea_search {
+      width: 100%;
+      height: 30px;
+      padding-left: 50px;
+      border: 0;
+      border-radius: 8px;
+      background: #fac437; }
+      .hea .hea-search #hea_search::-webkit-input-placeholder {
+        /* WebKit browsers */
+        color: #000000;
+        font-family: "Open Sans", sans-serif; }
+      .hea .hea-search #hea_search:-moz-placeholder {
+        /* Mozilla Firefox 4 to 18 */
+        color: #000000;
+        font-family: "Open Sans", sans-serif; }
+      .hea .hea-search #hea_search::-moz-placeholder {
+        /* Mozilla Firefox 19+ */
+        color: #000000;
+        font-family: "Open Sans", sans-serif; }
+      .hea .hea-search #hea_search:-ms-input-placeholder {
+        /* Internet Explorer 10+ */
+        color: #000000;
+        font-family: "Open Sans", sans-serif; }
+  .hea .hea-contact {
+    width: 130px;
+    margin: 10px 0 0 auto;
+    flex-shrink: 0; }
+    .hea .hea-contact .hc-top {
+      text-align: center; }
+      .hea .hea-contact .hc-top a {
+        display: inline-flex;
+        margin: 0 2px; }
+      .hea .hea-contact .hc-top .hc-ico_brasil {
+        background-image: url(../images/sprite.png);
+        background-position: 0px -25px;
+        width: 25px;
+        height: 17px; }
+      .hea .hea-contact .hc-top .hc-ico_argentina {
+        background-image: url(../images/sprite.png);
+        background-position: -25px 0px;
+        width: 25px;
+        height: 17px; }
+      .hea .hea-contact .hc-top .hc-ico_peru {
+        background-image: url(../images/sprite.png);
+        background-position: -25px -25px;
+        width: 25px;
+        height: 17px; }
+    .hea .hea-contact .hc-down {
+      text-align: right; }
+      .hea .hea-contact .hc-down .hc-ico_skype {
+        background-image: url(../images/sprite.png);
+        background-position: 0px 0px;
+        width: 25px;
+        height: 25px;
+        display: inline-flex;
+        position: relative;
+        bottom: -7px; }
+      .hea .hea-contact .hc-down a {
+        color: #00aff0;
+        text-decoration: none; }
+  @media screen and (max-width: 992px) {
+    .hea .hea-search {
+      width: 100%;
+      order: 4; } }
+  @media screen and (max-width: 768px) {
+    .hea .hea-logo {
+      margin-left: calc(50% - 115px); }
+    .hea .hea-contact {
+      display: none; }
+    .hea .hea-search {
+      position: absolute;
+      width: 100%;
+      top: 110px;
+      left: 0; }
+      .hea .hea-search .hs-ico_search {
+        border-radius: 0;
+        left: 5%; }
+      .hea .hea-search #hea_search {
+        border-radius: 0;
+        padding-left: 80px; }
+    .hea .hea-view_login {
+      width: 105px;
+      margin: 20px 0 0 auto;
+      flex-shrink: 0; }
+      .hea .hea-view_login b {
+        font-size: 15px; }
+      .hea .hea-view_login a {
+        font-size: 11px; } }
+  @media screen and (max-width: 530px) {
+    .hea .hea-logo {
+      width: 170px;
+      margin-left: 0;
+      margin-top: 13px; }
+      .hea .hea-logo img {
+        width: 100%; } }
+
+.slide-wrap {
+  width: 90%;
+  max-width: 970px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap; }
+
+.slide_destaque {
+  width: 100%;
+  height: auto;
+  background: #fac437;
+  text-align: center; }
+  .slide_destaque img {
+    width: 100%;
+    display: flex; }
+  .slide_destaque .sd-pager {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 101;
+    text-align: center; }
+    .slide_destaque .sd-pager span {
+      font-size: 40px;
+      color: #d0d0d0;
+      cursor: pointer; }
+      .slide_destaque .sd-pager span.cycle-pager-active {
+        color: #eaeaea; }
+  .slide_destaque .sd-arrow_prev {
+    display: inline-block;
+    position: absolute;
+    z-index: 150;
+    left: -20px;
+    top: 50%;
+    margin-top: -7px;
+    cursor: pointer;
+    background-image: url(../images/sprite.png);
+    background-position: -50px -20px;
+    width: 15px;
+    height: 16px; }
+  .slide_destaque .sd-arrow_next {
+    display: inline-block;
+    position: absolute;
+    z-index: 150;
+    right: -20px;
+    top: 50%;
+    margin-top: -7px;
+    cursor: pointer;
+    background-image: url(../images/sprite.png);
+    background-position: 0px -42px;
+    width: 15px;
+    height: 16px; }
+  @media screen and (max-width: 992px) {
+    .slide_destaque {
+      margin-top: 30px; } }
+  @media screen and (max-width: 992px) {
+    .slide_destaque .slide-wrap {
+      width: 100%; }
+    .slide_destaque .sd-arrow_prev {
+      left: 2%; }
+    .slide_destaque .sd-arrow_next {
+      right: 2%; } }

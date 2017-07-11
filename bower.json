@@ -1,0 +1,18 @@
+{
+  "name": "teste-profite-jr",
+  "authors": [
+    "Rafael Melo"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "normalize-css": "normalize.css#^7.0.0",
+    "jquery": "2.2.4",
+    "jquery-cycle2": "^2.1.6"
+  }
+}
