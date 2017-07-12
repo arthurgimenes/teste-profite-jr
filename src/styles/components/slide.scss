@@ -1,0 +1,150 @@
+.slide-wrap {
+  @include container();
+}
+
+.slide_destaque{
+  width: 100%;
+  height: auto;
+  background: #fac437;
+  text-align: center;
+  img{
+    width: 100%;
+    display: flex;
+  }
+  .sd-pager{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 101;
+    text-align: center;
+    list-style: none;
+    li{
+      position: relative;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+      button{
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        width: 10px;
+        height: 10px;
+        padding: 5px;
+        cursor: pointer;
+        color: transparent;
+        border: 0;
+        outline: none;
+        background: #d0d0d0;
+        border-radius: 10px;
+      }
+      &.slick-active{
+        button{
+          background: #eaeaea;
+        }
+
+      }
+    }
+  }
+  .sd-arrow_prev{
+    display: inline-block;
+    position: absolute;
+    z-index: 150;
+    left: -20px;
+    top: 50%;
+    margin-top: -7px;
+    cursor: pointer;
+    @include sprite($arrow_left);
+  }
+  .sd-arrow_next{
+    display: inline-block;
+    position: absolute;
+    z-index: 150;
+    right: -20px;
+    top: 50%;
+    margin-top: -7px;
+    cursor: pointer;
+    @include sprite($arrow_right);
+  }
+  @media screen and (max-width: 992px) {
+    margin-top: 30px;
+  }
+  @media screen and (max-width: 992px) {
+    .slide-wrap{
+      width: 100%;
+    }
+    .sd-arrow_prev{
+      left: 2%;
+    }
+    .sd-arrow_next{
+      right: 2%;
+    }
+  }
+}
+.slide_produto{
+  margin-top: 50px;
+  .sp-wrap_produto{
+    width: 240px;
+    border-right: 1px solid #e1e1e1;
+    text-align: center;
+    cursor: pointer;
+    .sp-img{
+      display: inline-block;
+    }
+    .sp-tt{
+      font-size: 15px;
+      min-height: 40px;
+      margin: 0;
+    }
+    .sp-preco_por,.sp-preco_ate{
+      font-size: 12px;
+      font-weight: bold;
+      margin: 0 0 3px;
+    }
+    .sp-preco_de{
+      text-decoration: line-through;
+      font-style: italic;
+      margin: 0 0 3px;
+      font-size: 12px;
+    }
+    .btn{
+      display: inline-block;
+    }
+    .btn-default{
+      margin: 20px 0 10px;
+      .ico-car{
+        @include sprite($carrinho);
+        display: inline-block;
+      }
+    }
+
+    &:last-child{
+      border: none;
+    }
+    &:hover{
+      background: #fac437;
+    }
+  }
+  .sp-arrow_prev{
+    display: inline-block;
+    position: absolute;
+    z-index: 150;
+    left: -20px;
+    top: 50%;
+    margin-top: -7px;
+    cursor: pointer;
+    @include sprite($seta_esquerda);
+  }
+  .sp-arrow_next{
+    display: inline-block;
+    position: absolute;
+    z-index: 150;
+    right: -20px;
+    top: 50%;
+    margin-top: -7px;
+    cursor: pointer;
+    @include sprite($seta_direita);
+  }
+}

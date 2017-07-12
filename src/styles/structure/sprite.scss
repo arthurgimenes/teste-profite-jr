@@ -1,0 +1,233 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$arrow-left-name: 'arrow_left';
+$arrow-left-x: 96px;
+$arrow-left-y: 52px;
+$arrow-left-offset-x: -96px;
+$arrow-left-offset-y: -52px;
+$arrow-left-width: 15px;
+$arrow-left-height: 16px;
+$arrow-left-total-width: 116px;
+$arrow-left-total-height: 82px;
+$arrow-left-image: '../images/sprite.png';
+$arrow-left: (96px, 52px, -96px, -52px, 15px, 16px, 116px, 82px, '../images/sprite.png', 'arrow_left', );
+$arrow-right-name: 'arrow_right';
+$arrow-right-x: 96px;
+$arrow-right-y: 36px;
+$arrow-right-offset-x: -96px;
+$arrow-right-offset-y: -36px;
+$arrow-right-width: 15px;
+$arrow-right-height: 16px;
+$arrow-right-total-width: 116px;
+$arrow-right-total-height: 82px;
+$arrow-right-image: '../images/sprite.png';
+$arrow-right: (96px, 36px, -96px, -36px, 15px, 16px, 116px, 82px, '../images/sprite.png', 'arrow_right', );
+$carrinho-name: 'carrinho';
+$carrinho-x: 96px;
+$carrinho-y: 68px;
+$carrinho-offset-x: -96px;
+$carrinho-offset-y: -68px;
+$carrinho-width: 16px;
+$carrinho-height: 13px;
+$carrinho-total-width: 116px;
+$carrinho-total-height: 82px;
+$carrinho-image: '../images/sprite.png';
+$carrinho: (96px, 68px, -96px, -68px, 16px, 13px, 116px, 82px, '../images/sprite.png', 'carrinho', );
+$ico-frag-argentina-name: 'ico-frag_argentina';
+$ico-frag-argentina-x: 47px;
+$ico-frag-argentina-y: 40px;
+$ico-frag-argentina-offset-x: -47px;
+$ico-frag-argentina-offset-y: -40px;
+$ico-frag-argentina-width: 25px;
+$ico-frag-argentina-height: 17px;
+$ico-frag-argentina-total-width: 116px;
+$ico-frag-argentina-total-height: 82px;
+$ico-frag-argentina-image: '../images/sprite.png';
+$ico-frag-argentina: (47px, 40px, -47px, -40px, 25px, 17px, 116px, 82px, '../images/sprite.png', 'ico-frag_argentina', );
+$ico-frag-brasil-name: 'ico-frag_brasil';
+$ico-frag-brasil-x: 0px;
+$ico-frag-brasil-y: 65px;
+$ico-frag-brasil-offset-x: 0px;
+$ico-frag-brasil-offset-y: -65px;
+$ico-frag-brasil-width: 25px;
+$ico-frag-brasil-height: 17px;
+$ico-frag-brasil-total-width: 116px;
+$ico-frag-brasil-total-height: 82px;
+$ico-frag-brasil-image: '../images/sprite.png';
+$ico-frag-brasil: (0px, 65px, 0px, -65px, 25px, 17px, 116px, 82px, '../images/sprite.png', 'ico-frag_brasil', );
+$ico-frag-peru-name: 'ico-frag_peru';
+$ico-frag-peru-x: 25px;
+$ico-frag-peru-y: 65px;
+$ico-frag-peru-offset-x: -25px;
+$ico-frag-peru-offset-y: -65px;
+$ico-frag-peru-width: 25px;
+$ico-frag-peru-height: 17px;
+$ico-frag-peru-total-width: 116px;
+$ico-frag-peru-total-height: 82px;
+$ico-frag-peru-image: '../images/sprite.png';
+$ico-frag-peru: (25px, 65px, -25px, -65px, 25px, 17px, 116px, 82px, '../images/sprite.png', 'ico-frag_peru', );
+$ico-search-name: 'ico-search';
+$ico-search-x: 96px;
+$ico-search-y: 0px;
+$ico-search-offset-x: -96px;
+$ico-search-offset-y: 0px;
+$ico-search-width: 20px;
+$ico-search-height: 20px;
+$ico-search-total-width: 116px;
+$ico-search-total-height: 82px;
+$ico-search-image: '../images/sprite.png';
+$ico-search: (96px, 0px, -96px, 0px, 20px, 20px, 116px, 82px, '../images/sprite.png', 'ico-search', );
+$ico-skype-name: 'ico-skype';
+$ico-skype-x: 0px;
+$ico-skype-y: 40px;
+$ico-skype-offset-x: 0px;
+$ico-skype-offset-y: -40px;
+$ico-skype-width: 25px;
+$ico-skype-height: 25px;
+$ico-skype-total-width: 116px;
+$ico-skype-total-height: 82px;
+$ico-skype-image: '../images/sprite.png';
+$ico-skype: (0px, 40px, 0px, -40px, 25px, 25px, 116px, 82px, '../images/sprite.png', 'ico-skype', );
+$icone-consultor-name: 'icone_consultor';
+$icone-consultor-x: 25px;
+$icone-consultor-y: 40px;
+$icone-consultor-offset-x: -25px;
+$icone-consultor-offset-y: -40px;
+$icone-consultor-width: 22px;
+$icone-consultor-height: 22px;
+$icone-consultor-total-width: 116px;
+$icone-consultor-total-height: 82px;
+$icone-consultor-image: '../images/sprite.png';
+$icone-consultor: (25px, 40px, -25px, -40px, 22px, 22px, 116px, 82px, '../images/sprite.png', 'icone_consultor', );
+$icone-contato-name: 'icone_contato';
+$icone-contato-x: 72px;
+$icone-contato-y: 40px;
+$icone-contato-offset-x: -72px;
+$icone-contato-offset-y: -40px;
+$icone-contato-width: 22px;
+$icone-contato-height: 17px;
+$icone-contato-total-width: 116px;
+$icone-contato-total-height: 82px;
+$icone-contato-image: '../images/sprite.png';
+$icone-contato: (72px, 40px, -72px, -40px, 22px, 17px, 116px, 82px, '../images/sprite.png', 'icone_contato', );
+$icone-rj-name: 'icone_rj';
+$icone-rj-x: 0px;
+$icone-rj-y: 0px;
+$icone-rj-offset-x: 0px;
+$icone-rj-offset-y: 0px;
+$icone-rj-width: 48px;
+$icone-rj-height: 40px;
+$icone-rj-total-width: 116px;
+$icone-rj-total-height: 82px;
+$icone-rj-image: '../images/sprite.png';
+$icone-rj: (0px, 0px, 0px, 0px, 48px, 40px, 116px, 82px, '../images/sprite.png', 'icone_rj', );
+$icone-sp-name: 'icone_sp';
+$icone-sp-x: 48px;
+$icone-sp-y: 0px;
+$icone-sp-offset-x: -48px;
+$icone-sp-offset-y: 0px;
+$icone-sp-width: 48px;
+$icone-sp-height: 40px;
+$icone-sp-total-width: 116px;
+$icone-sp-total-height: 82px;
+$icone-sp-image: '../images/sprite.png';
+$icone-sp: (48px, 0px, -48px, 0px, 48px, 40px, 116px, 82px, '../images/sprite.png', 'icone_sp', );
+$seta-direita-name: 'seta_direita';
+$seta-direita-x: 96px;
+$seta-direita-y: 20px;
+$seta-direita-offset-x: -96px;
+$seta-direita-offset-y: -20px;
+$seta-direita-width: 15px;
+$seta-direita-height: 16px;
+$seta-direita-total-width: 116px;
+$seta-direita-total-height: 82px;
+$seta-direita-image: '../images/sprite.png';
+$seta-direita: (96px, 20px, -96px, -20px, 15px, 16px, 116px, 82px, '../images/sprite.png', 'seta_direita', );
+$seta-esquerda-name: 'seta_esquerda';
+$seta-esquerda-x: 50px;
+$seta-esquerda-y: 65px;
+$seta-esquerda-offset-x: -50px;
+$seta-esquerda-offset-y: -65px;
+$seta-esquerda-width: 15px;
+$seta-esquerda-height: 16px;
+$seta-esquerda-total-width: 116px;
+$seta-esquerda-total-height: 82px;
+$seta-esquerda-image: '../images/sprite.png';
+$seta-esquerda: (50px, 65px, -50px, -65px, 15px, 16px, 116px, 82px, '../images/sprite.png', 'seta_esquerda', );
+$spritesheet-width: 116px;
+$spritesheet-height: 82px;
+$spritesheet-image: '../images/sprite.png';
+$spritesheet-sprites: ($arrow-left, $arrow-right, $carrinho, $ico-frag-argentina, $ico-frag-brasil, $ico-frag-peru, $ico-search, $ico-skype, $icone-consultor, $icone-contato, $icone-rj, $icone-sp, $seta-direita, $seta-esquerda, );
+$spritesheet: (116px, 82px, '../images/sprite.png', $spritesheet-sprites, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

@@ -1,0 +1,68 @@
+.foo-wrap {
+  @include container();
+  justify-content: center;
+}
+.foo{
+  width: 100%;
+  margin-top: 80px;
+  padding: 55px 0 60px;
+  background: url('../images/bg-footer.jpg');
+  .foo-col_1,.foo-col_2{
+    width: 230px;
+    display: inline-flex;
+    flex-direction: row;
+    .ico-rj{
+      @include sprite($icone_rj);
+      display: inline-flex;
+    }
+    .ico-sp{
+      @include sprite($icone_sp);
+      display: inline-flex;
+    }
+    .right-rj,.right-sp{
+      width: 170px;
+      display: inline-flex;
+      flex-direction: column;
+      margin-left: auto;
+      margin-top: 15px;;
+      span,b{
+        display: flex;
+        width: 100%;
+        font-size: 13px;
+        margin: 0 0 2px 0;
+      }
+    }
+  }
+  .foo-col_3{
+    width: 180px;
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 100px;
+    .btn{
+      margin-bottom: 10px;
+      display: inline-flex;
+      flex-direction: row;
+      .ico-mail{
+        @include sprite($icone_contato);
+        display: inline-flex;
+        margin-right: 5px;
+        flex: 0 0 22px;
+
+      }
+      .ico-chat{
+        @include sprite($icone_consultor);
+        display: inline-flex;
+        margin-right: 5px;
+        flex: 0 0 22px;
+      }
+      span{
+            flex: 0 0 135px;
+      }
+    }
+  }
+  @media screen and (max-width: 850px) {
+    .foo-col_3{
+      margin: auto;
+    }
+  }
+}

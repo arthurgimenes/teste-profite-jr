@@ -1,0 +1,141 @@
+.hea-wrap {
+  @include container();
+}
+
+.hea {
+  height: 70px;
+  display: flex;
+  padding: 40px 0;
+  .hea-logo{
+    margin: 0 ;
+  }
+  .hea-view_login{
+    width: 130px;
+    margin: 20px 29px 0;
+    flex-shrink: 0;
+    b{
+      font-size: 19px;
+    }
+    a{
+      font-size: 14px;
+      color: #000000;
+      text-decoration: none;
+    }
+  }
+  .hea-search{
+    width: 340px;
+    margin: 20px 0 0 0;
+    position: relative;
+    .hs-ico_search{
+      width: 40px;
+      height: 30px;
+      left: 0;
+      top: 0;
+      position: absolute;
+      border-radius: 8px;
+      background-color: #000000;
+      cursor: pointer;
+
+      i{
+        @include sprite($ico-search);
+        display: block;
+        margin: 5px auto;
+      }
+
+    }
+    #hea_search{
+      width: 100%;
+      height: 30px;
+      padding-left: 50px;
+      border: 0;
+      border-radius: 8px;
+      background: #fac437;
+      @include placeholder-color(#000000,'Open Sans');
+    }
+  }
+  .hea-contact{
+    width: 130px;
+    margin: 10px 0 0 auto;
+    flex-shrink: 0;
+    .hc-top{
+      text-align: center;
+      a{
+        display: inline-flex;
+        margin: 0 2px;
+      }
+      .hc-ico_brasil{
+        @include sprite($ico-frag_brasil);
+      }
+      .hc-ico_argentina{
+        @include sprite($ico-frag_argentina);
+      }
+      .hc-ico_peru{
+        @include sprite($ico-frag_peru);
+      }
+    }
+    .hc-down{
+      text-align: right;
+      .hc-ico_skype{
+        @include sprite($ico-skype);
+        display: inline-flex;
+        position: relative;
+        bottom: -7px;
+      }
+      a{
+        color: #00aff0;
+        text-decoration: none;
+      }
+    }
+
+  }
+  @media screen and (max-width: 992px) {
+    .hea-search{
+      width: 100%;
+      order: 4;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .hea-logo{
+      margin-left: calc(50% - 115px);
+    }
+    .hea-contact{
+      display: none;
+    }
+    .hea-search{
+      position: absolute;
+      width: 100%;
+      top: 110px;
+      left:0;
+      .hs-ico_search{
+        border-radius: 0;
+        left: 5%;
+      }
+      #hea_search{
+        border-radius: 0;
+        padding-left: 80px;
+      }
+    }
+    .hea-view_login{
+      width: 105px;
+      margin: 20px 0 0 auto;
+      flex-shrink: 0;
+      b{
+        font-size: 15px;
+      }
+      a{
+        font-size: 11px;
+      }
+    }
+
+  }
+  @media screen and (max-width: 530px) {
+    .hea-logo{
+      width: 170px;
+      margin-left: 0;
+      margin-top: 13px;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
