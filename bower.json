@@ -13,6 +13,7 @@
   "dependencies": {
     "normalize-css": "normalize.css#^7.0.0",
     "jquery": "2.2.4",
-    "jquery-cycle2": "^2.1.6"
+    "slick-carousel": "^1.6.0",
+    "magnific-popup": "^1.1.0"
   }
 }
