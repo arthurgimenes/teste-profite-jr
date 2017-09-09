@@ -1,0 +1,765 @@
+/*VARIAVEIS*/
+/*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0; }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+html {
+  font-size: 1em; }
+  @media (max-width: 642px) {
+    html {
+      font-size: 0.8em; } }
+
+body {
+  background-color: #fff;
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #000;
+  margin: 0;
+  max-width: 100%; }
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto; }
+
+/* MENU (HEADER E NAV) */
+header {
+  display: flex;
+  align-items: center;
+  height: 144px; }
+  @media (max-width: 642px) {
+    header {
+      margin: 10px 0px; } }
+  header .container {
+    display: flex;
+    justify-content: space-around; }
+    @media (max-width: 642px) {
+      header .container {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center; } }
+    header .container .logo {
+      display: flex;
+      align-items: center; }
+      @media (max-width: 642px) {
+        header .container .logo {
+          justify-content: flex-end;
+          width: 60%;
+          margin: 3%; } }
+      header .container .logo img {
+        width: 233px;
+        height: 62px; }
+        @media (max-width: 642px) {
+          header .container .logo img {
+            width: 200px;
+            height: 53px; } }
+    header .container .acesso {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      @media (max-width: 642px) {
+        header .container .acesso {
+          width: 28%;
+          font-size: 1.5em;
+          margin: 3%; } }
+      header .container .acesso h3 {
+        margin: 0; }
+        @media (max-width: 642px) {
+          header .container .acesso h3 {
+            font-size: 0.8em; } }
+      header .container .acesso .acesso-login a {
+        text-decoration: none;
+        color: #000; }
+        @media (max-width: 642px) {
+          header .container .acesso .acesso-login a {
+            font-size: 0.8em; } }
+    header .container .busca {
+      display: flex;
+      align-items: center; }
+      @media (max-width: 642px) {
+        header .container .busca {
+          margin: 20px 0px;
+          width: 100%;
+          text-align: right;
+          background: #ffc51c; } }
+      header .container .busca span {
+        display: flex;
+        border-radius: 0; }
+        header .container .busca span img {
+          height: 23px;
+          width: 23px;
+          border-radius: 10px 0px 0px 10px;
+          background: #000;
+          padding: 7px 10px 6px 10px; }
+          @media (max-width: 642px) {
+            header .container .busca span img {
+              border-radius: 0;
+              margin-left: 20px; } }
+      header .container .busca input {
+        height: 30px;
+        background: #ffc51c;
+        border-radius: 0 10px 10px 0;
+        width: 340px;
+        padding-left: 5px; }
+        @media (max-width: 642px) {
+          header .container .busca input {
+            width: 100%;
+            height: 30px;
+            border-radius: 0;
+            border: none; } }
+    header .container .contato {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center; }
+      @media (max-width: 642px) {
+        header .container .contato {
+          display: none; } }
+      header .container .contato .idiomas {
+        display: flex;
+        justify-content: center; }
+        header .container .contato .idiomas a img {
+          width: 25px;
+          height: 17px;
+          padding: 5px; }
+    header .container .skype {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      header .container .skype span {
+        color: #00AFF0;
+        font-size: 18px; }
+
+footer {
+  height: 200px;
+  background: #f1f1f1;
+  display: flex;
+  justify-content: center; }
+  footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+    @media (max-width: 642px) {
+      footer .container {
+        justify-content: center; } }
+    footer .container > div {
+      display: flex; }
+      footer .container > div .endereco-descricao {
+        padding: 6px 5px 0px 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: start; }
+        footer .container > div .endereco-descricao p {
+          margin: 3px;
+          color: #717272; }
+        footer .container > div .endereco-descricao .telefone {
+          color: #000;
+          font-weight: bold; }
+    footer .container .social {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      footer .container .social a {
+        display: flex;
+        align-items: center;
+        background: #ffc51c;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 12px;
+        color: #000;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 180px;
+        margin: 5px;
+        height: 35px;
+        padding: 5px; }
+        @media (max-width: 642px) {
+          footer .container .social a {
+            font-size: 9px;
+            width: 130px; } }
+        footer .container .social a img {
+          padding: 0px 5px 0px 5px; }
+        footer .container .social a div span {
+          font-weight: bold;
+          padding-left: 5px; }
+
+/* ESTILIZANDO O BANNER (SLIDES)*/
+#banner {
+  background: #ffc51c;
+  height: 350px; }
+  @media (max-width: 642px) {
+    #banner {
+      height: 233px; } }
+  #banner .banner-container {
+    display: flex;
+    align-items: center;
+    max-width: 980px; }
+    @media (max-width: 642px) {
+      #banner .banner-container {
+        max-width: 642px; } }
+    #banner .banner-container .seta {
+      padding: 10px;
+      cursor: pointer; }
+      @media (max-width: 642px) {
+        #banner .banner-container .seta {
+          padding: 0px;
+          position: absolute;
+          z-index: 1; } }
+    @media (max-width: 642px) {
+      #banner .banner-container .seta-esquerda {
+        left: 1px; }
+      #banner .banner-container .seta-direita {
+        right: 1px; } }
+    #banner .banner-container .navegacao .botao-navegacao div {
+      background: url("../img/slide_proximo.png"); }
+    #banner .banner-container .slide {
+      position: relative; }
+      #banner .banner-container .slide img:nth-child(1) {
+        content: url("../img/banner1.jpg"); }
+      #banner .banner-container .slide img:nth-child(2) {
+        content: url("../img/banner2.jpg"); }
+      #banner .banner-container .slide img:nth-child(3) {
+        content: url("../img/banner3.jpg"); }
+      #banner .banner-container .slide img:nth-child(4) {
+        content: url("../img/banner4.jpg"); }
+      #banner .banner-container .slide img:nth-child(5) {
+        content: url("../img/banner5.jpg"); }
+      @media (max-width: 642px) {
+        #banner .banner-container .slide img:nth-child(1) {
+          content: url("../img/banner1_mobile.jpg"); }
+        #banner .banner-container .slide img:nth-child(2) {
+          content: url("../img/banner2_mobile.jpg"); }
+        #banner .banner-container .slide img:nth-child(3) {
+          content: url("../img/banner3_mobile.jpg"); }
+        #banner .banner-container .slide img:nth-child(4) {
+          content: url("../img/banner4_mobile.jpg"); }
+        #banner .banner-container .slide img:nth-child(5) {
+          content: url("../img/banner5_mobile.jpg"); } }
+      #banner .banner-container .slide .navegacao {
+        width: 100%;
+        position: absolute;
+        bottom: 4px;
+        text-align: center;
+        padding: 1px;
+        display: flex;
+        justify-content: center; }
+        #banner .banner-container .slide .navegacao .btn-navegacao {
+          background-repeat: no-repeat;
+          width: 20px;
+          cursor: pointer; }
+        #banner .banner-container .slide .navegacao .btn-proximo {
+          background-image: url("../img/slide_proximo.png"); }
+        #banner .banner-container .slide .navegacao .btn-ativado {
+          background-image: url("../img/slide_atual.png"); }
+      #banner .banner-container .slide .banner {
+        display: none;
+        height: 350px; }
+        @media (max-width: 642px) {
+          #banner .banner-container .slide .banner {
+            height: 233px;
+            width: 636px; } }
+
+/* ESTILIZANDO OS PRODUTOS*/
+#produtos {
+  margin: 50px; }
+  @media (max-width: 642px) {
+    #produtos {
+      margin: 50px 0px; } }
+  #produtos .container {
+    display: flex;
+    justify-content: center; }
+    @media (max-width: 642px) {
+      #produtos .container {
+        justify-content: space-between;
+        align-items: center; } }
+    #produtos .container .seta {
+      padding: 70px 10px;
+      cursor: pointer; }
+    #produtos .container .lista-produtos {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      #produtos .container .lista-produtos .produto {
+        width: 245px;
+        /*border-right: 1px solid $borda-produto;*/ }
+        @media (max-width: 642px) {
+          #produtos .container .lista-produtos .produto {
+            display: none;
+            height: 350px;
+            width: 30%; } }
+        #produtos .container .lista-produtos .produto .modal {
+          display: none;
+          position: fixed;
+          z-index: 1;
+          padding-top: 50px;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          overflow: auto;
+          background-color: #000;
+          background-color: rgba(0, 0, 0, 0.12); }
+        #produtos .container .lista-produtos .produto .imagem-modal {
+          background-color: #fefefe;
+          margin: auto;
+          padding: 20px;
+          border: 1px solid #d6d2d6;
+          width: 450px; }
+          #produtos .container .lista-produtos .produto .imagem-modal .imagem-zoom {
+            width: 450px;
+            height: 400px; }
+        #produtos .container .lista-produtos .produto .fechar {
+          color: #ffc51c;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+          display: flex;
+          justify-content: flex-end; }
+          #produtos .container .lista-produtos .produto .fechar:hover, #produtos .container .lista-produtos .produto .fechar:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer; }
+        #produtos .container .lista-produtos .produto .imagem-hover {
+          display: none; }
+        #produtos .container .lista-produtos .produto:hover {
+          background: #ffc51c; }
+          @media (max-width: 642px) {
+            #produtos .container .lista-produtos .produto:hover {
+              background: #fff; } }
+          #produtos .container .lista-produtos .produto:hover .imagem-padrao {
+            display: none; }
+          #produtos .container .lista-produtos .produto:hover .imagem-hover {
+            display: inline-block; }
+        #produtos .container .lista-produtos .produto .comprar {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row; }
+          #produtos .container .lista-produtos .produto .comprar button {
+            display: flex;
+            align-items: center;
+            background: #000;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 1em;
+            padding: 7px 20px;
+            text-align: center;
+            /* width: 144px; */
+            border: #000 solid 2px; }
+            #produtos .container .lista-produtos .produto .comprar button img {
+              width: 22px;
+              padding-right: 5px; }
+        #produtos .container .lista-produtos .produto .economia {
+          display: flex;
+          justify-content: center; }
+          #produtos .container .lista-produtos .produto .economia p {
+            color: #000;
+            border: 1px solid rgba(105, 105, 105, 0.37);
+            padding: 2px;
+            font-size: 0.7em;
+            text-align: center;
+            width: 80%;
+            background: #fff; }
+        #produtos .container .lista-produtos .produto .img-produto {
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          @media (max-width: 642px) {
+            #produtos .container .lista-produtos .produto .img-produto img {
+              width: 90%;
+              height: 90%; } }
+        #produtos .container .lista-produtos .produto .nome-produto {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center; }
+          #produtos .container .lista-produtos .produto .nome-produto .produto-titulo {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1em;
+            margin: 5px; }
+        #produtos .container .lista-produtos .produto .preco-produto {
+          text-align: center;
+          font-size: .7em;
+          font-weight: bold;
+          font-style: italic;
+          margin: 10px; }
+          #produtos .container .lista-produtos .produto .preco-produto p {
+            margin: 0 auto; }
+            #produtos .container .lista-produtos .produto .preco-produto p span {
+              font-weight: normal; }
+        #produtos .container .lista-produtos .produto .classificao-produto {
+          display: flex;
+          justify-content: center; }

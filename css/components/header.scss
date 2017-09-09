@@ -1,0 +1,128 @@
+/* MENU (HEADER E NAV) */
+header {
+  display: flex;
+  align-items: center;
+  height: 144px;
+  @media #{$md-mobile}{
+    margin: 10px 0px;
+  }
+  .container {
+    display: flex;
+    justify-content: space-around;
+    @media #{$md-mobile}{
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      @media #{$md-mobile}{
+        justify-content: flex-end;
+        width: 60%;
+        margin: 3%;
+      }
+      img{
+        width: 233px;
+        height: 62px;
+        @media #{$md-mobile}{
+          width: 200px;
+          height: 53px;
+        }
+      }
+    } 
+    .acesso{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @media #{$md-mobile}{
+        width: 28%;
+        font-size: 1.5em;
+        margin: 3%;
+      }
+      h3 {
+        margin: 0;
+        @media #{$md-mobile}{
+          font-size: $mobile-text;
+        }
+      }
+      .acesso-login a{
+        text-decoration: none;
+        color: $cor-texto;
+        @media #{$md-mobile}{
+          font-size: $mobile-text;
+        }
+      }
+    }
+    .busca{
+      display: flex;
+      align-items: center;
+      @media #{$md-mobile}{
+        margin: 20px 0px; 
+        width: 100%;
+        text-align: right;
+        background: $cor-primaria;
+      }
+      span {
+        display: flex;
+        border-radius: 0;
+        img{
+          height: 23px;
+          width: 23px;
+          border-radius: 10px 0px 0px 10px;
+          background: $cor-texto;
+          padding: 7px 10px 6px 10px;
+          @media #{$md-mobile}{
+            border-radius: 0;
+            margin-left: 20px;
+          }
+        }
+      }
+      input{
+        height: 30px; 
+        background: $cor-primaria;
+        border-radius: 0 10px 10px 0;
+        width: 340px;
+        padding-left: 5px;
+        @media #{$md-mobile}{
+          width: 100%;
+          height: 30px;
+          border-radius: 0;
+          border: none;
+        }
+      }
+    }
+    .contato {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      @media #{$md-mobile}{
+        display: none;
+      }
+
+      .idiomas {
+        display: flex;
+        justify-content: center;
+        a img{
+          width: 25px;
+          height: 17px;
+          padding: 5px;
+        }
+      }
+    }
+    .skype{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      span {
+        color: $cor-texto-contato;
+        font-size: 18px;
+      }
+    }
+  } 
+}
+
+

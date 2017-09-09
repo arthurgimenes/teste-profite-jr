@@ -1,0 +1,267 @@
+/* ESTILIZANDO O BANNER (SLIDES)*/
+#banner {
+  background: $cor-primaria;
+  height: 350px;
+  @media #{$md-mobile}{
+    height: 233px;
+  }
+  .banner-container{
+    display: flex;
+    align-items: center;
+    max-width:980px;
+    @media #{$md-mobile}{
+      max-width:642px;
+    }
+    .seta{
+      padding: 10px;
+      cursor: pointer;
+      @media #{$md-mobile}{
+        padding: 0px;
+        position:absolute; z-index: 1;
+      }
+      
+    }
+
+    @media #{$md-mobile}{
+      .seta-esquerda{
+        left: 1px;
+      }
+      .seta-direita{
+        right: 1px;
+      }
+    }
+    .navegacao .botao-navegacao div{
+      background: url("../img/slide_proximo.png")
+    }
+    .slide {
+      position: relative;
+      
+      img:nth-child(1){
+        content: url("../img/banner1.jpg"); 
+      }
+      img:nth-child(2){
+        content: url("../img/banner2.jpg"); 
+      }
+      img:nth-child(3){
+        content: url("../img/banner3.jpg"); 
+      }
+      img:nth-child(4){
+        content: url("../img/banner4.jpg"); 
+      }
+      img:nth-child(5){
+        content: url("../img/banner5.jpg"); 
+      }
+      @media #{$md-mobile}{
+        img:nth-child(1){
+          content: url("../img/banner1_mobile.jpg"); 
+        }
+        img:nth-child(2){
+          content: url("../img/banner2_mobile.jpg"); 
+        }
+        img:nth-child(3){
+          content: url("../img/banner3_mobile.jpg"); 
+        }
+        img:nth-child(4){
+          content: url("../img/banner4_mobile.jpg"); 
+        }
+        img:nth-child(5){
+          content: url("../img/banner5_mobile.jpg"); 
+        }
+      }
+      .navegacao{
+        width: 100%;
+        position: absolute;
+        bottom: 4px;
+        text-align: center;
+        padding: 1px;
+        display: flex;
+        justify-content: center;
+        .btn-navegacao {
+          background-repeat: no-repeat;
+          width: 20px;
+          cursor: pointer;
+        }
+        .btn-proximo{
+          background-image: url('../img/slide_proximo.png'); 
+        }
+        .btn-ativado {
+          background-image: url('../img/slide_atual.png'); 
+        }
+      }
+      .banner {
+        display:none;
+        height: 350px;
+        @media #{$md-mobile}{
+          height: 233px;
+          width: 636px;
+        }
+        
+      }
+    }
+  }
+}
+
+/* ESTILIZANDO OS PRODUTOS*/
+#produtos{
+  margin: 50px;
+  @media #{$md-mobile}{
+    margin: 50px 0px;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    @media #{$md-mobile}{
+      justify-content: space-between;
+      align-items: center;
+    }
+    .seta {
+      padding: 70px 10px;
+      cursor: pointer;
+    }
+    .lista-produtos {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      @media #{$md-mobile}{
+        
+      }
+      .produto{
+        width: 245px;
+        /*border-right: 1px solid $borda-produto;*/
+        @media #{$md-mobile}{
+          display:none;
+          height: 350px;
+          width: 30%; 
+          
+        }
+        .modal {
+          display: none; 
+          position: fixed; 
+          z-index: 1; 
+          padding-top: 50px;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%; 
+          overflow: auto;
+          background-color: $cor-texto;
+          background-color: $borda-produto;
+        }
+        .imagem-modal {
+          background-color: $modal-fundo;
+          margin: auto;
+          padding: 20px;
+          border: 1px solid $modal-borda;
+          width: 450px;
+          .imagem-zoom{
+            width: 450px;
+            height: 400px;
+          }
+        }
+        .fechar {
+          color: $cor-primaria;
+          float: right;
+          font-size: 28px;
+          font-weight: bold;
+          display: flex;
+          justify-content: flex-end;
+          &:hover, &:focus{
+            color: $cor-texto;
+            text-decoration: none;
+            cursor: pointer;
+          }
+        }
+        .imagem-hover {
+          display: none;
+        }
+        &:hover{
+          @media #{$md-mobile}{
+            background: $cor-branca;
+          }
+          background: $cor-primaria;
+          .imagem-padrao {
+            display: none;
+          }
+          .imagem-hover{
+            display: inline-block
+          }
+        }
+        .comprar{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+          button{
+            display: flex;
+            align-items: center;
+            background: $cor-texto;
+            color: $cor-branca;
+            text-transform: uppercase;
+            font-size: 1em;
+            padding: 7px 20px;
+            text-align: center;
+            /* width: 144px; */
+            border: $cor-texto solid 2px;
+            img{
+              width: 22px;
+              padding-right: 5px;
+            }
+          }
+        }
+        .economia{
+          display: flex;
+          justify-content: center;
+          p{
+            color: $cor-texto;
+            border: 1px solid $borda-economia;
+            padding: 2px;
+            font-size: 0.7em;
+            text-align: center;
+            width: 80%;
+            background: $cor-branca;
+          }
+        }
+        .img-produto{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @media #{$md-mobile}{
+            img {
+              width: 90%;
+              height: 90%;
+            }
+          }
+        }
+        .nome-produto{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          .produto-titulo{
+            text-align: center;
+            font-weight: bold;
+            font-size: 1em;
+            margin: 5px;
+          }
+        }
+        .preco-produto{
+          text-align: center;
+          font-size: .7em;
+          font-weight: bold;
+          font-style: italic;
+          margin: 10px;
+          p {
+            margin: 0 auto;
+            span {
+              font-weight: normal;
+            }
+          }
+        }
+        .classificao-produto{
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
