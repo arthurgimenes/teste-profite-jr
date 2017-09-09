@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <title>Teste Profite</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Maicon Henrique Raimundo">
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    /* Array de produtos (json) */
+    var produtos = [
+      {
+        "image": "calcado1",
+        "image-hover": "calcado1_hover",
+        "image-zoom": "calcado1_zoom",
+        "nome": "Sandália Ferracini Ecologic",
+        "preco_a_vista": "R$ 95,92",
+        "valor_parcelas": "R$ 23,98",
+        "qtd_parcelas": "4",
+        "economia": "R$ 43,98"
+      },
+      {
+        "image": "calcado2",
+        "image-hover": "calcado2_hover",
+        "image-zoom": "calcado2_zoom",
+        "nome": "Chinelo Kildare",
+        "preco_a_vista": "R$ 79,92",
+        "valor_parcelas": "R$ 26,64",
+        "qtd_parcelas": "4",
+        "economia": "R$ 19,98"
+      },
+      {
+        "image": "calcado3",
+        "image-hover": "calcado3_hover",
+        "image-zoom": "calcado3_zoom",
+        "nome": "Tênis Ferracini Week",
+        "preco_a_vista": "R$ 183,92",
+        "valor_parcelas": "R$ 20,43",
+        "qtd_parcelas": "9",
+        "economia": "R$ 45,98"
+      },
+      {
+        "image": "calcado4",
+        "image-hover": "calcado4_hover",
+        "image-zoom": "calcado4_zoom",
+        "nome": "Tênis Democrata Fan",
+        "preco_a_vista": "R$ 159,92",
+        "valor_parcelas": "R$ 22,84",
+        "qtd_parcelas": "7",
+        "economia": "R$ 59,98"
+      }
+    ];
+  </script>
+</head>
+<body>
+  <main>
+    <!-- CABEÇALHO DA PÁGINA -->
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="img/profite_logo_novo.png" alt="Logo Profite">
+        </div>
+        <div class="acesso">
+          <h3>Olá, Visitante</h3>
+          <div class="acesso-login">
+            <a href="#" title="Cadastra-se">Cadastra-se</a> -
+            <a href="#" title="Login">Login</a>
+          </div>
+        </div>
+        <div class="busca">
+          <span><img src="img/ícone_pesquisa.png" alt="Pesquisa"></span>
+          <input placeholder="Buscar por...">
+        </div>
+        <div class="contato">
+          <div class="idiomas">
+            <a href="#"><img src="img/bandeira1.png" alt="Brasil" title="Brasil"></a>
+            <a href="#"><img src="img/bandeira2.png" alt="Argentina" title="Argentina"></a>
+            <a href="#"><img src="img/bandeira3.png" alt="Peru" title="Peru"></a>
+          </div>
+          <div class="skype">
+            <img src="img/skype.png" alt="Skype">
+            <span>11 33375618</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- SEÇÃO DE BANNER (SLIDE) -->
+    <section id="banner">
+      <div class="container">
+        <div class="banner-container">
+          <div class="seta seta-esquerda" onclick="trocarDiv(-1)">
+            <img src="img/seta_esquerda.png" alt="Anterior">
+          </div>
+          <div class="slide">
+            <img class="banner" >
+            <img class="banner" >
+            <img class="banner" >
+            <img class="banner" >
+            <img class="banner" >
+            <div class="navegacao">
+                <div class="btn-proximo btn-navegacao" onclick="divAtual(1)">&nbsp;</div>
+                <div class="btn-proximo btn-navegacao" onclick="divAtual(2)">&nbsp;</div>
+                <div class="btn-proximo btn-navegacao" onclick="divAtual(3)">&nbsp;</div>
+                <div class="btn-proximo btn-navegacao" onclick="divAtual(4)">&nbsp;</div>
+                <div class="btn-proximo btn-navegacao" onclick="divAtual(5)">&nbsp;</div>
+              </div>
+          </div>
+          <div class="seta seta-direita" onclick="trocarDiv(1)">
+            <img src="img/seta_direita.png" alt="Próximo">
+          </div>
+        </div> 
+      </div>
+    </section>
+  
+    <!-- SEÇÃO DE PRODUTOS -->
+    <section id="produtos">
+      <div class="container">
+        <div class="seta seta-esquerda"  onclick="trocaProduto(-3);">
+          <img src="img/seta_esquerda-produto.png" alt="Produto Anterior" title="Produto Anterior">
+        </div>
+        <div class="lista-produtos">
+          <!-- LOOP PARA PEGAR TODOS OS PRODUTOS E REDENRIZAR NA TELA -->
+          <script>
+            $.each(produtos, function (index, item) {
+              var produto = "<div class='produto'>"
+                                +"<div class='img-produto'>"
+                                +"<img src='img/"+produtos[index].image+".png' class='imagem-padrao' alt='"+produtos[index].nome+"'  onClick='abreModal("+index+");'>"
+                                +"<img src='img/"+produtos[index].image+"_hover.png' class='imagem-hover' alt='imagem"+index+"'  onClick='abreModal("+index+");'>"
+                                +"</div>"
+                                +"<div class='nome-produto'>"
+                                +"<p class='produto-titulo'>"+produtos[index].nome+"</p>"
+                                +"</div>"
+                                +"<div class='classificao-produto'>"
+                                +"<img src='img/estrelas.png' alt='Classificação'>"
+                                +"</div>"
+                                +"<div class='preco-produto'>"
+                                +"<p>Por: "+produtos[index].preco_a_vista+"</p>"
+                                +"<p><span>ou</span> até "+produtos[index].qtd_parcelas+"x de "+produtos[index].valor_parcelas+"</p>"
+                                +"</div>"
+                                +"<div class='comprar'>"
+                                +"<button type='button'>"
+                                +"<img src='img/carrinho.png' alt='Comprar'>"
+                                +"Comprar"
+                                +"</button>"
+                                +"</div>"
+                                +"<div class='economia'>"
+                                +"<p>Economize de "+produtos[index].economia+"</p>"
+                                +"</div>"
+                 
+                                +"<div id='modalZoom"+index+"' class='modal'>"
+                                +"<div class='imagem-modal'>"
+                                +"<span class='fechar' onclick='fecharModal("+index+");'>&times;</span>"
+                                +"<img src='img/"+produtos[index].image+"_zoom.png' class='imagem-zoom' alt='"+produtos[index].nome+"'>"
+                                +"</div>"
+                                +"</div>"
+                                +"</div>";
+                                $('.lista-produtos').append(produto);
+            });
+          </script>
+        </div>
+        <div class="seta seta-direita"  onclick="trocaProduto(3);">
+          <img src="img/seta_direita-produto.png" alt="Próximo produto" >
+        </div>
+      </div>
+    </section>
+  
+    <!-- RODAPÉ -->
+    <footer>
+      <div class="container">
+        <div class="rj">
+          <div class="endereco-img">
+            <img src="img/ícone_rj.png" alt="Rio de Janeiro">
+          </div>
+          <div class="endereco-descricao">
+            <p>Rua do acre, 77 - sala 1108</p>
+            <p>Centro - Rio de Janeiro</p>
+            <p class="telefone">tel.: +55 (21) 2263.6044</p>
+          </div>
+        </div>
+        <div class="sp">
+          <div class="endereco-img">      
+            <img src="img/ícone_sp.png" alt="São Paulo">
+          </div>
+          <div class="endereco-descricao">
+            <p>Rua Cardoso de melo, 1750</p>
+            <p>6º Andar Vila Olimpica</p>
+            <p class="telefone">tel.: +55 (21) 2263.6044</p>
+          </div>
+        </div>
+        <div class="social">
+          <a href="#" title="Contato">
+            <img src="img/ícone_contato.png" alt="Contato">
+            <div>
+              Entre em <span> contato</span>
+            </div>
+          </a>
+          <a href="#" title="Chat">
+            <img src="img/ícone_consultor.png" alt="Chat">
+            <div>
+              Fale com o nosso <br><span>Consultor online</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script src="js/carousel-banner.js"></script>
+  <script src="js/carousel-produtos.js"></script>
+  <script src="js/modal.js"></script>
+</body>
+</html>
