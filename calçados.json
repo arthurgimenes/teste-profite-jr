@@ -1,0 +1,35 @@
+{
+    "calçados": [{
+        "nome": "Sandália Ferracini Ecologic",
+        "img": "calçado1",
+        "hover": "calçado1_hover",
+        "zoom": "calçado1_zoom",
+        "preco": 95.92,
+        "parcelas": 4,
+        "economize": 43.98
+    }, {
+        "nome": "Chinelo Kildare",
+        "img": "calçado2",
+        "hover": "calçado2_hover",
+        "zoom": "calçado2_zoom",
+        "preco": 79.92,
+        "parcelas": 3,
+        "economize": 19.98
+    }, {
+        "nome": "Tênis Ferracini Week",
+        "img": "calçado3",
+        "hover": "calçado3_hover",
+        "zoom": "calçado3_zoom",
+        "preco": 183.92,
+        "parcelas": 9,
+        "economize": 45.98
+    }, {
+        "nome": "Tênis Democrata Fan",
+        "img": "calçado4",
+        "hover": "calçado4_hover",
+        "zoom": "calçado4_zoom",
+        "preco": 159.92,
+        "parcelas": 7,
+        "economize": 59.98
+    }]
+}
