@@ -1,0 +1,25 @@
+{
+  "name": "teste-profite-jr",
+  "version": "1.0.0",
+  "description": "* HTML e HTML5\r * CSS\r * Noções de Javascript e Jquery\r * GIT\r * Sites responsivos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thyagof/teste-profite-jr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thyagof/teste-profite-jr/issues"
+  },
+  "homepage": "https://github.com/Thyagof/teste-profite-jr#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.0"
+  }
+}

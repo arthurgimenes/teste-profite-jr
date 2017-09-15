@@ -1,5 +1,8 @@
-$(document).ready(function() {
+$(document).ready(() => {
   var myItems;
 
-  $.getJSON('calcados.json');
+  $.getJSON('http://localhost:3000/calcados.json', (data) => {
+    myItems = data.calcados;
+    console.log(myItems);
+  });
 });
