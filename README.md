@@ -30,20 +30,20 @@
 
 ### Como concorrer a vaga:
 * Forka esse projeto;
-* No seu fork, codifique o [layout](https://drive.google.com/file/d/0B3S5qqT-LEIESUFES1hhUzd2ZzA/view?usp=sharing) seguindo as instruÃ§Ãµes abaixo;
-* FaÃ§a um pull request.
+* No seu fork, codifique o [layout](https://drive.google.com/file/d/0B3S5qqT-LEIESUFES1hhUzd2ZzA/view?usp=sharing) seguindo as instruções abaixo;
+* Faça um pull request.
 
-### InstruÃ§Ãµes para o teste:
+### Instruções para o teste:
 
 ##### [Link do layout](https://drive.google.com/file/d/0B3S5qqT-LEIESUFES1hhUzd2ZzA/view?usp=sharing)
 #
-##### ObrigatÃ³rio
+##### Obrigatório
 * HTML5 e CSS3
 * Carrossel com Jquery
 * Permitido uso de framework :D 
 
-##### BÃ´nus
-* InteraÃ§Ã£o com JSON para renderizar os produtos
+##### Bonus
+* Interação com JSON para renderizar os produtos
 * Grunt, Gulp ou similar
 * Responsividade
 * SASS/LESS

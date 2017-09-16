@@ -1,0 +1,91 @@
+body {
+    font-family: Arial;
+}
+
+.btn-search {
+    background-color: #000;
+    padding: 6px 6;
+    border-radius: 10px 10px 10px 10px !important;
+    border: none;
+}
+
+.btn-search > img {
+    width: 21px;
+    height: 21px;
+}
+
+.btn-footer {
+    background-color: #FAC437;
+    margin-bottom: 10px;
+}
+
+.btn-footer > div.col-xs-1 {
+    padding: 0;
+}
+
+.endereco {
+    color: #B0B0B0;
+    font-size: 12px;
+}
+
+.telefone {
+    color: #000;
+    font-size: 12px;
+    font-weight: bold;    
+}
+
+.header-link, .header-link a {
+    color: #000;
+    font-size: 10px;
+}
+
+.header-link a:hover {
+    color: #000;
+}
+
+.page-header {
+    border-bottom: none;
+    margin: 20px 0;
+    padding: 9px 0;
+}
+
+.page-footer {
+    background-color: #F1F1F1;
+    padding: 20px 0;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+#bandeiras > img {
+    height: 15px;
+}
+
+#skype {
+    color: #00AFF0;
+}
+
+#search-input {
+    margin-left: -5px !important;
+    z-index: -1;
+    background-color: #FAC437;
+    border: none;
+    border-radius: 0 10px 10px 0 !important;
+}
+
+#search-input::-webkit-input-placeholder { 
+    color: black; 
+}
+
+#visitor {
+    font-weight: bold;
+}
+
+@media (max-width: 991px) {
+    .pull-right-sm {
+        float: right;
+    }
+}

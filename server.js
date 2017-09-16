@@ -11,10 +11,13 @@ app.use(express.static(__dirname + '/public'));
 
 app.use('/js', express.static(__dirname + '/js/bootstrap'));
 app.use('/js', express.static(__dirname + '/js/jquery'));
-app.use('/js', express.static(__dirname + '/js/popper')); 
+app.use('/js', express.static(__dirname + '/js/popper'));
 app.use('/js', express.static(__dirname + '/js'));
 app.use('/css', express.static(__dirname + '/css/bootstrap'));
-app.use('/css', express.static(__dirname + '/css'))
+app.use('/css', express.static(__dirname + '/css'));
+app.use('/img', express.static(__dirname + '/resources/img/topo'));
+app.use('/img', express.static(__dirname + '/resources/img/banner'));
+app.use('/img', express.static(__dirname + '/resources/img/footer'));
 
 var readJsonFileSync = (filepath, encoding) => {
     if (typeof (encoding) == 'undefined'){
@@ -24,21 +27,23 @@ var readJsonFileSync = (filepath, encoding) => {
     return JSON.parse(file);
 }
 
-var getConfig = (file) => {
+var getJSON = (file) => {
     var filepath = __dirname + '/' + file;
     return readJsonFileSync(filepath);
 }
 
-json = getConfig('calcados.json');
+json = getJSON('calcados.json');
 
 app.get('/', (req, res) => {
+    res.writeHead(200, {"Content-Type": "text/html; charset=utf-8"});
     res.render('index.html');
 })
 
 app.get('/calcados.json', (req, res) => {
+    //res.writeHead(200, {"Content-Type": "application/json; charset=utf-8"});
     res.send(json);
 });
 
 app.listen(port, () => {
     console.log(`Server is up on port ${port}`);
-});  
+});
