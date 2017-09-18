@@ -1,0 +1,8 @@
+Para baixar as dependências do servidor node.js:
+- No CLI, execute "npm install" no diretório do projeto.
+
+Para rodar o servidor:
+- No CLI, execute "node server.js" no diretório do projeto.
+- O projeto subirá na Url: http://localhost:3000/.
+
+Qualquer dúvida, estou à disposição. 
