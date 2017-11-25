@@ -12,7 +12,7 @@
 * CSS
 * Noções de Javascript e Jquery
 * GIT
-* Sites responsivos
+* Sites responsivos 
 
 #
 
