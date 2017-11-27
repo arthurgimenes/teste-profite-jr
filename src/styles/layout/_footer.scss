@@ -1,0 +1,215 @@
+body {
+	> footer {
+		background-image: url(../arquivos/fundo_footer_desk.jpg);
+		height: 120px;
+		margin: 31px 0 auto auto !important;
+		font-size: 12px;
+		@media #{$desk-large} {
+			width: 100%;
+		}
+		@media #{$tablet} {
+			background-image: url(../arquivos/fundo_footer.jpg);
+			height: 101px;
+			margin: 31px 0 auto auto !important;
+			
+		}
+		@media #{$elo} {
+			height: 155px;
+		}
+		@media #{$phone-max} {
+			height: 250px;
+		    text-align: center;
+		}
+		@media #{$phone} {
+			height: 230px;
+		   	text-align: center;
+		}
+		@media #{$phone-min} {
+			height: 227px;			
+		    text-align: center;
+		}
+		.container{
+			width: 90%;
+			margin: 0 auto;
+			padding: 2% 0% 0% 0%;
+			color: #828282;		
+			@media #{$desk-max} {
+				width: 60%;
+				a {
+					color: black;
+					&:visited {
+						color: black;
+					}
+					&:hover {
+						color: white;
+						font-weight: bold; 
+					}
+					&:active {
+						color: white;
+						font-weight: bold;
+					}
+				}					
+			}
+			@media #{$desk-large} {
+				width: 60%;
+				a {
+					color: black;
+					&:visited {
+						color: black;
+					}
+					&:hover {
+						color: white;
+						font-weight: bold; 
+					}
+					&:active {
+						color: white;
+						font-weight: bold;
+					}
+				}					
+			}
+			@media #{$tablet} {
+				width: 95%;
+    			margin: 0 auto;
+				padding: 2% 0% 0% 5%;
+				display: inline-block;
+				float: left;
+				font-size: 12px;				
+			}	
+			@media #{$elo} {
+				width: 100%;
+    		    padding: 5%;
+			}
+			@media #{$phone-max} {
+			    width: 95%;
+    		    padding: 5%;
+			}
+			@media #{$phone} {
+			   	width: 94%;
+    		    padding: 5%;
+			}
+			@media #{$phone-min} {
+    		    width: 100%;
+    		    padding: 5%;
+    		}
+			.estado {
+				display: inline-block;
+    			float: left;    			
+    			padding-right: 1%;
+    			@media #{$tablet} {
+					width: 6%;
+				}
+				@media #{$elo} {
+					width: 11%;
+				}
+				@media #{$phone-max} {
+					width: 20%;
+				}
+				@media #{$phone} {
+					width: 20%;
+				}	
+    			@media #{$phone-min} {
+    			    width: 20%;
+    			}
+    			img {
+    				@media #{$desk} {
+						width: 30px;
+					}
+    				@media #{$tablet} {
+					width: 25px;
+					}
+				}
+			}
+			.endereco {
+				display: inline-block;
+    			float: left;
+    			padding-right: 3%;
+    			padding-bottom: 5%;
+    			@media #{$tablet} {
+					width: 30%;
+					padding-right: 0;
+				}
+    			@media #{$elo} {
+					width: 38%;
+				}
+				@media #{$phone-max} {
+					width: 80%;
+				}
+				@media #{$phone} {
+					width: 80%;
+				}	
+    			@media #{$phone-min} {
+    			    width: 80%;
+    			    padding-bottom: 5%;
+    			}
+    			img {
+    				@media #{$desk} {
+						width: 30px;
+					}
+    				@media #{$tablet} {
+						width: 25px;
+					}
+				}
+				span {
+					display: block;
+				}
+			}
+			.tel {
+				color: black;
+				font-weight: bold;
+			}
+			.btn-contato{
+				float: left;
+			    width: 100%;
+			    height: 29px;
+			    margin: 0% 0% 1% 3%;
+			    background: $color_main;
+			    border: none;
+			    font-size: 10px;
+			    @media #{$tablet} {
+					width: 100%;
+				}	
+				@media #{$elo} {
+					width: 95%;
+				}
+				@media #{$phone-max} {
+					width: 100%;
+				}
+	    		span{
+	    			img {
+			    	vertical-align: middle;
+			    	float: left;
+			    	width: 18px
+			    	}
+				}				
+			}
+			.contato,
+			.chat {
+				display: inline-block;
+				float: right;
+				width: 22%;
+				@media #{$desk-large} {
+					width: 30%;
+				}
+				@media #{$tablet} {
+					width: 26%;
+				}	
+				@media #{$elo} {
+					float: left;
+					width: 50%;
+				}
+				@media #{$phone-max} {
+					float: left;
+					width: 100%;
+				}
+				@media #{$phone} {
+					float: left;
+					width: 100%;
+				}		 
+    			@media #{$phone-min} {
+					float: left;
+					width: 95%;
+				}
+			}
+		}	
+	}
+}	
