@@ -106,6 +106,7 @@ header section .container div {
 }
 
 
+
 /* Cards sapatos */
 
 .card {
@@ -324,6 +325,7 @@ footer {
         align-items: center;
         justify-content: flex-end;
         color: #fff;
+        padding-right: 13px;
         background-color: #161212;
         border: none;
     }
