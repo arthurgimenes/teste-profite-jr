@@ -9,10 +9,10 @@ header section .container {
 }
 
 header section .container div {
-    margin:1rem 0 1rem 0;
+    margin: 1rem 0 1rem 0;
 }
 
-.logo{
+.logo {
     width: 25%;
 }
 
@@ -20,19 +20,19 @@ header section .container div {
     width: 100%;
 }
 
-.login{
+.login {
     width: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.login span:nth-child(1){
+.login span:nth-child(1) {
     font-size: 20px;
     font-weight: 900;
 }
 
-.login span:nth-child(2) a{
+.login span:nth-child(2) a {
     font-size: 12px;
     font-weight: 900;
     color: #000;
@@ -42,20 +42,20 @@ header section .container div {
     display: flex;
     align-items: center;
     height: 35px;
-    width: 38% !important;
+    width: 38%;
     background-color: #FFA200;
     border-radius: 20px;
 }
 
-.search input{
+.search input {
     border-bottom: 0px;
 }
 
-.search input:focus{
+.search input:focus {
     border: none;
 }
 
-.search img{
+.search img {
     width: 30px;
     height: 30px;
     margin: 3px 6px;
@@ -63,7 +63,7 @@ header section .container div {
 
 .search-img {
     background-color: black;
-    border-radius: 20px;    
+    border-radius: 20px;
     width: 45px;
     height: 35px;
 }
@@ -78,30 +78,30 @@ header section .container div {
     width: 17%;
 }
 
-.country{
+.country {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.country img{
+.country img {
     width: 25px;
     height: 20px;
     margin: 3px;
 }
 
-.contact{
+.contact {
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.contact span{
+.contact span {
     color: #009DF3;
     margin-left: 3px;
 }
 
-.carousel-container{
+.carousel-container {
     background-color: #FFA200;
 }
 
@@ -117,7 +117,7 @@ header section .container div {
     background-color: yellow;
 }
 
-.card-image-1{
+.card-image-1 {
     background-image: url('/home/glayton/Desktop/teste-profite-jr/assets/images/sapatos/calçado1_hover.png');
     width: 100%;
     height: 113px;
@@ -125,7 +125,7 @@ header section .container div {
     background-position: center;
 }
 
-.card-image-2{
+.card-image-2 {
     background-image: url('/home/glayton/Desktop/teste-profite-jr/assets/images/sapatos/calçado2_hover.png');
     width: 100%;
     height: 113px;
@@ -133,7 +133,7 @@ header section .container div {
     background-position: center;
 }
 
-.card-image-3{
+.card-image-3 {
     background-image: url('/home/glayton/Desktop/teste-profite-jr/assets/images/sapatos/calçado3_hover.png');
     width: 100%;
     height: 113px;
@@ -141,7 +141,7 @@ header section .container div {
     background-position: center;
 }
 
-.card-image-4{
+.card-image-4 {
     background-image: url('/home/glayton/Desktop/teste-profite-jr/assets/images/sapatos/calçado4_hover.png');
     width: 100%;
     height: 113px;
@@ -149,7 +149,7 @@ header section .container div {
     background-position: center;
 }
 
-.card:hover{
+.card:hover {
     background-color: yellow;
 }
 
@@ -204,18 +204,16 @@ header section .container div {
     padding: 0px 3px 0px 3px;
     border: 1px solid #c9c9c9;
     background-color: #fff;
-
 }
 
-
-.footer{
+.footer {
     display: flex;
     justify-content: space-around;
-    align-items: left ;
+    align-items: left;
     padding: 3rem 0rem;
 }
 
-.chat{
+.chat {
     display: flex;
     align-items: center;
     background-color: #f3cd05;
@@ -224,21 +222,20 @@ header section .container div {
     color: #000;
 }
 
-.chat div{
+.chat div {
     display: flex;
     flex-direction: column;
-
 }
 
-.chat img{
+.chat img {
     margin-right: 5px;
 }
 
-.chat-consultor{
+.chat-consultor {
     font-weight: 900;
 }
 
-.email{
+.email {
     background-color: #f3cd05;
     padding: 10px 20px;
     display: flex;
@@ -246,36 +243,71 @@ header section .container div {
     color: #000;
 }
 
-.email img{
+.email img {
     margin-right: 5px;
 }
 
-.email-contato{
+.email-contato {
     font-weight: 900;
 }
 
-.endereco-rj p{
+.endereco-rj p {
     float: right;
 }
 
-.endereco-sp p{
+.endereco-sp p {
     float: right;
 }
 
-.endereco-rj img{
+.endereco-rj img {
     margin-top: 3px;
     margin-right: 3px;
 }
 
-.endereco-sp img{
+.endereco-sp img {
     margin-top: 3px;
     margin-right: 3px;
 }
 
-
-footer{
+footer {
     background-color: rgba(238, 238, 238, 0.91);
     margin: 3rem 0rem 0rem 0rem;
 }
 
-
+@media screen and (max-width: 480px) {
+    header section .container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .search {
+        width: 100%;
+        border-radius: 0px;
+    }
+    .search-img {
+        border-radius: 0px;
+    }
+    .language {
+        display: none;
+    }
+    .login {
+        width: 32%;
+    }
+    .logo {
+        width: 40%;
+    }
+    .container {
+        width: 100% !important;
+    }
+    .login span:nth-child(1) {
+        font-size: 15px;
+        font-weight: 900;
+    }
+    .login span:nth-child(2) a {
+        font-size: 9px;
+        font-weight: 900;
+        color: #000;
+    }
+}
