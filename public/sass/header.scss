@@ -1,0 +1,41 @@
+@import "../modules/responsividade";
+@import "fontes";
+@import "gerais";
+@import "sideInfo";
+@import "search";
+@import "logo";
+@import "userArea";
+
+// ------------ Outros ------------- //
+
+
+.navbar-default{
+	padding: 35px 0;
+	background: #fff;
+	@media #{$desktops}{
+		margin: 0 13% 0 10%;
+	}
+	> div{
+		padding: 0;
+		@media #{$not-mobile}{
+			padding-left: 10px;
+		}
+	}
+	h3{
+  		margin: 11px 0 0;
+		font-weight: 800;
+		font-size: 14px;
+		@media #{$mobile-sm}{
+			margin-top: 5px;
+		}
+		@media #{$not-mobile}{
+			font-size: 19px;
+			margin-top: 14px;
+			letter-spacing: 1.5px;
+		}
+		@media #{$desktop}{
+			font-size: 15px;
+		}
+
+  	}
+}
