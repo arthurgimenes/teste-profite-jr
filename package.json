@@ -1,0 +1,25 @@
+{
+  "name": "teste-profite-jr",
+  "version": "1.0.0",
+  "description": "Teste para vaga de front-end júnior",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamilaNuttoc/teste-profite-jr.git"
+  },
+  "keywords": [
+    "teste",
+    "front-end",
+    "junior",
+    "profite"
+  ],
+  "author": "CamilaNuttoc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CamilaNuttoc/teste-profite-jr/issues"
+  },
+  "homepage": "https://github.com/CamilaNuttoc/teste-profite-jr#readme"
+}
