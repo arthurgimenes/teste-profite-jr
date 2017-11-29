@@ -37,12 +37,14 @@
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
           rel="stylesheet" crossorigin="anonymous"/>
     <link href="./public/stylesheets/header/header.css" rel="stylesheet" type="text/css"/>
+    <link href="./public/stylesheets/carrossel.css" rel="stylesheet" type="text/css"/>
 
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
     <script type="text/javascript" src="./public/scripts/header.js"></script>
+    <script type="text/javascript" src="./public/scripts/carrosselBanner.js"></script>
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon"
@@ -61,15 +63,15 @@
 
   				  	<!-- Elementos que não serão escondidos em mobile -->
   				  	<div class="navbar-header">
-  				  		<div class="hidden-lg hidden-md col-sm-2 hidden-xs"></div>
-  				    	<div class="col-lg-4 col-md-4 col-sm-7 col-xs-8 logo">
+  				  		<div class="hidden-lg hidden-md col-sm-2 col-xs-3"></div>
+  				    	<div class="col-lg-4 col-md-4 col-sm-7 col-xs-6 logo">
   				    		<a class="navbar-brand" href="#">
   				    			<img src="./public/logo/profite_logo_novo.png" 
   				    				 alt="Logo Profite"/>
   				    		</a>
   				    	</div>
 
-  				    	<div class="col-lg-2 col-md-3 col-sm-3 col-xs-4 user">
+  				    	<div class="col-lg-2 col-md-3 col-sm-3 col-xs-3 user">
 
   				    		<h3>Olá, Visitante</h3>
 
@@ -128,9 +130,13 @@
   				    		<!-- Formulário de busca -->
   				    		<form class="search-form navbar-left">
       						  	<div class="form-group">
-      						    	<input type="text" class="form-control" placeholder="Buscar por ..."/>
+      						    	<input type="text" class="form-control" 
+                                           placeholder="Buscar por ..."/>
       						  	</div>
-      						  	<button type="submit"><img src="./public/icones/ícone_pesquisa.png" alt="Ícone de pesquisa"/></button>
+      						  	<button type="submit">
+                                <img src="./public/icones/ícone_pesquisa.png" 
+                                     alt="Ícone de pesquisa"/>
+                                </button>
       						</form>
 
   				    	</div>
@@ -145,15 +151,16 @@
   					<div class="col-md-3"></div>
 
     				<div class="col-md-9">
-    					<img src="./public/icones/bandeira3.png" alt="Bandeira do Peru"/>
-    					<img src="./public/icones/bandeira2.png" alt="Bandeira da Argentina"/>
-    					<img src="./public/icones/bandeira1.png" alt="Bandeira do Brasil"/>
+    					<a href="#"><img src="./public/icones/bandeira3.png" alt="Bandeira do Peru"/></a>
+    					<a href="#"><img src="./public/icones/bandeira2.png" alt="Bandeira da Argentina"/></a>
+    					<a href="#"><img src="./public/icones/bandeira1.png" alt="Bandeira do Brasil"/></a>
     					
     				</div>
 
     				<div id="skype">
     					<div class="tel pull-right">11 33375618</div>
-    					<img class="pull-right" src="./public/icones/skype.png" alt="Logo do Skype"/>
+    					<img class="pull-right" src="./public/icones/skype.png" 
+                             alt="Logo do Skype"/>
     				</div>
 
     			</div>
@@ -162,10 +169,79 @@
 
 			</nav>
 
-		</header>	
+		</header>
+
+        <section class="carrossel">
+            <!-- CARROSSEL BOOTSTRAP DE BANNERS -->
+            <div id="carrosselBanner" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicadores -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carrosselBanner" data-slide-to="0" class="active"></li>
+                    <li data-target="#carrosselBanner" data-slide-to="1"></li>
+                    <li data-target="#carrosselBanner" data-slide-to="2"></li>
+                    <li data-target="#carrosselBanner" data-slide-to="3"></li>
+                    <li data-target="#carrosselBanner" data-slide-to="4"></li>
+                </ol>
+        
+                <!-- Envolve os slides -->
+                <div class="carousel-inner" role="listbox">
+          
+                    <!-- Slides -->
+                    <div class="item active">
+                        <a href="#">
+                            <img src="./public/banner/banner1_mobile.jpg" 
+                                 alt="Profite prêmios">
+                        </a>
+                    </div>
+
+                    <div class="item">
+                      <a href="#"><img src="./public/banner/banner2_mobile.jpg" 
+                         alt="Experiências de compra"></a>
+                    </div>
+
+                    <div class="item">
+                      <a href="#"><img src="./public/banner/banner3_mobile.jpg" 
+                         alt="Compra online mobile"></a>
+                    </div>
+
+                    <div class="item">
+                      <a href="#"><img src="./public/banner/banner4_mobile.jpg" 
+                         alt="e-commerce teclado"></a>
+                    </div>
+
+                    <div class="item">
+                      <a href="#"><img src="./public/banner/banner5_mobile.jpg" 
+                         alt="compra online"></a>
+                    </div>
+
+                </div>
+        
+                <!-- Controle de direita e esquerda -->
+                <a class="left carousel-control" href="#carrosselBanner" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="right carousel-control" href="#carrosselBanner" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
+    
+            </div>
+        </section>
+
+        <section>
+            
+        </section>
+
+        <footer>
+    
+        </footer>
 
 	</div>
 	
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+          integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+          crossorigin="anonymous"></script>
 </body>
 </html>

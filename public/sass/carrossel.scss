@@ -1,0 +1,44 @@
+@import "./modules/responsividade";
+
+.carousel-control.right{
+  background: 0;
+  @media #{$desktop-bg}{
+    right: -100px;
+  }
+  @media #{$tablet}{
+    right: -100px;
+  }
+}
+.carousel-control.left{
+  background: 0;
+  @media #{$desktop-bg}{
+    left: -100px;
+  }
+  @media #{$tablet}{
+    left: -100px;
+  }
+}
+.carousel-indicators{
+  bottom: -4px;
+  left: 50.3%;
+}
+.carousel-indicators li{
+  margin: 1px 4px;
+}
+.container-fluid{
+  padding: 0;
+  @media #{$desktops}{
+    max-width: 967px;
+  }
+}
+.carrossel{
+  margin: 0 -35%;
+  background: #ffbc40;
+}
+.carrossel .carousel{
+  width: 641px;
+  margin: 0 auto;
+  @media #{$desktops}{
+    width: 967px;
+  }
+}

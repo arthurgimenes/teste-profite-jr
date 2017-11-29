@@ -1,5 +1,8 @@
 .search-form{
 	width: 100%;
+	@media #{$desktop}{
+		width: 130%;
+	}
 	position: relative;
 	margin: 19px 0 0 10px;
 	padding: 0;
@@ -29,7 +32,7 @@
 	}
 	input{
 		background: #ffc266;
-		padding: 10px 0 10px 70px;
+		padding: 10px 10px 10px 70px;
 		@media #{$desktops}{
 			padding-left: 51px;
 		}
