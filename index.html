@@ -234,49 +234,8 @@
             <!-- Esconde o que passa da área do carrossel -->
             <div class="carrossel-overfl">
 
-                <!-- Agrupa e aplica white space nowrap -->
-                <div class="carrosselnw" style="transform: translateX(0)">
-                    <!-- Item base para gerar outros -->
-                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 content">
-                        <div class="thumbnail">
-
-                            <a>
-
-                                <!-- Detalhes do item -->
-                                <img src="./public/sapatos/calçado1_hover.png" 
-                                    alt="Sandália Ferracini Ecologic" 
-                                    data-toggle="modal" data-target="#tenis1"/>
-                                <div class="caption">
-
-                                    <h4>Sandália Ferracini Ecologic</h3>
-
-                                    <img src="./public/sapatos/estrelas.png"/><br />
-                                    <span class="preco-original"><i>
-                                        De: R$ <span>75,92</span>
-                                    </i></span><br />
-
-                                    <p class="preco-desconto"><b>
-                                        Por: <i>R$ <span>95,92</span></i>
-                                    </b></p>
-                                    <p class="preco-parcelado"><i>
-                                        ou <b>até 3X</b> de <b>R$ 23,98</b>
-                                    </i></p>
-
-                                    <button class="comprarBtn">
-                                        <span class="glyphicon glyphicon-shopping-cart" 
-                                                aria-hidden="true"></span> COMPRAR
-                                    </button><br />
-                                    <span class="preco-economia">
-                                        Economize: R$ 43,98
-                                    </span>
-
-                                </div>
-
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
+                <!-- Serve de container para itens -->
+                <div class="carrosselnw" style="transform: translateX(0)"></div>
 
             </div>
 
@@ -289,8 +248,7 @@
             </button>
 
             <!-- Modal -->
-            <div class="modal fade" id="tenis1" tabindex="-1" role="dialog" 
-                  aria-labelledby="myModalLabel">
+            <div class="modal fade" id="tenis" tabindex="-1" role="dialog">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="modal-body">
@@ -311,18 +269,21 @@
     <footer>
         <div class="row">
             <div class="col-md-2 hidden-sm"></div>
+
             <address class="col-md-3 col-sm-4 col-xs-4">
                 <img src="./public/footer/ícone_rj.png" alt="icone rio de janeiro">
                 <p> Rua do Acre, 77 - sala 1108 </p>
                 <p> Centro - Rio de Janeiro </p>
                 <p><strong><abbr title="Telefone">tel.:</abbr> +55 (21) 2263-6944</strong></p>
             </address>
+
             <address class="col-md-3 col-sm-4 col-xs-3">
                 <img src="./public/footer/ícone_sp.png" alt="icone são paulo">
                 <p> Rua Cardoso de Melo, 1750 </p>
                 <p> 6º Andar Vila Olímpia </p>
                 <p><strong><abbr title="Telefone">tel.:</abbr> +55 (11) 2263-6944</strong></p>
             </address>
+
             <div class="col-md-2 col-sm-3 col-xs-3 btns center">
                 <a href="#">
                   <img src="./public/footer/ícone_contato.png" alt="icone contato"/>
@@ -333,7 +294,9 @@
                   FALE COM NOSSO <strong>CONSULTOR ONLINE</strong>
                 </a>
             </div>
+
             <div class="col-md-1 hidden-sm"></div>
+
         </div>
   </footer>
 
@@ -347,6 +310,76 @@
     <script type="text/javascript" src="./public/scripts/header.js"></script>
     <script type="text/javascript" src="./public/scripts/carrosselBanner.js"></script>
     <script type="text/javascript" src="./public/scripts/carrosselTenis.js"></script>
+
+    <!-- Data -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var produtosArr = [{ 
+                "nome":"Sandália Ferracini Ecologic", 
+                "img":"./public/sapatos/calçado1_hover.png",
+                "precoOriginal": 95.92,
+                "precoPromocao": 95.92
+                },{
+                "nome":"Chinelo Kildare", 
+                "img":"./public/sapatos/calçado2_hover.png",
+                "precoOriginal": 99.90,
+                "precoPromocao": 79.92
+                },{
+                "nome":"Tênis Ferracini Week", 
+                "img":"./public/sapatos/calçado3_hover.png",
+                "precoOriginal": 229.90,
+                "precoPromocao": 183.92
+                },{
+                "nome":"Tênis Democrata Fan", 
+                "img":"./public/sapatos/calçado4_hover.png",
+                "precoOriginal": 219.90,
+                "precoPromocao": 159.92
+                },{ 
+                "nome":"Sandália Ferracini Ecologic", 
+                "img":"./public/sapatos/calçado1_hover.png",
+                "precoOriginal": 95.92,
+                "precoPromocao": 95.92
+                },{
+                "nome":"Chinelo Kildare", 
+                "img":"./public/sapatos/calçado2_hover.png",
+                "precoOriginal": 99.90,
+                "precoPromocao": 79.92
+                },{
+                "nome":"Tênis Ferracini Week", 
+                "img":"./public/sapatos/calçado3_hover.png",
+                "precoOriginal": 229.90,
+                "precoPromocao": 183.92
+                },{
+                "nome":"Tênis Democrata Fan", 
+                "img":"./public/sapatos/calçado4_hover.png",
+                "precoOriginal": 219.90,
+                "precoPromocao": 159.92
+                },{ 
+                "nome":"Sandália Ferracini Ecologic", 
+                "img":"./public/sapatos/calçado1_hover.png",
+                "precoOriginal": 95.92,
+                "precoPromocao": 95.92
+                },{
+                "nome":"Chinelo Kildare", 
+                "img":"./public/sapatos/calçado2_hover.png",
+                "precoOriginal": 99.90,
+                "precoPromocao": 79.92
+                },{
+                "nome":"Tênis Ferracini Week", 
+                "img":"./public/sapatos/calçado3_hover.png",
+                "precoOriginal": 229.90,
+                "precoPromocao": 183.92
+                },{
+                "nome":"Tênis Democrata Fan", 
+                "img":"./public/sapatos/calçado4_hover.png",
+                "precoOriginal": 219.90,
+                "precoPromocao": 159.92
+                }
+            ];
+            seedCarrossel(produtosArr);
+        });
+
+    </script>
 	
 </body>
 </html>

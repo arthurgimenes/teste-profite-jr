@@ -71,6 +71,9 @@
   border: 0;
   padding: 7px 19px;
   font-size: 13px; }
+  .comprarBtn img {
+    width: 15px;
+    margin: 0 4px 4px 0; }
 
 .preco-economia {
   font-size: 9.5px;
