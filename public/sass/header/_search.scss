@@ -15,7 +15,7 @@
 		position: absolute;
 		top: 0;
 		background: black;
-		left: 30px;
+		left: 45px;
 		@media #{$desktops}{
 			left: 0;
 			padding: 0 11px;
@@ -32,7 +32,7 @@
 	}
 	input{
 		background: #ffc266;
-		padding: 10px 10px 10px 70px;
+		padding: 10px 10px 10px 85px;
 		@media #{$desktops}{
 			padding-left: 51px;
 		}

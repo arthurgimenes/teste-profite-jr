@@ -57,7 +57,7 @@ button {
     position: absolute;
     top: 0;
     background: black;
-    left: 30px; }
+    left: 45px; }
     @media only screen and (min-width: 992px) {
       .search-form button {
         left: 0;
@@ -71,7 +71,7 @@ button {
         width: 100%; } }
   .search-form input {
     background: #ffc266;
-    padding: 10px 10px 10px 70px; }
+    padding: 10px 10px 10px 85px; }
     @media only screen and (min-width: 992px) {
       .search-form input {
         padding-left: 51px; } }
@@ -145,6 +145,10 @@ button {
   padding: 20px;
   border-radius: 0;
   box-shadow: none; }
+
+@media only screen and (max-width: 767px) {
+  .dropdown {
+    position: static; } }
 
 .navbar-default {
   padding: 35px 0 10px;

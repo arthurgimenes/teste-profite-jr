@@ -5,7 +5,7 @@
 //Container de carrossel
 .carrosselTenis{
 	position: relative;
-	width: 641px;
+	width: 630px;
 	margin: 40px auto 0 auto;
 	@media #{$not-mobile}{
 		margin-top: 80px;
@@ -21,12 +21,12 @@
 //Área visível de carrossel
 .carrossel-overfl{
 	overflow: hidden;
-	width: 93%;
+	width: 95%;
 	@media #{$tablet}{
-		width: 95%;
+		width: 96%;
 	}
 	@media #{$desktops}{
-		width: 100%;
+		width: 99.8%;
 	}
 	margin: 0 auto;
 }
@@ -38,10 +38,8 @@
 		white-space: normal;
 	}
 	width: 600px;
-	margin:0 2%;
 	@media #{$tablet}{
 		width: 750px;
-		margin-right: 45px;
 	}
 	@media #{$desktops}{
 		width: 967px;

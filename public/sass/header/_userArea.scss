@@ -46,3 +46,9 @@
   border-radius: 0;
   box-shadow: none;
 }
+
+.dropdown{
+	@media #{$mobile}{
+		position: static;
+	}
+}

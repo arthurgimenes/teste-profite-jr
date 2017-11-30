@@ -1,11 +1,15 @@
 .thumbnail{
 	border-color: #fff;
-	border-right: 1px solid #ededed;
+	border-right: 1px solid #ddd;
 	padding: 0 20px 20px 20px;
 	a{
 		cursor: pointer;
 		>img{
 			margin: 0 auto;
+			width: 90%;
+			@media #{$not-mobile}{
+				width: 100%;
+			}
 		}
 	}
 	.caption{
@@ -23,7 +27,10 @@
 	text-align: center;
 	margin: 0 18px;
 	h4{
-		font-size: 14px;
+		font-size: 12px;
+		@media #{$not-mobile}{
+			font-size: 14px;
+		}
 		font-weight: 800;
 		min-height: 40px;
 		+ img{
@@ -31,7 +38,10 @@
 		}
 	}
 	p{
-		font-size: 12.3px;
+		font-size: 11px;
+		@media #{$not-mobile}{
+			font-size: 13.2px;
+		}
 	}
 }
 .preco-original{
@@ -65,4 +75,5 @@
 	display: block;
 	margin: 0 auto;
 	width: 130px;
+	height: 20px;
 }

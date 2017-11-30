@@ -1,8 +1,17 @@
+$(document).ready(function(){
+  if($(window).width() <768){
+    $('.carrosselnw').css({"-webkit-transform":"translate(2)"});
+  }else{
+    $('.carrosselnw').css({"-webkit-transform":"translate(0)"});
+  }
+});
+style="transform: translateX(0)"
 //Gera itens do carrossel
 function seedCarrossel(arr){
     var produtosJson = JSON.stringify(arr);
     var produtos = JSON.parse(produtosJson);
     var carrosselHtml = '';
+    var economia;
     //Constrói itens
     for(var i=0; i<produtos.length; i++){
         carrosselHtml += '<div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 content">';
@@ -12,15 +21,17 @@ function seedCarrossel(arr){
         carrosselHtml += '<div class="caption">';
         carrosselHtml += '<h4>'+produtos[i].nome+'</h4>';
         carrosselHtml += '<img src="./public/sapatos/estrelas.png"/><br />';
-        carrosselHtml += '<span class="preco-original"><i>De: R$ <span>'
-                         +produtos[i].precoOriginal.toString().replace(".", ",")+'</span></i></span><br />';
-        carrosselHtml += '<p class="preco-desconto"><b>Por: <i>R$ <span>'
+        carrosselHtml += '<span class="preco-original">';
+        if(produtos[i].precoOriginal !== produtos[i].precoPromocao){
+          carrosselHtml += '<i>De: R$ <span>'+produtos[i].precoOriginal.toString().replace(".", ",")+'</span></i>';
+        }
+        carrosselHtml += '</span><br /><p class="preco-desconto"><b>Por: <i>R$ <span>'
                          +produtos[i].precoPromocao.toString().replace(".", ",")+'</span></i></b></p>';
         carrosselHtml += '<p class="preco-parcelado"><i>ou <b>até 3X</b> de <b>R$ '
                          +(produtos[i].precoPromocao/3).toFixed(2).toString().replace(".", ",")+'</b></i></p>';
         carrosselHtml += '<button class="comprarBtn"><img src="./public/sapatos/carrinho.png" alt="icone carrinho">COMPRAR</button><br />';
         carrosselHtml += '<span class="preco-economia">Economize: R$ '
-                         +((produtos[i].precoOriginal)-(produtos[i].precoPromocao)).toFixed(2).toString().replace(".", ",")+'</span>';
+                         +(produtos[i].precoOriginal - produtos[i].precoPromocao).toFixed(2).toString().replace(".", ",")+'</span>';
         carrosselHtml += '</div></a></div></div>';
     }
     //Adiciona itens a html
@@ -58,8 +69,8 @@ function move(btn){
 
             // Se não estiver nos últimos itens de desktop(pos3) 
             // ou mobile/tablet(carrosselWidth), continua.
-            if(pos !== 3 || carrosselWidth === '641px' || carrosselWidth === '778px'){
-            value = Number('-'+pos+'02.7');
+            if(pos !== 3 || carrosselWidth === '630px' || carrosselWidth === '778px'){
+            value = Number('-'+pos+'00');
 
             //Caso contrário, volta ao início
             }else{
@@ -77,20 +88,19 @@ function move(btn){
 
       //Se primeiro clique não tornar pos negativo
       if(pos !== -1){
-          value = Number('-'+pos+'02.7');
+          value = Number('-'+pos+'00');
 
       //Caso torne, mostra últimos itens de acordo com screen size
       }else{
-          if(carrosselWidth === '641px' || carrosselWidth === '778px'){
-              value = -302.7;
+          if(carrosselWidth === '630px' || carrosselWidth === '778px'){
+              value = -300;
               pos = 3;
           }else{
-              value = -202.7;
+              value = -200;
               pos = 2;
           }
       }
     }
-                
     //Aplica novo positionamento
     $('.carrosselnw').css('transform', 'translateX('+value+'%)');       
 }

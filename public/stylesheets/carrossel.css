@@ -21,9 +21,8 @@
 .carousel-indicators {
   bottom: -4px;
   left: 50.3%; }
-
-.carousel-indicators li {
-  margin: 1px 4px; }
+  .carousel-indicators li {
+    margin: 1px 4px; }
 
 .container-fluid {
   padding: 0; }
@@ -34,12 +33,11 @@
 .carrossel {
   margin: 0 -35%;
   background: #ffbc40; }
-
-.carrossel .carousel {
-  width: 641px;
-  margin: 0 auto; }
-  @media only screen and (min-width: 992px) {
-    .carrossel .carousel {
-      width: 967px; } }
+  .carrossel .carousel {
+    width: 641px;
+    margin: 0 auto; }
+    @media only screen and (min-width: 992px) {
+      .carrossel .carousel {
+        width: 967px; } }
 
 /*# sourceMappingURL=carrossel.css.map */

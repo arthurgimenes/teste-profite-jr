@@ -2,7 +2,7 @@
 	background: none;
 	border: none;
 	position: absolute;
-	top: -50px;
+	top: -30px;
 	@media #{$not-mobile}{
 		top: -140px;
 	}
@@ -20,7 +20,7 @@
 }
 .btnCtrlNext{
 	right: 20px;
-	@media #{$not-mobile}{
+	@media #{$desktop}{
 		right: 0;
 	}
 	@media #{$desktop-bg}{

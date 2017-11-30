@@ -5,4 +5,7 @@ $(document).ready(function(){
 		$('.dropdown-menu').slideDown().css('display', '');
 	});
 
+	//Mostra tooltip em bandeiras
+	$('[data-toggle="tooltip"]').tooltip();
+
 });
