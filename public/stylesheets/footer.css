@@ -1,0 +1,67 @@
+footer {
+  width: 100%;
+  background-color: #f5f5f5;
+  background-image: url("../footer/absurdity.png");
+  margin-top: 70px;
+  padding: 10px 10px 10px 50px;
+  font-size: 11px;
+  color: #777;
+  font-family: arial; }
+  @media only screen and (min-width: 992px) {
+    footer {
+      font-size: 13px;
+      padding: 45px; } }
+  footer .row {
+    width: 641px;
+    margin: 0 auto; }
+    @media only screen and (min-width: 992px) {
+      footer .row {
+        width: 967px; } }
+  footer .btns a {
+    font-size: 9px;
+    padding: 6px 6px 6px 43px;
+    background: #ffbc40;
+    margin-bottom: 10px;
+    display: block;
+    color: #000;
+    width: 165px;
+    position: relative;
+    height: 40px; }
+    @media only screen and (min-width: 992px) {
+      footer .btns a {
+        font-size: 11px; } }
+    footer .btns a:first-of-type {
+      margin-top: 10px;
+      padding-top: 13px; }
+    footer .btns a img {
+      margin-right: 5px;
+      height: 100%;
+      position: absolute;
+      width: 23px;
+      height: auto;
+      left: 13px;
+      top: 10px; }
+
+abbr[title] {
+  border: 0; }
+
+address {
+  margin-top: 19px; }
+  address p {
+    margin-bottom: 5px; }
+  address strong {
+    color: #000; }
+  address img {
+    position: absolute;
+    left: -25px;
+    top: -9px;
+    width: 35px; }
+    @media only screen and (min-width: 992px) {
+      address img {
+        left: -40px;
+        width: auto; } }
+  address:nth-of-type(2) {
+    margin-left: 10px;
+    white-space: nowrap; }
+
+/*# sourceMappingURL=footer.css.map */
