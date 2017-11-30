@@ -2,6 +2,7 @@
 
 .carousel-control.right{
   background: 0;
+  color: #fff;
   @media #{$desktop-bg}{
     right: -100px;
   }
@@ -11,6 +12,7 @@
 }
 .carousel-control.left{
   background: 0;
+  color: #fff;
   @media #{$desktop-bg}{
     left: -100px;
   }

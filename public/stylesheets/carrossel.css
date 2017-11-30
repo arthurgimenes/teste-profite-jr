@@ -1,5 +1,6 @@
 .carousel-control.right {
-  background: 0; }
+  background: 0;
+  color: #fff; }
   @media only screen and (min-width: 1200px) {
     .carousel-control.right {
       right: -100px; } }
@@ -8,7 +9,8 @@
       right: -100px; } }
 
 .carousel-control.left {
-  background: 0; }
+  background: 0;
+  color: #fff; }
   @media only screen and (min-width: 1200px) {
     .carousel-control.left {
       left: -100px; } }

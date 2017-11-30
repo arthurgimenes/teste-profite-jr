@@ -38,13 +38,7 @@
           rel="stylesheet" crossorigin="anonymous"/>
     <link href="./public/stylesheets/header/header.css" rel="stylesheet" type="text/css"/>
     <link href="./public/stylesheets/carrossel.css" rel="stylesheet" type="text/css"/>
-
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-            crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./public/scripts/header.js"></script>
-    <script type="text/javascript" src="./public/scripts/carrosselBanner.js"></script>
+    <link href="./public/stylesheets/carrosselTenis/carrosselTenis.css" rel="stylesheet" type="text/css"/>
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon"
@@ -218,20 +212,80 @@
                 </div>
         
                 <!-- Controle de direita e esquerda -->
-                <a class="left carousel-control" href="#carrosselBanner" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <a class="left carousel-control" href="#carrosselBanner" 
+                    role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" 
+                    aria-hidden="true"></span>
                     <span class="sr-only">Anterior</span>
                 </a>
-                <a class="right carousel-control" href="#carrosselBanner" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <a class="right carousel-control" href="#carrosselBanner" 
+                    role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" 
+                    aria-hidden="true"></span>
                     <span class="sr-only">Próximo</span>
                 </a>
     
             </div>
         </section>
 
-        <section>
-            
+        <section class="carrosselTenis row">
+
+            <!-- Esconde o que passa da área do carrossel -->
+            <div class="carrossel-overfl">
+
+                <!-- Agrupa e aplica white space nowrap -->
+                <div class="carrosselnw" style="transform: translateX(0)">
+                    <!-- Item base para gerar outros -->
+                    <div class="col-lg-3 col-md-3 col-sm-4 col-xs-4 content">
+                        <div class="thumbnail">
+
+                            <a href="#">
+
+                                <!-- Detalhes do item -->
+                                <img src="./public/sapatos/calçado1_hover.png" 
+                                    alt="Sandália Ferracini Ecologic"/>
+                                <div class="caption">
+
+                                    <h4>Sandália Ferracini Ecologic</h3>
+
+                                    <img src="./public/sapatos/estrelas.png"/><br />
+                                    <span class="preco-original"><i>
+                                        De: R$ <span>75,92</span>
+                                    </i></span><br />
+
+                                    <p class="preco-desconto"><b>
+                                        Por: <i>R$ <span>95,92</span></i>
+                                    </b></p>
+                                    <p class="preco-parcelado"><i>
+                                        ou <b>até 3X</b> de <b>R$ 23,98</b>
+                                    </i></p>
+
+                                    <button class="comprarBtn">
+                                        <span class="glyphicon glyphicon-shopping-cart" 
+                                                aria-hidden="true"></span> COMPRAR
+                                    </button><br />
+                                    <span class="preco-economia">
+                                        Economize: R$ 43,98
+                                    </span>
+
+                                </div>
+
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Botões para navegação no carrossel -->
+            <button class="btnCtrlPrev" onclick="move(this);">
+                <img src="./public/sapatos/seta_esquerda.png"/>
+            </button>
+            <button class="btnCtrlNext" onclick="move(this);">
+                <img src="./public/sapatos/seta_direita.png"/>
+            </button>
+
         </section>
 
         <footer>
@@ -239,9 +293,17 @@
         </footer>
 
 	</div>
+
+	<!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./public/scripts/header.js"></script>
+    <script type="text/javascript" src="./public/scripts/carrosselBanner.js"></script>
+    <script type="text/javascript" src="./public/scripts/carrosselTenis.js"></script>
 	
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
-          integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
-          crossorigin="anonymous"></script>
 </body>
 </html>

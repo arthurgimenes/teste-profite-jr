@@ -1,0 +1,62 @@
+.thumbnail{
+	border-color: #fff;
+	border-right: 1px solid #ededed;
+	padding: 0 20px 20px 20px;
+	a>img{
+		margin: 0 auto;
+	}
+	.caption{
+		padding: 0;
+	}
+
+	&:hover{
+		@media #{$desktops}{
+			background: #ffbc40;
+		}
+	}
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.caption{
+	text-align: center;
+	margin: 0 18px;
+	h4{
+		font-size: 14px;
+		font-weight: 800;
+		min-height: 40px;
+		+ img{
+		    padding-bottom: 8px;
+		}
+	}
+	p{
+		font-size: 12.3px;
+	}
+}
+.preco-original{
+	font-size: 11px;
+	text-decoration: line-through;
+	color: #777;
+}
+.preco-desconto{
+	margin-bottom: 4px;
+}
+.preco-parcelado{
+	margin-bottom: 8px;
+}
+.comprarBtn{
+	background: black;
+	color: #ddd;
+	margin-bottom: 9px;
+	border: 0;
+	padding: 7px 19px;
+	font-size: 13px;
+}
+.preco-economia{
+	font-size: 9.5px;
+	padding: 2px 14px;
+	border: 1px solid #ccc;
+	background: #fff;
+	display: block;
+	margin: 0 auto;
+	width: 130px;
+}

@@ -1,0 +1,59 @@
+@import "./modules/responsividade";
+@import "ctrl";
+@import "thumbnail";
+
+//Container de carrossel
+.carrosselTenis{
+	position: relative;
+	width: 641px;
+	margin: 40px auto 0 auto;
+	@media #{$not-mobile}{
+		margin-top: 80px;
+	}
+	@media #{$tablet}{
+		width: 778px;
+	}
+	@media #{$desktops}{
+		width: 967px;
+	}
+}
+
+//Área visível de carrossel
+.carrossel-overfl{
+	overflow: hidden;
+	width: 93%;
+	@media #{$tablet}{
+		width: 95%;
+	}
+	@media #{$desktops}{
+		width: 100%;
+	}
+	margin: 0 auto;
+}
+
+//Itens do carrossel
+.carrosselnw{
+	white-space: nowrap;
+	*{
+		white-space: normal;
+	}
+	width: 600px;
+	margin:0 2%;
+	@media #{$tablet}{
+		width: 750px;
+		margin-right: 45px;
+	}
+	@media #{$desktops}{
+		width: 967px;
+		margin: 0;
+	}
+  	transition: 1s;
+  	.content{
+  	  display: inline-block;
+  	  float: none;
+  	}
+  	[class^='col-']{
+  		padding: 0;
+  	}
+}
+
