@@ -30,10 +30,11 @@
   border-color: #fff;
   border-right: 1px solid #ededed;
   padding: 0 20px 20px 20px;
-  padding-bottom: 0;
   margin-bottom: 0; }
-  .thumbnail a > img {
-    margin: 0 auto; }
+  .thumbnail a {
+    cursor: pointer; }
+    .thumbnail a > img {
+      margin: 0 auto; }
   .thumbnail .caption {
     padding: 0; }
   @media only screen and (min-width: 992px) {
@@ -125,5 +126,16 @@
     float: none; }
   .carrosselnw [class^='col-'] {
     padding: 0; }
+
+.modal-body {
+  padding: 0 15px; }
+  .modal-body img {
+    width: 100%; }
+  .modal-body button {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    opacity: 1;
+    width: 20px; }
 
 /*# sourceMappingURL=carrosselTenis.css.map */

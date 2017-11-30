@@ -2,8 +2,11 @@
 	border-color: #fff;
 	border-right: 1px solid #ededed;
 	padding: 0 20px 20px 20px;
-	a>img{
-		margin: 0 auto;
+	a{
+		cursor: pointer;
+		>img{
+			margin: 0 auto;
+		}
 	}
 	.caption{
 		padding: 0;
@@ -14,7 +17,6 @@
 			background: #ffbc40;
 		}
 	}
-	padding-bottom: 0;
 	margin-bottom: 0;
 }
 .caption{
