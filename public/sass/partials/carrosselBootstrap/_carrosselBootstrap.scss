@@ -1,0 +1,44 @@
+.carousel-control.right{
+  background: 0;
+  color: #fff;
+  @media #{$desktop-bg}{
+    right: -100px;
+  }
+}
+.carousel-control.left{
+  background: 0;
+  color: #fff;
+  @media #{$desktop-bg}{
+    left: -100px;
+  }
+}
+.carousel-indicators{
+  bottom: -4px;
+  left: 50.3%;
+  li{
+    margin: 1px 4px;
+  }
+}
+.container-fluid{
+  padding: 0;
+}
+.carrossel{
+  background: $laranja;
+  width: 101%;
+  .carousel{
+    margin: 0 auto;
+    text-align: center;
+    @media (min-width:665px) and (max-width:785px){
+      height: 233px;
+    }
+    @media #{$desktops}{
+      width: 967px;
+    }
+  }
+}
+.carousel-inner{
+  width: auto;
+  @media (min-width:665px) and (max-width:785px){
+    display: inline-block;
+  }
+}

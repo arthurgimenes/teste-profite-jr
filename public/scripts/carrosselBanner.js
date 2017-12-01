@@ -22,12 +22,12 @@ $(document).ready(function(){
   function mudaImagensCarrossel(size){
     if(size === 'mobile'){
       for(var i=0; i<length; i++){
-        $(imgs[i]).attr("src","./public/banner/banner"+(i+1)+"_mobile.jpg");
+        $(imgs[i]).attr("src","./public/img/banner/banner"+(i+1)+"_mobile.jpg");
       }
       return;
     }
     for(var i=0; i<length; i++){
-      $(imgs[i]).attr("src","./public/banner/banner"+(i+1)+".jpg");
+      $(imgs[i]).attr("src","./public/img/banner/banner"+(i+1)+".jpg");
     }
   }
   
