@@ -1,0 +1,23 @@
+[class^='btnCtrl']{
+	background: none;
+	border: none;
+	position: absolute;
+	top: 0;
+	@media #{$not-mobile}{
+		top: -140px;
+	}
+	height: 100%;
+}
+
+.btnCtrlPrev{
+	left: 0;
+	@media #{$desktop-bg}{
+		left: -35px;
+	}
+}
+.btnCtrlNext{
+	right: 0;
+	@media #{$desktop-bg}{
+		right: -35px;
+	}
+}
