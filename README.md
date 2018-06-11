@@ -35,7 +35,7 @@
 
 ### Instruções para o teste:
 
-##### [Link do layout](https://drive.google.com/file/d/0B3S5qqT-LEIESUFES1hhUzd2ZzA/view?usp=sharing)
+##### [Link do layout](https://www.figma.com/file/BOZqx8uK9NQ9IxbhVhyung96/Profit-e---Teste-de-Layout?node-id=0%3A1)
 #
 ##### Obrigatório
 * HTML5 e CSS3
