@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+body{
+	font-family: arial, sans-serif;
+	background-color: white;
+	color: rgba(0,0,0,0);
+}
+
+#logoCabecalho{
+
+	width: 230px;
+    height: 55px;
+    margin-left: 70px;
+    margin-top: 20px;
+    //margin: 10px 30px 0px 300px;
+    //display: inline-block;
+    //margin-left: 30px;
+}
+.container .row .col-md-3 .acesso nav{
+	font-size: 16px;
+	margin-top: -8px;
+}
+#ola{
+	
+	font-size: 22px;
+}
+.acesso{
+	margin-left: 50px;
+	margin-top: 27px;
+}
+.form-control {
+background-color: #FF8C00 !important; 
+display: inline-block !important;
+margin-right: -50px !important;
+}
+    
+.btn-default{
+display: inline-block !important;
+background-color: black !important;
+}
+
+
+#busca{
+	margin-top: 20px;
+}
+.bx-wrapper{ 
+    //background: #FFC51B !important;
+}
+.bannerC{
+    margin: auto auto;
+}
+.flag{
+    max-width:50px;
+    max-height:25px;
+    width: auto;
+    height: auto;
+    margin: 1px 1px;
+}
+#flagsGroup{
+	margin-left: 30px;
+	margin-top: 9px;
+	display: block;
+}
+#skypeImg{
+	display: inline-block !important;
+	margin-top: -5px;
+}
+.skypeDiv h3{
+	display: inline-block !important;
+}
+.skypeDiv{
+	margin-top: -5px;
+}
+#carrinho{
+  display: inline-block !important;
+}
+  .bannerC{
+    margin: auto auto;
+  }
+  .col-md-3{
+    //border-right: 1px solid gray;
+    display: inline-block;
+    max-width: 24.7%
+  }
+  .separate{
+  	border-right: 1px solid gray;
+  }
+  .btn-primary2{
+    color: white;
+  	background-color: #363636;
+  	border-color: #363636;
+    display: block !important;
+    margin: 0 auto 15px auto !important;
+    text-align: center;
+  }
+  .imgNoQuadro{
+    width: 60%;
+    height: 60%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .containerInBox{
+    //margin-left: 20px;
+  }
+  .centraBloco{
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+  .badge-primary{
+    margin: 0 auto 5px auto !important;
+    text-align: center !important;
+    display: block !important;
+    width: 135px !important;
+    color: black !important;
+    background-color: #fff !important;
+    border: 1px solid #666666 !important;
+}
+.container2{
+	display: inline-block;
+}
+.desconto{
+text-decoration: line-through;
+}
+.space{
+  padding-bottom: 20px;
+}
+.foot{
+	margin-left: 100px;
+}
+.iconesFoot, .textFoot{
+	display: inline-block; 
+	float: left;
+}
+.iconesFoot{
+	padding-bottom: 50px;
+}
+.textFoot{
+	float: left;
+	margin-left: 10px
+}
+.yellow{
+	background-color: #FFC51B !important;
+	color: black !important;
+}
+.black{
+	//color: #000000 !important;
+	//display: inline-block;
+}
+.consultor{
+	margin-top: 5px;
+	padding-bottom: 20px;
+  display: inline-block;
+}
+.textFoot2{
+  margin-top: 0px;
+}
+.consultor2{
+  margin-top: 4px; 
+}
