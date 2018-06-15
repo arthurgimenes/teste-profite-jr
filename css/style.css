@@ -1,0 +1,211 @@
+
+
+body {
+    padding-top: 52px;
+}
+
+aside {
+    padding-bottom: 20px;
+}
+
+.navbar-profite {
+    background-color: #fff;
+    border: none;
+}
+
+.user {
+    font-weight: 600;
+}
+
+.skype {
+    color: #00aff0;
+}
+
+input.form-control {
+    background: #fac437;
+    color: #fff !important;
+    border: none;
+}
+input.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fff;
+    opacity: 1; /* Firefox */
+}
+input.form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #fff;
+}
+input.form-control::-ms-input-placeholder { /* Microsoft Edge */
+    color: #fff;
+}
+
+.btn-search {
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+.flag {
+    width: 20px;
+}
+
+.img-contact {
+    width: 1.5em;
+}
+
+.navbar-default .navbar-text {
+    color: #00aff0;
+}
+
+
+
+/* Carousel */
+.banner {
+    margin: 0 auto;
+}
+.carousel-inner {
+    height: auto;
+}
+#copa {
+    background: #eebb00;
+}
+#seo {
+    background: #979691;
+}
+#buy {
+    background: #4cc0bf;
+}
+
+/* Produtos */
+article.container {
+    margin-bottom: 1em;
+}
+.card {
+    text-align: center;
+    padding: 1em;
+}
+.link-product:hover {
+    text-decoration: none;
+}
+.title-product {
+    color: #000;
+    font-size: 1.5em;
+    margin-top: .5em;
+}
+.ranking-img {
+    margin-bottom: .5em;
+}
+.btn-dark {
+    color: #fff;
+    background-color: #222;
+    border-color: #000;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: .5em;
+}
+.btn-dark:hover, .btn-dark:focus {
+    color: #fff;
+    background: #111;
+}
+.card p {
+    font-weight: 600;
+    font-size: smaller;
+}
+.card svg {
+    width: 1em;
+}
+span.econ {
+    border: 1px solid #ccc;
+    padding: .2em;
+}
+
+#card2 .price::before {
+    content: 'de R$99,90';
+    display: block;
+    text-decoration: line-through;
+    color: #777;
+    margin-bottom: .5em;
+}
+
+#card3 .price::before {
+    content: 'de R$229,90';
+    display: block;
+    text-decoration: line-through;
+    color: #777;
+    margin-bottom: .5em;
+}
+
+#card4 .price::before {
+    content: 'de R$219,90';
+    display: block;
+    text-decoration: line-through;
+    color: #777;
+    margin-bottom: .5em;
+}
+
+/* Modal */
+.img-zoom {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+.cap-modal {
+    margin-bottom: .5em;
+}
+.price-modal {
+    font-size: 2em;
+}
+.btn-yellow {
+    color: #fff;
+    background-color: #fac437;
+    border-color: #fac437;
+}
+.btn-yellow:hover {
+    color: #fff;
+    opacity: .7;
+}
+
+/* Footer */
+footer {
+    background: #dbdbdb;
+    padding: 2em 0;
+}
+
+address {
+    color: #555;
+}
+
+.btn-footer {
+    background: #fac437;
+    border: none;
+    padding: .5em;
+    margin-bottom: .5em;
+    color: #000;
+    font-size: small;
+}
+
+.btn-footer span {
+    font-weight: 600;
+}
+
+.rio::before {
+    content: url(../img/footer/ícone_rj.png);
+    display: block;
+    float: left;
+    padding: 1em;
+    position: relative;
+    bottom: 20px;
+}
+
+.sp::before {
+    content: url(../img/footer/ícone_sp.png);
+    display: block;
+    float: left;
+    padding: 1em;
+    position: relative;
+    bottom: 20px;
+}
+
+.tel {
+    font-weight: 700;
+    color: #000;
+}
