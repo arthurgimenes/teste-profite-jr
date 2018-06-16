@@ -1,0 +1,103 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body{
+	font-family: 'Ubuntu', sans-serif;
+	color: #7A7A7A;
+}
+
+header .imagensBanner{
+	background: #2EC4B6;
+}
+header .imagensBanner img{
+	float: left;
+	width: 	50%;
+}
+header .imagensBanner img.sobrepor{
+	opacity: 0.5;
+}
+
+footer{
+	background: #011627;
+	border-bottom: 10px solid #2EC4B6;
+}
+footer ul {
+	display: inline-block;
+	display: -webkit-inline-box;
+}
+footer ul span{
+	font-style: normal;
+	font-weight: bold;
+	line-height: normal;
+	font-size: 16px;
+	color: #FFFFFF;
+
+}
+footer ul li{
+	font-style: normal;
+	font-weight: bold;
+	line-height: normal;
+	font-size: 16px;
+	color: #FFFFFF;
+	list-style: none;
+}
+
+/***************Animação do botão - menu mobile***************/
+.icon-bar {
+    opacity: 1;
+    background-color: #FFF;
+    height: 2px;
+    width: 34px;
+    display: block;
+    margin: 8px 0px;
+    transition: 0.3s opacity;
+    -moz-transition: 0.3s opacity;
+    -webkit-transition: 0.3s opacity;
+    top: 10px;
+}
+  .closebtn{
+    width: 58px;
+    height: 38px;
+  }
+
+  .closebtn .icon-bar {
+    position: absolute;
+  }
+  .closebtn .icon-bar:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    animation-name: animacao;
+    animation-duration: 0.6s;
+  }
+  .closebtn .icon-bar:nth-child(2) {
+    -webkit-transform: rotate(-45deg); 
+    transform: rotate(-45deg);
+    animation-name: animacao2;
+    animation-duration: 0.6s;
+  }
+  .closebtn .icon-bar:nth-child(3) {
+    opacity: 0;
+  }
+
+
+  @keyframes animacao {
+   from {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+   }
+   to { 
+     -webkit-transform: rotate(45deg);
+     transform: rotate(45deg);
+   }
+  }
+
+  @keyframes animacao2 {
+   from {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+   }
+   to { 
+     -webkit-transform: rotate(-45deg);
+     transform: rotate(-45deg);
+   }
+  }
