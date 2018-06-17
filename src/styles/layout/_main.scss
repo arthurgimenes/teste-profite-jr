@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+body {
+	> .container {
+		margin: 31px auto;	
+		padding: 0px;
+		width: 90%;
+		@media #{$tablet} {
+			width: 100%;
+		}
+	}
+	font-family: 'Open Sans', sans-serif;	
+	textarea:focus, input:focus, select:focus, img:focus, div:focus {
+	    box-shadow: 0 0 0 0;
+	    border: 0 none;
+	    outline: 0;
+	}
+	.single-item {
+		width: 100%;
+		float: left;
+		text-align: center;
+		padding: 0% 10% 0% 10%;
+		background: $color_main;
+		@media #{$tablet} {
+			padding: 0;
+		}
+	}
+	.slick-slide img {
+	    display: block;
+	    float: left;
+	    margin: auto;
+	    width:100%;
+	}
+	.slider-container {
+	    width: 100%;
+	    overflow-x: hidden;
+	}
+	.slick-next {
+		right: 5%;
+		z-index: 9999;
+		height: 20px;
+      	width: 20px;
+		&:before {
+    		content:url(../arquivos/seta_direita.png);
+		}
+		@media #{$tablet} {
+			right: 3%;
+		}
+	}
+	.slick-prev {
+		left: 5%;
+		z-index: 9999;
+		height: 20px;
+      	width: 20px;
+		&:before {
+    		content:url(../arquivos/seta_esquerda.png);
+		}
+		@media #{$tablet} {
+			left: 3%;
+		}
+	}
+	.slick-dots {
+		width: 80%;
+		bottom: 5%;
+		@media #{$tablet} {
+			width: 100%;
+		}
+		li button:before {
+			font-size: 13.4px;
+		    line-height: 20px;
+		   	color: #eaeaea;
+		   	@media #{$tablet} {
+				font-size: 20px;
+				line-height: 30px;
+			}
+		}			
+		li.slick-active button:before {
+		    opacity: .75;
+		    color: #eaeaea;
+		}
+	}
+	.slider-container {
+		@media #{$tablet} {
+			display: none;
+		}
+		@media #{$phone-min} {
+			display: none;
+		}
+	}
+	.slider-container-mobile {
+		display:none;
+		@media #{$tablet} {
+			display: block;
+		}
+		@media #{$phone-min} {
+			display: block;
+		}
+	}
+	.slider-produtos {
+		width: 100%;
+		.produtos {
+			width: 100%;
+		    float: left;
+		    text-align: center;
+		    overflow-x: hidden;
+		    padding: 0% 10% 0% 10%;
+		    @media #{$tablet} {
+				padding: 0;
+			}	    
+		}
+		.produto {
+			display: inline-block;
+			float: left;
+			margin-right: 1%;
+			.produto-imagem{
+				width:100%;
+			}
+			.nome-produto {
+				display: block;
+			    float: left;
+			    width: 100%;
+			    color: #000;
+			    font-weight: bold;
+			}
+			.estrelas {
+				width: 100%;
+				padding: 10% 22%;
+			}
+			.de {
+				display: block;
+	    		float: left;
+	    		width: 100%;
+	    		font-style: italic;
+	    		text-decoration: line-through;
+	    		font-size: 11px;
+	    	}
+			.por {
+				display: block;
+	    		float: left;
+	    		width: 100%;
+	    		font-weight: bold;
+	    	}
+	    	.parcelado {
+	    		display: block;
+			    float: left;
+			    width: 100%;
+			    padding-bottom: 5%;
+	    	}
+	    	.btn-comprar {
+	    		display: block;
+			    float: left;
+			    width: 100%;
+			    height: 30px;
+			    border: none;
+			    background: black;
+			    font-style: italic;
+			    a {
+						color: white;
+					&:visited {
+						color:white;
+					}
+					&:hover {
+						color: $color_main;
+						font-weight: bold; 
+					}
+					&:active {
+						color: $color_main;
+						font-weight: bold;
+					}
+				}
+	    	}
+	    	.economize {
+	    		display: block;
+			    float: left;
+			    width: 100%;
+			    border: 1px solid #000;
+			    margin-top: 5%;
+	    	}
+		}
+		.slick-list {
+			width: 100%;
+		}
+		.slick-slide img {
+		    display: block;
+		    float: left;
+		    margin: auto;
+		    margin: 2%;
+		    width: 12%;
+		    vertical-align: middle;
+		}
+		.slick-next {
+			right: 5%;
+			z-index: 9999;
+			height: 20px;
+	      	width: 20px;
+			&:before {
+	    		content:url(../arquivos/seta_direita_produtos.png);
+			}
+			@media #{$tablet} {
+				right: 3%;
+			}
+		}
+		.slick-prev {
+			left: 5%;
+			z-index: 9999;
+			height: 20px;
+	      	width: 20px;
+			&:before {
+	    		content:url(../arquivos/seta_esquerda_produtos.png);
+			}
+			@media #{$tablet} {
+				left: 3%;
+			}
+		}
+	}
+
+}
+

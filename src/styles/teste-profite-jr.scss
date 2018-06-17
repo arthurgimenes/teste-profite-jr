@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* -----------------------------------------------------------------------------
+	Plugins
+   ----------------------------------------------------------------------------- */
+
+   @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+   @import "../../node_modules/slick-carousel/slick/slick.css";
+   @import "../../node_modules/slick-carousel/slick/slick-theme.css";
+   
+/* -----------------------------------------------------------------------------
+	Components
+   ----------------------------------------------------------------------------- */
+
+   @import "components/_variables.scss";
+   @import "components/font-awesome.min.css";
+
+/* -----------------------------------------------------------------------------
+   Layout
+   ----------------------------------------------------------------------------- */
+    
+    @import "layout/_header.scss";
+    @import "layout/_main.scss";
+    @import "layout/_footer.scss";
+
+
+    @import "components/_responsive.scss";
+
