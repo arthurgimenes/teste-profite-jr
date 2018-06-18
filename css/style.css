@@ -1,0 +1,185 @@
+
+
+ @media only screen and (max-width: 768px) {
+    .navbar-brand{margin-right: 0rem;}
+    }
+
+@media only screen and (max-width: 768px) {
+    #navbarTogglerDemo03{text-align: center;}
+    }
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+}
+
+
+
+.navbar-light .navbar-toggler{
+    border-color: rgba(0,0,0,0);
+}
+
+
+.badge-light {
+    color: #212529;
+    background-color: #5BDFA7;
+        border-radius: 30px;
+            margin-left: 2px;
+}
+
+.form-control{
+
+    border-bottom: inset;
+    border-left:  0;
+    border-top:  0;
+    border-right:  0;
+    width: 300px!important;
+
+}
+
+
+#navbarNavDropdown{
+
+    text-align: center;
+
+}
+
+
+
+#ibusca{
+
+color: black;
+
+}
+
+.btn-link:hover {
+    color: black;
+    text-decoration: underline;
+    background-color: transparent;
+    border-color: transparent;
+
+
+}
+
+.form-control:focus {
+    color: black;
+    background-color: #fff;
+    border-bottom-color: black;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+
+
+#produtos{
+
+margin-top: 50px;
+margin-bottom: 50px;
+
+
+}
+
+.borda_titulo{
+
+border-bottom: 3px solid #FF9943;
+
+}
+
+
+.img-produto{
+
+    width: 50%!important;
+    position: relative;
+    left: 20%;
+
+}
+
+.preco{
+
+color: #5BDFA7;
+font-weight: bold;
+
+}
+
+.valorantigo{
+
+text-decoration: line-through;
+
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #5BDFA7;
+    border-color: #5BDFA7;
+}
+
+.emate{
+
+font-size: 12px;
+
+
+}
+
+.card{
+
+border: 0px solid rgba(0,0,0,.125);
+
+}
+
+.card:hover{
+
+background-color: #F2F5F1;
+
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #44A67C;
+    border-color: #44A67C;
+}
+
+
+#myFooter {
+    background-color:#011627;
+    color: white;
+    padding-top: 30px;
+    margin-top: 30px;
+}
+
+#myFooter .footer-copyright {
+    background-color: #5BDFA7;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.local{
+
+    font-weight: bold;
+
+}
+
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    font-size: 27px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter p {
+    color: white;
+    text-decoration: none;
+}
+
+.btn_texto{
+
+font-size: 12px;
+
+}
