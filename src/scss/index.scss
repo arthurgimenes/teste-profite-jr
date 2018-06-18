@@ -1,2 +1,17 @@
+
+// vendors
 @import '../../node_modules/bootstrap/scss/bootstrap';
+
+// base
+@import './base/variables.scss';
+@import './base/helpers.scss';
+
+// layout
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+// custom
 @import './custom.scss';
+
+// module
+@import './module/carousel.scss';

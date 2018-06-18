@@ -96,7 +96,7 @@ const config = {
     ]),
     new HtmlWebPackPlugin({
       template: 'index.html',
-      favicon: './public/icon.ico',
+      favicon: './public/favicon-32x32.png',
       minify: !IS_DEV && {
         collapseWhitespace: true,
         preserveLineBreaks: true,

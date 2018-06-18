@@ -1,0 +1,18 @@
+
+// HELPERS
+
+.underline{
+    width: 60px;
+    height: 4px;
+    display: inline-block;
+    background-color: $color-brand;
+    position: relative;
+}
+.underline--small{
+    @extend .underline;
+    width: 40px;
+    height: 3px;
+}
+.text-line-through{
+    text-decoration: line-through;
+}

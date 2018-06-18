@@ -1,14 +1,52 @@
 {
     "results": [
         {
-            "title": "hdasjkdhasjd",
-            "price": 10.99,
-            "image": "xxxx"
+            "title": "Tênis Nike Air Max Sequent",
+            "price_in": "399,99",
+            "price_by": "299,99",
+            "image": "tenis-nike.png"
         },
         {
-            "title": "hdasjkdhasjd",
-            "price": 10.99,
-            "image": "xxxx"
+            "title": "Tênis Nike Air Max Sequent",
+            "price_in": "499,99",
+            "price_by": "399,99",
+            "image": "tenis-nike.png"
+        },
+        {
+            "title": "Tênis Nike Air Max Sequent",
+            "price_in": "599,99",
+            "price_by": "499,99",
+            "image": "tenis-nike.png"
+        },
+        {
+            "title": "Tênis Nike Air Max Sequent",
+            "price_in": "699,99",
+            "price_by": "599,99",
+            "image": "tenis-nike.png"
+        },
+        {
+            "title": "Tênis Nike Air Max Sequent",
+            "price_in": "199,99",
+            "price_by": "99,99",
+            "image": "tenis-nike.png"
+        },
+        {
+            "title": "Tênis Nike Air Max Sequent",
+            "price_in": "99,99",
+            "price_by": "59,99",
+            "image": "tenis-nike.png"
+        },
+        {
+            "title": "Tênis Nike Air Max Sequent",
+            "price_in": "399,99",
+            "price_by": "259,99",
+            "image": "tenis-nike.png"
+        },
+        {
+            "title": "Tênis Nike Air Max Sequent",
+            "price_in": "299,99",
+            "price_by": "209,99",
+            "image": "tenis-nike.png"
         }
     ]
 }
