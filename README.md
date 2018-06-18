@@ -1,52 +1,84 @@
-# SP Desenvolvedor Front-end - Junior
+# Boostrap + Webpack + JQuery Boilerplate
 
-###### Você já conhece a Profite? Nós somos a maior implantadora de e-commerce do Brasil. Atendemos clientes como Electrolux, Calvin Klein, C&A, Havaianas, Timex, Shopfácil, Mambo entre outros.
+> Build landing page with **Boostrap** and **jQuery** is so easy.
 
-###### Estamos procurando um(a) Desenvolvedor(a) Front-end, com sólidos conhecimentos em HTML. CSS e JS para projetar interfaces e entregar a melhor experiência para os consumidores visando sempre a otimização do código e agilidade no desenvolvimento.
+<a target="_blank" href="https://opensource.org/licenses/MIT" title="License: MIT">
+  <img src="https://img.shields.io/badge/License-MIT-blue.svg">
+</a>
+<a href="#badge">
+  <img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg">
+</a>
+<a target="_blank" href="http://makeapullrequest.com" title="PRs Welcome"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg"></a>
 
-###### O perfil que procuramos é de uma pessoa ligada no 220v, que respire a cultura mobile first e que seja capaz de defender ideias e apresentá-las de forma clara e objetiva. De fácil relacionamento, organizado(a) e comprometido(a) com prazos e qualidade das entregas.
+## Why ?
 
+React is awesome, and I use it everyday.
 
-### Requisitos:
-* HTML e HTML5
-* CSS
-* Noções de Javascript e Jquery
-* GIT
-* Sites responsivos
+However, not each project needs such a complicated library. jQuery and bootstrap are good enough.
 
-#
+Hence, this repo is suitable for simple projects.
 
-### Diferenciais
-* Vtex
+## About DOM manipulation, all you need is...
 
-### Benefícios
-*  Vale-refeição
-*  Vale-alimentação
-*  Plano de saúde
-*  Plano odontológico
-*  Vale-transporte
-*  Folga de aniversário
+#### 🤩 jQuery
 
+#### ❌ No React
 
-### Como concorrer a vaga:
-* Forka esse projeto;
-* No seu fork, codifique o [layout](https://www.figma.com/file/BOZqx8uK9NQ9IxbhVhyung96/Profit-e---Teste-de-Layout?node-id=0%3A1) seguindo as instruções abaixo;
-* Faça um pull request.
+#### ❌ No Vue
 
-### Instruções para o teste:
+#### ❌ No Angular
 
-##### [Link do layout](https://www.figma.com/file/BOZqx8uK9NQ9IxbhVhyung96/Profit-e---Teste-de-Layout?node-id=0%3A1)
-#
-##### Obrigatório
-* HTML5 e CSS3
-* Carrossel com Jquery
-* Permitido uso de framework :D 
+## About CSS, all you need is...
 
-##### Bônus
-* Interação com JSON para renderizar os produtos
-* Grunt, Gulp ou similar
-* Responsividade
-* SASS/LESS
+#### 🤩 Bootstrap + CSS
 
-### Final:
-Quando finalizar enviar o teste para: arthur@profite.com.br
+#### ❌ No CSS Modules
+
+#### ❌ No styled-components
+
+## Features
+
+* **Bootstrap** and **jQuery** installed
+* Hot Module Replacement (**HMR**)
+* Support **ES6** Syntax
+* **ESLint** + **Prettier** = **Neat Coding Style**
+* Webpack production building
+
+## Download and Install
+
+Let's go!
+
+```
+$ git clone https://github.com/xxhomey19/bootstrap-webpack-jquery-boilerplate.git
+$ yarn // or npm install
+```
+
+## Development
+
+Run development page on **localhost:8080**
+
+```
+$ npm run dev
+```
+
+## Build
+
+Build for production.
+
+```
+$ npm run build
+```
+
+## Deploy
+
+Deploy to `gh-pages` branch on GitHub.
+
+**[DEMO](https://xxhomey19.github.io/bootstrap-webpack-jquery-boilerplate/)**
+
+```
+$ npm run deploy
+```
+
+## License
+
+MIT © [xxhomey19](https://github.com/xxhomey19)
