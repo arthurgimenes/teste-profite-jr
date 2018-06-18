@@ -1,0 +1,159 @@
+.hero{
+
+    .carousel-item{
+        height: 400px;
+    }
+
+    .carousel-caption{
+        top: 0;
+        left: 0;
+        background-color: $color-primary;
+        height: 100%;
+        width: 50%;
+
+        .info{
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 40px;
+            display: inline-block;
+            text-align: left;
+            margin-top: 125px;
+        }
+        .underline{
+            position: relative;
+            top: -10px;
+        }
+
+    }
+
+    .carousel-indicators li{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #fff;
+
+        &.active{
+            background-color: $color-brand;
+        }
+    }
+
+}
+
+
+
+@media (min-width: 768px) {
+
+    .products{
+
+        /* show 3 items */
+        .carousel-inner .active,
+        .carousel-inner .active + .carousel-item,
+        .carousel-inner .active + .carousel-item + .carousel-item,
+        .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item  {
+            display: block;
+        }
+
+        .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+        .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+        .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item,
+        .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+            transition: none;
+        }
+
+        .carousel-inner .carousel-item-next,
+        .carousel-inner .carousel-item-prev {
+            position: relative;
+            transform: translate3d(0, 0, 0);
+        }
+
+        .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+            position: absolute;
+            top: 0;
+            right: -25%;
+            z-index: -1;
+            display: block;
+            visibility: visible;
+        }
+
+        /* left or forward direction */
+        .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+        .carousel-item-next.carousel-item-left + .carousel-item,
+        .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+        .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item,
+        .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+            position: relative;
+            transform: translate3d(-100%, 0, 0);
+            visibility: visible;
+        }
+
+        /* farthest right hidden item must be abso position for animations */
+        .carousel-inner .carousel-item-prev.carousel-item-right {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            display: block;
+            visibility: visible;
+        }
+
+        /* right or prev direction */
+        .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+        .carousel-item-prev.carousel-item-right + .carousel-item,
+        .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+        .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item,
+        .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+            position: relative;
+            transform: translate3d(100%, 0, 0);
+            visibility: visible;
+            display: block;
+            visibility: visible;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next{
+            width: 10%;
+        }
+
+        .carousel-control-prev{
+            left: -90px;
+        }
+
+        .carousel-control-next{
+            right: -90px;
+        }
+
+    }
+
+}
+
+
+@media only screen and (max-width: 768px){
+    .hero {
+
+        .carousel-item{
+            height: 200px;
+        }
+
+        .carousel-caption{
+            width: 100%;
+            background-color: rgba($color-primary, 0.5);
+
+            .info{
+                font-size: 16px;
+                margin-top: 20px;
+                line-height: 20px;
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .hero {
+
+        .carousel-item img{
+            height: 100%;
+        }
+
+    }
+}

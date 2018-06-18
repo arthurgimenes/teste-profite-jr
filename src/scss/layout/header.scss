@@ -1,0 +1,69 @@
+
+// HEADER CUSTOM
+
+.header{}
+.header .form-search,
+.header .form-control{
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.5);
+    border-radius: 0;
+    background-color: transparent;
+}
+.header .navbar-toggler{
+    border: none;
+    padding: 0;
+}
+.header .form-search{
+    color: rgba(0,0,0,0.7);
+}
+.header .form-control{
+    width: 370px;
+
+    &:focus{
+        box-shadow: none;
+    }
+}
+.header .fa-shopping-cart,
+.header .cart-amount{
+    vertical-align: middle;
+}
+.header .cart-amount{
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #2fc4b7;
+    color: #fff;
+    font-size: 10px;
+}
+.header .navbar-light{
+    color: #000;
+}
+.header .nav-flag{
+    -ms-transition: all .2s;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+}
+.header .nav-flag:hover{
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.header .nav-link:hover .cart-amount{
+    background-color: #25b5a8;
+}
+.header .nav-vdivider{
+    display: inline-block;
+    width: 1px;
+    height: 30px;
+    background-color: rgba(0,0,0,.5);
+    vertical-align: middle;
+    margin: 6px 8px 0 12px;
+}
+
+@media only screen and (max-width: 768px){
+    .header .form-control{
+        width: auto;
+    }
+}

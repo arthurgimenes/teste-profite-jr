@@ -1,0 +1,111 @@
+
+// Your customize CSS
+
+
+
+
+
+
+
+
+
+// Products
+.products{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #7a7a7a;
+
+    .card{
+        transition: all .2s;
+        -webkit-transition: all .2s;
+        -ms-transition: all .2s;
+        border: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        cursor: pointer;
+        margin-left: 80px;
+        display: inline-block;
+
+        &:hover{
+            background-color: #f2f2f2;
+        }
+
+        &:first-child{
+            margin-left: 0;
+        }
+
+        &.off:after{
+            content: "";
+            width: 0px;
+            height: 0px;
+            border-top: 0px solid transparent;
+            border-bottom: 80px solid transparent;
+            border-right: 80px solid $color-brand;
+            position: absolute;
+            right: 0px;
+            color: #fff;
+            top: 0px;
+        }
+
+        &.off:before{
+            content: "OFF";
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            z-index: 1;
+            color: #fff;
+            font-size: 18px;
+        }
+    }
+
+    .card-price{
+        font-size: 22px;
+        color: $color-secondary;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .card-rate{
+        color: $color-brand;
+    }
+
+    .card-title{
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    .card-text{
+        margin: 0;
+        font-size: 13px;
+    }
+
+    .btn-primary{
+        background-color: $color-secondary;
+        border-color: $color-secondary;
+        text-transform: uppercase;
+    }
+
+    &__title{
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .underline{
+        top: -15px;
+    }
+
+
+}
+
+
+@media screen and (max-width: 768px){
+
+    .products__carrousel{
+        text-align: center;
+
+        .card{
+            margin-left: 0;
+        }
+    }
+
+}

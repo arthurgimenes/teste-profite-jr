@@ -1,0 +1,70 @@
+
+// FOOTER CUSTOM
+
+.footer{
+    background-color: $color-primary;
+    border-bottom: 8px solid $color-secondary;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #fff;
+}
+
+.footer h2{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer h3{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.footer p{
+    font-size: 12px;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+.footer .underline{
+    top: -18px;
+}
+
+.footer .btn-secondary{
+    background-color: $color-brand;
+    border-color: $color-brand;
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 12px;
+    width: 162px;
+    text-align: right;
+
+    .fa-headphones{
+        position: relative;
+        font-size: 14px;
+        top: 6px;
+    }
+    .fa-envelope{
+        font-size: 14px;
+    }
+}
+
+.footer .credits{
+    margin-top: 45px;
+    padding: 0;
+
+    li{
+        list-style-type: none;
+        display: inline-block;
+        margin-left: 15px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px){
+    .footer .credits{
+        margin-top: 22px;
+    }
+}
