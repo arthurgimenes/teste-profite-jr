@@ -1,0 +1,493 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: #7A7A7A;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  line-height: normal;
+  color: #011627;
+}
+
+li {
+  list-style: none;
+}
+
+.linha {
+  width: 65px;
+  height: 0px;
+  border-top: 5px solid #FF9F1C;
+  margin-bottom: 15px;
+}
+
+/*========================= HEADER =========================*/
+.carrinhoMobile, .logo {
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+}
+
+input.busca {
+  border: none;
+  border-bottom: 1px solid;
+  height: 34px;
+  padding: 10px 15px;
+  margin-top: 8px;
+  width: 90%;
+}
+
+input.busca:focus {
+  outline-offset: none;
+  outline: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  background: #fbfbfb;
+}
+
+button.btn.btn-buscar {
+  margin: -4px;
+  background: transparent;
+  border-bottom: 1px solid;
+  border-radius: unset;
+  padding: 5px;
+}
+
+.conta span {
+  font-size: 13px;
+  color: #7A7A7A;
+}
+
+.conta, .carrinho {
+  font-size: 18px;
+  color: #011627;
+}
+
+.idiomas {
+  height: 50px;
+  padding: 15px 10px;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+}
+
+span.qtdCarrinho {
+  background-color: #2EC4B6;
+  margin-left: 3px;
+}
+
+.navbar {
+  margin-bottom: 10px;
+}
+
+/***********************/
+.imagensBanner img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel .item a {
+  display: block;
+}
+
+.bannerMobile {
+  display: none;
+}
+
+.tituloBanner {
+  position: absolute;
+  top: 75px;
+  left: 90px;
+  width: 520px;
+}
+
+.tituloBanner h1 {
+  color: #FFFFFF;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+/*========================= MAIN =========================*/
+main {
+  margin: 15px 0;
+}
+
+.boxProduto {
+  margin: 0 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.boxProduto:hover {
+  background: #F2F2F2;
+  border: 1.4px solid #F2F2F2;
+}
+
+.boxProduto img {
+  width: 100%;
+}
+
+span.flag {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 3;
+}
+
+.nomeProduto {
+  font-weight: 500;
+  font-size: 12px;
+  color: #7A7A7A;
+}
+
+.avaliacao input[type=radio] {
+  display: none;
+}
+
+.avaliacao input[type=radio]:not(:checked) ~ label i.fa:before {
+  content: "";
+  color: #FF9F1C;
+}
+
+.avaliacao input[type=radio]:checked ~ label i.fa:before {
+  content: "";
+  color: #FF9F1C;
+}
+
+.boxPreco {
+  margin: 10px 0;
+}
+
+.de {
+  font-size: 12px;
+  text-decoration: line-through;
+  -webkit-text-decorations-in-effect: line-through;
+  color: #7A7A7A;
+}
+
+.por {
+  font-weight: 500;
+  font-size: 18px;
+  color: #2EC4B6;
+}
+
+.parcelas {
+  font-size: 11px;
+  color: #7A7A7A;
+}
+
+.comprar {
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+  background: #2EC4B6;
+  border-radius: 5px;
+  padding: 5px;
+  max-width: 125px;
+  width: 100%;
+}
+
+/*========================= FOOTER =========================*/
+footer.rodape {
+  background: #011627;
+  border-bottom: 10px solid #2EC4B6;
+}
+
+.rodape h1, .rodape h2,
+.rodape h3, .rodape h4,
+.rodape h5, .rodape h6 {
+  color: #FFFFFF;
+}
+
+footer ul span {
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+footer ul li {
+  font-style: normal;
+  line-height: normal;
+  color: #FFFFFF;
+  list-style: none;
+  padding: 5px 0;
+  margin: 5px 0;
+}
+
+.btnInfo {
+  color: #FFFFFF;
+  background: #FF9F1C;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 5px;
+  display: flex;
+  white-space: normal;
+  padding: 0;
+  width: 140px;
+  height: 38px;
+  margin: auto;
+}
+
+.btnInfo div .fa {
+  font-size: 18px;
+}
+
+.btnInfo div .fa {
+  padding: 8px;
+}
+
+.agencia {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.agencia a {
+  padding: 5px;
+  margin: 0 15px;
+}
+
+/***************Animação do botão - menu mobile***************/
+.btn-mobile {
+  border: none;
+}
+
+.icon-bar {
+  opacity: 1;
+  background-color: #011627;
+  height: 2.5px;
+  width: 34px;
+  display: block;
+  margin: 8px 0px;
+  transition: 0.3s opacity;
+  -moz-transition: 0.3s opacity;
+  -webkit-transition: 0.3s opacity;
+  top: 10px;
+}
+
+.closebtn {
+  width: 58px;
+  height: 38px;
+}
+
+.closebtn .icon-bar {
+  position: absolute;
+}
+
+.closebtn .icon-bar:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  animation-name: animacao;
+  animation-duration: 0.6s;
+}
+
+.closebtn .icon-bar:nth-child(2) {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  animation-name: animacao2;
+  animation-duration: 0.6s;
+}
+
+.closebtn .icon-bar:nth-child(3) {
+  opacity: 0;
+}
+
+@keyframes animacao {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+@keyframes animacao2 {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+/*****************************************************/
+.menuMobile {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 99999;
+  top: 100px;
+  left: 0;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+  transition: 0.5s;
+  overflow-y: scroll;
+  display: none;
+}
+
+.menuMobile li {
+  list-style: none;
+  padding: 5px 0;
+  margin: 3px 0;
+}
+
+/*************** CONTROLES CARROSSEL ***************/
+.owl-controls .owl-buttons > div {
+  width: 40px;
+  height: 25px;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}
+
+.owl-controls .owl-buttons > div:hover {
+  color: #E7E7E7;
+}
+
+.owl-controls .owl-buttons > div.owl-prev {
+  left: 0px;
+}
+
+.owl-controls .owl-buttons > div.owl-next {
+  right: 0px;
+}
+
+.prateleira .owl-controls .owl-buttons > div {
+  color: #011627;
+}
+
+.prateleira .owl-controls .owl-buttons > div:hover {
+  color: #FF9F1C;
+}
+
+.prateleira .owl-controls .owl-buttons > div.owl-prev {
+  left: -15px;
+}
+
+.prateleira .owl-controls .owl-buttons > div.owl-next {
+  right: -15px;
+}
+
+/********************* RESPONSIVO *********************/
+@media (max-width: 450px) {
+  .tituloBanner {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 55%;
+  }
+
+  .tituloBanner h1 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 451px) and (max-width: 580px) {
+  .tituloBanner {
+    position: absolute;
+    top: 0;
+    left: 35px;
+    width: 55%;
+  }
+
+  .tituloBanner h1 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 581px) and (max-width: 767px) {
+  .tituloBanner {
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    width: 55%;
+  }
+
+  .tituloBanner h1 {
+    font-size: 52px;
+  }
+}
+@media (max-width: 767px) {
+  input.busca {
+    text-align: center;
+  }
+
+  .menuMobile {
+    display: block;
+  }
+
+  .carrinhoMobile {
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .nav-desktop,
+.bannerDesktop {
+    display: none;
+  }
+
+  .bannerMobile {
+    display: block;
+  }
+
+  .imagensBanner img {
+    opacity: 0.5;
+  }
+
+  .item.imagensBanner {
+    background: url(../images/banner-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .btnInfo {
+    color: #FFFFFF;
+    background: #FF9F1C;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 5px;
+    display: flex;
+    white-space: normal;
+    padding: 0;
+    width: 140px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .tituloBanner {
+    position: absolute;
+    top: 25px;
+    left: 45px;
+    width: 45%;
+  }
+
+  .tituloBanner h1 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 992px) {
+  .conta span {
+    display: none;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .tituloBanner {
+    position: absolute;
+    top: 35px;
+    left: 40px;
+    width: 50%;
+  }
+
+  .tituloBanner h1 {
+    font-size: 43px;
+  }
+}
