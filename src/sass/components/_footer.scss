@@ -1,0 +1,80 @@
+@import '../variables';
+@import '../responsive';
+@import '../base';
+.footerWrapper{
+    background-color: $color-blue;
+    color: $color-white;
+    padding: 2rem 15%;
+    margin-top: 4rem;
+
+    @include respond(tablet) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.title {
+    font-size: 2rem;
+    line-height: 2.3rem;
+    font-weight: 700;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    width: 100%;
+    padding-left: 2rem;
+
+    @include respond(tablet) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem;
+
+    @include respond(tablet) {
+        flex-direction: column;
+    }
+    
+    
+
+    &__adress{
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 1rem;
+        font-size: 1.2rem;
+
+        .sp {
+            margin-right: 2rem;
+        }
+    }
+    &__buttons {
+        
+        a {
+            padding: .5rem 1rem;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: $color-orange;
+            margin: 1rem;
+            border-radius: 2rem;
+            text-transform: uppercase;
+
+
+            img{
+                width: 1.8rem;
+                margin: 1rem;
+            }
+        }
+    }
+    &__profite {}
+}

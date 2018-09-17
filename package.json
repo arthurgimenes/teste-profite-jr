@@ -1,0 +1,28 @@
+{
+  "name": "teste-profite-jr",
+  "version": "1.0.0",
+  "description": "* HTML e HTML5\r * CSS\r * Noções de Javascript e Jquery\r * GIT\r * Sites responsivos",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rafahur/teste-profite-jr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rafahur/teste-profite-jr/issues"
+  },
+  "homepage": "https://github.com/Rafahur/teste-profite-jr#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1"
+  }
+}
