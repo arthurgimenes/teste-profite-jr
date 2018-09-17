@@ -1,0 +1,9 @@
+$mobile-sm: "only screen and (max-width: 500px)";
+$mobile-lg: "(min-width:499px) and (max-width:766px)";
+$mobile: "only screen and (max-width: 767px)";
+$not-mobile: "only screen and (min-width: 768px)";
+$desktops: "only screen and (min-width:992px)";
+$tablet: "(min-width:768px) and (max-width:992px)";
+$not-desktop: "only screen and (max-width:992px)";
+$desktop: "(min-width:992px) and (max-width:1200px)";
+$desktop-bg: "only screen and (min-width:1200px)";

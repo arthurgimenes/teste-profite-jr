@@ -1,0 +1,28 @@
+.side-info{
+	padding: 0;
+	[class^='col-']{
+		padding: 0 10px 0 0;
+		img{
+			margin: 12px 0 0;
+			width: 30px;
+			padding: 0 3px;
+			border-radius: 4px;
+			float: right;
+		}
+	}
+}
+
+.tel{
+	font-size: 17.5px;
+	color: #44c0ed;
+	margin-top: 2px;
+	padding-right: 2px;
+	font-family: 'RobotoSlab';
+}
+
+#skype{
+	margin-top: 34px;
+	img{
+		padding: 0 5px;
+	}
+}

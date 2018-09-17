@@ -1,0 +1,16 @@
+body{
+	font-family: 'OpenSans';
+}
+
+a{
+	color: #000;
+	font-size: 14px;
+	&:hover, &:visited, &:focus{
+		text-decoration: none;
+		color: #555;
+	}
+}
+
+button{
+	outline: 0;
+}

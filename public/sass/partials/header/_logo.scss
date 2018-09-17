@@ -1,0 +1,24 @@
+.logo{
+	padding: 0 0 10px;
+	@media #{$desktop}{
+		padding: 0;
+	}
+}
+
+.navbar-brand{
+	padding: 15px 0;
+	float: none;
+	img{
+		width: 90%;
+		padding-left: 20%;
+		@media #{$mobile-sm}{
+			padding: 0;
+		}
+		@media #{$not-mobile}{
+			padding: 0;
+		}
+		@media #{$desktop-bg}{
+			padding: 0 5px;
+		}
+	}
+}
