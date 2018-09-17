@@ -5,6 +5,7 @@ var imagemin = require ('gulp-imagemin');
 var htmlmin = require ('gulp-htmlmin');
 var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
+var autoprefixer = require('gulp-autoprefixer');
 
 
 gulp.task('serve', ['sass','mincss','minify', 'imagemin'], function() {
@@ -25,6 +26,10 @@ gulp.task('sass', function() {
     gulp.src('./src/sass/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(rename({suffix: '.min'}))
+        .pipe(autoprefixer({
+            browsers: ['last 2 version'],
+            cascade: false
+        }))
         .pipe(gulp.dest('./src/css/'))
         .pipe(gulp.dest('./dist/css/'))
 
