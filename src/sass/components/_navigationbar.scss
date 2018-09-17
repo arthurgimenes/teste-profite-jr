@@ -1,0 +1,167 @@
+@import '../variables';
+@import '../responsive';
+
+
+.navBar-container {
+    min-width: 100%;
+    margin: 0 auto;
+    height: 8rem;
+    position:fixed;
+    z-index: 5000;
+}
+.navBar {
+    height: 100%;
+    width: 100%;
+    background-color: $color-white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 15%;
+
+    @include respond(phone) {
+        padding: 0 5%;
+    }
+
+    &__menu {
+        display: none;
+        img {
+            height: 1.5rem;
+            width: auto;
+        }
+        #searchIcon {
+            margin-left: 2rem;
+        }
+
+        @include respond(tablet) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 0;
+            flex-basis: 10%
+        }
+    }
+
+    &__logo {
+        display: flex;
+
+        #logo {
+            min-width: 11rem;
+            @include respond(tablet) {
+                width: 7rem;
+            }
+        }
+    }
+
+    &__search {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+        flex-direction: row;
+        border-bottom: 1px solid $color-black;
+        margin: 0 10%;
+
+        @include respond(monitor) {
+            display: none;
+        }
+
+        input {
+            padding: 1rem;
+            border: none;
+            font-size: 1.3rem;
+            width: 100%;
+            background-color: transparent;
+        }
+        img {
+            padding: 1rem;
+            min-width: 1.8rem;
+        }
+    }
+
+    &__others {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        height: 100%;
+
+        .account {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 2rem;
+            font-size: 1.3rem;
+            flex-grow: 1;
+            white-space: nowrap;
+
+            @include respond(tablet) {
+                display: none;
+            }
+    
+            span {
+                img {
+                    width: 1.8rem;
+                    margin-right: .5rem;
+                }
+            }
+        }
+
+        .cart {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+
+            @include respond(tablet) {
+                flex-grow: 1;
+                flex-basis: 10%;
+            }
+            span {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 1.4rem;
+                height: 1.4rem;
+                font-size: 1rem;
+                line-height: 1.1rem;
+                background-color: $color-green;
+                padding: .4rem .6rem;
+                border-radius: 1rem;
+                color: $color-white;
+            }
+        }
+
+        .h-divider {
+            height: 50%;
+            background-color: $color-gray;
+            width: 1px;
+            margin: 0 2rem;
+
+            @include respond(tablet) {
+                display: none;
+            }
+        }
+
+        .countries {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+
+            @include respond(tablet) {
+                display: none;
+            }
+
+            span:not(:last-child) {
+                margin-right: 2rem;
+                height: 1.8rem;
+            }
+
+            img {
+                width: 2.5rem;
+                height: 1.8rem;
+            }
+        }
+    }
+}  

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    
+    <title>Document</title> 
+</head>
+<body>
+    <header class="navBar-container">
+        <nav class="navBar">
+                <div class="navBar__menu">
+                    <a href="#"><img src="images/menu.svg" alt="logo profire"></a>
+                    <a href="#"><img id="searchIcon" src="images/search.png" alt=""></a>
+                </div>
+                <div class="navBar__logo">
+                    <a href="#"><img id="logo" src="images/Logo.svg" alt="logo profire"></a>
+                </div>
+                <div class="navBar__search">
+                    <input type="text" placeholder="O que você está procurando?"><span><img src="images/search.png" alt=""></span>
+                </div>
+                <div class="navBar__others">
+                    <p class="account"><span><img src="images/profile.svg" alt="icone de perfil"></span> Minha Conta</p>
+                    <div class="cart"><img src="images/cart.svg" alt="icone de carrinho"><span>1</span></div>
+                    <div class="h-divider"><span></span></div>
+                    <div class="countries">
+                        <span><img src="images/BR.png" alt="icone idioma portugues"></span>
+                        <span><img src="images/ES.png" alt="icone idioma espanhol (español)"></span>
+                        <span><img src="images/GB.png" alt="icone idioma ingles (english)"></span>
+                    </div>
+                </div>
+        </nav>
+    </header>
+
+    <section class="hero-container">
+        <div class="hero">
+            <div class="hero__left"></div>
+            <div class="hero__right"></div>
+            <div class="hero__carouselWrapper">
+                    <div class="main-carousel" data-flickity='{ "autoPlay": false, "prevNextButtons": true, "cellAlign": "left", "contain": true }'>
+                        <div class="main-carousel__card">
+                            <span>Nossa especialidade:<br>experiencia de compra</span>
+                            <span class="orangeLine--big"></span>
+                        </div>
+                        <div class="main-carousel__card" class="div">
+                            <span>Nossa especialidade:<br>experiencia de compra </span>
+                            <span class="orangeLine--big"></span>
+                        </div>
+                        <div class="main-carousel__card" class="div">
+                            <span>Nossa especialidade:<br>experiencia de compra </span>
+                            <span class="orangeLine--big"></span>
+                        </div>
+                        <div class="main-carousel__card" class="div">
+                            <span>Nossa especialidade:<br>experiencia de compra </span>
+                            <span class="orangeLine--big"></span>
+                        </div>
+                    </div>
+            </div> 
+        </div>
+    </section>
+
+    <section class="products-container">
+        <div class="products">
+            <span class="title">Produtos<span class="orangeLine--medium"></span> </span>
+            
+            <div class="products-carousel" data-flickity='{"pageDots": false, "autoPlay": false, "prevNextButtons": true, "cellAlign": "center", "contain": true }'>
+                <div class="products-carousel__card">
+                    <a class="product" href="#">
+                        <img src="images/product.png" alt="tenis couro puma r698 q4 v2">
+                        <p class="product__title">Tênis couro puma r698 q4 v2</p>
+                        <div class="product__ratingStars">
+                            <img src="images/fullstar.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                        </div>
+                        <p class="product__oldPrice">de R$ 299,00</p>
+                        <p class="product__price">por R$ 399,00</p>
+                        <p class="product__parcel">ou em 3x de R$133,00</p>
+                        <button class="product__btn">
+                            <img src="images/cartplus.svg" alt="">
+                            <span>Comprar</span>  
+                        </button>
+                    </a>
+                </div>
+                <div class="products-carousel__card">
+                    <a class="product" href="#">
+                        <img src="images/product.png" alt="tenis couro puma r698 q4 v2">
+                        <p class="product__title">Tênis couro puma r698 q4 v2</p>
+                        <div class="product__ratingStars">
+                            <img src="images/fullstar.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                        </div>
+                        <p class="product__oldPrice">de R$ 299,00</p>
+                        <p class="product__price">por R$ 399,00</p>
+                        <p class="product__parcel">ou em 3x de R$133,00</p>
+                        <button class="product__btn">
+                            <img src="images/cartplus.svg" alt="">
+                            <span>Comprar</span>  
+                        </button>
+                    </a>
+                </div>
+                <div class="products-carousel__card">
+                    <img class="discount" src="images/flag.png" alt="OFF">
+                    <a class="product" href="#">
+                        <img src="images/product.png" alt="tenis couro puma r698 q4 v2">
+                        
+                        <p class="product__title">Tênis couro puma r698 q4 v2</p>
+                        <div class="product__ratingStars">
+                            <img src="images/fullstar.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                        </div>
+                        <p class="product__oldPrice">de R$ 299,00</p>
+                        <p class="product__price">por R$ 399,00</p>
+                        <p class="product__parcel">ou em 3x de R$133,00</p>
+                        <button class="product__btn">
+                            <img src="images/cartplus.svg" alt="">
+                            <span>Comprar</span>  
+                        </button>
+                    </a>
+                </div>
+                <div class="products-carousel__card">
+                    <a class="product" href="#">
+                        <img src="images/product.png" alt="tenis couro puma r698 q4 v2">
+                        <p class="product__title">Tênis couro puma r698 q4 v2</p>
+                        <div class="product__ratingStars">
+                            <img src="images/fullstar.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                        </div>
+                        <p class="product__oldPrice">de R$ 299,00</p>
+                        <p class="product__price">por R$ 399,00</p>
+                        <p class="product__parcel">ou em 3x de R$133,00</p>
+                        <button class="product__btn">
+                            <img src="images/cartplus.svg" alt="">
+                            <span>Comprar</span>  
+                        </button>
+                    </a>
+                </div>
+                <div class="products-carousel__card">
+                    <a class="product" href="#">
+                        <img src="images/product.png" alt="tenis couro puma r698 q4 v2">
+                        <p class="product__title">Tênis couro puma r698 q4 v2</p>
+                        <div class="product__ratingStars">
+                            <img src="images/fullstar.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                        </div>
+                        <p class="product__oldPrice">de R$ 299,00</p>
+                        <p class="product__price">por R$ 399,00</p>
+                        <p class="product__parcel">ou em 3x de R$133,00</p>
+                        <button class="product__btn">
+                            <img src="images/cartplus.svg" alt="">
+                            <span>Comprar</span>  
+                        </button>
+                    </a>
+                </div>
+                <div class="products-carousel__card">
+                    <a class="product" href="#">
+                        <img src="images/product.png" alt="tenis couro puma r698 q4 v2">
+                        <p class="product__title">Tênis couro puma r698 q4 v2</p>
+                        <div class="product__ratingStars">
+                            <img src="images/fullstar.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                        </div>
+                        <p class="product__oldPrice">de R$ 299,00</p>
+                        <p class="product__price">por R$ 399,00</p>
+                        <p class="product__parcel">ou em 3x de R$133,00</p>
+                        <button class="product__btn">
+                            <img src="images/cartplus.svg" alt="">
+                            <span>Comprar</span>  
+                        </button>
+                    </a>
+                </div>
+                <div class="products-carousel__card">
+                    <a class="product" href="#">
+                        <img src="images/product.png" alt="tenis couro puma r698 q4 v2">
+                        <p class="product__title">Tênis couro puma r698 q4 v2</p>
+                        <div class="product__ratingStars">
+                            <img src="images/fullstar.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                        </div>
+                        <p class="product__oldPrice">de R$ 299,00</p>
+                        <p class="product__price">por R$ 399,00</p>
+                        <p class="product__parcel">ou em 3x de R$133,00</p>
+                        <button class="product__btn">
+                            <img src="images/cartplus.svg" alt="">
+                            <span>Comprar</span>  
+                        </button>
+                    </a>
+                </div>
+                <div class="products-carousel__card">
+                    <a class="product" href="#">
+                        <img src="images/product.png" alt="tenis couro puma r698 q4 v2">
+                        <p class="product__title">Tênis couro puma r698 q4 v2</p>
+                        <div class="product__ratingStars">
+                            <img src="images/fullstar.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                            <img src="images/star.svg" alt="pontuação uma estrela cheia">
+                        </div>
+                        <p class="product__oldPrice">de R$ 299,00</p>
+                        <p class="product__price">por R$ 399,00</p>
+                        <p class="product__parcel">ou em 3x de R$133,00</p>
+                        <button class="product__btn">
+                            <img src="images/cartplus.svg" alt="">
+                            <span>Comprar</span>  
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footerWrapper">
+        <span class="title">Localização<span class="orangeLine--medium"></span> </span>
+        <div class="footer">
+            <div class="footer__adress">
+                <div class="sp">
+                    <p><b>São Paulo</b></p>
+                    <p>Rua do Rocio, 423/1801</p>
+                    <p>Vila Olimpia - SP</p>
+                    <p>04552-000</p>
+                    <p>+55 11 3333 3333</p>
+                </div>
+                <div class="rj">
+                    <p><b>Rio de Janeiro</b></p>
+                    <p>Vol. da Pátria 301/702</p>
+                    <p>Botafogo - RJ</p>
+                    <p>22270-000</p>
+                    <p>+55 21 3333 3333</p>
+                </div>
+            </div>
+            <div class="footer__buttons">
+                <a href="#"> <img src="images/mail.svg" alt="">  Entre em contato</a>
+                <a href="#"> <img src="images/chat.svg" alt="">  Fale com o nosso consultor online</a>
+            </div>
+            <div class="footer__profite">
+                <img src="images/LogosFooter.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+    
+
+
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>
