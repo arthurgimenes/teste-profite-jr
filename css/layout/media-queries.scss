@@ -1,0 +1,41 @@
+@media (max-width: 767px) {
+    .carousel-inner img {
+        max-height: 191px;
+    }
+}
+
+@media(min-width: 768px) {
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: inline-block;
+    }
+
+    .barraBuscaDesktop {
+        width: 50%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid black;;
+        background-image: url("../imagens/icone-lupa.svg");
+        background-repeat: no-repeat;
+        
+        background-position-x: 99%;
+        background-position-y: 10px;
+        padding-right: 20px;
+        padding-bottom: 8px;
+        font-size: 0.8em;  
+        display: inline-block;
+    }
+
+    .separador {
+        padding-right: 18px;
+    }
+
+    .idiomas {
+       padding-right: 28px;
+    }
+
+}

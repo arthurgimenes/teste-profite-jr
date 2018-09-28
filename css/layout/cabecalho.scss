@@ -1,0 +1,36 @@
+.cabecalhoPrincipal .separador {
+    color: #7A7A7A;
+    width: 30px;
+}
+
+.barraBusca {
+    width: 99%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;;
+    background-image: url("../imagens/icone-lupa.svg");
+    background-repeat: no-repeat;
+    
+    background-position-x: 99%;
+    background-position-y: 15%;
+    padding-right: 20px;
+    padding-bottom: 8px;
+    font-size: 0.8em;  
+}
+
+.barraBuscaDesktop {
+    display: none;
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.carousel-indicators .active{
+    background-color: #FF9F1C;
+}
+
+

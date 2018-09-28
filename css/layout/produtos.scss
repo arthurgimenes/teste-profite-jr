@@ -1,0 +1,68 @@
+.meusProdutos {
+    margin-top: 10px;
+}
+
+.meusProdutos .linha{
+    background-color: $cor-linha;
+    margin-top: 1px;
+    margin-bottom: 5px;
+    display: inline-block;
+    width: 2.0em;
+    height: 5px;
+}
+
+.produto-lista .imagem-produto{
+    width: 112px;
+    height: 92px;
+}
+
+.produto-lista .titulo-produto{
+    color: $cor-fonte-produto;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.produto-lista .anuncio-produto{
+    color: $cor-fonte-produto;
+    font-size: 11px;
+}
+
+.produto-lista .enfase-preco-produto {
+    color: $cor-fonte-da-enfase;
+    font-size: 18px;
+}
+
+.produto-lista .comprar-submit {
+    border: none;
+    height: 36px;
+    width: 140px;
+    font-size: 15px;
+    background-color: $cor-botao-comprar;
+    color: $cor-fonte-botao-produto;
+    text-transform: uppercase;
+    background-image: url("../imagens/carrinho-branco.svg");
+    background-position-x: 10px;
+    background-position-y: 8px; 
+    background-repeat: no-repeat;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+input[type="radio"] + label span {
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+input[type="radio"] + label span {
+    background-color: #BDBDBD;
+}
+
+input[type="radio"]:checked + label span{
+    background-color: #FF9F1C;
+}
