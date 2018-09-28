@@ -1,0 +1,13 @@
+@import "base/bootstrap.min";
+@import "base/bootstrap-grid.min";
+@import "base/bootstrap-reboot.min";
+
+@import "helpers/variaveis";
+
+
+// Arquivos do Rodapé / Footer 
+@import "layout/corpo";
+@import "layout/cabecalho";
+@import "layout/produtos";
+@import "layout/rodape";
+@import "layout/media-queries";

@@ -1,0 +1,59 @@
+.rodapePrincipal{
+    background-color: $cor-do-rodape;
+    padding-top: 20px;
+}
+
+.rodapePrincipal .subtitulo {
+    color: $cor-fonte-rodape;
+}
+
+.rodapePrincipal .linha{
+    background-color: $cor-linha;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 2.0em;
+    height: 4px;
+}
+
+.rodapePrincipal .endereco {
+    color: $cor-fonte-rodape;
+    font-size: 13px;
+}
+
+.rodapePrincipal .rodapePrincipal-botao-submit{
+    border: none;
+    color: $cor-fonte-rodape;
+    width: 198px;
+    height: 39px;
+    font-size: 12px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: $cor-do-botao-footer;
+    background-repeat: no-repeat;
+    background-position-x: 15px;
+    background-position-y: 12px; 
+}
+
+.rodapePrincipal .rodapePrincipal-botao-submit:nth-child(2n) {
+    background-image: url("../imagens/icone-carta.svg"); 
+}
+
+.rodapePrincipal .rodapePrincipal-botao-submit {
+    background-image: url("../imagens/icone-contato.svg"); 
+}
+
+.container-de-botoes-submit {
+    margin-bottom: 20px;
+}
+
+.container-logo-footer{
+    margin-bottom: 20px;
+}
+
+.rodapePrincipal .linha-final {
+    background-color: $cor-linha-final;
+    height: 0.6em;
+    width: 100%;
+}
