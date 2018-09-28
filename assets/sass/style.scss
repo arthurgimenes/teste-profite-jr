@@ -1,0 +1,139 @@
+@import "node_modules/breakpoint-sass/stylesheets/_breakpoint.scss";
+@import "node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+@import "_header.scss";
+@import "_footer.scss";
+@import "_variable.scss";
+@import "_mixins.scss";
+
+body{
+	background-color: #fff;
+	font-family: 'Ubuntu', sans-serif;
+
+	.mainProfite{
+		.banner{	
+			@include breakpoint($celular){
+				display: none;
+			}
+		}
+
+		.bannerMobile{	
+			display: none;
+			@include breakpoint($celular){
+				display: block;
+			}
+		}
+
+		.paginator{
+			padding: 0 240px;
+			position: absolute;
+			top: 220px;
+			width: 100%;
+
+			@include breakpoint($note){
+				padding: 0 170px;
+				top: 33%;
+			}
+
+			@include breakpoint($tablet){
+				display: none;
+			}
+
+			.prev{
+				background: url(../img/left_banner.png) no-repeat;
+				float: left;
+				@include prevNext;
+			}
+			.next{
+				background: url(../img/right_banner.png) no-repeat;
+				float: right;
+				@include prevNext;
+			}
+
+
+		}
+
+		.produtos{
+			.tituloProdutos{
+				color: #000;	
+				font-weight: bold;			
+				position: relative;
+
+				@include breakpoint($celular){
+					padding: 0 20px;
+				}
+
+				&:after{
+					background: #ff9b00;					
+					content: "";
+					height: 7px;
+					left: calc(7.4% - 85px);
+					opacity: 1;
+					position: absolute;
+					top: 40px;					
+					width: 65px;
+
+					@include breakpoint($tablet){
+						left: calc(87px - 85px);
+					}
+
+					@include breakpoint($celular){
+						left: calc(105px - 85px);
+					}
+				}
+			}
+
+			.produtoTenis{
+				@include make-xs-column(6);
+				@include make-sm-column(6);
+				@include make-md-column(3);
+				background-color: #ffffff;
+				display: inline-block;
+				font-family: 'Ubuntu';
+				margin: 20px 0;
+				padding: 20px;
+				text-align: center;
+				&:hover{
+					background-color: #F2F2F2;
+				}
+
+				.imgTenis{
+					@include breakpoint($celular){
+						max-width: 100%;
+					}
+				}
+
+				.tituloTenis{
+					color: #7a7a7a;
+					font-size: 12px;
+					text-transform: uppercase;
+				}
+				.valorAntigo{
+					font-size: 12px;
+					margin: 0;
+					text-decoration-line:line-through; 
+				}
+				.valorAtual{
+					color: #2ec4b6;
+					font:{
+						size:18px;
+						weight: bold 
+					};
+					margin: 0;
+				}
+				.valorParcela{
+					color: #7a7a7a;
+					font-size: 11px;
+				}
+
+				.btnComprar{
+					background-color: #2EC4B6;
+					color:#fff;
+					text-transform: uppercase;
+				}
+
+			}			
+
+		}
+	}// fim Main
+}//fim body 
