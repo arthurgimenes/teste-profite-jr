@@ -1,0 +1,178 @@
+@import "node_modules/breakpoint-sass/stylesheets/_breakpoint.scss";
+@import "node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+@import "_variable.scss";
+@import "_mixins.scss";
+
+
+.headerProfite{
+	background-color: $header;
+	padding: 25px 0 15px;	
+	width: 100%;
+
+	@include breakpoint($celular){
+		height: 100%;
+		padding: 20px 0 0;
+	}
+
+	.logoProfite{
+		background: url(../img/logo.png);
+		background-repeat: no-repeat;
+		display: inline-block;
+		float: left;
+		height: 30px;
+		margin: 0px 10px;
+		text-indent: -999px;
+		width: 106px;
+
+		@include breakpoint($tablet){
+			display: none;
+			float: none;
+			margin: 0 auto 20px;
+		}
+	}
+
+	.buscaHeader{
+		@include make-xs-column(12);
+		@include make-sm-column(12);
+		@include make-md-column(4);
+		margin: 0px 100px;
+
+		@include breakpoint($note){
+			margin: 0 40px;
+		}
+
+		@include breakpoint($tablet){
+			margin:0;
+		}
+
+		.inputBuscaHeader{
+			border: none;
+			border-bottom: 1px solid #7A7A7A;
+			border-radius: 0; 
+		}
+
+		.lupa{
+			background: url(../img/icon.png);
+			background-repeat: no-repeat;
+			border: none;
+			border-bottom: 1px solid #7A7A7A;
+			border-radius: 0;
+			display: inline-block;
+			height: 29px;
+			margin: 5px 0;
+			text-indent: -9999px;
+			width: 30px;
+		}
+	}
+
+	.menuUsuario{
+		@include make-xs-column(12);
+		@include make-sm-column(12);
+		@include make-md-column(2);
+		border-right: 2px solid #7A7A7A;
+
+		@include breakpoint($note){
+			padding: 0;
+		}
+
+		@include breakpoint($tablet){
+			display: none;
+		}
+
+		.minhaConta{
+			color: #7A7A7A;
+			display: inline-block;
+			font-size: 13px;
+			margin: 0 20px 0 0;
+		}
+		.qtdadeCompras{
+			background: #2ec4b6;
+			border-radius: 50%;
+			color: #fff;
+			font-size: 10px;
+			display: inline-block;
+			padding: 2px 6px;
+		}
+	}
+
+	.menuBandeiras{
+		@include make-xs-column(12);
+		@include make-sm-column(12);
+		@include make-md-column(2);
+		.banES{
+			margin: 0 10px;
+		}
+
+		@include breakpoint($tablet){
+			display: none;
+		}
+	}
+
+	.menuResponsivo{
+		background-color: $header;
+		border: none;
+		display: none;
+
+		a{
+			color: #000 !important;			
+		}
+
+		@include breakpoint($tablet){
+			display: block;
+		}
+
+		.logoProfiteMobile{
+			background: url(../img/logo.png);
+			background-repeat: no-repeat;
+			display: inline-block;
+			float: left;
+			height: 30px;
+			margin: 0px 10px;
+			text-indent: -999px;
+			width: 106px;
+
+			@include breakpoint($tablet){
+				display: block;
+				float: none;
+				margin: 10px auto;
+			}
+		}
+
+		.qtdadeCompras{
+			background: #2ec4b6;
+			border-radius: 50%;
+			color: #fff;
+			font-size: 10px;
+			display: inline-block;
+			padding: 0px 7px;
+		}
+
+		.menuBandeirasMobile a{
+			display: inline-block;
+			@include breakpoint($paisagem){
+				display: block;
+			}
+		}
+
+		.navbar-toggle{
+			float: left;
+			border: none;
+			&:hover, &:focus{
+				background-color: #fff;
+			}
+			.icon-bar{
+				background-color: #000;
+			}
+		}
+
+		.navbar-nav{
+			float: right;
+			@include breakpoint($paisagem){
+				float: left;
+			}
+		}
+	}
+
+
+}// fim Header

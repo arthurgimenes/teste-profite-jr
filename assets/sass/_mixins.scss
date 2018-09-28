@@ -1,0 +1,22 @@
+@mixin prevNext{
+	background-repeat: no-repeat;
+	cursor: pointer;
+	display: inline-block;
+	height: 22px;
+	width: 22px;
+}
+
+@mixin btnFooter{
+	background-color: #FF9F1C;
+	color: #fff;
+	font:{
+		size: 12px;
+		weight: normal;
+	}
+	line-height: 14px;
+	text-transform: uppercase;
+	width: 195px;
+	span{
+		float: left;
+	}
+}
