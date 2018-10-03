@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Foot from "./components/Foot/Foot";
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
 
         </div>
         <div id="containerFoot" class="container-fluid">
+            <Foot />
         </div>
       </div>
     );
