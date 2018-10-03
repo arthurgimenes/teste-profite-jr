@@ -1,0 +1,16 @@
+#containerHead{
+  height: 6.68vh;
+  background: red;
+}
+#containerBanner{
+  height: 35.92vh;
+  background: yellow;
+}
+#containerProducts{
+  height: 38.76vh;
+  background: white;
+}
+#containerFoot{
+  height: 18.62vh;
+  background: blue;
+}
