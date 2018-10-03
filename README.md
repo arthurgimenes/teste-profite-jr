@@ -30,7 +30,7 @@
 
 ### Como concorrer a vaga:
 * Forka esse projeto;
-* No seu fork, codifique o [layout](https://drive.google.com/file/d/0B3S5qqT-LEIESUFES1hhUzd2ZzA/view?usp=sharing) seguindo as instruções abaixo;
+* No seu fork, codifique o [layout](https://www.figma.com/file/BOZqx8uK9NQ9IxbhVhyung96/Profit-e---Teste-de-Layout?node-id=0%3A1) seguindo as instruções abaixo;
 * Faça um pull request.
 
 ### Instruções para o teste:
