@@ -4,7 +4,7 @@
 }
 #containerBanner{
   height: 35.92vh;
-  background: yellow;
+  background:#011627;
 }
 #containerProducts{
   height: 38.76vh;
@@ -69,6 +69,19 @@
 #divRightHead{
   padding-top:  7px;
 
+}
+/* Banner ///////////////////////////////////*/
+#containerBanner div{
+  width: auto;
+  height: 35.92vh;
+}
+#carouselIndicatorCircle{
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+.carousel-indicators .active{
+  background: #FF9F1C;
 }
 /* Foot /////////////////////////////////////*/
 #containerFoot{
