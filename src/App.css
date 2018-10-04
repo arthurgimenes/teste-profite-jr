@@ -14,16 +14,76 @@
   height: 18.62vh;
   background: #011627;
 }
-/* Foot */
+/* Head /////////////////////////////////////*/
+#divLogoProfite img{
+  width: auto;
+  height: 5vh;
+  float: left;
+}
+#divInputHead button{
+  border: transparent;
+  border-bottom: 1px solid #7A7A7A;
+  border-radius: 0;
+}
+#divInputHead input{
+  border: transparent;
+  border-bottom: 1px solid #7A7A7A;
+  border-radius: 0;
+}
+#divInputHead button img{
+  width: auto;
+  height: 3vh;
+}
+#divRightHead img{
+  width: auto;
+  height: 3vh;
+
+}
+#divRightUserPhoto{
+  border-radius: 100%;
+  background: black;
+  border: 3px solid black;
+}
+#divRightHead button{
+  background: transparent;
+  border: transparent;
+  width: auto;
+  height: 4vh;
+  padding: 0;
+  margin-left: 20px;
+}
+#divRightHead button span{
+  background: #2EC4B6;
+  color: #FFFFFF;
+  border-radius: 100%;
+  font-size: 70%;
+}
+#divRectangleHorizontalMenu{
+  width: 3px;
+  height: 3vh;
+  background: #7A7A7A;
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: -10px;
+}
+#divRightHead{
+  padding-top:  7px;
+
+}
+/* Foot /////////////////////////////////////*/
+#containerFoot{
+  color: #FFFFFF;
+}
 #rowListFoot li{
   font-size: 55%;
   list-style: none;
-  color: #FFFFFF;
+}
+#divAdress{
+  margin-left: 5px;
 }
 #divAdress span{
   font-size: 75%;
   font-weight: bold;
-  color:#FFFFFF;
 }
 #divAdress ul{
   margin-left: -16px;
@@ -33,7 +93,7 @@
   width: 30px;
   height: 3px;
   background: #FF9F1C;
-  margin: 9px 0 9px 0;
+  margin: 5px 0 9px 0;
 }
 #containerFoot button{
   background: #FF9F1C;
@@ -43,8 +103,19 @@
   height: 35px;
   font-size: 70%;
   color:#FFFFFF;
+  margin-top: 10px;
 }
-#containerFoot button:first-of-type{
-    margin-top: 28px;
-    margin-bottom: -10px;
+#divImgFoot img{
+  width: auto;
+  height: 3vh;
 }
+#divImgFoot div div:last-of-type img{
+  width: auto;
+  height: 5vh;
+}
+#containerFoot span{
+  font-family: Ubuntu;
+  font-style: regular;
+}
+
+

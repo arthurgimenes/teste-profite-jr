@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import './App.css';
 import Foot from "./components/Foot/Foot";
+import Head from "./components/Head/Head";
 
 class App extends Component {
   render() {
     return (
       <div id="divApp" className="App">
         <div id="containerHead" class="container-fluid">
-
+          <Head />
         </div>
         <div id="containerBanner" class="container-fluid">
 
@@ -16,7 +17,7 @@ class App extends Component {
 
         </div>
         <div id="containerFoot" class="container-fluid">
-            <Foot />
+          <Foot />
         </div>
       </div>
     );

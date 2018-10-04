@@ -1,10 +1,12 @@
 import React from 'react';
+import logoProfite2 from "../../assets/logo_profite2.png";
+import logoVtex from "../../assets/logo_vtex.png";
 
 class Foot extends React.Component {
     render() {
         return (
-            <div class="row justify-content-md-center">
-                <div id="divAdress" class="col-4">
+            <div class="row align-items-center">
+                <div id="divAdress" class="col-3">
                     <div class="row">
                         <span>Localização</span>
                     </div>
@@ -32,20 +34,27 @@ class Foot extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="row">
-                        <div class="col-6">
+                <div id="divContatFoot" class="col-sm">
+                    <div class="row justify-content-center">
+                        <div class="col-4">
                             <button>ENTRE EM CONTATO</button>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
                             <button>FALE COM O NOSSO CONSULTOR ONLINE</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-2">
-                    <img></img><span>logo profite</span>
+                <div class="col-1">
+                </div>
+                <div id="divImgFoot" class="col-2 align-self-end">
+                    <div class="row">
+                        <div class="col-sm">
+                            <span>Created by</span>
+                            <img src={logoProfite2} alt="logoProfite2" />
+                        </div>
+                        <div class="col-sm">
+                            <span>Powered by</span>
+                            <img src={logoVtex} alt="logoVtex" />
+                        </div>
+                    </div>
                 </div>
             </div >
         );
