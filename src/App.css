@@ -8,7 +8,7 @@
 }
 #containerProducts{
   height: 38.76vh;
-  background: #E5E5E5;
+  background: #FFFFFF;
 }
 #containerFoot{
   height: 18.62vh;
@@ -82,6 +82,41 @@
 }
 .carousel-indicators .active{
   background: #FF9F1C;
+}
+/* Products /////////////////////////////////*/
+#carouselExampleControls{
+  background: transparent;
+}
+#divCardProduct{
+  width: 15rem;
+  height: 38vh;
+  text-align: center;
+  border: none;
+  align-items: center;
+}
+#divCardProduct div{
+  margin: 0;
+  padding: 0;
+}
+#divCardProduct a{
+  background: #2EC4B6;
+  color: #FFFFFF;
+  border: transparent;
+}
+#divCardProduct h5{
+  font-size: 80%;
+  margin: 0;
+  padding: 0;
+  color: #7A7A7A;
+}
+#divCardProduct p{
+  font-size: 80%;
+  padding: 0;
+  margin: 0;
+}
+#divCardProduct img{
+  width: 25vh;
+  height: auto;
 }
 /* Foot /////////////////////////////////////*/
 #containerFoot{

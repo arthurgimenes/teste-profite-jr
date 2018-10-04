@@ -3,6 +3,7 @@ import './App.css';
 import Foot from "./components/Foot/Foot";
 import Head from "./components/Head/Head";
 import Banner from "./components/Banner/Banner";
+import Products from "./components/Products/Products";
 
 class App extends Component {
   render() {
@@ -15,7 +16,17 @@ class App extends Component {
           <Banner />
         </div>
         <div id="containerProducts" class="container-fluid">
+          <div class="row">
+            <div class="col-1">
 
+            </div>
+            <div class="col-sm">
+              <Products />
+            </div>
+            <div class="col-1">
+
+            </div>
+          </div>
         </div>
         <div id="containerFoot" class="container-fluid">
           <Foot />
