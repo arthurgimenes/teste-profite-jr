@@ -150,6 +150,11 @@
   font-size: 70%;
   color:#FFFFFF;
 }
+#divContatFoot img{
+  width: auto;
+  height: 5vh;
+  float: left;
+}
 #divContatFoot button:last-of-type{
   margin-top: 15px;
 }

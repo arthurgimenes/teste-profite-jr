@@ -1,6 +1,8 @@
 import React from 'react';
 import logoProfite2 from "../../assets/logo_profite2.png";
 import logoVtex from "../../assets/logo_vtex.png";
+import letter from "../../assets/letter.png";
+import headset from "../../assets/headset.png";
 
 class Foot extends React.Component {
     render() {
@@ -41,8 +43,8 @@ class Foot extends React.Component {
                 <div id="divContatFoot" class="col-5">
                     <div class="row align-items-center">
                         <div class="col-6">
-                            <button>ENTRE EM CONTATO</button>
-                            <button>FALE COM O NOSSO CONSULTOR ONLINE</button>
+                            <button><img src={letter} alt="letter" />ENTRE EM CONTATO</button>
+                            <button><img src={headset} alt="headset" />FALE COM O NOSSO CONSULTOR ONLINE</button>
                         </div>
                     </div>
                 </div>
