@@ -10,7 +10,7 @@ import britainFlag from "../../assets/britain_flag.png";
 class Head extends React.Component {
     render() {
         return (
-            <div class="row">
+            <div class="row align-items-center">
                 <div id="divLogoProfite" class="col-3">
                     <img src={profiteLogo} alt="profite" />
                 </div>
@@ -24,27 +24,23 @@ class Head extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div id="divRightHead" class="col-3">
-                    <div class="row">
-                        <div class="col-3.5">
-                            <img id="divRightUserPhoto" src={userPhoto} alt="userPhoto" />
-                            <span>Minha Conta</span>
-                        </div>
-                        <div class="col-3.5">
-                            <button>
-                                <img src={shoppingCart} alt="shoppingCart" />
-                                <span class="navbar-toggler-icon">5</span>
-                            </button>
-                        </div>
-                        <div class="col-0.5">
-                            <div id="divRectangleHorizontalMenu" />
-                        </div>
-                        <div class="col-sm">
-                            <button><img src={brasilFlag} alt="brasilFlag" /></button>
-                            <button><img src={spainFlag} alt="spainFlag" /></button>
-                            <button><img src={britainFlag} alt="britainFlag" /></button>
-                        </div>
-                    </div>
+                <div class="col-md-auto">
+                    <img id="divRightUserPhoto" src={userPhoto} alt="userPhoto" />
+                    <span>Minha Conta</span>
+                </div>
+                <div id="divCarShopping" class="col-md-auto">
+                    <button>
+                        <img src={shoppingCart} alt="shoppingCart" />
+                        <span class="navbar-toggler-icon">5</span>
+                    </button>
+                </div>
+                <div  class="col-md-auto">
+                    <div id="divRectangleHorizontalMenu" />
+                </div>
+                <div id="divButtonFlag" class="col-md-auto">
+                    <button><img src={brasilFlag} alt="brasilFlag" /></button>
+                    <button><img src={spainFlag} alt="spainFlag" /></button>
+                    <button><img src={britainFlag} alt="britainFlag" /></button>
                 </div>
             </div>
         );

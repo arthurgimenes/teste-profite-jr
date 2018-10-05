@@ -1,5 +1,5 @@
 #containerHead{
-  height: 6.68vh;
+  height: 8.68vh;
   background: #FFFFFF;
 }
 #containerBanner{
@@ -11,64 +11,63 @@
   background: #FFFFFF;
 }
 #containerFoot{
-  height: 18.62vh;
+  height: 16.62vh;
   background: #011627;
 }
 /* Head /////////////////////////////////////*/
-#divLogoProfite img{
-  width: auto;
-  height: 5vh;
-  float: left;
-}
 #divInputHead button{
   border: transparent;
   border-bottom: 1px solid #7A7A7A;
   border-radius: 0;
 }
 #divInputHead input{
+  width: auto;
+  height: 6.68vh;
   border: transparent;
   border-bottom: 1px solid #7A7A7A;
   border-radius: 0;
-}
-#divInputHead button img{
-  width: auto;
-  height: 3vh;
-}
-#divRightHead img{
-  width: auto;
-  height: 3vh;
-
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 #divRightUserPhoto{
+  width: auto;
+  height: 3vh;
   border-radius: 100%;
   background: black;
   border: 3px solid black;
-}
-#divRightHead button{
-  background: transparent;
-  border: transparent;
-  width: auto;
-  height: 4vh;
-  padding: 0;
-  margin-left: 20px;
-}
-#divRightHead button span{
-  background: #2EC4B6;
-  color: #FFFFFF;
-  border-radius: 100%;
-  font-size: 70%;
 }
 #divRectangleHorizontalMenu{
   width: 3px;
   height: 3vh;
   background: #7A7A7A;
-  margin-top: 5px;
-  margin-left: 20px;
-  margin-right: -10px;
 }
-#divRightHead{
-  padding-top:  7px;
-
+#containerHead img{
+  width: auto;
+  height: 3vh;
+}
+#divLogoProfite img{
+  margin-top: -1vh;
+  height: 6vh;
+  float: left;
+}
+#divButtonFlag button{
+  background: transparent;
+  border: transparent;
+  width: auto;
+  height: 3vh;
+}
+#divCarShopping button span{
+  background: #2EC4B6;
+  color: #FFFFFF;
+  border-radius: 100%;
+  font-size: 70%;
+}
+#divCarShopping button{
+  background: transparent;
+  border: transparent;
+  height: 3vh;
+  width: auto;
 }
 /* Banner ///////////////////////////////////*/
 #containerBanner div{
@@ -113,6 +112,9 @@
   font-size: 80%;
   padding: 0;
   margin: 0;
+}
+#divCardProduct p:nth-child(1){
+  color: #7A7A7A;
 }
 #divCardProduct img{
   width: 25vh;
