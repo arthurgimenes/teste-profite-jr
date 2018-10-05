@@ -15,18 +15,8 @@ class App extends Component {
         <div id="containerBanner" class="container-fluid">
           <Banner />
         </div>
-        <div id="containerProducts" class="container-fluid">
-          <div class="row">
-            <div class="col-1">
-
-            </div>
-            <div class="col-sm">
+        <div id="containerProducts" class="container-fluid">         
               <Products />
-            </div>
-            <div class="col-1">
-
-            </div>
-          </div>
         </div>
         <div id="containerFoot" class="container-fluid">
           <Foot />

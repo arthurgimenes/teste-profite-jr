@@ -83,9 +83,6 @@
   background: #FF9F1C;
 }
 /* Products /////////////////////////////////*/
-#carouselExampleControls{
-  background: transparent;
-}
 #divCardProduct{
   width: 15rem;
   height: 38vh;
@@ -120,6 +117,24 @@
   width: 25vh;
   height: auto;
 }
+#divBeforeButton span{
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    float: right;
+}
+#divAfterButton span{
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
 /* Foot /////////////////////////////////////*/
 #containerFoot{
   color: #FFFFFF;
