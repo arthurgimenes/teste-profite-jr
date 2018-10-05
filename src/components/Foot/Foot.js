@@ -6,14 +6,18 @@ class Foot extends React.Component {
     render() {
         return (
             <div class="row align-items-center">
-                <div id="divAdress" class="col-3">
-                    <div class="row">
-                        <span>Localização</span>
+                <div id="divAdress" class="col-5">
+                    <div class="row align-items-center">
+                        <div class="col-sm">
+                            <span>Localização</span>
+                        </div>
                     </div>
-                    <div class="row">
-                        <span id="divrectangle"></span>
+                    <div class="row align-items-center">
+                        <div class="col-sm">
+                            <div id="divrectangle"/>
+                        </div>
                     </div>
-                    <div id="rowListFoot" class="row">
+                    <div id="rowListFoot" class="row align-items-center">
                         <div class="col-5">
                             <ul>
                                 <li>São Paulo</li>
@@ -34,15 +38,13 @@ class Foot extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div id="divContatFoot" class="col-sm">
-                    <div class="row justify-content-center">
-                        <div class="col-4">
+                <div id="divContatFoot" class="col-5">
+                    <div class="row align-items-center">
+                        <div class="col-6">
                             <button>ENTRE EM CONTATO</button>
                             <button>FALE COM O NOSSO CONSULTOR ONLINE</button>
                         </div>
                     </div>
-                </div>
-                <div class="col-1">
                 </div>
                 <div id="divImgFoot" class="col-2 align-self-end">
                     <div class="row">

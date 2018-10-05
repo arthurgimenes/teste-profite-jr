@@ -128,24 +128,20 @@
   font-size: 55%;
   list-style: none;
 }
-#divAdress{
-  margin-left: 5px;
-}
+
 #divAdress span{
   font-size: 75%;
   font-weight: bold;
 }
 #divAdress ul{
-  margin-left: -16px;
   padding: 0;
 }
 #divrectangle{
   width: 30px;
   height: 3px;
   background: #FF9F1C;
-  margin: 5px 0 9px 0;
 }
-#containerFoot button{
+#divContatFoot button{
   background: #FF9F1C;
   border: transparent;
   border-radius: 10px;
@@ -153,7 +149,9 @@
   height: 35px;
   font-size: 70%;
   color:#FFFFFF;
-  margin-top: 10px;
+}
+#divContatFoot button:last-of-type{
+  margin-top: 15px;
 }
 #divImgFoot img{
   width: auto;
