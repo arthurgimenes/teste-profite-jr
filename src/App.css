@@ -83,6 +83,12 @@
   background: #FF9F1C;
 }
 /* Products /////////////////////////////////*/
+#divCardProduct:hover{
+  background: #F2F2F2;
+}
+#divCardProduct:hover a{
+  display: unset;
+}
 #divCardProduct{
   width: 15rem;
   height: 38vh;
@@ -94,10 +100,23 @@
   margin: 0;
   padding: 0;
 }
+#divCardProduct p{
+  font-size: 80%;
+  padding: 0;
+  margin: 0;
+  color: #7A7A7A
+}
+#divCardProduct div p:first-of-type{
+  text-decoration: line-through;
+}
+#divCardProduct div p:nth-child(3){
+  color: #2EC4B6;
+}
 #divCardProduct a{
   background: #2EC4B6;
   color: #FFFFFF;
   border: transparent;
+  display: none;
 }
 #divCardProduct h5{
   font-size: 80%;
@@ -105,16 +124,15 @@
   padding: 0;
   color: #7A7A7A;
 }
-#divCardProduct p{
-  font-size: 80%;
-  padding: 0;
-  margin: 0;
-}
 #divCardProduct p:nth-child(1){
   color: #7A7A7A;
 }
 #divCardProduct img{
   width: 25vh;
+  height: auto;
+}
+#dicCardBody img{
+  width: 2vh;
   height: auto;
 }
 #divBeforeButton span{
