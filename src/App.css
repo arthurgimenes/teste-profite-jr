@@ -74,9 +74,16 @@
   width: auto;
 }
 /* Banner ///////////////////////////////////*/
-#containerBanner div{
+#carouselExampleIndicators{
   width: auto;
   height: 35.92vh;
+}
+#carouselExampleIndicators img{
+  width: auto;
+  height: 35.92vh;
+}
+#containerBanner{
+  padding: 0;
 }
 #carouselIndicatorCircle{
   width: 1.5vh;
@@ -86,9 +93,6 @@
 .carousel-indicators .active{
   background: #FF9F1C;
 }
-#footste{
-  padding: 0;
-}
 /* Products /////////////////////////////////*/
 #divCardProduct:hover{
   background: #F2F2F2;
@@ -97,7 +101,7 @@
   display: unset;
 }
 #divCardProduct{
-  width: 32vh;
+  width: 28vh;
   height: 38vh;
   text-align: center;
   border: none;
