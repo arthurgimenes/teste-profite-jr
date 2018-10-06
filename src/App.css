@@ -86,6 +86,9 @@
 .carousel-indicators .active{
   background: #FF9F1C;
 }
+#footste{
+  padding: 0;
+}
 /* Products /////////////////////////////////*/
 #divCardProduct:hover{
   background: #F2F2F2;
@@ -186,6 +189,7 @@
   height: 35px;
   font-size: 70%;
   color:#FFFFFF;
+  font-weight: bold;
 }
 #divContatFoot img{
   width: auto;
@@ -199,11 +203,11 @@
   width: auto;
   height: 3vh;
 }
-#divImgFoot div div:last-of-type img{
+#divImgFootVtex img{
   width: auto;
-  height: 5vh;
+  height: 3vh;
 }
-#containerFoot span{
+#divImgFoot span{
   font-family: Ubuntu;
   font-style: regular;
 }

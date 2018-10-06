@@ -16,7 +16,7 @@ class Foot extends React.Component {
                     </div>
                     <div class="row align-items-center">
                         <div class="col-sm">
-                            <div id="divrectangle"/>
+                            <div id="divrectangle" />
                         </div>
                     </div>
                     <div id="rowListFoot" class="row align-items-center">
@@ -51,12 +51,20 @@ class Foot extends React.Component {
                 <div id="divImgFoot" class="col-2 align-self-end">
                     <div class="row">
                         <div class="col-sm">
-                            <span>Created by</span>
-                            <img src={logoProfite2} alt="logoProfite2" />
+                            <div class="row">
+                                <span>Created by</span>
+                            </div>
+                            <div id="divImgFootProfite" class="row">
+                                <img src={logoProfite2} alt="logoProfite2" />
+                            </div>
                         </div>
                         <div class="col-sm">
-                            <span>Powered by</span>
-                            <img src={logoVtex} alt="logoVtex" />
+                            <div class="row">
+                                <span>Powered by</span>
+                            </div>
+                            <div id="divImgFootVtex" class="row">
+                                <img src={logoVtex} alt="logoVtex" />
+                            </div>
                         </div>
                     </div>
                 </div>
