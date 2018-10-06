@@ -1,18 +1,22 @@
 #containerHead{
   height: 8.68vh;
   background: #FFFFFF;
+  padding: 0 17.7vh 0 17.7vh;
 }
 #containerBanner{
   height: 35.92vh;
   background:#011627;
+  
 }
 #containerProducts{
   height: 38.76vh;
   background: #FFFFFF;
+  padding: 0 17.7vh 0 17.7vh;
 }
 #containerFoot{
   height: 16.62vh;
   background: #011627;
+  padding: 0 17.7vh 0 17.7vh;
 }
 /* Head /////////////////////////////////////*/
 #divInputHead button{
@@ -90,7 +94,7 @@
   display: unset;
 }
 #divCardProduct{
-  width: 15rem;
+  width: 13rem;
   height: 38vh;
   text-align: center;
   border: none;

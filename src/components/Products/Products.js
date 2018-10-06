@@ -4,25 +4,37 @@ import CardProduct from "./CardProduct";
 
 
 class Products extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props)
-        this.state ={
+        this.state = {
             productId: 1,
         }
         this.beforeClick = this.beforeClick.bind(this)
         this.afterClick = this.afterClick.bind(this)
     }
 
-    beforeClick(){
-        this.setState({
-            productId: this.state.productId-1,
-        });
+    beforeClick() {
+        if (this.state.productId == 1) {
+            this.setState({
+                productId: 99,
+            });
+        } else {
+            this.setState({
+                productId: this.state.productId - 1,
+            });
+        }
     }
 
-    afterClick(){
-        this.setState({
-            productId: this.state.productId+1,
-        });
+    afterClick() {
+        if (this.state.productId == 100) {
+            this.setState({
+                productId: 1,
+            });
+        } else {
+            this.setState({
+                productId: this.state.productId + 1,
+            });
+        }
     }
 
     render() {
@@ -32,16 +44,16 @@ class Products extends React.Component {
                     <span onClick={this.beforeClick} />
                 </div>
                 <div class="col-sm">
-                    <CardProduct productId={this.state.productId}/>
+                    <CardProduct productId={this.state.productId} />
                 </div>
                 <div class="col-sm">
-                    <CardProduct productId={this.state.productId+1}/>
+                    <CardProduct productId={this.state.productId + 1} />
                 </div>
                 <div class="col-sm">
-                    <CardProduct productId={this.state.productId+2}/>
+                    <CardProduct productId={this.state.productId + 2} />
                 </div>
                 <div class="col-sm">
-                    <CardProduct productId={this.state.productId+3}/>
+                    <CardProduct productId={this.state.productId + 3} />
                 </div>
                 <div id="divAfterButton" class="col-1">
                     <span onClick={this.afterClick} />
