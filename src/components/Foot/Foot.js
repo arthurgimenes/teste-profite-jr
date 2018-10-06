@@ -41,10 +41,28 @@ class Foot extends React.Component {
                     </div>
                 </div>
                 <div id="divContatFoot" class="col-5">
-                    <div class="row align-items-center">
-                        <div class="col-6">
-                            <button><img src={letter} alt="letter" />ENTRE EM CONTATO</button>
-                            <button><img src={headset} alt="headset" />FALE COM O NOSSO CONSULTOR ONLINE</button>
+                    <div class="row ">
+                        <div class="col-6 ">
+                            <button>
+                                <div class="row align-items-center ">
+                                    <div class="col-1 ">
+                                        <img src={letter} alt="letter" />
+                                    </div>
+                                    <div class="col-sm ">
+                                        <span>ENTRE EM CONTATO</span>
+                                    </div>
+                                </div>
+                            </button>
+                            <button>
+                                <div class="row align-items-center ">
+                                    <div class="col-1 ">
+                                        <img src={headset} alt="headset" />
+                                    </div>
+                                    <div class="col-sm ">
+                                        <span>FALE COM O NOSSO CONSULTOR ONLINE</span>
+                                    </div>
+                                </div>
+                            </button>
                         </div>
                     </div>
                 </div>
