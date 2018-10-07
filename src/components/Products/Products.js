@@ -39,21 +39,31 @@ class Products extends React.Component {
 
     render() {
         return (
-            <div class="row align-items-center">
+            <div id="divRowProducts" class="row align-items-center">
                 <div id="divBeforeButton" class="col-1">
                     <span onClick={this.beforeClick} />
                 </div>
                 <div class="col-sm">
-                    <CardProduct productId={this.state.productId} />
-                </div>
-                <div class="col-sm">
-                    <CardProduct productId={this.state.productId + 1} />
-                </div>
-                <div class="col-sm">
-                    <CardProduct productId={this.state.productId + 2} />
-                </div>
-                <div class="col-sm">
-                    <CardProduct productId={this.state.productId + 3} />
+                    <div class="row align-items-center">
+                        <span>Produtos</span>
+                    </div>
+                    <div class="row align-items-center">
+                        <div id="divrectangleProducts"></div>
+                    </div>
+                    <div id="divRowCardProduct" class="row">
+                        <div class="col-sm">
+                            <CardProduct productId={this.state.productId} />
+                        </div>
+                        <div class="col-sm">
+                            <CardProduct productId={this.state.productId + 1} />
+                        </div>
+                        <div class="col-sm">
+                            <CardProduct productId={this.state.productId + 2} />
+                        </div>
+                        <div class="col-sm">
+                            <CardProduct productId={this.state.productId + 3} />
+                        </div>
+                    </div>
                 </div>
                 <div id="divAfterButton" class="col-1">
                     <span onClick={this.afterClick} />

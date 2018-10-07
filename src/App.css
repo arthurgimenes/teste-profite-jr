@@ -34,12 +34,16 @@
   -moz-box-shadow: none;
   box-shadow: none;
 }
-#divRightUserPhoto{
+#divRightUserPhoto img{
   width: auto;
   height: 3vh;
   border-radius: 100%;
   background: black;
   border: 0.4vh solid black;
+  margin-right: 5px;
+}
+#divRightUserPhoto span{
+  cursor: pointer;
 }
 #divRectangleHorizontalMenu{
   width: 0.4vh;
@@ -60,6 +64,7 @@
   border: transparent;
   width: auto;
   height: 3vh;
+  cursor: pointer;
 }
 #divCarShopping button span{
   background: #2EC4B6;
@@ -72,6 +77,7 @@
   border: transparent;
   height: 3vh;
   width: auto;
+  cursor: pointer;
 }
 /* Banner ///////////////////////////////////*/
 #carouselExampleIndicators{
@@ -94,6 +100,11 @@
   background: #FF9F1C;
 }
 /* Products /////////////////////////////////*/
+#divrectangleProducts{
+  width: 5vh;
+  height: 0.5vh;
+  background: #FF9F1C;
+}
 #divCardProduct:hover{
   background: #F2F2F2;
 }
@@ -101,8 +112,8 @@
   display: unset;
 }
 #divCardProduct{
-  width: 28vh;
-  height: 38vh;
+  width: auto;
+  height: 33vh;
   text-align: center;
   border: none;
   align-items: center;
@@ -112,7 +123,7 @@
   padding: 0;
 }
 #divCardProduct p{
-  font-size: 80%;
+  font-size: 70%;
   padding: 0;
   margin: 0;
   color: #7A7A7A
@@ -124,7 +135,7 @@
   color: #2EC4B6;
 }
 #divCardProduct div p:nth-child(5){
-  margin-bottom: 2vh;
+  margin-bottom: 1vh;
 }
 #divCardProduct a{
   background: #2EC4B6;
@@ -142,12 +153,13 @@
   color: #7A7A7A;
 }
 #divCardProduct img{
-  width: 25vh;
+  width: 22vh;
   height: auto;
 }
 #dicCardBody img{
   width: 2vh;
   height: auto;
+  cursor: pointer;
 }
 #divBeforeButton span{
   border: solid black;
@@ -155,8 +167,9 @@
   display: inline-block;
   padding: .5vh;
   transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    float: right;
+  -webkit-transform: rotate(135deg);
+  float: right;
+  cursor: pointer;
 }
 #divAfterButton span{
   border: solid black;
@@ -165,23 +178,30 @@
   padding: 0.5vh;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+  float: left;
+  cursor: pointer;
 }
-
 /* Foot /////////////////////////////////////*/
 #containerFoot{
   color: #FFFFFF;
+}
+#divLocation{
+  margin-bottom: 1vh;
 }
 #rowListFoot li{
   font-size: 55%;
   list-style: none;
 }
-
+#divAdress{
+  margin-top: 1vh;
+}
 #divAdress span{
   font-size: 75%;
   font-weight: bold;
 }
 #divAdress ul{
   padding: 0;
+  margin: 0;
 }
 #divrectangle{
   width: 5vh;
@@ -192,19 +212,20 @@
   background: #FF9F1C;
   border: transparent;
   border-radius: 10px;
-  width: 100%;
-  height: 4.5vh;
-  font-size: 65%;
+  width: 80%;
+  height: 4vh;
+  font-size: 55%;
   color:#FFFFFF;
   font-weight: bold;
+  cursor: pointer;
 }
 #divContatFoot img{
   width: auto;
-  height: 4.5vh;
+  height: 4vh;
   float: left;
 }
 #divContatFoot button:last-of-type{
-  margin-top: 1.5vh;
+  margin-top: 0.5vh;
 }
 #divImgFootProfite img{
   width: auto;
@@ -218,5 +239,16 @@
   font-family: Ubuntu;
   font-style: regular;
 }
+/* mediaQuery /////////////////////////*/
+@media only screen and (max-width: 1250px){
+  #containerHead{
+    /*
+    tirar uma coluca do card
+    reajustar input
+    reajustar vtexfoot
 
-
+    obs: check seta do products
+    */ 
+    
+  }
+}

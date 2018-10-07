@@ -24,8 +24,8 @@ class Head extends React.Component {
                         </div>
                     </div>
                 </div>
-                <div class="col-md-auto">
-                    <img id="divRightUserPhoto" src={userPhoto} alt="userPhoto" />
+                <div id="divRightUserPhoto" class="col-md-auto">
+                    <img  src={userPhoto} alt="userPhoto" />
                     <span>Minha Conta</span>
                 </div>
                 <div id="divCarShopping" class="col-md-auto">
