@@ -45,13 +45,17 @@ class Products extends React.Component {
                 </div>
                 <div class="col-sm">
                     <div class="row align-items-center">
-                        <span>Produtos</span>
+                        <div class="col-sm">
+                            <span>Produtos</span>
+                        </div>
                     </div>
                     <div class="row align-items-center">
-                        <div id="divrectangleProducts"></div>
+                        <div class="col-sm">
+                            <div id="divrectangleProducts"></div>
+                        </div>
                     </div>
                     <div id="divRowCardProduct" class="row">
-                        <div class="col-sm">
+                        <div class="col-sm ">
                             <CardProduct productId={this.state.productId} />
                         </div>
                         <div class="col-sm">

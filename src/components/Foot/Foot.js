@@ -7,7 +7,7 @@ import headset from "../../assets/headset.png";
 class Foot extends React.Component {
     render() {
         return (
-            <section>
+            <section id="sectionContentFoot">
                 <div id="divLocation" class="row align-items-center">
                     <div class="col-sm">
                         <span>Localização</span>
@@ -42,7 +42,7 @@ class Foot extends React.Component {
                         </div>
                     </div>
                     <div id="divContatFoot" class="col-5">
-                        <div class="row align-items-center">
+                        <div class="row">
                             <div class="col-6 ">
                                 <button>
                                     <div class="row align-items-center">
@@ -67,9 +67,9 @@ class Foot extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div id="divImgFoot" class="col-2 ">
-                        <div class="row align-items-center">
-                            <div class="col-sm">
+                    <div id="divImgFoot" class="col-2 col align-self-end">
+                        <div class="row align-items-end">
+                            <div class="col-sm ">
                                 <div class="row">
                                     <span>Created by</span>
                                 </div>
@@ -77,8 +77,8 @@ class Foot extends React.Component {
                                     <img src={logoProfite2} alt="logoProfite2" />
                                 </div>
                             </div>
-                            <div class="col-sm">
-                                <div class="row">
+                            <div class="col-sm ">
+                                <div class="row ">
                                     <span>Powered by</span>
                                 </div>
                                 <div id="divImgFootVtex" class="row">

@@ -1,12 +1,11 @@
 #containerHead{
   height: 8.68vh;
   background: #FFFFFF;
-  padding: 0 17.7vh 0 17.7vh;
+  padding: 0.5vh 17.7vh 0 17.7vh;
 }
 #containerBanner{
   height: 35.92vh;
   background:#011627;
-  
 }
 #containerProducts{
   height: 38.76vh;
@@ -33,6 +32,8 @@
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 #divRightUserPhoto img{
   width: auto;
@@ -182,22 +183,22 @@
   cursor: pointer;
 }
 /* Foot /////////////////////////////////////*/
+#sectionContentFoot{
+  padding: 3px 0 3px 0;
+}
 #containerFoot{
   color: #FFFFFF;
 }
 #divLocation{
+  font-size: 80%;
   margin-bottom: 1vh;
 }
 #rowListFoot li{
-  font-size: 55%;
+  font-size: 50%;
   list-style: none;
 }
 #divAdress{
   margin-top: 1vh;
-}
-#divAdress span{
-  font-size: 75%;
-  font-weight: bold;
 }
 #divAdress ul{
   padding: 0;
@@ -211,7 +212,7 @@
 #divContatFoot button{
   background: #FF9F1C;
   border: transparent;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 80%;
   height: 4vh;
   font-size: 55%;
@@ -219,13 +220,13 @@
   font-weight: bold;
   cursor: pointer;
 }
+#divContatFoot button:last-of-type{
+  margin-top: 5px;
+}
 #divContatFoot img{
   width: auto;
   height: 4vh;
   float: left;
-}
-#divContatFoot button:last-of-type{
-  margin-top: 0.5vh;
 }
 #divImgFootProfite img{
   width: auto;
@@ -240,15 +241,8 @@
   font-style: regular;
 }
 /* mediaQuery /////////////////////////*/
-@media only screen and (max-width: 1250px){
-  #containerHead{
-    /*
-    tirar uma coluca do card
-    reajustar input
-    reajustar vtexfoot
 
-    obs: check seta do products
-    */ 
-    
-  }
+/* (1920x1080) Full HD Display */
+@media  screen and (max-width: 1920px) {
+  /* insert styles here */
 }
