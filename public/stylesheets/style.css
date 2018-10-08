@@ -72,6 +72,16 @@ body {
 .icon {
 	display: inline-block;
 }
+
+.offer {
+    position: absolute;
+    width: 82px;
+    height: 73px;
+    background: url('../../images/sprites.png') -10px -232px;
+    right: 0px;
+    top: 0px;
+}
+
 .barra {
     width: 23px;
     height: 16px;
@@ -504,6 +514,16 @@ ul.starts {
 	   	width: 72px; height: 21px;
 	    background: url('../../images/sprites.png') -228px -180px;
    	}
+   	
+   	.offer {
+	    width: 82px; height: 73px;
+	    background: url('../../images/sprites.png') -112px -232px;
+	}
+	.product > h5 {
+    	font-size: 10px;
+    	margin-top: 5px;
+ }
+
    	.icon-product {
 		width: 112px;
 		height: 93px;
