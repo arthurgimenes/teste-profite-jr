@@ -1,52 +1,58 @@
-# SP Desenvolvedor Front-end - Junior
-
-###### Você já conhece a Profite? Nós somos a maior implantadora de e-commerce do Brasil. Atendemos clientes como Electrolux, Calvin Klein, C&A, Havaianas, Timex, Shopfácil, Mambo entre outros.
-
-###### Estamos procurando um(a) Desenvolvedor(a) Front-end, com sólidos conhecimentos em HTML. CSS e JS para projetar interfaces e entregar a melhor experiência para os consumidores visando sempre a otimização do código e agilidade no desenvolvimento.
-
-###### O perfil que procuramos é de uma pessoa ligada no 220v, que respire a cultura mobile first e que seja capaz de defender ideias e apresentá-las de forma clara e objetiva. De fácil relacionamento, organizado(a) e comprometido(a) com prazos e qualidade das entregas.
+### Test Profit Front end Junior.
+  This is a test for Front End Junior to Reply layout.
+  [Link do layout](https://www.figma.com/file/BOZqx8uK9NQ9IxbhVhyung96/Profit-e---Teste-de-Layout?node-id=0%3A1)
 
 
-### Requisitos:
-* HTML e HTML5
-* CSS
-* Noções de Javascript e Jquery
-* GIT
-* Sites responsivos
+## Desktop
+<table>
+  <th>Desktop</th>
+<tr>  
+  <td>
+    <img src="https://i.imgur.com/mf1GQ9D.png"/>
+  </td>
+</tr>
+</table>
+<table>
+  <th>Galaxy S5</th>
+  <th>Iphone X</th>
+  <th> Iphone 6/7</th>
+<tr>
+  <td>
+   <img src="https://i.imgur.com/7aBKnRI.png"/>
+  </td>
+<td>
+   <img src="https://i.imgur.com/G7AbVxy.png"/>
+  </td>
+<td>
+   <img src="https://i.imgur.com/mRiNt37.png"/>
+  </td>
+</tr>
+</table>
 
-#
 
-### Diferenciais
-* Vtex
-
-### Benefícios
-*  Vale-refeição
-*  Vale-alimentação
-*  Plano de saúde
-*  Plano odontológico
-*  Vale-transporte
-*  Folga de aniversário
+## Getting Started
 
 
-### Como concorrer a vaga:
-* Forka esse projeto;
-* No seu fork, codifique o [layout](https://www.figma.com/file/BOZqx8uK9NQ9IxbhVhyung96/Profit-e---Teste-de-Layout?node-id=0%3A1) seguindo as instruções abaixo;
-* Faça um pull request.
+For install
+* NodeJS -> https://nodejs.org/en/download/
+* Git -> https://git-scm.com/downloads
 
-### Instruções para o teste:
+Global dependencies required
+* npm install -g bower
 
-##### [Link do layout](https://www.figma.com/file/BOZqx8uK9NQ9IxbhVhyung96/Profit-e---Teste-de-Layout?node-id=0%3A1)
-#
-##### Obrigatório
-* HTML5 e CSS3
-* Carrossel com Jquery
-* Permitido uso de framework :D 
+How to execute
+* git clone https://github.com/armenio2/test-front-end-junior--profit.git
+* npm install
+* npm start
 
-##### Bônus
-* Interação com JSON para renderizar os produtos
-* Grunt, Gulp ou similar
-* Responsividade
-* SASS/LESS
+Open in your browser
+http://localhost:3000
 
-### Final:
-Quando finalizar enviar o teste para: arthur@profite.com.br
+
+## Built With
+* [BOWER] - https://bower.io/
+* [HTML5] - https://devdocs.io/html/
+* [CSS3] - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+* [JAVASCRIPT ECMA6] - http://es6-features.org/#Constants
+* [BOOTSTRAP 4.1] - http://getbootstrap.com/docs/4.1/getting-started/contents/
+* [REACT.JS] - https://reactjs.org/

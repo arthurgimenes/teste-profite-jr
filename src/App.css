@@ -1,0 +1,352 @@
+#containerHead{
+  height: 8.68vh;
+  background: #FFFFFF;
+  padding: 0.5vh 17.7vh 0 17.7vh;
+}
+#containerBanner{
+  height: 35.92vh;
+  background:#011627;
+}
+#containerProducts{
+  height: 37.76vh;
+  background: #FFFFFF;
+  padding: 8px 17.7vh 8px 17.7vh;
+  align-content: center;
+  align-items: center;
+}
+#containerFoot{
+  height: 17.62vh;
+  background: #011627;
+  padding: 0 17.7vh 0 17.7vh;
+}
+/* Head /////////////////////////////////////*/
+.nav-item a {
+  cursor: pointer;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+#navbar {
+  padding: 0;
+}
+#navbar li {
+  padding: 0;
+  margin: 0;
+  display: block;
+margin-left: auto;
+margin-right: auto
+}
+#divInputHead button{
+  border: transparent;
+  border-bottom: 1px solid #7A7A7A;
+  border-radius: 0;
+}
+#divInputHead input{
+  width: auto;
+  height: 6.68vh;
+  border: transparent;
+  border-bottom: 1px solid #7A7A7A;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#divRightUserPhoto img{
+  width: auto;
+  height: 3vh;
+  border-radius: 100%;
+  background: black;
+  border: 0.4vh solid black;
+  margin-right: 5px;
+}
+#divRightUserPhoto span{
+  cursor: pointer;
+}
+#divRectangleHorizontalMenu{
+  width: 0.4vh;
+  height: 4vh;
+  background: #7A7A7A;
+}
+#containerHead img{
+  width: auto;
+  height: 3vh;
+}
+#divLogoProfite img{
+  margin-top: -1vh;
+  height: 6vh;
+  float: left;
+}
+#divButtonFlag button{
+  background: transparent;
+  border: transparent;
+  width: auto;
+  height: 3vh;
+  cursor: pointer;
+}
+#divCarShopping button span{
+  background: #2EC4B6;
+  color: #FFFFFF;
+  border-radius: 100%;
+  font-size: 70%;
+}
+#divCarShopping button{
+  background: transparent;
+  border: transparent;
+  height: 3vh;
+  width: auto;
+  cursor: pointer;
+}
+/* Banner ///////////////////////////////////*/
+#sectionBanner img{
+  opacity: 0.5;
+}
+#carouselExampleIndicators{
+  width: auto;
+  height: 35.92vh;
+}
+#carouselExampleIndicators img{
+  width: auto;
+  height: 35.92vh;
+}
+#containerBanner{
+  padding: 0;
+}
+#carouselIndicatorCircle{
+  width: 1.5vh;
+  height: 1.5vh;
+  border-radius: 100%;
+}
+.carousel-indicators .active{
+  background: #FF9F1C;
+}
+/* Products /////////////////////////////////*/
+#divCardProduct{
+  margin-top: 8px;
+}
+#divRowProducts {
+  height: 100%;
+}
+#divrectangleProducts{
+  width: 5vh;
+  height: 0.5vh;
+  background: #FF9F1C;
+}
+#divCardProduct:hover{
+  background: #F2F2F2;
+}
+#divCardProduct:hover a{
+  visibility: unset;
+}
+#divCardProduct{
+  width: auto;
+  height: 100%;
+  text-align: center;
+  border: none;
+  align-items: center;
+  padding: 8px;
+}
+#divCardProduct div{
+  margin: 0;
+  padding: 0;
+}
+#divCardProduct p{
+  font-size: 70%;
+  padding: 0;
+  margin: 0;
+  color: #7A7A7A
+}
+#divCardProduct div p:first-of-type{
+  text-decoration: line-through;
+}
+#divCardProduct div p:nth-child(3){
+  color: #2EC4B6;
+}
+#divCardProduct div p:nth-child(5){
+  margin-bottom: 1vh;
+}
+#divCardProduct a{
+  background: #2EC4B6;
+  color: #FFFFFF;
+  border: transparent;
+  font-size: 8pt;
+  visibility: hidden;
+}
+#divCardProduct h5{
+  font-size: 80%;
+  margin: 0;
+  padding: 0;
+  color: #7A7A7A;
+}
+#divCardProduct p:nth-child(1){
+  color: #7A7A7A;
+}
+#divCardProduct img{
+  width: 100px;
+  height: auto;
+}
+#dicCardBody img{
+  width: 2vh;
+  height: auto;
+  cursor: pointer;
+}
+#divBeforeButton span{
+  border: solid black;
+  border-width: 0 .5vh .5vh 0;
+  display: inline-block;
+  padding: .5vh;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  float: right;
+  cursor: pointer;
+}
+#divAfterButton span{
+  border: solid black;
+  border-width: 0 0.5vh 0.5vh 0;
+  display: inline-block;
+  padding: 0.5vh;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  float: left;
+  cursor: pointer;
+}
+/* Foot /////////////////////////////////////*/
+#sectionContentFoot{
+  padding: 8px 0 8px 0;
+}
+#containerFoot{
+  color: #FFFFFF;
+}
+#divLocation{
+  font-size: 80%;
+  margin-bottom: 1vh;
+}
+#rowListFoot li{
+  font-size: 6pt;
+  list-style: none;
+}
+#divAdress{
+  margin-top: 1vh;
+}
+#divAdress ul{
+  padding: 0;
+  margin: 0;
+}
+#divrectangle{
+  width: 5vh;
+  height: 0.5vh;
+  background: #FF9F1C;
+}
+#divContatFoot button{
+  background: #FF9F1C;
+  border: transparent;
+  border-radius: 5px;
+  width: 70%;
+  height: auto;
+  font-size: 50%;
+  color:#FFFFFF;
+  font-weight: bold;
+  cursor: pointer;
+}
+#divContatFoot button:last-of-type{
+  margin-top: 5px;
+}
+#divContatFoot img{
+  width: auto;
+  height: 4vh;
+  float: left;
+}
+#divImgFootProfite img{
+  width: auto;
+  height: 3vh;
+}
+#divImgFootVtex img{
+  width: auto;
+  height: 3vh;
+}
+#divImgFoot span{
+  font-family: Ubuntu;
+  font-style: regular;
+}
+/* mediaQuery /////////////////////////*/
+.showColumMobile{
+  display: none;
+}
+/* (320x480) iPhone Smartphone */
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
+  .hiddenColum{
+    display: none;
+  }
+  .showColumMobile{
+    display: unset;
+  }
+  #containerHead{
+    height: 18vh;
+    padding: 16px;
+  }
+  #containerProducts{
+    height: 42vh;
+    padding: 0 0px 0 7px;
+  }
+  #containerFoot{
+    height: 55vh;
+    padding: 0 10vh 0 10vh;
+  }
+  #divCardProduct{
+    width: 50%;
+    height: 32vh;
+  }
+  #divCardProduct a{
+    visibility: unset;
+  }
+  #divCardProduct:hover{
+    background:transparent;
+  }
+  #buttonNavBarMobile{
+    margin: 0;
+  }
+  #divLogoProfite{
+    margin-left: 0px;
+    padding: 0;
+  }
+  .nav-item{
+    width: 100%;
+    z-index: 4;
+    background: white;
+  }
+  .collapse{
+    background: white;
+    z-index: 3;
+  }
+  #divContatFoot button{
+    width: 100%;
+    font-size: 80%;
+    height: 7vh;
+  }
+  #secondButtonFootMobile{
+    margin-top: 20px;
+  }
+  #divContatFoot{
+    margin-top: 20px;
+    margin-bottom: 18px;
+  }
+  #divLocation{
+    font-size: 100%;
+    margin-bottom: 1vh;
+  }
+  #rowListFoot li{
+    font-size: 8pt;
+    list-style: none;
+  }
+  #divImgFoot{
+    margin-left: 20px;
+  }
+  #divCarShopping{
+    background: transparent;
+    border: none;
+  }
+  #divCarShopping button span{
+    padding: 2px;
+    font-size: 70%;
+  }
+}
