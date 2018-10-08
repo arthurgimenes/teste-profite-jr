@@ -2,8 +2,10 @@
   "name": "teste-profite-jr",
   "version": "0.0.0",
   "private": true,
+  "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "node test.js"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
