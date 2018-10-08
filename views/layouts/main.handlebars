@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<title>{{{title}}}</title>
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" type="text/css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<link rel="stylesheet" href="stylesheets/reset.css" type="text/css">
+	<link rel="stylesheet" href="stylesheets/style.css" type="text/css">
+
+
+
+	<style>
+		.bx-wrapper .bx-prev {
+		    width: 14px; height: 22px;
+    		background: url('../../images/sprites.png') -295px -232px;
+		}
+		.bx-wrapper .bx-next {
+			 width: 14px; height: 22px;
+    		background: url('../../images/sprites.png') -377px -246px;
+		}
+		.bx-wrapper .bx-prev:hover, .bx-wrapper .bx-prev:focus {
+    		background-position: -295px -232px;
+		}
+		.bx-wrapper .bx-prev:hover, .bx-wrapper .bx-prev:focus {
+    		background-position: -295px -232px;
+		}
+		.bx-wrapper .bx-next:hover, .bx-wrapper .bx-next:focus {
+    		background-position: -377px -246px;;
+		}
+		.bx-wrapper .bx-next:hover, .bx-wrapper .bx-next:focus {
+    		background-position: -377px -246px;;
+		}
+		.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    		background: #FF9F1C;
+		}
+		.bx-wrapper .bx-pager,
+		.bx-wrapper .bx-pager, .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+		    bottom: 20px;
+		    left: 20px;
+		}
+		.bx-wrapper .bx-pager.bx-default-pager a { background: #BDBDBD; }
+		.bx-wrapper {
+		    -moz-box-shadow: none;
+		     -webkit-box-shadow: none; 
+		     box-shadow: none; 
+		     border: none; 
+		     background: none; 
+		}
+		.lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {
+    		background-color: #FF9F1C;
+		}
+		.lSSlideOuter .lSPager.lSpg > li a {
+		    background-color: #BDBDBD;
+		    height: 7px;
+		    width: 6.99px;
+		}
+
+		.lSAction > .lSPrev {
+		    background-position: 0 0;
+		    left: 10px;
+		}
+		.bx-wrapper .bx-prev {left: 420px; }
+		.bx-wrapper .bx-next {right: 420px; }
+
+		.bx-wrapper {
+    		margin-bottom: 30px;
+		}
+		.lSSlideOuter .lSPager.lSpg  {
+			display: none;
+		}
+		.lSAction > a {
+
+    		background-image: url(../../images/sprites.png);
+
+		}
+		.lSAction > .lSPrev {
+		width: 14px; height: 22px;
+		   background-position: -261px -232px;
+		   left: 10px;
+		}
+		.lSAction > .lSNext {
+			width: 14px; height: 22px;
+		    background-position: -343px -246px;
+		    right: 10px;
+		}
+		/*.lslide {
+			width: 216.429px !important;
+		}*/
+
+		@media only screen and (max-device-width:480px){
+   		
+			.bx-wrapper .bx-pager, .bx-wrapper .bx-pager, .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
+			    bottom: 11px;
+			    left: 142px;
+			    position: absolute;
+			    width: 100px;
+			}
+
+			.lSSlideOuter .lSPager.lSpg  {
+			display: block;
+		}
+			.lSAction > .lSNext{
+				display: none ;
+			}
+			.lSAction > .lSPrev{
+				display: none;
+			}
+			.lslide {
+			width: initial;
+			}
+		}
+	@media only screen and (device-width:768px){
+  
+	}
+
+	@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+
+
+	}
+	</style>
+  	
+  	
+</head>
+<body>
+
+	{{{body}}}
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.js"></script>
+
+
+	<script>
+	    $(document).ready(function(){
+	      $('.slider').bxSlider();
+ 		  $("#products").lightSlider({
+	        item: 2.8,
+	 
+    });
+ 		});
+  	</script>
+
+</body>
+</html>

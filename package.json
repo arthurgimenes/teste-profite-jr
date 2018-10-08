@@ -1,0 +1,40 @@
+{
+  "name": "teste-profite-jr",
+  "version": "1.0.0",
+  "description": "###### Você já conhece a Profite? Nós somos a maior implantadora de e-commerce do Brasil. Atendemos clientes como Electrolux, Calvin Klein, C&A, Havaianas, Timex, Shopfácil, Mambo entre outros.",
+  "engines": {
+    "node": "8.9.1"
+  },
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "del": "^3.0.0",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-uglify": "^3.0.1",
+    "serve-favicon": "^2.4.5",
+    "uglify": "^0.1.5"
+  },
+  "devDependencies": {
+    "morgan": "^1.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/6IX7ine/teste-profite-jr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/6IX7ine/teste-profite-jr/issues"
+  },
+  "homepage": "https://github.com/6IX7ine/teste-profite-jr#readme"
+}
