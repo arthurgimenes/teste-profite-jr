@@ -53,7 +53,7 @@ class Head extends React.Component {
                     </button>
                 </div>
 
-                <div class="col-md-auto">
+                <div class="col-md-auto hiddenColum">
                     <div class="navbar collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li class="nav-item">

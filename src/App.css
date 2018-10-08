@@ -98,6 +98,9 @@ margin-right: auto
   cursor: pointer;
 }
 /* Banner ///////////////////////////////////*/
+#sectionBanner img{
+  opacity: 0.5;
+}
 #carouselExampleIndicators{
   width: auto;
   height: 35.92vh;
@@ -276,21 +279,17 @@ margin-right: auto
   }
   .showColumMobile{
     display: unset;
-    border: 1px solid red;
   }
   #containerHead{
     height: 18vh;
     padding: 16px;
-  }
-  #containerBanner{
-    height: 36vh;
   }
   #containerProducts{
     height: 42vh;
     padding: 0 0px 0 7px;
   }
   #containerFoot{
-    height: 50vh;
+    height: 55vh;
     padding: 0 10vh 0 10vh;
   }
   #divCardProduct{
@@ -323,6 +322,13 @@ margin-right: auto
     width: 100%;
     font-size: 80%;
     height: 7vh;
+  }
+  #secondButtonFootMobile{
+    margin-top: 20px;
+  }
+  #divContatFoot{
+    margin-top: 20px;
+    margin-bottom: 18px;
   }
   #divLocation{
     font-size: 100%;

@@ -143,7 +143,7 @@ class Foot extends React.Component {
                                     </button>
                                 </div>
                             </div>
-                            <div class="row justify-content-md-center">
+                            <div id="secondButtonFootMobile" class="row justify-content-md-center">
                                 <div class="col-12">
                                     <button>
                                         <div class="row align-items-center ">
