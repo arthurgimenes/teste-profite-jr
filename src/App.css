@@ -8,16 +8,33 @@
   background:#011627;
 }
 #containerProducts{
-  height: 38.76vh;
+  height: 37.76vh;
   background: #FFFFFF;
-  padding: 0 17.7vh 0 17.7vh;
+  padding: 8px 17.7vh 8px 17.7vh;
+  align-content: center;
+  align-items: center;
 }
 #containerFoot{
-  height: 16.62vh;
+  height: 17.62vh;
   background: #011627;
   padding: 0 17.7vh 0 17.7vh;
 }
 /* Head /////////////////////////////////////*/
+.nav-item a {
+  cursor: pointer;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+#navbar {
+  padding: 0;
+}
+#navbar li {
+  padding: 0;
+  margin: 0;
+  display: block;
+margin-left: auto;
+margin-right: auto
+}
 #divInputHead button{
   border: transparent;
   border-bottom: 1px solid #7A7A7A;
@@ -48,7 +65,7 @@
 }
 #divRectangleHorizontalMenu{
   width: 0.4vh;
-  height: 3vh;
+  height: 4vh;
   background: #7A7A7A;
 }
 #containerHead img{
@@ -101,6 +118,12 @@
   background: #FF9F1C;
 }
 /* Products /////////////////////////////////*/
+#divCardProduct{
+  margin-top: 8px;
+}
+#divRowProducts {
+  height: 100%;
+}
 #divrectangleProducts{
   width: 5vh;
   height: 0.5vh;
@@ -110,14 +133,15 @@
   background: #F2F2F2;
 }
 #divCardProduct:hover a{
-  display: unset;
+  visibility: unset;
 }
 #divCardProduct{
   width: auto;
-  height: 33vh;
+  height: 100%;
   text-align: center;
   border: none;
   align-items: center;
+  padding: 8px;
 }
 #divCardProduct div{
   margin: 0;
@@ -142,7 +166,8 @@
   background: #2EC4B6;
   color: #FFFFFF;
   border: transparent;
-  display: none;
+  font-size: 8pt;
+  visibility: hidden;
 }
 #divCardProduct h5{
   font-size: 80%;
@@ -154,7 +179,7 @@
   color: #7A7A7A;
 }
 #divCardProduct img{
-  width: 22vh;
+  width: 100px;
   height: auto;
 }
 #dicCardBody img{
@@ -184,7 +209,7 @@
 }
 /* Foot /////////////////////////////////////*/
 #sectionContentFoot{
-  padding: 3px 0 3px 0;
+  padding: 8px 0 8px 0;
 }
 #containerFoot{
   color: #FFFFFF;
@@ -194,7 +219,7 @@
   margin-bottom: 1vh;
 }
 #rowListFoot li{
-  font-size: 50%;
+  font-size: 6pt;
   list-style: none;
 }
 #divAdress{
@@ -213,9 +238,9 @@
   background: #FF9F1C;
   border: transparent;
   border-radius: 5px;
-  width: 80%;
-  height: 4vh;
-  font-size: 55%;
+  width: 70%;
+  height: auto;
+  font-size: 50%;
   color:#FFFFFF;
   font-weight: bold;
   cursor: pointer;
@@ -242,7 +267,32 @@
 }
 /* mediaQuery /////////////////////////*/
 
-/* (1920x1080) Full HD Display */
-@media  screen and (max-width: 1920px) {
-  /* insert styles here */
+/* (320x480) iPhone Smartphone */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #containerHead{
+    height: 100vh;
+    padding: 16px;
+  }
+  #containerBanner{
+    height: 35vh;
+  }
+  #containerProducts{
+    height: 45vh;
+    padding: 0 10px 0 10px;
+  }
+  #containerFoot{
+    height: 45vh;
+  } /*products*/
+  #divCardProduct{
+    width: 40%;
+  }
+  #divCardProduct a{
+    display: unset;
+  }
+  #divRowCardProduct div:nth-of-type(3){
+    display: none;
+  }
+  #divRowCardProduct div:nth-of-type(4){
+    display: none;
+  }
 }
