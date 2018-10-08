@@ -150,94 +150,150 @@ class Products extends React.Component {
 
     render() {
         return (
-            <div id="divRowProducts" class="row align-items-center">
-                <div id="divBeforeButton" class="col-1">
-                    <span href="#carouselExampleControls" role="button" data-slide="prev" />
-                </div>
-                <div class="col-sm">
-                    <div class="row align-items-center">
-                        <div class="col-sm">
-                            <span>Produtos</span>
-                        </div>
+            <section>
+                <div id="divRowProducts" class="row align-items-center hiddenColum">
+                    <div id="divBeforeButton" class="col-1">
+                        <span href="#carouselExampleControls" role="button" data-slide="prev" />
                     </div>
-                    <div class="row align-items-center">
-                        <div class="col-sm">
-                            <div id="divrectangleProducts"></div>
-                        </div>
-                    </div>
-                    <div id="carouselExampleControls" class="carousel slide row align-items-center" data-interval="false" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div id="divRowCarousel" class="carousel-item active">
-                                <div class="row">
-                                    <div class="col-sm">
-                                        <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
-                                    </div>
-                                    <div class="col-sm">
-                                        <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
-                                    </div>
-                                    <div class="col-sm">
-                                        <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
-                                    </div>
-                                    <div class="col-sm">
-                                        <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="divRowCarousel" class="carousel-item">
-                                <div class="row">
-                                    <div class="col-sm ">
-                                        <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
-                                    </div>
-                                    <div class="col-sm">
-                                        <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
-                                    </div>
-                                    <div class="col-sm">
-                                        <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
-                                    </div>
-                                    <div class="col-sm">
-                                        <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="divRowCarousel" class="carousel-item">
-                                <div class="row">
-                                    <div class="col-sm ">
-                                        <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
-                                    </div>
-                                    <div class="col-sm">
-                                        <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
-                                    </div>
-                                    <div class="col-sm">
-                                        <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
-                                    </div>
-                                    <div class="col-sm">
-                                        <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="divRowCarousel" class="carousel-item">
-                                <div class="row">
-                                    <div class="col-sm ">
-                                        <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
-                                    </div>
-                                    <div class="col-sm">
-                                        <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
-                                    </div>
-                                    <div class="col-sm">
-                                        <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
-                                    </div>
-                                    <div class="col-sm">
-                                        <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
-                                    </div>
-                                </div>
+                    <div class="col-sm">
+                        <div class="row align-items-center">
+                            <div class="col-sm">
+                                <span>Produtos</span>
                             </div>
                         </div>
+                        <div class="row align-items-center">
+                            <div class="col-sm">
+                                <div id="divrectangleProducts"></div>
+                            </div>
+                        </div>
+                        <div id="carouselExampleControls" class="carousel slide row align-items-center" data-interval="false" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div id="divRowCarousel" class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-sm ">
+                                            <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
+                                        </div>
+                                        <div class="col-sm ">
+                                            <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
+                                        </div>
+                                        <div class="col-sm ">
+                                            <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
+                                        </div>
+                                        <div class="col-sm ">
+                                            <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div id="divRowCarousel" class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-sm ">
+                                            <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
+                                        </div>
+                                        <div class="col-sm">
+                                            <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
+                                        </div>
+                                        <div class="col-sm">
+                                            <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
+                                        </div>
+                                        <div class="col-sm">
+                                            <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="divRowCarousel" class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-sm ">
+                                            <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
+                                        </div>
+                                        <div class="col-sm">
+                                            <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
+                                        </div>
+                                        <div class="col-sm">
+                                            <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
+                                        </div>
+                                        <div class="col-sm">
+                                            <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="divRowCarousel" class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-sm ">
+                                            <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
+                                        </div>
+                                        <div class="col-sm">
+                                            <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
+                                        </div>
+                                        <div class="col-sm">
+                                            <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
+                                        </div>
+                                        <div class="col-sm">
+                                            <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="divAfterButton" class="col-1" >
+                        <span href="#carouselExampleControls" role="button" data-slide="next" />
                     </div>
                 </div>
-                <div id="divAfterButton" class="col-1" >
-                    <span href="#carouselExampleControls" role="button" data-slide="next" />
+                {/*on mobile trade container*/}
+                <div  class="row showColumMobile">
+                    <div class="col-sm">
+                        <div class="row align-items-center">
+                            <div class="col-sm">
+                                <span>Produtos</span>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-sm">
+                                <div id="divrectangleProducts"></div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-12">
+                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="row w-100 ">
+                                                <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
+                                                <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row w-100">
+                                                <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
+                                                <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row w-100">
+                                                <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
+                                                <CardProduct objectData={jsonProducts[Math.floor(Math.random() * 12)]} />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            {/*
+                            <div class="col-12">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                            </div>
+                        */}
+                        </div>
+                    </div>
                 </div>
-            </div>
+
+            </section>
         );
     }
 }

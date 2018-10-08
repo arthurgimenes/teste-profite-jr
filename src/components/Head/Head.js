@@ -11,12 +11,18 @@ class Head extends React.Component {
     render() {
         return (
             <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button id="buttonNavBarMobile" class="navbar-toggler col-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div id="divLogoProfite" class="col-2">
+                <div id="divLogoProfite" class="col-2 " >
                     <img src={profiteLogo} alt="profite" />
+                </div>
+                <div id="divCarShopping" class="col-3 navbar-toggler">
+                    <button>
+                        <img src={shoppingCart} alt="shoppingCart" />
+                        <span class="navbar-toggler-icon">5</span>
+                    </button>
                 </div>
                 <div id="divInputHead" class="col-sm">
                     <div class="input-group mb-3">
@@ -40,7 +46,7 @@ class Head extends React.Component {
                     </div>
                 </div>
 
-                <div id="divCarShopping" class="col-md-auto">
+                <div  class="col-md-auto hiddenColum" id="divCarShopping">
                     <button>
                         <img src={shoppingCart} alt="shoppingCart" />
                         <span class="navbar-toggler-icon">5</span>
@@ -48,7 +54,7 @@ class Head extends React.Component {
                 </div>
 
                 <div class="col-md-auto">
-                    <div class="navbar">
+                    <div class="navbar collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <div id="divRectangleHorizontalMenu" />

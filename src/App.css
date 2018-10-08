@@ -266,33 +266,73 @@ margin-right: auto
   font-style: regular;
 }
 /* mediaQuery /////////////////////////*/
-
+.showColumMobile{
+  display: none;
+}
 /* (320x480) iPhone Smartphone */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .hiddenColum{
+    display: none;
+  }
+  .showColumMobile{
+    display: unset;
+    border: 1px solid red;
+  }
   #containerHead{
-    height: 100vh;
+    height: 18vh;
     padding: 16px;
   }
   #containerBanner{
-    height: 35vh;
+    height: 36vh;
   }
   #containerProducts{
-    height: 45vh;
-    padding: 0 10px 0 10px;
+    height: 42vh;
+    padding: 0 0px 0 7px;
   }
   #containerFoot{
-    height: 45vh;
-  } /*products*/
+    height: 50vh;
+    padding: 0 10vh 0 10vh;
+  }
   #divCardProduct{
-    width: 40%;
+    width: 50%;
+    height: 32vh;
   }
   #divCardProduct a{
-    display: unset;
+    visibility: unset;
   }
-  #divRowCardProduct div:nth-of-type(3){
-    display: none;
+  #divCardProduct:hover{
+    background:transparent;
   }
-  #divRowCardProduct div:nth-of-type(4){
-    display: none;
+  #buttonNavBarMobile{
+    margin: 0;
+  }
+  #divLogoProfite{
+    margin-left: 0px;
+    padding: 0;
+  }
+  .nav-item{
+    width: 100%;
+    z-index: 4;
+    background: white;
+  }
+  .collapse{
+    background: white;
+    z-index: 3;
+  }
+  #divContatFoot button{
+    width: 100%;
+    font-size: 80%;
+    height: 7vh;
+  }
+  #divLocation{
+    font-size: 100%;
+    margin-bottom: 1vh;
+  }
+  #rowListFoot li{
+    font-size: 8pt;
+    list-style: none;
+  }
+  #divImgFoot{
+    margin-left: 20px;
   }
 }
