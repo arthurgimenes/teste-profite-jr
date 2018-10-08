@@ -2,7 +2,14 @@
   "name": "teste-profite-jr",
   "version": "1.0.0",
   "description": "###### Você já conhece a Profite? Nós somos a maior implantadora de e-commerce do Brasil. Atendemos clientes como Electrolux, Calvin Klein, C&A, Havaianas, Timex, Shopfácil, Mambo entre outros.",
+  "engines": {
+    "node": "8.9.1"
+  },
   "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "node test.js"
+  },
   "dependencies": {
     "del": "^3.0.0",
     "express": "^4.16.3",
