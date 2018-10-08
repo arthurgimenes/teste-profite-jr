@@ -335,4 +335,8 @@ margin-right: auto
   #divImgFoot{
     margin-left: 20px;
   }
+  #divCarShopping{
+    background: transparent;
+    border: none;
+  }
 }
