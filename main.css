@@ -1,0 +1,184 @@
+/* CARREGO A FONT DIODRUM E ROBOTO */
+@font-face {
+    font-family: DiodrumSemibold;
+    src: url(fonts/DiodrumSemibold.otf);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+
+.your-class{
+    background-color: blue;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline;
+    padding: 2px 10px;
+}
+
+header ul .search{
+    background-color: blue;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+header ul li:hover{
+    background-color:#D6D6D6;
+    cursor: pointer;
+}
+
+#sliderfeatured {
+    font-family: "DiodrumSemibold", sans-serif;
+    color: #FFF;
+    font-size: 42px;
+}
+#featuredone {
+    background-color: #011626;
+    height: 400px;
+}
+#sliderbackground {
+    background-size: cover;
+    height: 400px;
+    float: right;
+}
+#featuredone #sliderbackground {
+    background-image: url(slider/creditcard.jpg);
+}
+#featuredtwo {
+    background-color: #011626;
+    height: 400px;
+}
+#featuredtwo #sliderbackground {
+    background-image: url(slider/creditcard2.jpg);
+}
+
+#sliderfeatured #slidertext {
+    top: 40%;
+    position: absolute;
+    line-height: 48px;
+}
+#sliderfeatured #slidertext:after {
+    margin-top: 12px;
+    display: block;
+    content: " ";
+    width: 80px;
+    height: 5px;
+    background-color: orange;
+}
+
+#sliderprodutostitle {
+    font-family: "DiodrumSemibold", sans-serif;
+}
+#sliderprodutostitle:after {
+    margin-top: 6px;
+    display: block;
+    content: " ";
+    width: 40px;
+    height: 3px;
+    background-color: orange;
+
+}
+
+#sliderfeatured {
+    max-width: 100%;
+    overflow: hidden;
+    display: block;
+    margin-bottom: 20px;
+}
+
+#sliderprodutos {
+    font-family: "Roboto";
+    font-size: 12px;
+    color: #777;
+}
+#sliderprodutos .col-md-2:hover {
+    background-color: #F2F2F2;
+}
+#sliderprodutos .col-md-2 #buybutton {
+    opacity: 0;
+}
+#sliderprodutos .col-md-2:hover #buybutton {
+    opacity: 1;
+}
+#greentext {
+    color: #2EC4B6;
+    font-size: 20px;
+}
+
+#localizacao:after {
+    margin-top: 6px;
+    display: block;
+    content: " ";
+    width: 40px;
+    height: 3px;
+    background-color: orange;
+}
+
+#footer{
+    margin-top: 30px;
+}
+
+#btnMail{
+    padding-left: 30px;
+    background: url(imagens/mail.png); 
+    background-repeat: no-repeat; 
+    background-position: 16px 12px;
+    
+    background-color: orange;
+    border-radius: 8px;
+    width: 250px;
+    height: 50px;
+
+    margin-bottom: 16px;
+
+}
+
+#btnSac{
+    background: url(imagens/sac.png); 
+    background-repeat: no-repeat; 
+    background-position: 16px 12px;
+    
+    background-color: orange;
+    border-radius: 8px;
+    width: 250px;
+    height: 50px;
+
+    margin-bottom: 16px;
+}
+
+#containerFooter{
+    padding: 16px;
+    background-color: #011626;
+    color: white;
+
+}
+
+#search{
+
+    background: url(imagens/search.png); 
+    background-repeat: no-repeat; 
+    background-position: right;
+
+    width: 350px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 12px;
+
+
+}
+
+#headerContent{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+#logo{
+    background: url(imagens/logo.png); 
+    background-repeat: no-repeat; 
+    background-position: right;
+}
