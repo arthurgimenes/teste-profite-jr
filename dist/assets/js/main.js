@@ -26,7 +26,7 @@ $(function(){
 	// carousel produtos
 	$('#owl-carousel-produtos').owlCarousel({
 		loop:true,
-		margin:40,
+		margin:20,
 		autoplay:true,
 		dots: true,
 		dotsData: true,
