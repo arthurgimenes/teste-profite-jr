@@ -240,7 +240,7 @@
         },
         methods : {
             getJson(){
-                axios.get('http://192.168.0.26:3000/json')
+                axios.get('http://localhost:3000/json')
                     .then(resp => this.dataJson =  resp.data.data)
             }
         }
