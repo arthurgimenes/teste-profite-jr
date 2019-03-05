@@ -1,0 +1,40 @@
+{
+  "name": "teste-profite-jr",
+  "version": "1.0.0",
+  "description": "* HTML e HTML5\r * CSS\r * Noções de Javascript e Jquery\r * GIT\r * Sites responsivos",
+  "main": " app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arthurgimenes/teste-profite-jr.git"
+  },
+  "author": "Renato Santos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arthurgimenes/teste-profite-jr/issues"
+  },
+  "homepage": "https://github.com/arthurgimenes/teste-profite-jr#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "browser-sync": "^2.26.3",
+    "cors": "^2.8.5",
+    "del": "^3.0.0",
+    "express": "^4.16.4",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.1",
+    "nodemon": "^1.18.10"
+  }
+}
