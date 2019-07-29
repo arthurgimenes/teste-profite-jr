@@ -1,0 +1,50 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+body{
+   font-family: $fonte-primaria;
+}
+
+.navContainer{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   width: 90%;
+   height: 80px;
+   margin-left: 10%;
+}
+
+.navProcura{
+   width: 450px;
+   border: 0;
+   border-bottom: 1px solid $cinza-claro;
+   font-size: $fonte-size-procura;
+}
+
+.navContainer--menu{
+   width: 12%;
+
+}
+.navConta{
+   text-decoration: none;
+   color: $cinza;
+}
+.navCompra--img{
+   margin-left: 2%;
+}
+.linhaVertical{
+   border: 0.5px solid $cinza;
+   height: 30%;
+}
+
+.navIdiomas{
+   width: 40px;
+   padding: 10px;
+}
+
+
+
+

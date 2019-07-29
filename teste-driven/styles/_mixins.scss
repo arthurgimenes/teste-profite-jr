@@ -1,0 +1,29 @@
+@mixin flexColumn {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin bannerTamanho {
+    width: 960px;
+    height: 430px; 
+    position: relative; 
+}
+
+@mixin slideTamanho{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+}
+@mixin botao {
+    color: $branco;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+}
