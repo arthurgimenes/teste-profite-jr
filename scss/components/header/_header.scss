@@ -1,0 +1,189 @@
+.header-desktop{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    padding: 25px 0;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+    
+
+    .container{
+        width:90%;
+        max-width: 1380px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a img{
+            width: 107px;
+            height: 30px;
+        }
+    
+    .search{
+        width: 32%;
+        padding: 0.4rem 0 0.2rem 0;
+        border: none;
+        border-bottom: 1px solid #7A7A7A;
+        display: flex;
+        justify-content: space-between;
+        input{
+           border: none;
+           width: 100%;
+            }
+        button{
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            }
+        }
+    
+    .box-info{
+        display: flex;
+        align-items: center;
+        
+
+        li{
+            margin-left: 20px;
+            a{
+                color: black !important;
+                display:flex;
+                align-items: center;
+                span{
+                    margin-left: 5px;
+                }
+            }
+        }
+        li:first-child{
+            margin-left: 0px;
+        }
+        .cart{
+            line-height: 1rem;
+            height: 1rem;
+            width: 1rem;
+            -webkit-border-radius: 1rem;
+            border-radius: 1rem;
+            background-color: #2EC4B6;
+            color: #fff;
+            font-size: .75rem;
+            z-index: 1;
+            text-align: center;
+            margin-left: .5rem;
+            }
+        .line{
+          
+            height: 30px;
+            border: 1px solid #7A7A7A;
+            
+            }
+        }
+    }
+}
+
+
+@media (min-width: 800px){
+    .menu-mobile{
+        display: none;
+    }
+}
+
+.header-mobile{
+    display: none;
+}
+
+
+
+
+
+@media (max-width: 800px) {
+    .header-desktop{
+        display: none;
+    }
+    .menu-mobile{
+        position: absolute;
+        left: -250px;
+        top:120px;
+        width: 250px;
+        height: 0;
+        z-index: 99;
+        background:rgba(0, 0, 0, 0.8);
+        transition: all 0.4s linear;
+        
+        li{
+            border-bottom: 1px solid white;
+            padding:1.5rem 0 1.5rem 1rem;
+        }
+        a{
+            color: white;
+        }
+    }
+    .header-mobile{
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        padding: 22px 0;
+        background-color: #ffffff;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+
+    .container{
+        width:90%;
+        height: 100%;
+        margin: 0 auto;
+        .toggle{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            i{
+                cursor: pointer;
+                color: black !important;
+            }
+            a img{
+                width: 107px;
+                height: 30px;
+                }
+            }
+            .box-info{
+                display: flex;
+                align-items: center;
+                .cart{
+                    line-height: 1rem;
+                    height: 1rem;
+                    width: 1rem;
+                    -webkit-border-radius: 1rem;
+                    border-radius: 1rem;
+                    background-color: #2EC4B6;
+                    color: #fff;
+                    font-size: .75rem;
+                    z-index: 1;
+                    text-align: center;
+                    margin-left: .5rem;
+                    }
+                }
+        .search{
+            width: 100%;
+            margin: 1rem auto 0 auto;
+            padding: 0.4rem 0 0.2rem 0;
+            border: none;
+            border-bottom: 1px solid #7A7A7A;
+            display: flex;
+            justify-content: space-between;
+            input{
+                border: none;
+                width: 100%;
+                 }
+             button{
+                 border: none;
+                 background-color: transparent;
+                 cursor: pointer;
+                 }
+            }
+        
+        
+        }
+    }
+}

@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none !important;
+    opacity: 0.9;
+    cursor: pointer;
+    
+}
+
+a:hover{
+    opacity: 1;
+}
+
+li{
+    list-style-type: none;
+}
+
+ul{
+    margin-bottom: 0;
+}
