@@ -1,0 +1,133 @@
+.container{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1380px;
+}
+
+
+@mixin back($value) {
+    background-image: url('#{$value}');
+}
+
+@each $bg, $value in $bgs {
+    .btn-#{$bg}{
+        @include back($value);
+    }
+}
+
+.bg{
+    background-position: center;
+}
+
+.slideshow{
+    width: 100%;
+    position: relative;
+    margin-top:83px;
+    
+    .slider{
+        width: 100%;
+        ul, li{
+            width: 100%;
+            padding:200px 0;
+            background-size: cover;
+
+        }
+        .caption{
+            width: 90%;
+            height: 100%;
+            color:#fff;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            font-size:2rem;
+            hr{
+                border: 4px solid #FF9F1C;
+                width: 5%;
+                margin: 0.7rem 0 0 0;
+            }
+        }
+    }
+
+    .pagination{
+        position: absolute;
+        top:90%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        li{
+            font-size:0.7rem;
+            margin: 2px 4px;
+            color: #BDBDBD;
+            cursor: pointer;
+        }
+    }
+
+    .next-left, .next-right{
+        position: absolute;
+        top:0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-size:3rem;
+        cursor: pointer;
+    }
+    .next-left{
+        left:15px;
+    }
+    .next-right{
+        right:15px;
+    }
+
+.img-mobile{
+    display: none;
+}
+
+
+}
+
+@media (max-width: 1000px) {
+    .slideshow{
+    .slider{
+        .caption{
+            width: 50%;
+            font-size:2rem;
+            padding-left: 1rem;
+            hr{
+                border: 4px solid #FF9F1C;
+                width: 10%;
+                margin: 0.7rem 0 0 0;
+            }
+        }
+    }
+}
+}
+
+@media (max-width: 800px) {
+    .slideshow{
+        margin-top:120px;
+        .slider{
+            .bg {
+                background-position-x: 80%;
+            }
+            .caption{
+                width: 100%;
+                color:#fff;
+                font-size:2rem;
+                padding-left: 2rem;
+                hr{
+                    border: 4px solid #FF9F1C;
+                    width: 10%;
+                    margin: 0.7rem 0 0 0;
+                }
+            }
+        }
+        .next-left, .next-right{
+            font-size:2rem;
+        }
+        
+
+    }
+   
+}
