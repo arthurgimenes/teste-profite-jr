@@ -138,7 +138,7 @@ button[type=submit] {
         position: absolute;
         top: 0;
         display: block;
-        background: url("banner.png") no-repeat;
+        background: url("img/banner.png") no-repeat;
     }
     #account {
         display: none;
@@ -297,7 +297,7 @@ button[type=submit] {
         position: absolute;
         top: 0;
         display: block;
-        background: url("banner.png") no-repeat;
+        background: url("img/banner.png") no-repeat;
     }
     section img {
         width: 100%;
@@ -496,7 +496,7 @@ button[type=submit] {
         margin-left: 50%;
         position: absolute;
         display: block;
-        background: url("banner.png") no-repeat 0 0;
+        background: url("img/banner.png") no-repeat 0 0;
         z-index: 0;
     }
     section .title {
