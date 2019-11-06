@@ -26,6 +26,7 @@
         margin-right: 150px;
         margin-left: 50px;
     }
+<<<<<<< HEAD
     .box {
         width: 200px;
         height: 300px;
@@ -51,4 +52,6 @@
         font-size: 16px;
         font-weight: normal;
     }
+=======
+>>>>>>> c19da7d0ebb9a1041c1e60164900cd0d26b82dd8
 }
