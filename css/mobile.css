@@ -1,0 +1,54 @@
+@media (max-width: 679px) {
+    input {
+        width: auto;
+    }
+    #bandeiras {
+        display: none;
+    }
+    .conta {
+        display: none;
+    }
+    .btn-botao {
+        margin-left: 50px;
+        margin-top: 100 px;
+    }
+    .rodape {
+        align-content: center;
+    }
+    .slider {
+        display: none;
+    }
+    .mb-slider {
+        display: list-item;
+    }
+    .rodape-logo {
+        margin-top: 50px;
+        margin-right: 150px;
+        margin-left: 50px;
+    }
+    .box {
+        width: 200px;
+        height: 300px;
+    }
+    .img1 {
+        width: 160px;
+        height: 130px;
+    }
+    .avaliacao {
+        padding-left: 55px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .preco-novo,
+    .parcelado {
+        font-size: 9px;
+    }
+    .titulo-produto {
+        margin-top: 7px;
+        font-size: 10px;
+    }
+    .preco-bottom {
+        font-size: 16px;
+        font-weight: normal;
+    }
+}
