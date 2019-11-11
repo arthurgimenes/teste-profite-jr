@@ -1,0 +1,26 @@
+[
+  {
+    "nome": "tenis 1",
+    "avaliacao": 1,
+    "valorAnterior": 399,
+    "valorAtual": 299
+  },
+  {
+    "nome": "tenis 2",
+    "avaliacao": 1,
+    "valorAnterior": 399,
+    "valorAtual": 299
+  },
+  {
+    "nome": "tenis 3",
+    "avaliacao": 1,
+    "valorAnterior": 399,
+    "valorAtual": 299
+  },
+  {
+    "nome": "tenis 4",
+    "avaliacao": 1,
+    "valorAnterior": 399,
+    "valorAtual": 299
+  }
+]
