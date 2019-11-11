@@ -1,0 +1,103 @@
+.navbar {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  button {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    span.line {
+      width: 30px;
+      height: 3px;
+      background-color: #000;
+      display: block;
+      margin: 5px;
+    }
+  }
+
+  .cart-items-number {
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: #2ec4b6;
+    display: inline-flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    margin: 0 5px;
+  }
+
+  .input-group {
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+    input {
+      border: none;
+      border-bottom: 1px solid #000;
+      background-color: transparent;
+      padding: 5px 0;
+      width: 100%;
+    }
+    img {
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  .account p {
+    color: #a7a7a7;
+    font-size: 13px;
+  }
+
+  .account,
+  .languages {
+    display: none;
+  }
+
+  @media screen and (min-width: 767px) {
+    flex-wrap: nowrap;
+    button {
+      display: none;
+    }
+    img.logo {
+      order: 1;
+    }
+    .user-menu {
+      order: 3;
+    }
+    .account {
+      display: inline-flex;
+      margin: 0 10px;
+      .user {
+        margin: 0 5px;
+      }
+      img,
+      p {
+        display: inline-block;
+      }
+    }
+    .languages {
+      display: inline-flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      border-left: 1px solid #000;
+      img {
+        margin: 10px;
+      }
+    }
+    .input-group {
+      order: 2;
+      width: 440px;
+      input::placeholder {
+        font-family: "Ubuntu";
+      }
+    }
+  }
+}
