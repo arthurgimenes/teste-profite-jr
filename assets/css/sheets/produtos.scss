@@ -1,0 +1,156 @@
+@media (max-width: 414px) {
+  
+  .products {
+    width: 100%;
+    padding-bottom: 40px;
+   
+    h2 {
+      @include underline-details;
+      padding: 25px 0;
+      margin-bottom: 20px;
+    }
+
+    .items {
+      width: auto;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .outer-products{
+        display: none;
+      }  
+      .item {
+        width: 200px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        img:nth-child(1) {
+          width: 130px;
+          height: 120px;
+          padding-bottom: 20px;
+        }
+
+        h4 {
+          text-align: center;
+          text-transform: uppercase;
+          font-size: .8em;
+          color: $gray-default;
+          margin-bottom: 5px;
+        }
+
+        .stars {
+          width: 100px;
+          margin-bottom: 5px;
+        }
+
+        p {
+          margin-bottom: 5px;
+          color: $gray-default;
+          font-size: .9em;
+          text-align: center;
+        }
+
+        h5 {
+          margin-bottom: 5px;
+          color: $green-details;
+          font-size: 1.3em;
+        }
+
+        button {
+          width: 90%;
+          height: 40px;
+          text-transform: uppercase;
+          border: none;
+          border-radius: 5px;
+          font-size: 1em;
+          color: $white-default;
+          background: url("../../images/carrinho-comprar.png") no-repeat $green-details;
+          background-position: 20px 10px;
+        }
+      }
+    }
+
+    .outer-products {
+      display: none;
+    }
+  }
+
+}
+
+@media (min-width: 415px) {
+  .products {
+    width: 100%;
+    padding-bottom: 40px;
+
+    h2 {
+      @include underline-details;
+      padding: 25px 0;
+      margin-bottom: 20px;
+    }
+
+    .items {
+      width: auto;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .item {
+        width: 200px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        img:nth-child(1) {
+          width: 130px;
+          height: 120px;
+          padding-bottom: 20px;
+        }
+
+        h4 {
+          text-align: center;
+          text-transform: uppercase;
+          font-size: .8em;
+          color: $gray-default;
+          margin-bottom: 5px;
+        }
+
+        .stars {
+          width: 100px;
+          margin-bottom: 5px;
+        }
+
+        p {
+          margin-bottom: 5px;
+          color: $gray-default;
+          font-size: .9em;
+          text-align: center;
+        }
+
+        h5 {
+          margin-bottom: 5px;
+          color: $green-details;
+          font-size: 1.3em;
+        }
+
+        button {
+          width: 90%;
+          height: 40px;
+          text-transform: uppercase;
+          border: none;
+          border-radius: 5px;
+          font-size: 1em;
+          color: $white-default;
+          background: url("../../images/carrinho-comprar.png") no-repeat $green-details;
+          background-position: 20px 10px;
+        }
+      }
+    }
+  }
+}

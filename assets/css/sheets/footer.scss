@@ -1,0 +1,213 @@
+@media (max-width: 414px) {
+
+  footer {
+    width: 100%;
+    height: auto;
+    background: #011627;
+    border-bottom: 5px solid $green-details;
+    .rodape {
+      display: none;
+    }
+    h2 {
+      @include underline-details;
+      padding: 25px 0;
+      color: $white-default;
+    }
+
+    .locations {
+      padding: 25px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: row;
+
+      .location-sp,
+      .location-rj {
+        width: 45%;
+        height: auto;
+
+        h3 {
+          color: $white-default;
+          font-size: 1em;
+          letter-spacing: .1em;
+          margin-bottom: 10px;
+        }
+
+        p {
+          color: $white-default;
+          margin-bottom: 5px;
+          font-size: .9em;
+        }
+      }
+    }
+
+    .buttons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      button {
+        width: 200px;
+        height: 40px;
+        margin-bottom: 25px;
+        border: none;
+        border-radius: 5px;
+        padding-left: 25px;
+      }
+
+      .contact-email {
+        background: url('../../images/cartinha.png') no-repeat left $orange-details;
+        color: $white-default;
+        background-position-x: 20px;
+      }
+
+      .contact-call {
+        background: url('../../images/contato.png') no-repeat left $orange-details;
+        color: $white-default;
+        background-position-x: 20px;
+      }
+    }
+
+    .organizations {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      margin-bottom: 30px;
+
+      .org-profite {
+        margin-right: 40px;
+      }
+
+      .org-vtex {
+        margin-left: 40px;
+      }
+
+      p {
+        color: $white-default;
+        font-size: .7em;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+}
+
+@media (min-width: 415px) {
+  .footer-mbl {
+    display: none;
+  }
+
+  footer {
+    padding-bottom: 15px;
+    height: 213px;
+    background-color: #011627;
+    border-bottom: 10px solid $green-details;
+
+    .rodape {
+      width: 940px;
+      height: 210px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+
+      .location {
+        margin: 0;
+      }
+    }
+
+    h3 {
+      margin-left: -53px;
+      margin-top: -115px;
+      color: #F2F2F2;
+
+      &::after {
+        @include underline-details;
+      }
+    }
+
+    h4 {
+      margin-top: 30px;
+      margin-bottom: 0;
+    }
+
+    .filiais {
+      width: 512px;
+      color: #F2F2F2;
+      margin-left: -95px;
+      margin-top: 80px;
+      line-height: 25px;
+      display: flex;
+      align-items: center;
+
+      .filial-sp,
+      .filial-rj {
+        margin-right: 40px;
+      }
+    }
+  }
+
+  .contate-nos {
+    width: 195px;
+    height: 105px;
+    margin-left: -60px;
+    display: grid;
+    align-items: center;
+    padding-top: 70px;
+
+    button {
+      width: 195px;
+      height: 38px;
+      color: #F2F2F2;
+      border-radius: 5px;
+      border: none;
+      padding-left: 45px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .botao-contato {
+    background: url(../../images/cartinha.png) no-repeat left;
+    background-color: $orange-details;
+    background-position: 15px;
+    cursor: pointer;
+  }
+
+  .botao-consultor {
+    background: url(../../images/contato.png) no-repeat left;
+    background-color: $orange-details;
+    background-position: 15px;
+    margin-top: 45px;
+    cursor: pointer;
+  }
+
+  .autores,
+  .createdby {
+    width: 185px;
+    color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-top: auto;
+    font-size: 10px;
+  }
+
+  .autores .profite {
+    margin-right: 20px;
+
+    p {
+      margin-bottom: 5px;
+    }
+  }
+
+  .vtex p {
+    margin-bottom: 5px;
+  }
+
+  li {
+    list-style: none;
+    font-size: .8em;
+  }
+}

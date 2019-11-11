@@ -1,0 +1,62 @@
+@media (max-width: 414px) {
+  
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .header-nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 0;
+      .menu_hamburger {
+        li {
+          width: 30px;
+          height: 4px;
+          background-color: $black-default;
+          margin-bottom: 5px;
+          list-style: none;
+          border-radius: 20%;
+        }
+      }
+      .shopping_cart {
+        width: 55px;
+        display: flex;
+        align-items: center;
+        img {
+          width: 30px; 
+        }
+        a {
+          text-decoration: none;
+          margin-left: 5px;
+          background-color: $green-details;
+          border-radius: 100%;
+          width: 15px;
+          height: 15px;
+          text-align: center;
+          color: $white-default;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 2px;
+        }
+      }
+    }
+    .grupo-menu {
+      display: none;
+    }
+  }
+  .search {
+    font-size: 1.2em;
+    border: none;
+    color: $gray-default;
+    width: 100%;  
+    padding-bottom: 5px;
+    border-bottom: 1px solid $gray-default;
+    background: url(../../images/search.png) no-repeat right;
+    background-size: 25px;
+    margin-bottom: 20px;
+  }
+
+}
