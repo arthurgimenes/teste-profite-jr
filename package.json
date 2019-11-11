@@ -1,0 +1,27 @@
+{
+  "name": "teste-profite-jr",
+  "version": "1.0.0",
+  "description": "* HTML e HTML5\r * CSS\r * Noções de Javascript e Jquery\r * GIT\r * Sites responsivos",
+  "main": "app.js",
+  "dependencies": {
+    "connect": "~3.6.6",
+    "jquery": "^3.4.1",
+    "serve-static": "~1.13.2"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renan-dev/teste-profite-jr.git"
+  },
+  "author": "Renan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renan-dev/teste-profite-jr/issues"
+  },
+  "homepage": "https://github.com/renan-dev/teste-profite-jr#readme",
+  "devDependencies": {
+    "sass": "^1.23.3"
+  }
+}

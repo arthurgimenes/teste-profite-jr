@@ -1,0 +1,7 @@
+@mixin underline-details {
+  content: "";
+  display: block;
+  border-bottom: 5px solid $orange-details;
+  width: 60px;
+  height: 10px; 
+}
