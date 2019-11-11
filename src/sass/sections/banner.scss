@@ -1,0 +1,49 @@
+section.banner {
+  background-image: url("../img/banner-mobile.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 190px;
+  color: #fff;
+
+  h1 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 34px;
+    width: 165px;
+  }
+
+  .title-line {
+    width: 30px; /*65*/
+    height: 3px; /*6*/
+    background-color: #ff9f1c;
+  }
+
+  @media screen and (min-width: 769px) {
+    background-image: url("../img/banner.png");
+    background-position: 140%;
+    background-size: contain;
+    height: 430px;
+    background-color: #011627;
+    align-items: flex-end;
+    display: flex;
+    h1 {
+      width: 395px;
+    }
+    .title-line {
+      width: 65px;
+      height: 6px;
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #fff;
+    }
+
+    .swiper-banner {
+      height: 230px;
+    }
+  }
+  @media screen and (min-width: 1441px) {
+    background-position: 100%;
+  }
+}

@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+}
+
+button {
+  outline: 0;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.container {
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.swiper-button-next,
+.produtos-button-next,
+.swiper-button-prev,
+.produtos-button-prev {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-button-next,
+  .produtos-button-next,
+  .swiper-button-prev,
+  .produtos-button-prev {
+    display: block;
+  }
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-button-prev {
+  left: 60px;
+}
+
+.swiper-button-next {
+  right: 60px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #bdbdbd;
+  opacity: 1;
+  margin: 3px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ff9f1c;
+}
+
+.produtos-pagination,
+.banner-pagination {
+  margin: 10px;
+  position: relative;
+}
