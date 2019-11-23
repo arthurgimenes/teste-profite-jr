@@ -22,9 +22,9 @@ const Banner = () => {
 
     return (
       <div className="Banner">
-          <div className="risco"></div>
           <h1>Nossa especialidade: experiência de compra.</h1>
-          <Gallery
+          <div className="risco"></div>
+          <Gallery 
           index={index}
           onRequestChange={i => {
             setIndex(i);

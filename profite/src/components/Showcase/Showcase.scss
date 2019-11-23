@@ -1,0 +1,28 @@
+.Showcase{
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+        h2{
+            margin: 5px;
+        }
+
+        .risco{
+            width: 32px;
+            height: 5px;
+            background-color: #FF9F1C;
+            margin: 5px 5px;
+           
+        }
+        section{
+            display: flex;
+            justify-content: space-around;
+            overflow: hidden;
+            .slide{
+                display: flex;
+                justify-content: flex-start;
+                margin-top: 50px;
+                transform: translateX(167px)
+    
+            }
+        }
+    
+}
