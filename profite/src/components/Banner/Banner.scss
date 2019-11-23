@@ -4,39 +4,25 @@
     margin-top: 10px;
     font-family: 'Ubuntu', sans-serif;
     background-size: cover;
-    header{
-        width: 277px;
-        height: 131.13px;
-        padding-left: 20px;
-        padding-top: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
         h1{
                 color: #fff;
                 font-weight: bold;
                 font-size: 30px;
                 line-height: 34px;
-                margin: 5px;
+                margin: 0px 0px 10px 10px;
+                position: absolute;
+                z-index: 3;
             }   
-        div{
+        .risco{
             width: 32px;
             height: 5px;
             background-color: #FF9F1C;
-            margin: 5px;
+            margin-top: 65px;
+            margin-left: 10px;
+            position: absolute;
+            z-index: 2;
         }
-        section{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            article{
-                width: 50%;
-                display: flex;
-                justify-content: space-around;
-                div{
-                    width: 10px;
-                    height: 10px;
-                     background-color: #BDBDBD;
-                     border-radius: 100%;
-                }
-            }
-        }
-    }
 }
