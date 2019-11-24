@@ -1,7 +1,9 @@
 import React from 'react'
 import Shoe from '../../../img/tenis.png'
 import Add from '../../../img/add-carrinho.png'
+import Stars from '../../../img/rating.png'
 import './Item.scss'
+
 
 
 const products = [
@@ -9,6 +11,7 @@ const products = [
         Name: "Puma1",
         picture: Shoe,
         description: "TÊNIS COURO PUMA R698 Q4 V2",
+        rating: Stars,
         price: 299.00,
         sale: 399.90,
     },
@@ -17,6 +20,7 @@ const products = [
         picture: Shoe,
         description: "TÊNIS COURO PUMA R698 Q4 V2",
         price: 299.00,
+        rating: Stars,
         sale: 399.90,
     },
     {   
@@ -24,6 +28,7 @@ const products = [
         picture: Shoe,
         description: "TÊNIS COURO PUMA R698 Q4 V2",
         price: 299.00,
+        rating: Stars,
         sale: 399.90,
     },
     {   
@@ -31,6 +36,7 @@ const products = [
         picture: Shoe,
         description: "TÊNIS COURO PUMA R698 Q4 V2",
         price: 299.00,
+        rating: Stars,
         sale: 399.90,
     }
 
@@ -38,15 +44,31 @@ const products = [
 
 const Item = () => {
 
+    const [rotate, setrotate] = React.useState(true)
+
+    React.useEffect(() =>{
+        setInterval(() => {
+           if( rotate ){
+               setrotate(false)
+           }
+           else{
+               setrotate(true)
+           }
+        }, 3000);
+    },[rotate])
+
+ 
     
     return (
 
         <div className="Item">
 
             {products.map((item) => {
-                return <div className="product">
+                return <div className="product" style={rotate ? {transform: "translateX(0px)"} : {transform: "translateX(-300px)"}} >
+                    <div><p>OFF</p></div>
                     <img src={item.picture} alt="tenis"/>
                     <p>{item.description}</p>
+                    <img src={item.rating} alt="avaliação"/>
                     <p>de R${item.price}</p>
                     <p>por R$ {item.sale}</p>
                     <p>ou em 3x de R$ {(item.sale / 3).toFixed(2)}</p>

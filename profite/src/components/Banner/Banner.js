@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import './Banner.scss'
 import backgroundImage from '../../img/background-image.png'
 import { Gallery, GalleryImage } from "react-gesture-gallery"
+import LineOrange from '../LineOrange/LineOrange'
 
 const images = [ backgroundImage, backgroundImage, backgroundImage, backgroundImage]
 
@@ -23,7 +24,7 @@ const Banner = () => {
     return (
       <div className="Banner">
           <h1>Nossa especialidade: experiência de compra.</h1>
-          <div className="risco"></div>
+          <LineOrange />
           <Gallery 
           index={index}
           onRequestChange={i => {

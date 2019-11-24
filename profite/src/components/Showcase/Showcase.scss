@@ -5,14 +5,6 @@
         margin: 5px;
     }
 
-    .risco{
-        width: 32px;
-        height: 5px;
-        background-color: #FF9F1C;
-        margin: 5px 5px;
-        
-    }
-
     .slide{
         display: flex;
         width: 100%;
@@ -27,10 +19,11 @@
         justify-content: center;
         align-items: center;
         div{
-            width: 10px;
-            height: 10px;
+            width: 7px;
+            height: 7px;
             border-radius: 100%;
-            background-color: #FF9F1C;
+            background-color: #BABABA;
+            transition-delay: 500ms;
             margin-right: 10px;
         }
     }

@@ -7,12 +7,14 @@ import IconPhone from '../../img/Iconphone.png'
 import Logos from './Logos/Logos'
 import Profite from '../../img/logobranco.png'
 import Vtex from '../../img/vtex.png'
+import LineOrange from '../LineOrange/LineOrange'
 
 const Footer = () => {
     return (
         <div className="Footer">
             <section>
                 <h2>Localização</h2>
+                <LineOrange />
             </section>
             <main>
                 <Adress UF="São Paulo" adress="Rua do Rócio, 423/1801" state="Vila Olímpia - SP" cep="04552-000" tel="+55 11 3333 3333" />
