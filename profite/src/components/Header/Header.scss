@@ -1,0 +1,39 @@
+body{
+    margin: 0%;
+}
+.Header{
+    width: 100%;
+    header{
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      div{
+          display: flex;
+          .elipse{
+              width: 14px;
+              height: 14px;
+              border-radius: 100%;
+              background-color: #2EC4B6;
+          }
+      }
+    }
+    section{
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        input, button {
+            border: none;
+            border-bottom: 1px #7a7a7a solid;
+           
+        }
+        input{
+            width: 230px;
+        }
+        
+        button{
+            background-color:white;
+
+        }
+    }
+}

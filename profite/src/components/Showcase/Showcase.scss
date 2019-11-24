@@ -1,0 +1,49 @@
+.Showcase{
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    section{
+        width: 100%;
+        h2{
+            margin: 5px;
+        }
+    }
+
+    .slide{
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 50px;
+        overflow-x: auto;
+        }
+    article{
+        width: 100%;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div{
+            width: 7px;
+            height: 7px;
+            border-radius: 100%;
+            background-color: #BABABA;
+            transition-delay: 500ms;
+            margin-right: 10px;
+        }
+    }
+
+}
+
+@media(min-width: 768px){
+    .Showcase{
+        margin-top: 200px;
+        .slide{
+            justify-content: space-around;
+            align-items: center;
+            padding-left: 700px;
+        }
+    }
+}
