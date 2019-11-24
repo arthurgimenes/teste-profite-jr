@@ -11,6 +11,27 @@ const products = [
         description: "TÊNIS COURO PUMA R698 Q4 V2",
         price: 299.00,
         sale: 399.90,
+    },
+    {   
+        Name: "Puma2",
+        picture: Shoe,
+        description: "TÊNIS COURO PUMA R698 Q4 V2",
+        price: 299.00,
+        sale: 399.90,
+    },
+    {   
+        Name: "Puma3",
+        picture: Shoe,
+        description: "TÊNIS COURO PUMA R698 Q4 V2",
+        price: 299.00,
+        sale: 399.90,
+    },
+    {   
+        Name: "Puma4",
+        picture: Shoe,
+        description: "TÊNIS COURO PUMA R698 Q4 V2",
+        price: 299.00,
+        sale: 399.90,
     }
 
 ]

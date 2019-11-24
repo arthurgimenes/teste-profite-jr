@@ -2,11 +2,13 @@
     font-family: Ubuntu;
     width: 150px;
     display: flex;
-    overflow-inline: hidden;
-    margin-right: 10px;
+    .product{
+        width: 90%;
+        margin: 0 10px;
+    }
 
     img{
-        align-self: center;
+        align-self: center; 
     }
     
     p{
