@@ -20,8 +20,10 @@ const Showcase = () => {
 
     return (
         <div className="Showcase">
-            <h2>Produtos</h2>
-            <LineOrange />
+            <section>
+                <h2>Produtos</h2>
+                <LineOrange />
+            </section>
             <div className="slide">
               <Item />       
             </div>

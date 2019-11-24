@@ -1,8 +1,15 @@
 .Showcase{
     font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    h2{
-        margin: 5px;
+    section{
+        width: 100%;
+        h2{
+            margin: 5px;
+        }
     }
 
     .slide{
@@ -28,4 +35,15 @@
         }
     }
 
+}
+
+@media(min-width: 768px){
+    .Showcase{
+        margin-top: 200px;
+        .slide{
+            justify-content: space-around;
+            align-items: center;
+            padding-left: 700px;
+        }
+    }
 }

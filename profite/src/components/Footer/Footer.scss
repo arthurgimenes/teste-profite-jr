@@ -39,3 +39,9 @@
         align-items: center;
     }
 }
+
+@media(min-width: 768px){
+    .Footer{
+        flex-direction: row;
+    }
+}

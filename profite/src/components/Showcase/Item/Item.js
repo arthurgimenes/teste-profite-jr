@@ -64,7 +64,7 @@ const Item = () => {
         <div className="Item">
 
             {products.map((item) => {
-                return <div className="product" style={rotate ? {transform: "translateX(0px)"} : {transform: "translateX(-300px)"}} >
+                return <div className="product" style={rotate ? {transform: "translateX(0px)"} : {transform: "translateX(-450px)"}} >
                     <div><p>OFF</p></div>
                     <img src={item.picture} alt="tenis"/>
                     <p>{item.description}</p>

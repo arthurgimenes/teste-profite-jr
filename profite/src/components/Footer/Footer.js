@@ -12,6 +12,7 @@ import LineOrange from '../LineOrange/LineOrange'
 const Footer = () => {
     return (
         <div className="Footer">
+
             <section>
                 <h2>Localização</h2>
                 <LineOrange />

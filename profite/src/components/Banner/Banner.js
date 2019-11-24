@@ -25,7 +25,10 @@ const Banner = () => {
       <div className="Banner">
           <h1>Nossa especialidade: experiência de compra.</h1>
           <LineOrange />
-          <Gallery 
+          <section>
+
+          </section>
+          <Gallery  className="picture"
           index={index}
           onRequestChange={i => {
             setIndex(i);

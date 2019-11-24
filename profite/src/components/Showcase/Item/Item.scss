@@ -9,9 +9,7 @@
         flex-direction: column;
         align-items: center;
         transition-delay: 500ms;
-        &:nth-child(1){
-            display: none;
-        }
+        
         div{
             display: flex;
             align-items: center;
