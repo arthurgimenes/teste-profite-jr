@@ -21,3 +21,4 @@
 <link href="style/css/com/card.css" rel="stylesheet" type="text/css" />
 <link href="style/css/com/btn-footer.css" rel="stylesheet" type="text/css" />
 <link href="style/css/com/btn-body.css" rel="stylesheet" type="text/css" />
+<link href="style/css/com/estrelas.css" rel="stylesheet" type="text/css" />

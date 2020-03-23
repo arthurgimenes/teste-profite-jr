@@ -3,9 +3,12 @@
         <?php
             require("../def/head.php");
             //require("../def/function.php");
+            
         ?>
+         <script type="text/javascript" src="js/functions.js"></script>
     </head>
     <body>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <div class="container-fluid no-gutters" style="margin: 35px 0 0 0;">
             <div class="row">
                 <i class="fas fa-bars d-sm-none d-block offset-1 mt-4" style="font-size: 20px; cursor: pointer"></i>
@@ -85,11 +88,25 @@
                     <img class="card-img-top" src="/teste-profite-jr/img/produto1.jpg" alt="Imagem de capa do card">
                     <div class="card-body" style="text-align: center">
                         <h6 class="card-title">Camiseta Zed League of Legends</h6>
-                        <i class="card-text fas fa-star strela" style="color: #FF9F1C"></i>
-                        <i class="card-text fas fa-star strela" style="color: #FF9F1C"></i>
-                        <i class="card-text far fa-star strela" style="color: #FF9F1C"></i>
-                        <i class="card-text far fa-star strela" style="color: #FF9F1C"></i>
-                        <i class="card-text far fa-star strela" style="color: #FF9F1C"></i>
+                        <div class="estrelas">
+                            <input type="radio" id="estrela-empty" name="estrelas1" value="" checked/>
+
+                            <label for="estrela-1"><i class="fa"></i> </label>
+                            <input type="radio" id="estrela-1" name="estrelas1" value="1"/>
+
+                            <label for="estrela-2"><i class="fa"></i></label>
+                            <input type="radio" id="estrela-2" name="estrelas1" value="2"/>
+
+                            <label for="estrela-3"><i class="fa"></i></label>
+                            <input type="radio" id="estrela-3" name="estrelas1" value="3"/>
+
+                            <label for="estrela-4"><i class="fa"></i></label>
+                            <input type="radio" id="estrela-4" name="estrelas1" value="4"/>
+
+                            <label for="estrela-5"><i class="fa"></i></label>
+                            <input type="radio" id="estrela-5" name="estrelas1" value="5"/>
+
+                        </div>
                         <p style="text-decoration: line-through; font-size: smaller;">de R$ 299,00</p>
                         <p style="font-weight: bold; color:#2EC4B6; font-size: larger;">Por R$ 399,00</p>
                         <p style="font-size: smaller">ou em 3x de R$ 133,00</p>
@@ -100,11 +117,25 @@
                     <img class="card-img-top" src="/teste-profite-jr/img/produto1.jpg" alt="Imagem de capa do card">
                     <div class="card-body" style="text-align: center">
                         <h6 class="card-title">Camiseta Zed League of Legends</h6>
-                        <i class="card-text fas fa-star strela" style="color: #FF9F1C"></i>
-                        <i class="card-text fas fa-star strela" style="color: #FF9F1C"></i>
-                        <i class="card-text far fa-star strela" style="color: #FF9F1C"></i>
-                        <i class="card-text far fa-star strela" style="color: #FF9F1C"></i>
-                        <i class="card-text far fa-star strela" style="color: #FF9F1C"></i>
+                        <div class="estrelas">
+                            <input type="radio" id="estrela-empty" name="estrelas2" value="" checked/>
+
+                            <label for="estrela-6"><i class="fa"></i></label>
+                            <input type="radio" id="estrela-6" name="estrelas2" value="1"/>
+
+                            <label for="estrela-7"><i class="fa"></i></label>
+                            <input type="radio" id="estrela-7" name="estrelas2" value="2"/>
+
+                            <label for="estrela-8"><i class="fa"></i></label>
+                            <input type="radio" id="estrela-8" name="estrelas2" value="3"/>
+
+                            <label for="estrela-9"><i class="fa"></i></label>
+                            <input type="radio" id="estrela-9" name="estrelas2" value="4"/>
+
+                            <label for="estrela-10"><i class="fa"></i></label>
+                            <input type="radio" id="estrela-10" name="estrelas2" value="5"/>
+
+                        </div>
                         <p style="text-decoration: line-through; font-size: smaller;">de R$ 299,00</p>
                         <p style="font-weight: bold; color:#2EC4B6; font-size: larger;">Por R$ 399,00</p>
                         <p style="font-size: smaller">ou em 3x de R$ 133,00</p>
@@ -115,11 +146,25 @@
                     <img class="card-img-top" src="/teste-profite-jr/img/produto1.jpg" alt="Imagem de capa do card">
                     <div class="card-body" style="text-align: center">
                         <h6 class="card-title">Camiseta Zed League of Legends</h6>
-                        <i class="card-text fas fa-star strela" style="color: #FF9F1C"></i>
-                        <i class="card-text fas fa-star strela" style="color: #FF9F1C"></i>
-                        <i class="card-text far fa-star strela" style="color: #FF9F1C"></i>
-                        <i class="card-text far fa-star strela" style="color: #FF9F1C"></i>
-                        <i class="card-text far fa-star strela" style="color: #FF9F1C"></i>
+                        <div class="estrelas">
+                            <input type="radio" id="estrela-empty" name="estrelas3" value="" checked/>
+
+                            <label for="estrela-11"><i class="fa"></i></label>
+                            <input type="radio" id="estrela-11" name="estrelas3" value="1"/>
+
+                            <label for="estrela-12"><i class="fa"></i></label>
+                            <input type="radio" id="estrela-12" name="estrelas3" value="2"/>
+
+                            <label for="estrela-13"><i class="fa"></i></label>
+                            <input type="radio" id="estrela-13" name="estrelas3" value="3"/>
+
+                            <label for="estrela-14"><i class="fa"></i></label>
+                            <input type="radio" id="estrela-14" name="estrelas3" value="4"/>
+
+                            <label for="estrela-15"><i class="fa"></i></label>
+                            <input type="radio" id="estrela-15" name="estrelas3" value="5"/>
+
+                        </div>
                         <p style="text-decoration: line-through; font-size: smaller;">de R$ 299,00</p>
                         <p style="font-weight: bold; color:#2EC4B6; font-size: larger;">Por R$ 399,00</p>
                         <p style="font-size: smaller">ou em 3x de R$ 133,00</p>
@@ -130,11 +175,25 @@
                     <img class="card-img-top" src="/teste-profite-jr/img/produto1.jpg" alt="Imagem de capa do card">
                     <div class="card-body" style="text-align: center">
                         <h6 class="card-title">Camiseta Zed League of Legends</h6>
-                        <i class="card-text fas fa-star strela" style="color: #FF9F1C"></i>
-                        <i class="card-text fas fa-star strela" style="color: #FF9F1C"></i>
-                        <i class="card-text far fa-star strela" style="color: #FF9F1C"></i>
-                        <i class="card-text far fa-star strela" style="color: #FF9F1C"></i>
-                        <i class="card-text far fa-star strela" style="color: #FF9F1C"></i>
+                        <div class="estrelas">
+                            <input type="radio" id="estrela-empty" name="estrelas4" value="" checked/>
+
+                            <label for="estrela-16"><i class="fa"></i></label>
+                            <input type="radio" id="estrela-16" name="estrelas4" value="1"/>
+
+                            <label for="estrela-17"><i class="fa"></i></label>
+                            <input type="radio" id="estrela-17" name="estrelas4" value="2"/>
+
+                            <label for="estrela-18"><i class="fa"></i></label>
+                            <input type="radio" id="estrela-18" name="estrelas4" value="3"/>
+
+                            <label for="estrela-19"><i class="fa"></i></label>
+                            <input type="radio" id="estrela-19" name="estrelas4" value="4"/>
+
+                            <label for="estrela-20"><i class="fa"></i></label>
+                            <input type="radio" id="estrela-20" name="estrelas4" value="5"/>
+
+                        </div>
                         <p style="text-decoration: line-through; font-size: smaller;">de R$ 299,00</p>
                         <p style="font-weight: bold; color:#2EC4B6; font-size: larger;">Por R$ 399,00</p>
                         <p style="font-size: smaller">ou em 3x de R$ 133,00</p>
