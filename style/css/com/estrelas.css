@@ -1,0 +1,16 @@
+
+.estrelas input[type=radio] {
+    display: none;
+  }
+
+  .estrelas label i.fa:before {
+    content:'\f005';
+    color: #FF9F1C;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .estrelas input[type=radio]:checked ~ label i.fa:before {
+    content:'\f006';
+    color: #FF9F1C;
+  }
+ 

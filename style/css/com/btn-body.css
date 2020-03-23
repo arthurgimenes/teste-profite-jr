@@ -1,0 +1,9 @@
+.btn-body{
+    background-color: #2EC4B6;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-body:hover{
+    background-color: rgb(45, 179, 165);
+}
