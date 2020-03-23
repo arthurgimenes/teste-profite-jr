@@ -1,0 +1,8 @@
+.btn-footer{
+    background-color: #FF9F1C;
+    cursor: pointer;
+}
+
+.btn-footer:hover{
+    background-color: rgb(224, 143, 28);
+}
