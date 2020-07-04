@@ -1,1 +1,3 @@
-$('.banner').slick();
+$('.banner').slick({
+  arrows: false,
+});

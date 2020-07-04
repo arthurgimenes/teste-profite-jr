@@ -15,14 +15,131 @@ body {
     height: 80px;
     font-family: $font-ubuntu;
     display: flex;
-    background: $cor-branca;
+    background: $cor-branco;
     align-items: center;
+    justify-content: space-between;
+
+    .busca {
+      position: relative;
+
+      #cBusc {
+        width: 450px;
+        outline: none;
+        padding: 0 0 5px;
+        border-bottom: 1px solid $cor-preco;
+        border-right: 0;
+        border-left: 0;
+        border-top: 0;
+        font-family: $font-ubuntu;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 15px;
+      }
+      .lupa {
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background: transparent;
+        position: absolute;
+        bottom: 3px;
+        right: -5px;
+      }
+    }
+
+    .bandeiras {
+      width: 115px;
+      height: 18px;
+      display: flex;
+      justify-content: inherit;
+      position: relative;
+      &:before {
+        content: "";
+        width: 0px;
+        height: 30px;
+        left: -20px;
+        top: -6px;
+        border: 1px solid $cor-preco;
+        position: absolute;
+      }
+    }
+
+    .conta {
+      display: flex;
+      width: 140px;
+      justify-content: space-around;
+      .minha-conta {
+        font-family: $font-ubuntu;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 15px;
+        color: $cor-preco;
+        position: relative;
+        &:before {
+          background-image: url($icone-icone-usuario);
+          width: 18px;
+          height: 18px;
+          display: inline-block;
+          left: -25px;
+          position: absolute;
+          content: "";
+        }
+      }
+      .carrinho {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .icone-carrinho {
+          background-image: url($icone-carrinho);
+          width: 19px;
+          height: 18px;
+          margin-right: 5px;
+        }
+        .numero{
+          background-color: $cor-preco2;
+          color: $cor-branco;
+          font-size: 10px;
+          font-weight: 500;
+          font-family: $font-ubuntu;
+          line-height: 11px;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
   }
 
   .banner {
     img {
       width: 100%;
       height: auto;
+    }
+  }
+
+  .titulo-produtos {
+    font-family: $font-ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: $cor-preto;
+    margin-top: 25px;
+    display: block;
+    margin-bottom: 31px;
+    position: relative;
+    &:after {
+      content: "";
+      width: 58px;
+      border: 4.3px solid $cor-botao;
+      position: absolute;
+      bottom: -17px;
+      left: 0px;
     }
   }
 
@@ -83,15 +200,23 @@ body {
         background: $cor-preco2;
         border-radius: 5px;
         border: 0;
-        font-family: Ubuntu;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 16px;
-        color: $cor-branca;
         width: 125px;
         height: 32px;
         display: none;
+        .icone-botao {
+          background-image: url($icone-botao-compra);
+          width: 18px;
+          height: 19px;
+          display: block;
+        }
+        .texto-botao {
+          color: $cor-branco;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 16px;
+        }
       }
 
       &:hover {
@@ -99,94 +224,139 @@ body {
         border: 1.4px solid $cor-borda;
         box-sizing: border-box;
         .botao-compra {
-          display: block;
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
           margin: 0 auto;
         }
       }
     }
   }
-}
-.titulo-produtos {
-  font-family: $font-ubuntu;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 22px;
-  width: 88px;
-  height: 23px;
-  color: #011627;
-}
 
-footer {
-  background-color: #011627;
-  color: $cor-branca;
-  height: 213px;
-  bottom: 10px;
-  .content {
-    display: flex;
-  }
-  .sp {
-    h3 {
-      font-family: $font-ubuntu;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 20px;
-      line-height: 23px;
-      width: 110px;
-      height: 23px;
-      left: 380px;
-      bottom: 177px;
-      color: $cor-branca;
+  footer {
+    background-color: $cor-preto;
+    color: $cor-branco;
+    height: 213px;
+    bottom: 10px;
+    border-bottom: 10px solid $cor-preco2;
+    .content {
+      display: flex;
+      height: 213px;
+      align-items: flex-end;
+      justify-content: space-between;
     }
-    h4,
-    p {
-      font-family: $font-ubuntu;
-      font-style: normal;
-      font-size: 16px;
-      line-height: 22px;
+    .estados {
+      width: 380px;
+      height: 165px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 26px;
+      .sp {
+        h3 {
+          font-family: $font-ubuntu;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 23px;
+          width: 110px;
+          height: 23px;
+          color: $cor-branco;
+          position: relative;
+          &:after {
+            content: "";
+            width: 36px;
+            border: 4.3px solid $cor-botao;
+            position: absolute;
+            bottom: -22px;
+            left: 0px;
+          }
+        }
+        h4,
+        p {
+          font-family: $font-ubuntu;
+          font-style: normal;
+          font-size: 16px;
+          line-height: 22px;
+        }
+
+        p {
+          font-weight: 400;
+        }
+        h4 {
+          font-weight: bold;
+          margin-top: 40px;
+        }
+      }
+      .rj {
+        h4,
+        p {
+          font-family: $font-ubuntu;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 22px;
+        }
+        p {
+          font-weight: 400;
+        }
+        h4 {
+          font-weight: bold;
+        }
+      }
+    }
+    .botoes {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 26px;
+
+      .ctt,
+      .consultor {
+        cursor: pointer;
+        outline: none;
+        background-color: $cor-botao;
+        color: $cor-branco;
+        font-family: $font-ubuntu;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        border: 0;
+        width: 195px;
+        height: 38px;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: space-around;
+        display: flex;
+      }
+      .ctt {
+        margin-bottom: 25px;
+        .icone-ctt {
+          background-image: url($icone-botao-ctt);
+          width: 16px;
+          height: 13px;
+          display: block;
+          background-repeat: no-repeat;
+        }
+      }
+      .consultor {
+        .icone-consutor {
+          background-image: url($icone-botao-consultor);
+          width: 17px;
+          height: 18px;
+          background-repeat: no-repeat;
+        }
+        .texto-consultor {
+          width: 120px;
+        }
+      }
     }
 
-    p {
-      font-weight: 400;
+    .logos {
+      margin-bottom: 26px;
     }
-    h4 {
-      font-weight: bold;
+    .logo-profite {
+      margin-right: 15px;
     }
-  }
-  .rj {
-    h4,
-    p {
-      font-family: $font-ubuntu;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 16px;
-      line-height: 22px;
-    }
-    p {
-      font-weight: 400;
-    }
-    h4 {
-      font-weight: bold;
-    }
-  }
-  .ctt {
-    background-color: $cor-botao;
-    color: $cor-branca;
-    font-family: $font-ubuntu;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 11.8202px;
-    line-height: 14px;
-    border: 0;
-  }
-  .consultor {
-    background-color: $cor-botao;
-    color: $cor-branca;
-    font-family: $font-ubuntu;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 11.8202px;
-    line-height: 14px;
-    border: 0;
   }
 }
