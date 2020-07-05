@@ -1,0 +1,579 @@
+@import "_reset.scss";
+
+@import "_fonts.scss";
+@import "_variables.scss";
+@import "_mixins.scss";
+
+body {
+  .content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .cabecalho {
+    color: black;
+    height: 80px;
+    font-family: $font-ubuntu;
+    display: flex;
+    background: $cor-branco;
+    align-items: center;
+    justify-content: space-between;
+
+    .menu-mobile {
+      background: url($icone-menu-mobile) no-repeat;
+      width: 23px;
+      height: 16px;
+      display: none;
+    }
+
+    .busca {
+      position: relative;
+
+      #cBusc {
+        width: 450px;
+        outline: none;
+        padding: 0 0 5px;
+        border-bottom: 1px solid $cor-preco;
+        border-right: 0;
+        border-left: 0;
+        border-top: 0;
+        font-family: $font-ubuntu;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 15px;
+      }
+      .lupa {
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background: transparent;
+        position: absolute;
+        bottom: 3px;
+        right: -5px;
+      }
+    }
+
+    .bandeiras {
+      width: 115px;
+      height: 18px;
+      display: flex;
+      justify-content: inherit;
+      position: relative;
+      &:before {
+        content: "";
+        width: 0px;
+        height: 30px;
+        left: -20px;
+        top: -6px;
+        border: 1px solid $cor-preco;
+        position: absolute;
+      }
+    }
+
+    .conta {
+      display: flex;
+      width: 140px;
+      justify-content: space-around;
+      .minha-conta {
+        font-family: $font-ubuntu;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 15px;
+        color: $cor-preco;
+        position: relative;
+        &:before {
+          background-image: url($icone-icone-usuario);
+          width: 18px;
+          height: 18px;
+          display: inline-block;
+          left: -25px;
+          position: absolute;
+          content: "";
+        }
+      }
+      .carrinho {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .icone-carrinho {
+          background-image: url($icone-carrinho);
+          width: 19px;
+          height: 18px;
+          margin-right: 5px;
+        }
+        .numero {
+          background-color: $cor-preco2;
+          color: $cor-branco;
+          font-size: 10px;
+          font-weight: 500;
+          font-family: $font-ubuntu;
+          line-height: 11px;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  .banner {
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .slick-next {
+      right: 18%;
+      z-index: 10;
+      &:before {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='14' height='22' viewBox='0 0 14 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M-3.91006e-05 19.415L8.39663 11L-3.91006e-05 2.585L2.58496 0L13.585 11L2.58496 22L-3.91006e-05 19.415Z' fill='white'/%3e%3c/svg%3e ");
+        width: 14px;
+        height: 22px;
+        content: "";
+        display: block;
+      }
+    }
+    .slick-prev {
+      z-index: 10;
+      left: 18%;
+      &:before {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='14' height='22' viewBox='0 0 14 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.585 19.415L5.18833 11L13.585 2.585L11 0L0 11L11 22L13.585 19.415Z' fill='white'/%3e%3c/svg%3e ");
+        width: 14px;
+        height: 22px;
+        content: "";
+        display: block;
+      }
+    }
+  }
+
+  .banner-mobile {
+    display: none;
+  }
+
+  .titulo-produtos {
+    font-family: $font-ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: $cor-preto;
+    margin-top: 25px;
+    display: block;
+    margin-bottom: 31px;
+    position: relative;
+    &:after {
+      content: "";
+      width: 58px;
+      border: 4px solid $cor-botao;
+      position: absolute;
+      bottom: -17px;
+      left: 0px;
+    }
+  }
+
+  .produtos {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 36px;
+    .produto-unitario {
+      width: 216px;
+      height: 353px;
+      text-align: center;
+      box-sizing: border-box;
+      position: relative;
+      .off {
+        background-image: url($icone-off);
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 44px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .img-tenis {
+        margin-top: 30px;
+        margin-bottom: 28px;
+      }
+      .titulo-produto {
+        font-family: $font-ubuntu;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: $cor-preco;
+      }
+      .valor-antigo {
+        font-family: $font-ubuntu;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        text-decoration-line: line-through;
+        color: $cor-preco;
+        margin: 0;
+      }
+      .valor-novo {
+        font-family: $font-ubuntu;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: $cor-preco2;
+        margin: 0;
+      }
+      .valor-parcela {
+        font-family: $font-ubuntu;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 13px;
+        text-align: center;
+        color: $cor-preco;
+        margin: 5px 0 10px 0;
+      }
+      .botao-compra {
+        background: $cor-preco2;
+        border-radius: 5px;
+        border: 0;
+        width: 125px;
+        height: 32px;
+        display: none;
+        .icone-botao {
+          background-image: url($icone-botao-compra);
+          width: 18px;
+          height: 19px;
+          display: block;
+        }
+        .texto-botao {
+          color: $cor-branco;
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 16px;
+        }
+      }
+
+      &:hover {
+        background-color: $cor-borda;
+        border: 1.4px solid $cor-borda;
+        box-sizing: border-box;
+        .botao-compra {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  footer {
+    background-color: $cor-preto;
+    color: $cor-branco;
+    height: 213px;
+    bottom: 10px;
+    border-bottom: 10px solid $cor-preco2;
+    .content {
+      display: flex;
+      height: 213px;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+    .estados {
+      width: 380px;
+      height: 165px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 26px;
+      .sp {
+        h3 {
+          font-family: $font-ubuntu;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 23px;
+          width: 110px;
+          height: 23px;
+          color: $cor-branco;
+          position: relative;
+          &:after {
+            content: "";
+            width: 36px;
+            border: 4px solid $cor-botao;
+            position: absolute;
+            bottom: -22px;
+            left: 0px;
+          }
+        }
+        h4,
+        p {
+          font-family: $font-ubuntu;
+          font-style: normal;
+          font-size: 16px;
+          line-height: 22px;
+        }
+
+        p {
+          font-weight: 400;
+        }
+        h4 {
+          font-weight: bold;
+          margin-top: 40px;
+        }
+      }
+      .rj {
+        h4,
+        p {
+          font-family: $font-ubuntu;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 22px;
+        }
+        p {
+          font-weight: 400;
+        }
+        h4 {
+          font-weight: bold;
+        }
+      }
+    }
+    .botoes {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 26px;
+
+      .ctt,
+      .consultor {
+        cursor: pointer;
+        outline: none;
+        background-color: $cor-botao;
+        color: $cor-branco;
+        font-family: $font-ubuntu;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;
+        border: 0;
+        width: 195px;
+        height: 38px;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: space-around;
+        display: flex;
+      }
+      .ctt {
+        margin-bottom: 25px;
+        .icone-ctt {
+          background-image: url($icone-botao-ctt);
+          width: 16px;
+          height: 13px;
+          display: block;
+          background-repeat: no-repeat;
+        }
+      }
+      .consultor {
+        .icone-consutor {
+          background-image: url($icone-botao-consultor);
+          width: 17px;
+          height: 18px;
+          background-repeat: no-repeat;
+        }
+        .texto-consultor {
+          width: 120px;
+        }
+      }
+    }
+
+    .logos {
+      margin-bottom: 26px;
+    }
+    .logo-profite {
+      margin-right: 15px;
+    }
+  }
+
+  .slick-dots {
+    bottom: 20px;
+    li.slick-active {
+      button {
+        &:before {
+          color: $cor-botao;
+          opacity: 1;
+          font-size: 10px;
+        }
+      }
+    }
+    li {
+      margin: 0;
+      button {
+        &:before {
+          color: $cor-botao-banner;
+          opacity: 1;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .content {
+      max-width: 100%;
+      padding: 0 10px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .cabecalho {
+      .busca {
+        #cBusc {
+          width: 300px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 769px) {
+    .cabecalho {
+      flex-wrap: wrap;
+      .menu-mobile {
+        display: block;
+        order: 1;
+      }
+      .logo {
+        order: 2;
+      }
+      .conta {
+        order: 3;
+        justify-content: flex-end;
+        width: auto;
+        .minha-conta {
+          display: none;
+        }
+      }
+      .bandeiras {
+        display: none;
+      }
+      .busca {
+        order: 5;
+        width: 100%;
+        #cBusc {
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .produtos {
+      flex-wrap: wrap;
+      .produto-unitario {
+        width: 45%;
+        height: auto;
+        .img-tenis {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    footer {
+      height: auto;
+      .content {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+        align-items: center;
+        height: auto;
+        .estados {
+          margin-top: 27px;
+          height: auto;
+          .sp {
+            h3 {
+              font-size: 18px;
+              line-height: 20px;
+              &:after {
+                border: 3px solid $cor-botao;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .banner {
+      display: none;
+    }
+
+    .banner-mobile {
+      display: block;
+    }
+
+    .titulo-produtos{
+      font-size: 18px;
+      line-height: 21px;
+
+    }
+    .produtos {
+      .produto-unitario {
+        width: 45%;
+        .titulo-produto{
+          font-size: 10px;
+          line-height: 11px;
+        }
+        .valor-antigo{
+          font-size: 11px;
+          line-height: 13px;
+        }
+        .valor-novo{
+          font-size: 16px;
+          line-height: 18px;
+        }
+        .valor-parcela{
+          font-size: 11px;
+          line-height: 13px;
+        }
+        .texto-botao {
+          font-size: 15px;
+          line-height: 18px;
+        }
+        .img-tenis {
+          width: 100%;
+          height: auto;
+        }
+        .botao-compra{
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          margin: 0 auto;
+        }
+      }
+    }
+    footer {
+      .content{
+        width: 90%;
+        .estados{
+          width: 100%;
+
+        }
+        .logos {
+          width: 195px;
+          display: flex;
+          justify-content: space-around;
+        }
+      }
+    }
+  }
+}
