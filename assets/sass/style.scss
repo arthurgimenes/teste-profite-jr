@@ -19,6 +19,13 @@ body {
     align-items: center;
     justify-content: space-between;
 
+    .menu-mobile {
+      background: url($icone-menu-mobile) no-repeat;
+      width: 23px;
+      height: 16px;
+      display: none;
+    }
+
     .busca {
       position: relative;
 
@@ -87,7 +94,6 @@ body {
         }
       }
       .carrinho {
-
         display: flex;
         align-items: center;
         justify-content: center;
@@ -97,7 +103,7 @@ body {
           height: 18px;
           margin-right: 5px;
         }
-        .numero{
+        .numero {
           background-color: $cor-preco2;
           color: $cor-branco;
           font-size: 10px;
@@ -120,6 +126,32 @@ body {
       width: 100%;
       height: auto;
     }
+    .slick-next {
+      right: 18%;
+      z-index: 10;
+      &:before {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='14' height='22' viewBox='0 0 14 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M-3.91006e-05 19.415L8.39663 11L-3.91006e-05 2.585L2.58496 0L13.585 11L2.58496 22L-3.91006e-05 19.415Z' fill='white'/%3e%3c/svg%3e ");
+        width: 14px;
+        height: 22px;
+        content: "";
+        display: block;
+      }
+    }
+    .slick-prev {
+      z-index: 10;
+      left: 18%;
+      &:before {
+        background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='14' height='22' viewBox='0 0 14 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M13.585 19.415L5.18833 11L13.585 2.585L11 0L0 11L11 22L13.585 19.415Z' fill='white'/%3e%3c/svg%3e ");
+        width: 14px;
+        height: 22px;
+        content: "";
+        display: block;
+      }
+    }
+  }
+
+  .banner-mobile {
+    display: none;
   }
 
   .titulo-produtos {
@@ -136,7 +168,7 @@ body {
     &:after {
       content: "";
       width: 58px;
-      border: 4.3px solid $cor-botao;
+      border: 4px solid $cor-botao;
       position: absolute;
       bottom: -17px;
       left: 0px;
@@ -146,11 +178,22 @@ body {
   .produtos {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 36px;
     .produto-unitario {
       width: 216px;
       height: 353px;
       text-align: center;
       box-sizing: border-box;
+      position: relative;
+      .off {
+        background-image: url($icone-off);
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 44px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
 
       .img-tenis {
         margin-top: 30px;
@@ -266,7 +309,7 @@ body {
           &:after {
             content: "";
             width: 36px;
-            border: 4.3px solid $cor-botao;
+            border: 4px solid $cor-botao;
             position: absolute;
             bottom: -22px;
             left: 0px;
@@ -357,6 +400,180 @@ body {
     }
     .logo-profite {
       margin-right: 15px;
+    }
+  }
+
+  .slick-dots {
+    bottom: 20px;
+    li.slick-active {
+      button {
+        &:before {
+          color: $cor-botao;
+          opacity: 1;
+          font-size: 10px;
+        }
+      }
+    }
+    li {
+      margin: 0;
+      button {
+        &:before {
+          color: $cor-botao-banner;
+          opacity: 1;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .content {
+      max-width: 100%;
+      padding: 0 10px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .cabecalho {
+      .busca {
+        #cBusc {
+          width: 300px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 769px) {
+    .cabecalho {
+      flex-wrap: wrap;
+      .menu-mobile {
+        display: block;
+        order: 1;
+      }
+      .logo {
+        order: 2;
+      }
+      .conta {
+        order: 3;
+        justify-content: flex-end;
+        width: auto;
+        .minha-conta {
+          display: none;
+        }
+      }
+      .bandeiras {
+        display: none;
+      }
+      .busca {
+        order: 5;
+        width: 100%;
+        #cBusc {
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .produtos {
+      flex-wrap: wrap;
+      .produto-unitario {
+        width: 45%;
+        height: auto;
+        .img-tenis {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    footer {
+      height: auto;
+      .content {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+        align-items: center;
+        height: auto;
+        .estados {
+          margin-top: 27px;
+          height: auto;
+          .sp {
+            h3 {
+              font-size: 18px;
+              line-height: 20px;
+              &:after {
+                border: 3px solid $cor-botao;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .banner {
+      display: none;
+    }
+
+    .banner-mobile {
+      display: block;
+    }
+
+    .titulo-produtos{
+      font-size: 18px;
+      line-height: 21px;
+
+    }
+    .produtos {
+      .produto-unitario {
+        width: 45%;
+        .titulo-produto{
+          font-size: 10px;
+          line-height: 11px;
+        }
+        .valor-antigo{
+          font-size: 11px;
+          line-height: 13px;
+        }
+        .valor-novo{
+          font-size: 16px;
+          line-height: 18px;
+        }
+        .valor-parcela{
+          font-size: 11px;
+          line-height: 13px;
+        }
+        .texto-botao {
+          font-size: 15px;
+          line-height: 18px;
+        }
+        .img-tenis {
+          width: 100%;
+          height: auto;
+        }
+        .botao-compra{
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          margin: 0 auto;
+        }
+      }
+    }
+    footer {
+      .content{
+        width: 90%;
+        .estados{
+          width: 100%;
+
+        }
+        .logos {
+          width: 195px;
+          display: flex;
+          justify-content: space-around;
+        }
+      }
     }
   }
 }
